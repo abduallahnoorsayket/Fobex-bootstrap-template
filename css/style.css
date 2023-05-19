@@ -1,0 +1,100 @@
+/* Global   */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+html,
+body {
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Sen", sans-serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+  /* font-family: "Poppins", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: gray; */
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+}
+.section_heading {
+  /* font-family: "Sen"; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #232536;
+}
+.container {
+  padding: 0px 0px;
+}
+/* Colors */
+.Black {
+  color: #232536;
+}
+.Light {
+  color: #ffffff;
+}
+.Yellow {
+  color: #ffd050;
+}
+.Purple {
+  color: #592ea9;
+}
+
+.Dark_Grey {
+  color: #4c4c4c;
+}
+.Medium_grey {
+  color: #6d6e76;
+}
+.Light_grey {
+  color: #f4f4f4;
+}
+.Lavender {
+  color: #f4f0f8;
+}
+.Light_yellow {
+  color: #fbf6ea;
+}
+
