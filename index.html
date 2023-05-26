@@ -19,75 +19,118 @@
     <!-- custom Css -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Cube template</title>
+    <!-- SVG icons -->
+    <link rel="stylesheet" href="./icon/sprite.svg" />
   </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="nav__container">
-          <div class="row">
-            <div class="col-md-2">
-              <div class="float-left nav__Logo">
-                <img src="./image/home1/Logo.png" alt="" />
-              </div>
-            </div>
-            <div class="col-md-7">
-              <!-- New navbar  -->
-              <div class="navbar">
-                <!-- <div class="Navbar__Link Navbar__Link-brand">
-                 Website title
-               </div> -->
-                <div class="navbar__Link navbar__Link-toggle">
-                  <i class="fa fas fa-bars"></i>
+  <body id="home-1">
+    <!-- <header class="header"></header> -->
+    <main>
+      <section id="hero" class="hero">
+        <!-- <div class="hero__overlay"></div> -->
+        <div class="container hero__container">
+          <div class="nav__container">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="float-left nav__Logo">
+                  <img src="./image/home1/Logo.png" alt="" />
                 </div>
-                <nav class="navbar__Items">
-                  <div class="navbar__Link">
-                    <a class="navbar__Items--fontStyles" href="./home.html"
-                      ><span class="navbar__Items--active">Home</span>
-                    </a>
-                  </div>
-                  <div class="navbar__Link">
-                    <a class="navbar__Items--fontStyles" href="./blog.html">
-                      <span>Services</span></a
-                    >
-                  </div>
-                  <div class="navbar__Link">
-                    <a
-                      class="navbar__Items--fontStyles"
-                      href=".//blogPost.html"
-                    >
-                      <span>Portfolio</span></a
-                    >
-                  </div>
-                  <div class="navbar__Link">
-                    <a class="navbar__Items--fontStyles" href="./aboutUS.html"
-                      >Pages</a
-                    >
-                  </div>
-
-                  <div class="navbar__Link">
-                    <a class="navbar__Items--fontStyles" href="/contactUs.html"
-                      >News</a
-                    >
-                  </div>
-                  <div class="navbar__Link">
-                    <a class="navbar__Items--fontStyles" href="/contactUs.html"
-                      >Contact</a
-                    >
-                  </div>
-                </nav>
               </div>
-            </div>
-            <div class="col-md-2">
-              <div class="float-right">
-                <i class="fa fa-search"></i>
-                <button type="button" class="btn btn-primary">
-                  Free Quote
-                </button>
+              <div class="col-md-7">
+                <!-- New navbar  -->
+                <div class="float-left">
+                  <div class="navbar">
+                    <!-- <div class="Navbar__Link Navbar__Link-brand">
+                   Website title
+                 </div> -->
+                    <div class="navbar__Link navbar__Link-toggle">
+                      <i class="fa fas fa-bars"></i>
+                    </div>
+                    <nav class="navbar__Items">
+                      <div class="navbar__Link">
+                        <a class="navbar__Items--fontStyles" href="./home.html"
+                          ><span class="navbar__Items--active">Home +</span>
+                        </a>
+                      </div>
+                      <div class="navbar__Link">
+                        <a class="navbar__Items--fontStyles" href="./blog.html">
+                          <span>Services +</span></a
+                        >
+                      </div>
+                      <div class="navbar__Link">
+                        <a
+                          class="navbar__Items--fontStyles"
+                          href=".//blogPost.html"
+                        >
+                          <span>Portfolio +</span></a
+                        >
+                      </div>
+                      <div class="navbar__Link">
+                        <a
+                          class="navbar__Items--fontStyles"
+                          href="./aboutUS.html"
+                          >Pages +</a
+                        >
+                      </div>
+
+                      <div class="navbar__Link">
+                        <a
+                          class="navbar__Items--fontStyles"
+                          href="/contactUs.html"
+                          >News +</a
+                        >
+                      </div>
+                      <div class="navbar__Link">
+                        <a
+                          class="navbar__Items--fontStyles"
+                          href="/contactUs.html"
+                          >Contact
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-1">
+                <div class="float-right"></div>
+              </div> -->
+              <div class="col-md-3">
+                <div class="float-left"></div>
+                <div class="float-right">
+                  <!-- <i class="fa fa-search"></i> -->
+                  <svg class="icon search__icon">
+                    <use xlink:href="./icon/sprite.svg#Search"></use>
+                  </svg>
+                  <a type="button" href="#" class="btn btn-primary btn_primary">
+                    <svg class="icon nav__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                    Free Quote
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+          <div class="row">
+            <!-- <div class="col-md-2"></div> -->
+            <div class="col-md-12">
+              <div class="hero__content text-center">
+                <h1 class="hero__title">every Business consulting Solution</h1>
+                <a
+                  type="button"
+                  href="#"
+                  class="btn btn-primary btn_primary hero__button"
+                >
+                  <svg class="icon nav__arrow__icon">
+                    <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                  </svg>
+                  Let’s Work Together
+                </a>
+              </div>
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+          </div>
         </div>
-      </div>
-    </header>
+      </section>
+    </main>
   </body>
 </html>
