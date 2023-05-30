@@ -141,8 +141,8 @@ hr {
 }
 .nav__container {
   background: #ffffff;
-  padding: 22px 35px;
-  height: 90px;
+  padding: 16px 35px;
+  /* height: 90px; */
 }
 
 /* new navigation links */
@@ -462,9 +462,68 @@ hr {
   margin-top: 40px;
 }
 .focus__quality_progress_title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+}
+.focus__quality__progress_bar {
+  height: 10px;
+  background: #ff4c1a;
+  margin-bottom: 2px;
+  border-bottom: 2px solid #ff4c1a;
+}
+.focus__quality__progress_line {
+  background: #ff4c1a;
+  height: 2px;
+}
+.focus__quality__progress_bar--consulting {
+  width: 60%;
+}
+.focus__quality__progress_bar--finance {
+  width: 80%;
+}
+.focus__quality__progress_bar--start-up {
+  width: 65%;
+}
+/* SEVICE SECTION */
+.service {
+  background: var(--secondary);
+  /* background-image: url(../image/home1/service_bg.jpg); */
+}
+.service .section__heading {
+  color: var(--white);
+}
+/* .service .section__sub_heading {
+  background-image: url("../image/home1/service_sub_heading_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 0px;
+  opacity: 0.2;
+  
+} */
+.service__card__container {
+  padding: 50px 0;
+}
+.service__card {
+  padding: 50px 50px;
+  background: #131922;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  display: flex;
+}
+.service__icon {
+  height: 68px;
+  width: 68px;
+  fill: var(--primary);
+}
+.service__content {
+  padding: 0px 0px 0px 30px;
+}
+/* .service__arrow__icon{
+  fill: ;
+} */
+.service .feature__arrow__icon {
+  fill: #a2a6ad;
 }
 /* FOOTER SECTION */
 
