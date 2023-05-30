@@ -25,8 +25,8 @@
   <body id="home-1">
     <!-- <header class="header"></header> -->
     <main>
+      <!-- Hero start -->
       <section id="hero" class="hero">
-        <!-- <div class="hero__overlay"></div> -->
         <div class="container hero__container">
           <div class="nav__container">
             <div class="row">
@@ -90,9 +90,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col-md-1">
-                <div class="float-right"></div>
-              </div> -->
               <div class="col-md-3">
                 <div class="float-left"></div>
                 <div class="float-right">
@@ -141,6 +138,7 @@
           </div>
         </div>
       </section>
+      <!-- Hero End -->
       <!-- Feature Start  -->
       <section id="feature" class="feature">
         <div class="container">
@@ -255,25 +253,131 @@
         </div>
       </section>
       <!-- Feature End -->
+      <!-- About us Start-->
+      <section id="about-us" class="about-us">
+        <div class="container">
+          <div class="about-us__welcome">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="welcome__image"></div>
+              </div>
+              <div class="col-md-7">
+                <div class="welcome__content">
+                  <h6 class="section__sub_heading section__sub_heading--active">
+                    welcome hubal
+                    <!-- <span class="section__sub_heading_line">-</span> -->
+                    <hr class="section__sub_heading_line" />
+                  </h6>
+
+                  <h2 class="section__heading">
+                    Building great foundations for partnerships
+                  </h2>
+                  <div class="welcome__desc">
+                    Diam suscipit litora viver aenean fringilla quam orci lorem
+                    duis conubia nulla tellus sapien aenean sus pharetra diam
+                    tempor ante interdum dignissim
+                  </div>
+                  <ul class="welcome___list">
+                    <li>
+                      <svg class="icon feature__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      <span class="welcome__list_item"
+                        >Strategic Advisers for Excellence</span
+                      >
+                    </li>
+                    <li>
+                      <svg class="icon feature__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      <span class="welcome__list_item"
+                        >Persuasive Ideas for Growth</span
+                      >
+                    </li>
+                    <li>
+                      <svg class="icon feature__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      <span class="welcome__list_item"
+                        >Down to Earth Consulting</span
+                      >
+                    </li>
+                    <li>
+                      <svg class="icon feature__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      <span class="welcome__list_item"
+                        >Cut Through Noise to Find Clarity</span
+                      >
+                    </li>
+                  </ul>
+                  <a type="button" href="#" class="btn btn-primary btn_primary">
+                    <svg class="icon nav__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                    find out more
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us__focus-quality">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="focus-quality__content">
+                <h6 class="section__sub_heading section__sub_heading--active">
+                  Focus Quality
+                  <hr class="section__sub_heading_line" />
+                </h6>
+
+                <h2 class="section__heading">
+                  conceptual Design delivery exceptional execution
+                </h2>
+                <div class="welcome__desc">
+                  Erose luctus tellus velitens normal dapibus praesent tempor
+                  feugiat eleifend purus diam erat malesuada class duis orci
+                  class vulputate ultricies aliquet congue inceptos.
+                </div>
+                <div class="focus__quality_progress">
+                  <p
+                    class="focus__quality_progress_title uppercase text-bold-color"
+                  >
+                    Consulting (60%)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="focus-quality__image"></div>
+              <!-- <img
+                src="./image/home1/focus_quality.png"
+                class="focus-quality__image"
+                alt=""
+              /> -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Us end -->
+      <!-- Footer Start -->
       <section id="footer" class="footer">
         <div class="container">
           <div class="footer__cta">
             <div class="row">
               <div class="col-md-8">
-                <div class="">
-                  <div class="float-left">
-                    <svg class="icon footer__phone_icon">
-                      <use xlink:href="./icon/sprite.svg#footer-phone"></use>
-                    </svg>
-                  </div>
-                  <h3 class="footer__cta__title">
-                    Strategic consultants experts in accelerating change for
-                    business and individuals cause
-                  </h3>
+                <div class="float-left">
+                  <svg class="icon footer__phone_icon">
+                    <use xlink:href="./icon/sprite.svg#footer-phone"></use>
+                  </svg>
                 </div>
+                <h3 class="footer__cta__title">
+                  Strategic consultants experts in accelerating change for
+                  business and individuals cause
+                </h3>
               </div>
-              <div class="col-md">
-                <div class="float-right">
+              <div class="col-md-4">
+                <div class="float-right footer__btn_container">
                   <a type="button" href="#" class="btn btn-primary btn_primary">
                     <svg class="icon nav__arrow__icon">
                       <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -326,16 +430,16 @@
                 </div>
               </div>
               <div class="col-md-3">
-                <div class="float-left footer__widget__content">
+                <div class="footer__widget__content">
                   <div class="footer__widget__title">Newsletter</div>
                   <form class="footer__widget__des--margin-top">
                     <div class="form-group">
                       <input
                         type="email"
-                        class="form-control"
+                        class="form-control footer__newsletter"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
-                        placeholder="Enter email"
+                        placeholder="Enter email *"
                       />
                     </div>
                     <div class="form-check">
@@ -345,19 +449,53 @@
                         id="exampleCheck1"
                       />
                       <label class="form-check-label" for="exampleCheck1"
-                        >Check me out</label
+                        >I have read the privacy & policy</label
                       >
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <!-- <button type="submit" class="btn btn-primary">
                       Submit
-                    </button>
+                    </button> -->
                   </form>
+                  <div
+                    class="footer__widget__title footer__widget__des--margin-top"
+                  >
+                    Follow us
+                  </div>
+                  <div class="social_icons">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer__copyright">
+                <div class="float-left">
+                  <p>
+                    Copyright © 2023 Cube by HR Design. All Rights Reserved.
+                  </p>
+                </div>
+                <div class="float-right">
+                  <ul class="list-inline">
+                    <li>About us</li>
+                    <li>Careers</li>
+                    <li>FAQ</li>
+                    <li>Cookie Policy</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Footer End -->
     </main>
   </body>
 </html>
