@@ -297,6 +297,7 @@ hr {
 /*FEATURE SECTION */
 .feature {
   background: #f5f6f0;
+  position: relative;
 }
 .feature .section__sub_heading--color {
   color: #131922;
@@ -366,27 +367,27 @@ hr {
 }
 .feature .feature__Bg__vector__1 {
   position: absolute;
-  top: 1100px;
+  top: 100px;
   z-index: 2;
   left: 70px;
 }
 
 .feature .feature__Bg__vector__2 {
   position: absolute;
-  top: 1100px;
+  top: 100px;
   z-index: 2;
   right: 125px;
 }
 .feature .feature__Bg__vector__3 {
   position: absolute;
-  top: 1700px;
+  bottom: 100px;
   z-index: 2;
   left: 70px;
 }
 
 .feature .feature__Bg__vector__4 {
   position: absolute;
-  top: 1700px;
+  bottom: 100px;
   z-index: 2;
   right: 125px;
 }
@@ -443,6 +444,9 @@ hr {
 .about-us hr {
   margin: 10px 5px;
 }
+.focus-quality__image_container {
+  padding-left: 16px;
+}
 .focus-quality__image {
   background-image: url(../image/home1/focus_quality.png);
   width: 100%;
@@ -487,9 +491,10 @@ hr {
 }
 /* SEVICE SECTION */
 .service {
-  background: var(--secondary);
-  /* background-image: url(../image/home1/service_bg.jpg); */
+  position: relative;
+  background: url("../image/home1/service_bg_.jpg");
 }
+
 .service .section__heading {
   color: var(--white);
 }
@@ -502,7 +507,7 @@ hr {
   
 } */
 .service__card__container {
-  padding: 50px 0;
+  padding: 50px 0 100px 0;
 }
 .service__card {
   padding: 50px 50px;
@@ -518,12 +523,84 @@ hr {
 }
 .service__content {
   padding: 0px 0px 0px 30px;
+  width: 75%;
 }
 /* .service__arrow__icon{
   fill: ;
 } */
 .service .feature__arrow__icon {
   fill: #a2a6ad;
+}
+.service__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  /* or 133% */
+
+  text-transform: capitalize;
+
+  color: var(--white);
+}
+.service .feature__link {
+  color: #a2a6ad;
+}
+.service__row-margin {
+  margin-top: 30px;
+}
+.service .feature__arrow__icon:hover {
+  fill: #a2a6ad;
+}
+/* APPOINTMENT SECTION */
+
+.appointment .container {
+  background: #f5f6f0;
+  margin-top: -220px;
+  position: relative;
+  z-index: 10;
+}
+.appointment__image {
+  height: 100%;
+  width: 100%;
+}
+.appointment__content {
+  padding: 70px 80px;
+}
+.appointment .section__sub_heading_line {
+  margin: 10px;
+}
+.appointment .welcome__desc {
+  margin-top: 30px;
+}
+.appointment__form {
+  margin-top: 30px;
+}
+.appointment .btn_primary {
+  border-radius: 10px;
+}
+.appointment .form-control {
+  padding: 18px 25px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e3e4dd;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #5f6165;
+}
+.appointment select option {
+  padding: 18px 25px;
+}
+.appointment__top__arrow {
+  position: absolute;
+  fill: #e6e8e0;
+  width: 20px;
+  height: 109px;
+  left: 1487px;
+  top: 4407px;
+}
+.appointment textarea {
+  max-height: 150px;
+  resize: none;
 }
 /* FOOTER SECTION */
 
