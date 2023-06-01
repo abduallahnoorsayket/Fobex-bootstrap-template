@@ -22,11 +22,10 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #5f6165;
-}
-html,
-body {
-  min-height: 100%;
   overflow-x: hidden;
+}
+html {
+  background: black;
 }
 h1,
 h2,
@@ -116,16 +115,27 @@ hr {
   margin: 0;
   padding: 0;
 }
+section .section__sub_heading_line {
+  margin: 10px;
+}
 /* Buttons */
 .btn_primary {
   background: #ff4c1a;
   border-radius: 2px;
-  /* width: 228px;
-  height: 60px; */
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;
-  /* identical to box height, or 167% */
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 13px 20px;
+  border: none;
+}
+.btn_secondary {
+  background: var(--white);
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
   text-transform: uppercase;
   color: #ffffff;
   padding: 13px 20px;
@@ -595,12 +605,148 @@ hr {
   fill: #e6e8e0;
   width: 20px;
   height: 109px;
-  left: 1487px;
-  top: 4407px;
+  right: 100px;
+  top: 50px;
 }
 .appointment textarea {
   max-height: 150px;
   resize: none;
+}
+/* PROJECT SECTION */
+.project__title {
+  padding: 0 0 0 0;
+}
+.project__arrow__icon {
+  height: 17px;
+  width: 18px;
+  fill: #5f6165;
+}
+.project .btn_secondary {
+  border: 1px solid #888888;
+  border-radius: 3px;
+  padding: 15px 28px;
+}
+.project .btn_primary {
+  border: 1px solid var(--primary);
+  border-radius: 3px;
+  padding: 15px 28px;
+}
+
+.project .btn_primary .project__arrow__icon {
+  fill: var(--white);
+}
+.project__title__btn {
+  padding-top: 30px;
+}
+.project__title__divider {
+  height: 1px;
+  background: #888888;
+  margin: 30px 0 50px 260px;
+}
+.swiper__slider {
+  padding-left: 260px;
+}
+.swiper__content {
+  height: 490px;
+  width: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px 30px 30px;
+}
+.swiper__image-1 {
+  background-image: url(../image/home1/project-slier-1.png);
+}
+.swiper__image-2 {
+  background-image: url(../image/home1/project-slier-2.png);
+}
+.swiper__image-3 {
+  background-image: url(../image/home1/project-slier-3.png);
+}
+.swiper__image-4 {
+  background-image: url(../image/home1/project-slier-4.png);
+}
+.swiper__image-5 {
+  background-image: url(../image/home1/project-slier-5.png);
+}
+.swiper__image-6 {
+  background-image: url(../image/home1/project-slier-6.png);
+}
+.slider__title {
+  background: var(--white);
+  padding: 18px 30px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #131922;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+.slider__title:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.slider__btn {
+  border-radius: 20px;
+  padding: 5px 16px;
+  background: var(--white);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+.slider__right__arrow__icon {
+  height: 13px;
+  width: 26px;
+  fill: var(--primary);
+}
+.slider__title:hover .slider__btn {
+  opacity: 1;
+  visibility: visible;
+}
+/* WORKING PROCESS */
+.working-process .section__sub_heading {
+  color: #131922;
+}
+.process__container {
+  margin: 60px 0;
+}
+
+.process__icon-container {
+  padding: 35px 40px;
+  background: var(--primary);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.process__icon {
+  width: 66px;
+  height: 74px;
+  fill: var(--white);
+}
+.process__text {
+  margin: 30px 0 20px 0;
+}
+.process__title {
+  font-size: 30px;
+  color: #131922;
+}
+.process__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f6165;
+}
+.process__main-icon-content {
+  width: 169px;
+  height: 169px;
+  border-radius: 50%;
+  background: #f5f6f0;
 }
 /* FOOTER SECTION */
 

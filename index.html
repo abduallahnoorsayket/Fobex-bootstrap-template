@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <!-- custom Css -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Cube template</title>
@@ -151,12 +156,12 @@
             </div>
           </div>
           <img
-            src="./image/home1/Vector (2).png"
+            src="./image/home1/vector-2.png"
             class="feature__Bg__vector__1"
             alt=""
           />
           <img
-            src="./image/home1/Vector (1).png"
+            src="./image/home1/vector-1.png"
             class="feature__Bg__vector__2"
             alt=""
           />
@@ -240,12 +245,12 @@
             </div>
           </div>
           <img
-            src="./image/home1/Vector (3).png"
+            src="./image/home1/vector-3.png"
             class="feature__Bg__vector__3"
             alt=""
           />
           <img
-            src="./image/home1/Vector (4).png"
+            src="./image/home1/vector-4.png"
             class="feature__Bg__vector__4"
             alt=""
           />
@@ -390,17 +395,10 @@
       <!-- About Us end -->
       <!-- Service start -->
       <section id="service" class="service">
-        <!-- <img
-          class="service__bg__image"
-          src="../image/home1/service_bg.jpg"
-          alt=""
-        /> -->
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h6 class="section__sub_heading section__sub_heading active">
-                Exclusive service
-              </h6>
+              <h6 class="section__sub_heading active">Exclusive service</h6>
               <!-- <img src="../image/home1/BG_circle.png" alt="" /> -->
               <h2 class="section__heading">Our Flowless Services</h2>
             </div>
@@ -593,7 +591,225 @@
         </div>
       </section>
       <!-- Appointment end -->
+      <!-- Projects Start -->
+      <section id="project" class="project">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="project__title">
+                <div class="title__text float-left">
+                  <h6 class="section__sub_heading section__sub_heading--active">
+                    latest portfolio
+                    <hr class="section__sub_heading_line" />
+                  </h6>
+                  <h2 class="section__heading">Some Completed Project</h2>
+                </div>
 
+                <div class="project__title__btn float-right">
+                  <button
+                    class="btn btn-primary btn_secondary project__slider_prev"
+                  >
+                    <svg class="icon project__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#left-arrow"></use>
+                    </svg>
+                  </button>
+                  <button
+                    class="btn btn-primary btn_primary project__slider_next"
+                  >
+                    <svg class="icon project__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project__title__divider"></div>
+        <div class="swiper__slider">
+          <!-- Slider main container -->
+          <div class="swiper project-slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-1">
+                  <div class="slider__title">
+                    Experience Design
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-2">
+                  <div class="slider__title">
+                    Business Strategy
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-3">
+                  <div class="slider__title">
+                    Business Transformation
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-4">
+                  <div class="slider__title">
+                    Customer Experience
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-5">
+                  <div class="slider__title">
+                    Experience Design
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper__content swiper__image-6">
+                  <div class="slider__title">
+                    Customer Experience
+                    <span class="slider__btn">
+                      <svg class="icon slider__right__arrow__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#right-thin-arrow"
+                        ></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects End -->
+      <!-- Working Process Start -->
+      <section id="working-process" class="working-process">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h6 class="section__sub_heading">how we work</h6>
+              <!-- <img src="../image/home1/BG_circle.png" alt="" /> -->
+              <h2 class="section__heading">Our Working Process</h2>
+            </div>
+          </div>
+          <div class="process__container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="process__content">
+                  <div class="process__main-icon-content">
+                    <div class="process__icon-container">
+                      <svg class="icon process__icon">
+                        <use xlink:href="./icon/sprite.svg#work-sign-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="process__text">
+                    <h3 class="process__title">Free signup</h3>
+                    <div class="process__desc">
+                      Parturient aliquet risus primis nonsens eudu tincidunt
+                      arcu laoreet integer varius pellen tesque aliquet elite
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="process__content">
+                  <div class="process__text">
+                    <h3 class="process__title">Discuss Project</h3>
+                    <div class="process__desc">
+                      Parturient aliquet risus primis nonsens eudu tincidunt
+                      arcu laoreet integer varius pellen tesque aliquet elite
+                    </div>
+                  </div>
+                  <div class="process__main-icon-content">
+                    <div class="process__icon-container">
+                      <svg class="icon process__icon">
+                        <use xlink:href="./icon/sprite.svg#work-discuss"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="process__content">
+                  <div class="process__main-icon-content">
+                    <div class="process__icon-container">
+                      <svg class="icon process__icon">
+                        <use xlink:href="./icon/sprite.svg#work-budget"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="process__text">
+                    <h3 class="process__title">Set Budget</h3>
+                    <div class="process__desc">
+                      Parturient aliquet risus primis nonsens eudu tincidunt
+                      arcu laoreet integer varius pellen tesque aliquet elite
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="process__content">
+                  <div class="process__text">
+                    <h3 class="process__title">Ready to start</h3>
+                    <div class="process__desc">
+                      Parturient aliquet risus primis nonsens eudu tincidunt
+                      arcu laoreet integer varius pellen tesque aliquet elite
+                    </div>
+                  </div>
+                  <div class="process__main-icon-content">
+                    <div class="process__icon-container">
+                      <svg class="icon process__icon">
+                        <use xlink:href="./icon/sprite.svg#work-ready"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Working Process  End -->
       <!-- Footer Start -->
       <section id="footer" class="footer">
         <div class="container">
@@ -731,5 +947,7 @@
       </section>
       <!-- Footer End -->
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
