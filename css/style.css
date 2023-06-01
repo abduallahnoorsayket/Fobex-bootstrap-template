@@ -104,6 +104,9 @@ ul li {
 .text-bold-color {
   color: var(--secondary);
 }
+.btn-primary:hover {
+  background: var(--white);
+}
 /* icon */
 .icon {
   width: 50px;
