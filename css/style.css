@@ -8,6 +8,7 @@
   --gery-1: #5f6165;
   --gery-2: #888888;
   --gery-3: #a2a6ad;
+  --yellow: #ffa818;
 }
 /* Global   */
 
@@ -105,7 +106,7 @@ ul li {
   color: var(--secondary);
 }
 .btn-primary:hover {
-  background: var(--white);
+  background: var(--primary);
 }
 /* icon */
 .icon {
@@ -140,9 +141,34 @@ section .section__sub_heading_line {
   font-size: 15px;
   line-height: 25px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #5f6165;
   padding: 13px 20px;
-  border: none;
+  border: 1px solid #888888;
+}
+/* Badges  */
+.badge-primary {
+  background: var(--primary);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+*:focus {
+  outline: none;
+}
+textarea:focus,
+input:focus .btn-primary:focus .btn_primary:focus,
+button {
+  outline: none !important;
+}
+.section__sub_heading--circle-bg {
+  color: #131922;
+  background-image: url("../image/home1/BG_circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 0px;
+  font-weight: 600;
 }
 
 /* ======Home page 01========== */
@@ -312,21 +338,7 @@ section .section__sub_heading_line {
   background: #f5f6f0;
   position: relative;
 }
-.feature .section__sub_heading--color {
-  color: #131922;
-  background-image: url("../image/home1/BG_circle.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 15px 0px;
-}
-.section__sub_heading--bg-circle {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 934px;
-  top: 1080px;
-  background: #ffd2c6;
-}
+
 .feature__content {
   padding: 50px 0px;
   width: 85%;
@@ -811,6 +823,150 @@ section .section__sub_heading_line {
 }
 .testimonial .project__arrow__icon--active {
   fill: var(--white);
+}
+.testimonial__arrow__icon {
+  fill: var(--yellow);
+  height: 20px;
+  width: 16px;
+  margin: 0 0 5px 0;
+}
+/* PRICE SECTION */
+.price__card {
+  border: 20px solid #f5f6f0;
+  width: 97%;
+  transition: all 0.5s ease-in-out;
+}
+.price__card:hover {
+  border-color: var(--primary);
+}
+.price__card-content {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(19, 25, 34, 0.04);
+  padding: 45px 30px;
+  gap: 20;
+}
+.price__card__header {
+  display: flex;
+}
+.price .process__icon {
+  width: 44px;
+  height: 42px;
+}
+.price .process__icon-container {
+  padding: 19px 18px;
+  background: var(--primary);
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 0 20px 0 0;
+}
+.price__plan {
+  font-weight: 400;
+  color: #131922;
+}
+.price__line {
+  background: #e1e1e1;
+  height: 1px;
+  margin: 20px 0 25px 0;
+}
+.price ul li span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f6165;
+}
+.price ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 0 15px 0;
+}
+.price__check__icon {
+  fill: #5f6165;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px 0 0;
+}
+.price .nav__arrow__icon {
+  fill: var(--secondary);
+}
+
+.buy__button {
+  padding: 17px 0;
+  background: #f5f6f0;
+  border: 1px solid #e3e4dd;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: #131922;
+}
+.buy__button:hover {
+  background: var(--secondary);
+  color: var(--white);
+}
+.buy__button:hover .price .nav__arrow__icon {
+  fill: var(--white);
+}
+/* BLOG SECTION */
+#blog {
+  padding-bottom: 0;
+}
+.blog .container {
+  border-bottom: 1px solid #888888;
+}
+.blog__image_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+}
+.blog .project__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog .title__text {
+  width: 45%;
+}
+.blog .btn_secondary {
+  border-radius: 10px;
+  padding: 18px 30px;
+}
+.blog .project__arrow__icon {
+  margin: 0 10px 0 0;
+}
+.blog__person {
+  position: absolute;
+  top: 300px;
+}
+.blog__person__img {
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  border: 1px solid #ffff;
+}
+.blog__content {
+  position: relative;
+}
+.blog__text {
+  margin: 30px 0 0 0;
+  width: 90%;
+}
+.blog .card {
+  border: none;
+}
+.blog .blog__text h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #131922;
+  margin: 10px 0;
+}
+/* BRAND SECTION */
+.brand img {
+  opacity: 0.5;
+}
+.brand img:hover {
+  opacity: 1;
 }
 /* FOOTER SECTION */
 
