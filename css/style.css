@@ -145,6 +145,12 @@ section .section__sub_heading_line {
   padding: 13px 20px;
   border: 1px solid #888888;
 }
+.btn-primary:hover svg {
+  fill: var(--white);
+}
+.btn-primary:hover {
+  border: none;
+}
 /* Badges  */
 .badge-primary {
   background: var(--primary);
@@ -782,6 +788,7 @@ button {
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  box-shadow: 0px 5px 8px rgba(95, 97, 101, 0.04);
 }
 .testimonial-slider {
   width: 600px;
@@ -907,7 +914,7 @@ button {
 }
 /* BLOG SECTION */
 #blog {
-  padding-bottom: 0;
+  padding: 0;
 }
 .blog .container {
   border-bottom: 1px solid #888888;
