@@ -51,7 +51,7 @@
                       <i class="fa fas fa-bars"></i>
                     </div>
                     <nav class="navbar__Items">
-                      <div class="navbar__Link">
+                      <div class="navbar__Link active">
                         <a class="navbar__Items--fontStyles" href="./home.html"
                           ><span class="navbar__Items--active">Home +</span>
                         </a>
@@ -168,11 +168,16 @@
           <div class="row">
             <div class="col-md-4">
               <div class="feature__content">
-                <img
-                  src="./image/home1/feature_1.png"
-                  class="feature__image"
-                  alt=""
-                />
+                <div class="feature__image__container">
+                  <img
+                    src="./image/home1/feature_1.png"
+                    class="feature__image"
+                    alt=""
+                  />
+                  <svg class="icon feature__circle__icon">
+                    <use xlink:href="./icon/sprite.svg#cicle-Bg"></use>
+                  </svg>
+                </div>
                 <h3 class="feature__title">
                   Financial best planning that makes sense
                 </h3>
@@ -186,20 +191,23 @@
                   <svg class="icon feature__arrow__icon">
                     <use xlink:href="./icon/sprite.svg#right-arrow"></use>
                   </svg>
-                  <span>More about this</span>
+                  <span class="feature__more">More about this</span>
                 </a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="feature__content">
-                <img
-                  src="./image/home1/feature_2.png"
-                  class="feature__image"
-                  alt=""
-                />
-                <svg class="icon feature__circle__icon">
-                  <use xlink:href="./icon/sprite.svg#cicle-Bg"></use>
-                </svg>
+                <div class="feature__image__container">
+                  <img
+                    src="./image/home1/feature_2.png"
+                    class="feature__image"
+                    alt=""
+                  />
+                  <svg class="icon feature__circle__icon">
+                    <use xlink:href="./icon/sprite.svg#cicle-Bg"></use>
+                  </svg>
+                </div>
+
                 <h3 class="feature__title">
                   Business consulting service for growth
                 </h3>
@@ -209,21 +217,26 @@
                   lacinia non parturient luctus mauris lacinia quisque dictum
                   ligula uterna cursus.
                 </p>
-                <a href="#" class="feature__link feature__link--active">
+                <a href="#" class="feature__link">
                   <svg class="icon feature__arrow__icon">
                     <use xlink:href="./icon/sprite.svg#right-arrow"></use>
                   </svg>
-                  <span class="">More about this</span>
+                  <span class="feature__more">More about this</span>
                 </a>
               </div>
             </div>
             <div class="col-md-4">
               <div class="feature__content">
-                <img
-                  src="./image/home1/feature_3.png"
-                  class="feature__image"
-                  alt=""
-                />
+                <div class="feature__image__container">
+                  <img
+                    src="./image/home1/feature_3.png"
+                    class="feature__image"
+                    alt=""
+                  />
+                  <svg class="icon feature__circle__icon">
+                    <use xlink:href="./icon/sprite.svg#cicle-Bg"></use>
+                  </svg>
+                </div>
                 <h3 class="feature__title">
                   Check out relevant website and journal
                 </h3>
@@ -239,7 +252,7 @@
                       xlink:href="./icon/sprite.svg#feature_right_arrow"
                     ></use>
                   </svg>
-                  <span>More about this</span>
+                  <span class="feature__more">More about this</span>
                 </a>
               </div>
             </div>
@@ -398,6 +411,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
+              <!-- section__sub_heading--circle-bg -->
               <h6 class="section__sub_heading active">Exclusive service</h6>
               <!-- <img src="../image/home1/BG_circle.png" alt="" /> -->
               <h2 class="section__heading">Our Flowless Services</h2>
@@ -584,6 +598,9 @@
                       send message
                     </a>
                   </form>
+                  <svg class="icon appointment__bottom_right__arrow">
+                    <use xlink:href="./icon/sprite.svg#right-large-arrow"></use>
+                  </svg>
                 </div>
               </div>
             </div>
@@ -606,9 +623,7 @@
                 </div>
 
                 <div class="project__title__btn float-right">
-                  <button
-                    class="btn btn-primary btn_secondary project__slider_prev"
-                  >
+                  <button class="btn btn_secondary project__slider_prev">
                     <svg class="icon project__arrow__icon">
                       <use xlink:href="./icon/sprite.svg#left-arrow"></use>
                     </svg>
@@ -726,7 +741,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h6 class="section__sub_heading">how we work</h6>
+              <h6 class="section__sub_heading section__sub_heading--circle-bg">
+                how we work
+              </h6>
               <!-- <img src="../image/home1/BG_circle.png" alt="" /> -->
               <h2 class="section__heading">Our Working Process</h2>
             </div>
@@ -822,6 +839,12 @@
                     alt=""
                     class="rounded-circle"
                   />
+
+                  <div class="quote__icon-container">
+                    <svg class="icon quote__icon">
+                      <use xlink:href="./icon/sprite.svg#home-one-quote"></use>
+                    </svg>
+                  </div>
                   <div class="testimonail__des text-center">
                     Praesent bibendum praesent anterule conubia intege convallis
                     egete site commodo proin fermentum nostra egesta lacinia
@@ -831,9 +854,7 @@
                     laoreet to ornare hendrerit torquent
                   </div>
                   <div class="testimonial__btn">
-                    <button
-                      class="btn btn-primary btn_secondary testimonial__slider_prev"
-                    >
+                    <button class="btn btn_secondary testimonial__slider_prev">
                       <svg class="icon project__arrow__icon">
                         <use xlink:href="./icon/sprite.svg#left-arrow"></use>
                       </svg>
@@ -887,9 +908,7 @@
                     laoreet to ornare hendrerit torquent
                   </div>
                   <div class="testimonial__btn">
-                    <button
-                      class="btn btn-primary btn_secondary testimonial__slider_prev"
-                    >
+                    <button class="btn btn_secondary testimonial__slider_prev">
                       <svg class="icon project__arrow__icon">
                         <use xlink:href="./icon/sprite.svg#left-arrow"></use>
                       </svg>
@@ -1211,62 +1230,83 @@
                 <div class="project__title__btn float-right">
                   <button class="btn btn-primary btn_secondary">
                     <svg class="icon project__arrow__icon">
-                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-                    </svg>go to blog
+                      <use
+                        xlink:href="./icon/sprite.svg#right-arrow"
+                      ></use></svg
+                    >go to blog
                   </button>
                 </div>
               </div>
             </div>
-         
           </div>
           <div class="process__container">
             <div class="row">
-             <div class="col-md-6">
-               <div class="card ">
-                 <img class="blog__img" src="./image/home1/blog-image-1.png" alt="Card image">
-                 <div class="blog__image_overlay">
-                  <div class="blog__content text-white">
-                    <span class="badge badge-primary">Business</span>
-                  <span class="badge badge-primary">consulting</span>
-                  <div class="blog__person">
-                    <img class="blog__person__img" src="./image/home1/blog-first-person.png" alt="Card image">
-                    <span class="blog__person-name">by post
-                      stephen hock</span>
-                      
+              <div class="col-md-6">
+                <div class="card">
+                  <img
+                    class="blog__img"
+                    src="./image/home1/blog-image-1.png"
+                    alt="Card image"
+                  />
+                  <div class="blog__image_overlay">
+                    <div class="blog__content text-white">
+                      <span class="badge badge-primary">Business</span>
+                      <span class="badge badge-primary">consulting</span>
+                      <div class="blog__person">
+                        <img
+                          class="blog__person__img"
+                          src="./image/home1/blog-first-person.png"
+                          alt="Card image"
+                        />
+                        <span class="blog__person-name"
+                          >by post stephen hock</span
+                        >
+                      </div>
+                    </div>
                   </div>
+                  <div class="blog__text">
+                    <span> <strong>Business</strong> / 10 feb, 2023</span>
+                    <h3>
+                      Consectetuer adipiscing blandit manas etiam primis site
+                      formally libero.
+                    </h3>
                   </div>
-                 </div>
-                 <div class="blog__text">
-                  <span> <strong>Business</strong> / 10 feb, 2023</span>
-                  <h3>Consectetuer adipiscing blandit manas etiam
-                    primis site formally libero.</h3>
-                 </div>
-               </div>
-             </div>
-             <div class="col-md-6">
-              <div class="card ">
-                <img class="blog__img" src="./image/home1/blog-image-2.png" alt="Card image">
-                <div class="blog__image_overlay">
-                 <div class="blog__content text-white">
-                   <span class="badge badge-primary">Business</span>
-                 <span class="badge badge-primary">consulting</span>
-                 <div class="blog__person">
-                   <img class="blog__person__img" src="./image/home1/blog-second-person.png" alt="Card image">
-                   <span class="blog__person-name">by post
-                     stephen hock</span>
-                     
-                 </div>
-                 </div>
-                </div>
-                <div class="blog__text">
-                 <span> <strong>Business</strong> / 10 feb, 2023</span>
-                 <h3>He them day gathered forth forbid saw earth
-                  moved dolora at multiply.</h3>
                 </div>
               </div>
-             </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img
+                    class="blog__img"
+                    src="./image/home1/blog-image-2.png"
+                    alt="Card image"
+                  />
+                  <div class="blog__image_overlay">
+                    <div class="blog__content text-white">
+                      <span class="badge badge-primary">Business</span>
+                      <span class="badge badge-primary">consulting</span>
+                      <div class="blog__person">
+                        <img
+                          class="blog__person__img"
+                          src="./image/home1/blog-second-person.png"
+                          alt="Card image"
+                        />
+                        <span class="blog__person-name"
+                          >by post stephen hock</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog__text">
+                    <span> <strong>Business</strong> / 10 feb, 2023</span>
+                    <h3>
+                      He them day gathered forth forbid saw earth moved dolora
+                      at multiply.
+                    </h3>
+                  </div>
+                </div>
+              </div>
             </div>
-         </div>
+          </div>
         </div>
       </section>
       <!-- Blog End -->
@@ -1275,22 +1315,22 @@
         <div class="container">
           <div class="row">
             <div class="col-md-2">
-              <img src="./image/home1/brand-1.jpg" alt="">
+              <img src="./image/home1/brand-1.jpg" alt="" />
             </div>
             <div class="col-md-2">
-              <img src="./image/home1/brand-2.jpg" alt="">
+              <img src="./image/home1/brand-2.jpg" alt="" />
             </div>
             <div class="col-md-2">
-              <img src="./image/home1/brand-3.jpg" alt="">
+              <img src="./image/home1/brand-3.jpg" alt="" />
             </div>
             <div class="col-md-2">
-              <img src="./image/home1/brand-4.jpg" alt="">
+              <img src="./image/home1/brand-4.jpg" alt="" />
             </div>
             <div class="col-md-2">
-              <img src="./image/home1/brand-5.jpg" alt="">
+              <img src="./image/home1/brand-5.jpg" alt="" />
             </div>
             <div class="col-md-2">
-              <img src="./image/home1/brand-6.jpg" alt="">
+              <img src="./image/home1/brand-6.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -1302,15 +1342,15 @@
           <div class="footer__cta">
             <div class="row">
               <div class="col-md-8">
-                <div class="float-left">
+                <div class="cta__icon__container">
                   <svg class="icon footer__phone_icon">
                     <use xlink:href="./icon/sprite.svg#footer-phone"></use>
                   </svg>
+                  <h3 class="footer__cta__title">
+                    Strategic consultants experts in accelerating change for
+                    business and individuals cause
+                  </h3>
                 </div>
-                <h3 class="footer__cta__title">
-                  Strategic consultants experts in accelerating change for
-                  business and individuals cause
-                </h3>
               </div>
               <div class="col-md-4">
                 <div class="float-right footer__btn_container">
