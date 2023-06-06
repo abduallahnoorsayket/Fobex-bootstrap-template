@@ -2,6 +2,11 @@ const project__slider = new Swiper(".project-slider", {
   loop: true,
   slidesPerView: 3.7,
   spaceBetween: 20,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+  },
 
   // Navigation arrows
   navigation: {
@@ -13,6 +18,11 @@ const project__slider = new Swiper(".project-slider", {
 const testimonial__slider = new Swiper(".testimonial-slider", {
   loop: true,
   slidesPerView: 1,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+  },
 
   // Navigation arrows
   navigation: {

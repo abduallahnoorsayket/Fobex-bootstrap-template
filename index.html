@@ -31,7 +31,7 @@
     <!-- <header class="header"></header> -->
     <main>
       <!-- Hero start -->
-      <section id="hero" class="hero">
+      <section id="hero" class="hero hidden">
         <div class="container hero__container">
           <div class="nav__container">
             <div class="row">
@@ -271,12 +271,14 @@
       </section>
       <!-- Feature End -->
       <!-- About us Start-->
-      <section id="about-us" class="about-us">
+      <section id="about-us" class="about-us ">
         <div class="container">
           <div class="about-us__welcome">
             <div class="row">
               <div class="col-md-5">
-                <div class="welcome__image"></div>
+                <div class="wellcome__image__container">
+                  <div class="welcome__image"></div>
+                </div>
               </div>
               <div class="col-md-7">
                 <div class="welcome__content">
@@ -341,7 +343,7 @@
         </div>
         <div class="about-us__focus-quality">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-sm-12 col-md-5 ">
               <div class="focus-quality__content">
                 <h6 class="section__sub_heading section__sub_heading--active">
                   Focus Quality
@@ -391,7 +393,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-sm-12 col-md-7">
               <div class="focus-quality__image_container">
                 <div class="focus-quality__image"></div>
               </div>
@@ -407,7 +409,7 @@
 
       <!-- About Us end -->
       <!-- Service start -->
-      <section id="service" class="service">
+      <section id="service" class="service ">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center">
@@ -523,7 +525,7 @@
       </section>
       <!-- Service end -->
       <!-- Appointment start -->
-      <section id="appointment" class="appointment">
+      <section id="appointment" class="appointment ">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
@@ -834,16 +836,20 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="testimonial__slider__card">
-                  <img
-                    src="./image/home1/testimonial-1.png"
-                    alt=""
-                    class="rounded-circle"
-                  />
+                  <div class="testimonial__image__container">
+                    <img
+                      src="./image/home1/testimonial-1.png"
+                      alt=""
+                      class="rounded-circle"
+                    />
 
-                  <div class="quote__icon-container">
-                    <svg class="icon quote__icon">
-                      <use xlink:href="./icon/sprite.svg#home-one-quote"></use>
-                    </svg>
+                    <div class="quote__icon-container">
+                      <svg class="icon quote__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#home-one-quote"
+                        ></use>
+                      </svg>
+                    </div>
                   </div>
                   <div class="testimonail__des text-center">
                     Praesent bibendum praesent anterule conubia intege convallis
@@ -894,11 +900,21 @@
               </div>
               <div class="swiper-slide">
                 <div class="testimonial__slider__card">
-                  <img
-                    src="./image/home1/testimonial-1.png"
-                    alt=""
-                    class="rounded-circle"
-                  />
+                  <div class="testimonial__image__container">
+                    <img
+                      src="./image/home1/testimonial-1.png"
+                      alt=""
+                      class="rounded-circle"
+                    />
+
+                    <div class="quote__icon-container">
+                      <svg class="icon quote__icon">
+                        <use
+                          xlink:href="./icon/sprite.svg#home-one-quote"
+                        ></use>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="testimonail__des text-center">
                     Praesent bibendum praesent anterule conubia intege convallis
                     egete site commodo proin fermentum nostra egesta lacinia
@@ -1232,8 +1248,7 @@
                     <svg class="icon project__arrow__icon">
                       <use
                         xlink:href="./icon/sprite.svg#right-arrow"
-                      ></use></svg
-                    >go to blog
+                      ></use></svg>go to blog
                   </button>
                 </div>
               </div>
@@ -1241,61 +1256,72 @@
           </div>
           <div class="process__container">
             <div class="row">
+              
               <div class="col-md-6">
                 <div class="card">
+                 <div class="position-relative">
                   <img
-                    class="blog__img"
-                    src="./image/home1/blog-image-1.png"
-                    alt="Card image"
-                  />
-                  <div class="blog__image_overlay">
-                    <div class="blog__content text-white">
+                  class="blog__img"
+                  src="./image/home1/blog-image-1.png"
+                  alt="Card image"
+                />
+                <div class="blog__image_overlay">
+                  <div class="blog__content text-white">
+                    <div class="blog__badge__container">
                       <span class="badge badge-primary">Business</span>
-                      <span class="badge badge-primary">consulting</span>
-                      <div class="blog__person">
-                        <img
-                          class="blog__person__img"
-                          src="./image/home1/blog-first-person.png"
-                          alt="Card image"
-                        />
-                        <span class="blog__person-name"
-                          >by post stephen hock</span
-                        >
-                      </div>
+                       <span class="badge badge-primary">consulting</span>
+                    </div>
+                    <div class="blog__person">
+                      <img
+                        class="blog__person__img"
+                        src="./image/home1/blog-first-person.png"
+                        alt="Card image"
+                      />
+                      <span class="blog__person-name"
+                        >by post stephen hock</span
+                      >
                     </div>
                   </div>
+                </div>
+                 </div>
+                 
                   <div class="blog__text">
                     <span> <strong>Business</strong> / 10 feb, 2023</span>
                     <h3>
-                      Consectetuer adipiscing blandit manas etiam primis site
-                      formally libero.
+                      He them day gathered forth forbid saw earth moved dolora
+                      at multiply.
                     </h3>
                   </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="card">
+                 <div class="position-relative">
                   <img
-                    class="blog__img"
-                    src="./image/home1/blog-image-2.png"
-                    alt="Card image"
-                  />
-                  <div class="blog__image_overlay">
-                    <div class="blog__content text-white">
+                  class="blog__img"
+                  src="./image/home1/blog-image-2.png"
+                  alt="Card image"
+                />
+                <div class="blog__image_overlay">
+                  <div class="blog__content text-white">
+                    <div class="blog__badge__container">
                       <span class="badge badge-primary">Business</span>
-                      <span class="badge badge-primary">consulting</span>
-                      <div class="blog__person">
-                        <img
-                          class="blog__person__img"
-                          src="./image/home1/blog-second-person.png"
-                          alt="Card image"
-                        />
-                        <span class="blog__person-name"
-                          >by post stephen hock</span
-                        >
-                      </div>
+                       <span class="badge badge-primary">consulting</span>
+                    </div>
+                    <div class="blog__person">
+                      <img
+                        class="blog__person__img"
+                        src="./image/home1/blog-second-person.png"
+                        alt="Card image"
+                      />
+                      <span class="blog__person-name"
+                        >by post stephen hock</span
+                      >
                     </div>
                   </div>
+                </div>
+                 </div>
+                 
                   <div class="blog__text">
                     <span> <strong>Business</strong> / 10 feb, 2023</span>
                     <h3>
@@ -1311,26 +1337,38 @@
       </section>
       <!-- Blog End -->
       <!-- Brand Start -->
-      <section id="brand" class="brand">
+      <section id="brand" class="brand ">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2">
+            <div class="brand__image__container">
               <img src="./image/home1/brand-1.jpg" alt="" />
             </div>
-            <div class="col-md-2">
-              <img src="./image/home1/brand-2.jpg" alt="" />
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2"><div class="brand__image__container">
+                <img src="./image/home1/brand-2.jpg" alt="" />
+            </div>
+              
+            </div>
+            <div class="col-sm-12 col-md-2"><div class="brand__image__container">
               <img src="./image/home1/brand-3.jpg" alt="" />
             </div>
-            <div class="col-md-2">
-              <img src="./image/home1/brand-4.jpg" alt="" />
+              
             </div>
-            <div class="col-md-2">
+            <div class="col-sm-12 col-md-2"><div class="brand__image__container">
+            <img src="./image/home1/brand-4.jpg" alt="" />
+            </div>
+              
+            </div>
+            <div class="col-sm-12 col-md-2"><div class="brand__image__container">
               <img src="./image/home1/brand-5.jpg" alt="" />
             </div>
-            <div class="col-md-2">
-              <img src="./image/home1/brand-6.jpg" alt="" />
+              
+            </div>
+            <div class="col-sm-12 col-md-2"><div class="brand__image__container">
+                <img src="./image/home1/brand-6.jpg" alt="" />
+            </div>
+              
             </div>
           </div>
         </div>
