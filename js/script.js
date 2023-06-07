@@ -1,44 +1,12 @@
 function classToggle() {
-  const navs = document.querySelectorAll(".Navbar__Items");
+  const navs = document.querySelectorAll(".navbar__Items");
 
-  navs.forEach((nav) => nav.classList.toggle("Navbar__ToggleShow"));
+  navs.forEach((nav) => nav.classList.toggle("navbar__ToggleShow"));
 }
 document
-  .querySelector(".Navbar__Link-toggle")
+  .querySelector(".navbar__Link-toggle")
   .addEventListener("click", classToggle);
 
-(function () {
-  "use strict";
-
-  function carousels() {
-    $(".owl-carousel1").owlCarousel({
-      loop: true,
-      center: true,
-      margin: 0,
-      responsiveClass: true,
-      nav: false,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false,
-        },
-        680: {
-          items: 2,
-          nav: false,
-          loop: false,
-        },
-        1000: {
-          items: 3,
-          nav: true,
-        },
-      },
-    });
-  }
-
-  (function ($) {
-    carousels();
-  })(jQuery);
-})();
 
 //
 const project__slider = new Swiper(".project-slider", {
@@ -73,3 +41,5 @@ const testimonial__slider = new Swiper(".testimonial-slider", {
     prevEl: ".testimonial__slider_prev",
   },
 });
+
+
