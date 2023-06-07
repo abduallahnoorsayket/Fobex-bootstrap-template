@@ -11,7 +11,9 @@
   --yellow: #ffa818;
 }
 /* Global   */
-
+html {
+  background: red;
+}
 * {
   margin: 0;
   padding: 0;
@@ -302,32 +304,7 @@ button {
   width: 2px;
   background-color: var(--primary);
 } */
-/* navbar / header responsive */
-@media only screen and (max-width: 768px) {
-  .navbar__Items,
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar__Items {
-    display: none;
-  }
-  .navbar__Items--right {
-    margin-left: 0;
-  }
-  .navbar__ToggleShow {
-    display: flex;
-  }
-  .navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-    padding-top: 50px;
-  }
-  /* .btn_secondary {
-    padding: 6px 28px;
-  } */
-}
+
 /* HERO SECTION */
 #hero {
   padding: 0px;
@@ -335,7 +312,7 @@ button {
 .hero {
   background-color: #cccccc;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(0deg, rgba(1, 5, 21, 0.5), rgba(1, 5, 21, 0.5)),
     url("../image/home1/Bitmap.jpg");
   background-size: cover;
@@ -345,12 +322,16 @@ button {
   /* position: relative; */
   /* text-align: center;
     position: absolute; */
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
+  /* top: 50%;
+  left: 50%; */
   color: white;
   position: initial;
-  padding: 265px 0px;
+  /* padding: 265px 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 .hero__title {
   font-weight: 700;
@@ -394,6 +375,53 @@ button {
 }
 .hero__navigation--active {
   color: #ff4c1a;
+}
+/* .hero__tile__navigation__container{
+  display: flex;
+} */
+/* hero responsive */
+@media (max-width: 375px) {
+  .hero__navigation {
+    display: none;
+    visibility: hidden;
+  }
+  .hero__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .hero__content {
+    height: 80vh;
+  }
+  .nav__search__container {
+    display: none;
+    visibility: hidden;
+  }
+}
+/* navbar / header responsive */
+@media only screen and (max-width: 768px) {
+  .navbar__Items,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar__Items {
+    display: none;
+  }
+  .navbar__Items--right {
+    margin-left: 0;
+  }
+  .navbar__ToggleShow {
+    display: flex;
+  }
+  .navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+    padding-top: 50px;
+  }
+  /* .btn_secondary {
+    padding: 6px 28px;
+  } */
 }
 /*FEATURE SECTION */
 .feature {
