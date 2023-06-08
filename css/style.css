@@ -401,12 +401,12 @@ button {
 }
 /* hero responsive */
 @media only screen and (max-width: 768px) {
-}
-@media (max-width: 375px) {
   .hero__navigation {
     display: none;
     visibility: hidden;
   }
+}
+@media (max-width: 375px) {
   .hero__title {
     font-size: 60px;
     line-height: 70px;
@@ -425,7 +425,10 @@ button {
   }
 }
 /* navbar / header responsive */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+  .nav__search__container {
+    display: none;
+  }
   .navbar__Link.active .navbar__Items--fontStyles::before {
     visibility: hidden;
   }
@@ -464,9 +467,6 @@ button {
     opacity: 1;
     visibility: visible;
     transform: translateX(0px);
-  }
-
-  .navbar__ToggleShow {
   }
 
   .navbar__Link-toggle {
@@ -1224,6 +1224,14 @@ button {
   fill: var(--white);
 }
 /* testimonial responsive */
+@media (max-width: 768px) {
+  /* .testimonial_slider_container {
+    width: 85%;
+  } */
+  .testimonial-slider {
+    width: 478px;
+  }
+}
 @media (max-width: 375px) {
   .testimonial {
     background-image: none;
@@ -1323,6 +1331,11 @@ button {
   fill: var(--white);
 }
 /* price responsive */
+@media (max-width: 768px) {
+  .price__card {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 375px) {
   .price__card {
     width: 100%;
@@ -1403,6 +1416,17 @@ button {
   gap: 15px;
 }
 /* blog responsive */
+@media (max-width: 768px) {
+  .blog .title__text {
+    width: 65%;
+  }
+  .blog .process__container .blog__img {
+    width: 100%;
+  }
+  .blog .card {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 375px) {
   .blog .project__title {
     flex-direction: column;
@@ -1438,6 +1462,11 @@ button {
   opacity: 1;
 }
 /* brand responsive */
+@media (max-width: 768px) {
+  .brand .brand__image__container {
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 375px) {
   .brand__image__container {
     display: flex;
@@ -1562,6 +1591,15 @@ input[type="radio"] {
   padding-left: 0;
 }
 /* footer responsive */
+@media (max-width: 768px) {
+  .footer__cta {
+    padding: 36px 30px;
+  }
+  .footer__cta__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 @media (max-width: 375px) {
   .footer .cta__icon__container {
     flex-direction: column;

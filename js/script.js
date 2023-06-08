@@ -1,12 +1,25 @@
 //
 const project__slider = new Swiper(".project-slider", {
   loop: true,
-  slidesPerView: 3.7,
+  slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    375: {
-      slidesPerView: 1,
+    1650: {
+      slidesPerView: 3.7,
     },
+
+    1300: {
+      slidesPerView: 3,
+    },
+
+    1024: {
+      slidesPerView: 2,
+    },
+
+    880: {
+      slidesPerView: 1.8,
+    },
+
     768: {
       slidesPerView: 1.7,
     },
