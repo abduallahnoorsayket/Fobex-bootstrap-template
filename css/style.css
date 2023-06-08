@@ -216,7 +216,7 @@ button {
 
 /* new navigation links */
 /*  New navigation menu */
-.navbar {
+.nav {
   padding: 10px 0px !important;
   display: flex;
   color: white;
@@ -267,7 +267,6 @@ button {
 }
 .navbar__Items {
   display: flex;
-  align-items: center;
   gap: 35px;
 }
 
@@ -401,9 +400,16 @@ button {
 }
 /* hero responsive */
 @media only screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 95px;
+    line-height: 94px;
+  }
   .hero__navigation {
     display: none;
     visibility: hidden;
+  }
+  .nav__container {
+    padding: 16px 16px;
   }
 }
 @media (max-width: 375px) {
@@ -440,7 +446,7 @@ button {
     width: 90px;
   }
   .navbar__Items,
-  .navbar {
+  .nav {
     flex-direction: column;
     position: absolute;
     /* background: white; */
@@ -475,7 +481,7 @@ button {
     cursor: pointer;
     padding-top: 5px;
     top: -30px;
-    left: 266px;
+    right: 15px;
   }
   /* .btn_secondary {
     padding: 6px 28px;
