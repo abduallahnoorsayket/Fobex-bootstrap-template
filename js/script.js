@@ -7,6 +7,9 @@ const project__slider = new Swiper(".project-slider", {
     375: {
       slidesPerView: 1,
     },
+    768: {
+      slidesPerView: 1.7,
+    },
   },
 
   // Navigation arrows

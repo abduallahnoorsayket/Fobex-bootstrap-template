@@ -286,7 +286,7 @@ button {
 .fa-bars:before {
   content: "\f0c9";
   color: black;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 5px;
   border-radius: 3px;
 }
@@ -400,6 +400,8 @@ button {
   position: relative;
 }
 /* hero responsive */
+@media only screen and (max-width: 768px) {
+}
 @media (max-width: 375px) {
   .hero__navigation {
     display: none;
@@ -418,20 +420,29 @@ button {
   }
   .nav__container {
     background: #ffffff;
-    padding: 18px 16px 0 16px;
+    padding: 18px 16px 18px 16px;
     position: relative;
   }
 }
 /* navbar / header responsive */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
+  .navbar__Link.active .navbar__Items--fontStyles::before {
+    visibility: hidden;
+  }
+  .navbar__Items {
+    gap: 20px;
+  }
+  .nav__Logo img {
+    height: 30px;
+    width: 90px;
+  }
   .navbar__Items,
   .navbar {
     flex-direction: column;
     position: absolute;
-    background: white;
+    /* background: white; */
     padding: 10px 15px;
-    top: 0px;
-    /* left: 100px; */
+    top: 100%;
     width: 100%;
     z-index: 20;
     right: 0px;
@@ -449,17 +460,22 @@ button {
   .navbar__ToggleShow {
     display: flex;
     align-items: flex-start;
+    background: white;
     opacity: 1;
     visibility: visible;
     transform: translateX(0px);
   }
+
+  .navbar__ToggleShow {
+  }
+
   .navbar__Link-toggle {
     display: flex;
     position: absolute;
     cursor: pointer;
-    padding-top: 0px;
+    padding-top: 5px;
     top: -30px;
-    left: 255px;
+    left: 266px;
   }
   /* .btn_secondary {
     padding: 6px 28px;
@@ -573,6 +589,36 @@ button {
 }
 
 /* feature responsive */
+@media (max-width: 768px) {
+  .feature__content {
+    width: 90%;
+  }
+  .feature .feature__image {
+    width: 179px;
+    height: 177px;
+    border-radius: 50%;
+  }
+
+  .feature__title {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 35px 0px 0px 0px;
+  }
+  .feature__circle__icon {
+    height: 177px;
+    width: 179px;
+    right: 31px;
+  }
+  .feature .feature__Bg__vector__4 {
+    bottom: 39px;
+  }
+  .feature .feature__Bg__vector__3 {
+    bottom: 47px;
+  }
+  .feature .feature__Bg__vector__2 {
+    right: 57px;
+  }
+}
 @media (max-width: 375px) {
   .feature__content {
     text-align: center;
@@ -605,6 +651,9 @@ button {
   }
   .feature__circle__icon {
     right: 55px;
+  }
+  .feature__desc {
+    margin: 30px 0px 20px 0px;
   }
 }
 /* ABOUT US SECTION */
@@ -698,7 +747,22 @@ button {
 .focus__quality__progress_bar--start-up {
   width: 65%;
 }
-/* About us responsive */
+/* About-us responsive */
+@media (max-width: 768px) {
+  .welcome__content {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .about-us__welcome ul li {
+    padding: 10px 0;
+  }
+  .focus-quality__content {
+    padding: 80px 30px 80px 30px;
+  }
+  .focus-quality__image_container {
+    padding-right: 16px;
+  }
+}
 @media (max-width: 375px) {
   #about-us {
     padding: 100px 0 0px 0;
@@ -765,6 +829,7 @@ button {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   display: flex;
+  margin-bottom: 30px;
 }
 .service__icon {
   height: 68px;
@@ -794,14 +859,23 @@ button {
 .service .feature__link {
   color: #a2a6ad;
 }
-.service__row-margin {
-  margin-top: 30px;
-}
+
 .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
 }
 /* service responsive */
+@media (max-width: 768px) {
+  .service__card {
+    padding: 50px 30px;
+  }
+}
 @media (max-width: 375px) {
+  .service {
+    padding: 50px 0 250px;
+  }
+  .service__card__container {
+    padding: 50px 0 0px 0;
+  }
   .service__card {
     margin: 0 0 40px 0;
     padding: 25px 25px;
@@ -867,6 +941,12 @@ button {
   max-height: 150px;
   resize: none;
 }
+/* appointment responsive */
+@media (max-width: 768px) {
+  .appointment__content {
+    padding: 50px 0px;
+  }
+}
 @media (max-width: 375px) {
   .appointment__content {
     padding: 50px 0px;
@@ -878,7 +958,7 @@ button {
     right: 30px;
   }
   .appointment__image {
-    margin-top: -30px;
+    margin-top: -50px;
   }
 }
 
@@ -979,6 +1059,18 @@ button {
   opacity: 1;
   visibility: visible;
 }
+/* project responsive */
+@media (max-width: 768px) {
+  .project__title__divider {
+    height: 1px;
+    background: #888888;
+    margin: 30px 0 50px 30px;
+  }
+  .swiper__slider {
+    padding-left: 30px;
+  }
+}
+
 @media (max-width: 375px) {
   .swiper__slider {
     padding: 0 20px;
