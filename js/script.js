@@ -1,13 +1,3 @@
-function classToggle() {
-  const navs = document.querySelectorAll(".navbar__Items");
-
-  navs.forEach((nav) => nav.classList.toggle("navbar__ToggleShow"));
-}
-document
-  .querySelector(".navbar__Link-toggle")
-  .addEventListener("click", classToggle);
-
-
 //
 const project__slider = new Swiper(".project-slider", {
   loop: true,
@@ -42,4 +32,11 @@ const testimonial__slider = new Swiper(".testimonial-slider", {
   },
 });
 
+function classToggle() {
+  const navs = document.querySelectorAll(".navbar__Items");
 
+  navs.forEach((nav) => nav.classList.toggle("navbar__ToggleShow"));
+}
+document
+  .querySelector(".navbar__Link-toggle")
+  .addEventListener("click", classToggle);

@@ -182,7 +182,7 @@ button {
   display: none;
 }
 
-/* general Responsive */
+/* general global Responsive */
 @media (max-width: 768px) {
   .container {
     padding: 0px 30px;
@@ -191,7 +191,13 @@ button {
 }
 @media (max-width: 375px) {
   section {
-    /* padding: 50px 0; */
+    padding: 50px 0;
+  }
+  .section__heading {
+    font-size: 40px;
+  }
+  .process__container {
+    margin: 25px 0;
   }
 }
 
@@ -571,22 +577,31 @@ button {
   .feature__content {
     text-align: center;
     width: 100%;
+    padding: 25px 0;
   }
   .feature .feature__Bg__vector__1 {
     top: 20px;
     left: 20px;
+    width: 80px;
+    height: 80px;
   }
   .feature .feature__Bg__vector__2 {
     top: 20px;
     right: 20px;
+    width: 80px;
+    height: 80px;
   }
   .feature .feature__Bg__vector__3 {
     bottom: 20px;
     left: 20px;
+    width: 80px;
+    height: 80px;
   }
   .feature .feature__Bg__vector__4 {
     bottom: 20px;
     right: 20px;
+    width: 80px;
+    height: 80px;
   }
   .feature__circle__icon {
     right: 55px;
@@ -720,6 +735,7 @@ button {
 .service {
   position: relative;
   background: url("../image/home1/service_bg_.jpg");
+  padding: 50px 0 100px;
 }
 
 .service .section__heading {
@@ -784,9 +800,11 @@ button {
 .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
 }
+/* service responsive */
 @media (max-width: 375px) {
   .service__card {
     margin: 0 0 40px 0;
+    padding: 25px 25px;
   }
 }
 /* APPOINTMENT SECTION */
@@ -851,13 +869,16 @@ button {
 }
 @media (max-width: 375px) {
   .appointment__content {
-    padding: 70px 0px;
+    padding: 50px 0px;
   }
   .appointment__top__arrow {
     right: 30px;
   }
   .appointment__bottom_right__arrow {
     right: 30px;
+  }
+  .appointment__image {
+    margin-top: -30px;
   }
 }
 
@@ -1129,6 +1150,10 @@ button {
   .testimonial__btn {
     gap: 20px;
   }
+  .testimonail__des {
+    margin: 30px 0 30px 0;
+    width: 100%;
+  }
 }
 /* PRICE SECTION */
 .price__card {
@@ -1309,6 +1334,9 @@ button {
   .blog .card {
     margin: 0 0 20px 0;
   }
+  .blog .blog__text h3 {
+    font-size: 25px;
+  }
 }
 /* BRAND SECTION */
 .brand img {
@@ -1429,6 +1457,8 @@ input[type="radio"] {
 }
 .footer__copyright {
   padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
 }
 .footer ul li {
   display: inline;
@@ -1456,5 +1486,11 @@ input[type="radio"] {
   }
   .footer .btn_primary {
     width: 100%;
+  }
+  .footer__widget__content {
+    margin-top: 20px;
+  }
+  .footer__copyright {
+    flex-direction: column;
   }
 }
