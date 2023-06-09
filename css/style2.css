@@ -1,4 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+@import "./style2.css";
+:root {
+  --primary: #ffde00;
+  --secondary: #131922;
+  --white: #ffffff;
+  --gery-1: #5f6165;
+  --gery-2: #888888;
+  --gery-3: #a2a6ad;
+  --yellow: #ffa818;
+}
+/* Global   */
+html {
+  background: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f6165;
+  overflow-x: hidden;
+}
+html {
+  background: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-style: normal;
+}
+h1 {
+  font-size: 120px;
+}
+h2 {
+  font-size: 45px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+p {
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-family: "Sen", sans-serif;
+  font-size: 14px;
+}
 .container {
   padding: 0px;
+  max-width: 1720px;
+}
+
+section {
+  padding: 100px 0px;
+}
+.section__heading {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  text-transform: capitalize;
+  color: #131922;
+}
+.section__sub_heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ff4c1a;
+}
+.section__sub_heading_line {
+  width: 30px;
+  height: 2px;
+  background: #ff4c1a;
+}
+.section__sub_heading--active {
+  display: flex;
+}
+/* .container {
+  padding: 0px;
   max-width: 1320px;
+} */
+.active {
+  color: #ff4c1a;
+}
+ul li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-bold-color {
+  color: var(--secondary);
+}
+.btn-primary:hover {
+  background: var(--primary);
+}
+/* icon */
+.icon {
+  width: 50px;
+  height: 50px;
+  /* margin: 0.5em; */
+  /* fill: red; */
+}
+hr {
+  margin: 0;
+  padding: 0;
+}
+section .section__sub_heading_line {
+  margin: 10px;
+}
+/* Buttons */
+.btn_primary {
+  background: #ff4c1a;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 13px 20px;
+  border: none;
+}
+.btn_secondary {
+  background: var(--white);
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #5f6165;
+  padding: 13px 20px;
+  border: 1px solid #888888;
+}
+.btn-primary:hover svg {
+  fill: var(--white);
+}
+.btn-primary:hover {
+  border: none;
+}
+/* Badges  */
+.badge-primary {
+  background: var(--primary);
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0 10px 0 0;
+}
+*:focus {
+  outline: none;
+}
+textarea:focus,
+input:focus .btn-primary:focus .btn_primary:focus,
+button {
+  outline: none !important;
+}
+.section__sub_heading--circle-bg {
+  color: #131922;
+  background-image: url("../image/home1/BG_circle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 0px;
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
+
+/* general global Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 30px;
+    /* max-width: 1320px; */
+  }
+}
+@media (max-width: 375px) {
+  section {
+    padding: 50px 0;
+  }
+  .section__heading {
+    font-size: 40px;
+  }
+  .process__container {
+    margin: 25px 0;
+  }
+}
+
+/* ============= Home 2 ======================== */
+#hero {
+  padding: 0px;
+}
+.hero {
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
+    url("../image/home2/home-2\ hero.png");
+  background-size: cover;
+}
+.hero__container {
+  padding-top: 50px;
+}
+/* navbar */
+.nav-custom {
+  background: var(--white);
+  color: var(--secondary);
+  border-radius: 34px;
+  padding: 10px 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+  font-weight: 500 !important;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #131922;
+  padding-right: 1.6rem;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--primary);
+}
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: var(--secondary);
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.navbar-brand {
+  margin-right: 7rem;
+}
+.search__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0px 20px 0px 0px;
 }

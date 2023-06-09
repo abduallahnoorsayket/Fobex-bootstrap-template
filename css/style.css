@@ -66,6 +66,11 @@ label {
   font-family: "Sen", sans-serif;
   font-size: 14px;
 }
+.container {
+  padding: 0px;
+  max-width: 1320px;
+}
+
 section {
   padding: 100px 0px;
 }
