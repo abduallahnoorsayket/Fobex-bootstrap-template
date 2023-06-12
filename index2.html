@@ -33,6 +33,38 @@
       <!-- Hero start -->
       <section id="hero" class="hero">
         <div class="container hero__container">
+          <div class="top__container">
+            <div class="hero__topbar">
+              <div class="topbar__left">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#location"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >23/A28 Drive Detroit, MI 48226</span
+                >
+                <span class="top__line"></span>
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#message"></use>
+                </svg>
+                <span class="top__icon__text">support@cubex24.com</span>
+              </div>
+              <div class="topbar__right">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#history"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >Opening Hours: Mon - Fri: 09:00 - 05:00</span
+                >
+                <span class="top__line"></span>
+                <div class="social_icons">
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           <nav class="navbar navbar-dark navbar-expand-sm nav-custom">
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
@@ -46,7 +78,9 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon">
+                <i class="fa fas fa-bars"></i>
+              </span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-list-3">
               <ul class="navbar-nav">
@@ -144,13 +178,24 @@
                 </li>
               </ul>
             </div>
-            <div class="float-right nav__search__container">
-              <!-- <i class="fa fa-search"></i> -->
-              <svg class="icon search__icon">
-                <use xlink:href="./icon/sprite.svg#Search"></use>
-              </svg>
-              <img src="./image/home2/navTelephone.png" alt="" />
-              <a type="button" href="#" class="btn btn-primary btn_primary">
+            <div class="nav__search__container">
+              <div class="nav__phone__search__container">
+                <svg class="icon search__icon">
+                  <use xlink:href="./icon/sprite.svg#Search"></use>
+                </svg>
+                <span class="phone__image__container">
+                  <img src="./image/home2/navTelephone.png" alt="" />
+                </span>
+                <span class="nav__number__container">
+                  <span class="nav__free">Free Call</span>
+                  <span class="nav__number">02 (256) 256 025 </span>
+                </span>
+              </div>
+              <a
+                type="button"
+                href="#"
+                class="btn btn-primary btn_primary button-rounded"
+              >
                 <svg class="icon nav__arrow__icon">
                   <use xlink:href="./icon/sprite.svg#right-arrow"></use>
                 </svg>
@@ -158,45 +203,88 @@
               </a>
             </div>
           </nav>
-          <!-- <div class="row">
-            <div class="col-md-12">
-              <div class="hero__tile__navigation__container">
-                <div class="hero__content text-center">
-                  <div class="hero__section__title">
-                    <h1 class="hero__title">
-                      every Business consulting Solution
-                    </h1>
-                    <a
-                      type="button"
-                      href="#"
-                      class="btn btn-primary btn_primary hero__button"
-                    >
-                      <svg class="icon nav__arrow__icon">
-                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-                      </svg>
-                      Let’s Work Together
-                    </a>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="hero__tile__navigation__container">
+                  <div class="hero__content">
+                    <div class="hero__section__title">
+                      <h1 class="hero__title">
+                        best consulting
+                        <span class="active">experience</span> for your next
+                        business
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn btn-primary btn_secondary hero__button"
+                      >
+                        <svg class="icon nav__arrow__icon">
+                          <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                        </svg>
+                        Let’s Work Together
+                      </button>
+                    </div>
                   </div>
-                  <div class="hero__bg__container"></div>
-                </div>
-                <div class="hero__navigation hidden">
-                  <span
-                    >01
-                    <hr class="hero__nav_line" />
-                  </span>
-                  <span class="hero__navigation--active"
-                    >02
-                    <hr class="hero__nav_line" />
-                  </span>
-                  <span>03 </span>
+                  <!-- <div class="hero__navigation hidden">
+                    <span
+                      >01
+                      <hr class="hero__nav_line" />
+                    </span>
+                    <span class="hero__navigation--active"
+                      >02
+                      <hr class="hero__nav_line" />
+                    </span>
+                    <span>03 </span>
+                  </div> -->
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </section>
       <!-- Hero End -->
-
+      <!-- Appointment Start -->
+      <section id="appointment" class="appointment">
+        <div class="container appoinment__container">
+          <div class="appoinment__title__container">
+            <h3 class="appoinment__title">Booking For Online Appointment</h3>
+          </div>
+          <div class="appointment__form">
+            <form>
+              <div class="form-row">
+                <div class="col-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="col-3">
+                  <input type="text" class="form-control" placeholder="Email" />
+                </div>
+                <div class="col-3">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Select Subject*</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="col-3">
+                  <button type="button" class="btn btn-primary btn_primary">
+                    <svg class="icon nav__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                    Apply Now
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Appointment End -->
       <!-- Brand Start -->
       <section id="brand" class="brand">
         <div class="container">
@@ -238,115 +326,103 @@
       <!-- Footer Start -->
       <section id="footer" class="footer">
         <div class="container">
-          <div class="footer__cta">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="cta__icon__container">
-                  <svg class="icon footer__phone_icon">
-                    <use xlink:href="./icon/sprite.svg#footer-phone"></use>
-                  </svg>
-                  <h3 class="footer__cta__title">
-                    Strategic consultants experts in accelerating change for
-                    business and individuals cause
-                  </h3>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="float-right footer__btn_container">
-                  <a type="button" href="#" class="btn btn-primary btn_primary">
-                    <svg class="icon nav__arrow__icon">
-                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-                    </svg>
-                    project with us
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="footer__widget">
             <div class="row">
-              <div class="col-md-3">
+              <div class="col-md-4">
                 <div class="float-left footer__widget__content">
-                  <img src="./image/home1/FooterLogo.png" alt="" />
+                  <!-- <img src="./image/home1/FooterLogo.png" alt="" /> -->
+                  <h2 class="footer__title">Let’s Project</h2>
                   <div
                     class="footer__widget__des footer__widget__des--margin-top"
                   >
-                    Neque porttitor fermentum congue duis natoque had amcorp
-                    torquent vulputate donec tren conubian
+                    Neque eget porttitor fermentum congue duis natoque had
+                    amcorper a torquent vulputate donec conubian tempor nibhe
+                    tortor pharetra over the dictum.
                   </div>
                   <div
                     class="footer__widget__des footer__widget__des--margin-top footer__widget__des--emergency"
                   >
-                    Emergency
-                  </div>
-                  <h5 class="footer__widget__number">02 (256) 256 025</h5>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="float-left footer__widget__content">
-                  <div class="footer__widget__title">Our Service</div>
-                  <div
-                    class="footer__widget__des footer__widget__des--margin-top"
-                  >
-                    <ul class="footer__service__list">
-                      <li>Customer Experience</li>
-                      <li>Business Strategy</li>
-                      <li>Leadership Development</li>
-                      <li>Culture Change</li>
-                      <li>Engineering & Optimization</li>
-                      <li>Human Resource</li>
-                    </ul>
+                    <button
+                      type="button"
+                      class="btn btn-primary btn_primary hero__button"
+                    >
+                      <svg class="icon nav__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      project with us
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="float-left footer__widget__content">
-                  <div class="footer__widget__title">Contact us</div>
-                  <div class="footer__widget__des--white">Phone</div>
-                  <div class="footer__widget__des">02 (520) 2365 250</div>
-                  <div class="footer__widget__des--white">Location</div>
-                  <div class="footer__widget__des">
-                    Location 62/B Norman Street Los Angeles, 90017
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="footer__widget__content">
-                  <div class="footer__widget__title">Newsletter</div>
-                  <form class="footer__widget__des--margin-top">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control footer__newsletter"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Enter email *"
-                      />
-                    </div>
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        class="form-check-input"
-                        id="exampleCheck1"
-                      />
-                      <label class="form-check-label" for="exampleCheck1"
-                        >I have read the privacy & policy</label
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-3">
+                    <div class="float-left footer__widget__content">
+                      <div class="footer__widget__title">Our Service</div>
+                      <div
+                        class="footer__widget__des footer__widget__des--margin-top"
                       >
+                        <ul class="footer__service__list">
+                          <li>Customer Experience</li>
+                          <li>Business Strategy</li>
+                          <li>Leadership Development</li>
+                          <li>Culture Change</li>
+                          <li>Engineering & Optimization</li>
+                          <li>Human Resource</li>
+                        </ul>
+                      </div>
                     </div>
-                    <!-- <button type="submit" class="btn btn-primary">
-                      Submit
-                    </button> -->
-                  </form>
-                  <div
-                    class="footer__widget__title footer__widget__des--margin-top"
-                  >
-                    Follow us
                   </div>
-                  <div class="social_icons">
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  <div class="col-md-3">
+                    <div class="float-left footer__widget__content">
+                      <div class="footer__widget__title">Contact us</div>
+                      <div class="footer__widget__des--black">Phone</div>
+                      <div class="footer__widget__des">02 (520) 2365 250</div>
+                      <div class="footer__widget__des--black">Location</div>
+                      <div class="footer__widget__des">
+                        Location 62/B Norman Street Los Angeles, 90017
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="footer__widget__content">
+                      <div class="footer__widget__title">Newsletter</div>
+                      <form class="footer__widget__des--margin-top">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control footer__newsletter"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email *"
+                          />
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="exampleCheck1"
+                          />
+                          <label class="form-check-label" for="exampleCheck1"
+                            >I have read the privacy & policy</label
+                          >
+                        </div>
+                        <!-- <button type="submit" class="btn btn-primary">
+                          Submit
+                        </button> -->
+                      </form>
+                      <div
+                        class="footer__widget__title footer__widget__des--margin-top"
+                      >
+                        Follow us
+                      </div>
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
