@@ -1,4 +1,5 @@
 //
+"strict mode";
 const project__slider = new Swiper(".project-slider", {
   loop: true,
   slidesPerView: 1,
@@ -14,14 +15,6 @@ const project__slider = new Swiper(".project-slider", {
 
     1024: {
       slidesPerView: 2,
-    },
-
-    880: {
-      slidesPerView: 1.8,
-    },
-
-    768: {
-      slidesPerView: 1.7,
     },
   },
 
@@ -48,11 +41,29 @@ const testimonial__slider = new Swiper(".testimonial-slider", {
   },
 });
 
+const home__2__service__slider = new Swiper(".home-2-service-slider", {
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 20,
+  // breakpoints: {
+  //   375: {
+  //     slidesPerView: 1,
+  //   },
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".service__slider_next",
+    prevEl: ".service__slider_prev",
+  },
+});
+
 function classToggle() {
   const navs = document.querySelectorAll(".navbar__Items");
 
   navs.forEach((nav) => nav.classList.toggle("navbar__ToggleShow"));
 }
-document
-  .querySelector(".navbar__Link-toggle")
-  .addEventListener("click", classToggle);
+const navtoggle = document.querySelector(".navbar__Link-toggle");
+if (navtoggle) {
+  navtoggle.addEventListener("click", classToggle);
+}

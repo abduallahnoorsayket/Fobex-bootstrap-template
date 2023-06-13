@@ -273,6 +273,7 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   width: 60%;
+  margin-top: -60px;
 }
 .hero__button {
   margin-top: 40px;
@@ -467,7 +468,11 @@ select {
   height: 100% !important;
 }
 /* ABOUT US SECTION */
-
+.about-us {
+  background-image: url(../image/home2/about-us-bg.jpg);
+  background-position: right 79px top -83px;
+  background-repeat: no-repeat;
+}
 .about-us .section__description {
   width: 98%;
   margin: 40px 0 20px 0;
@@ -477,9 +482,116 @@ select {
   height: 550px;
   background: #fcdb00;
 }
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 50px;
+}
 .about-us-right-image-container {
   display: flex;
   gap: 20px;
+}
+/* FUN FACTS */
+.fun-facts {
+  position: relative;
+  background: var(--secondary);
+}
+
+.fun-facts .section__heading {
+  color: var(--white);
+}
+
+.fun-facts__card {
+  background: #131922;
+  border-radius: 10px;
+  display: flex;
+}
+.fun-facts__icon {
+  height: 68px;
+  width: 68px;
+  fill: var(--primary);
+}
+.fun-facts__content {
+  padding: 0px 0px 0px 10px;
+  width: 100%;
+}
+.number__line {
+  width: 1px;
+  height: 70px;
+  background: #d4dad8;
+  opacity: 0.2;
+  margin: 0 15px;
+}
+
+.fun-facts .feature__arrow__icon {
+  fill: #a2a6ad;
+}
+.fun-facts__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+.fun-facts .feature__link {
+  color: #a2a6ad;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.fun-facts .feature__arrow__icon:hover {
+  fill: #a2a6ad;
+}
+/* service responsive */
+@media (max-width: 768px) {
+  .fun-facts__card {
+    padding: 50px 30px;
+  }
+  .appointment__image {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 375px) {
+  .fun-facts {
+    padding: 50px 0 250px;
+  }
+  .fun-facts__card__container {
+    padding: 50px 0 0px 0;
+  }
+  .fun-facts__card {
+    margin: 0 0 40px 0;
+    padding: 25px 25px;
+  }
+}
+/* SERVICE SECTION */
+.service {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.service .section__heading {
+  margin: 10px 0 50px;
+  width: 48%;
+}
+.swiper__content {
+  /* height: 490px;
+  width: 420px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px 30px 30px; */
+}
+.swiper__image-1 {
+  background-image: url(../image/home1/project-slier-1.png);
+}
+.swiper__image-2 {
+  background-image: url(../image/home1/project-slier-2.png);
+}
+.swiper__image-3 {
+  background-image: url(../image/home1/project-slier-3.png);
+}
+.swiper__image-4 {
+  background-image: url(../image/home1/project-slier-4.png);
 }
 /* CLIENT SECTION */
 .client img {
