@@ -873,6 +873,39 @@ select {
 .blog .anchor__more {
   color: var(--gery-1);
 }
+/* TESTIMONIAL START */
+.testimonials {
+  /* width: 1200px; */
+  /* padding-left: 100px;
+  margin-left: 262px; */
+}
+.testimonials {
+  background: url(../image/home2/testimonial-bg.jpg),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.testimonials .about-us-image-sideborder {
+  height: 686px;
+}
+.testimonials__container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 0 0 100px;
+}
+.testimonials .about-us-right-image-container {
+  position: relative;
+}
+
+/* .testimonials .project__slider__image {
+  height: 680px;
+  width: 900px;
+}
+.testmonial__image_1 {
+  background: url("../image/home2/testimonial-people.jpg");
+} */
 /* CLIENT SECTION */
 .client img {
   opacity: 0.5;
