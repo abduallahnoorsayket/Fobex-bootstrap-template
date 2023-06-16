@@ -57,6 +57,22 @@ const home__2__service__slider = new Swiper(".home-2-service-slider", {
     prevEl: ".service__slider_prev",
   },
 });
+const home__2__project__slider = new Swiper(".home-2-project-slider", {
+  loop: true,
+  slidesPerView: 1.5,
+  spaceBetween: 20,
+  // breakpoints: {
+  //   375: {
+  //     slidesPerView: 1,
+  //   },
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".project__slider_next",
+    prevEl: ".project__slider_prev",
+  },
+});
 
 function classToggle() {
   const navs = document.querySelectorAll(".navbar__Items");
