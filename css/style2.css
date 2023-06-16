@@ -756,6 +756,19 @@ select {
   height: 28px;
   fill: #6a6c71;
 }
+.social_icons {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.social_icons i {
+  font-size: 18px;
+  color: var(--white);
+  padding-right: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-top: 20px;
+}
 /* CLIENT SECTION */
 .client img {
   opacity: 0.5;
