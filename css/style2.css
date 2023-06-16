@@ -754,6 +754,7 @@ select {
   position: absolute;
   bottom: 100px;
   left: 186px;
+  cursor: pointer;
 }
 .team__share__btn:hover .team .social_icons {
   /* opacity: 1; */
@@ -877,13 +878,17 @@ select {
 .testimonials {
   /* width: 1200px; */
   /* padding-left: 100px;
-  margin-left: 262px; */
+ */
+  margin-left: 262px;
 }
 .testimonials {
   background: url(../image/home2/testimonial-bg.jpg),
     linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
+}
+.testimonials .section__heading {
+  width: 90%;
 }
 .testimonials .about-us-image-sideborder {
   height: 686px;
@@ -897,8 +902,15 @@ select {
 }
 .testimonials .about-us-right-image-container {
   position: relative;
+  gap: 10px;
 }
-
+.tesimonial__btn {
+  position: absolute;
+  top: 324px;
+  left: 399px;
+  padding: 20px 25px;
+  border-radius: 50%;
+}
 /* .testimonials .project__slider__image {
   height: 680px;
   width: 900px;
