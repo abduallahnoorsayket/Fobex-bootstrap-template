@@ -86,8 +86,8 @@ const home__2__testimonial__slider = new Swiper(".home-2-testimonial-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".project__slider_next",
-    prevEl: ".project__slider_prev",
+    nextEl: ".testimonial__slider_next",
+    prevEl: ".testimonial__slider_prev",
   },
 });
 

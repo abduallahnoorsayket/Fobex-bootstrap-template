@@ -904,20 +904,56 @@ select {
   border-radius: 50%;
 }
 .testimonial__card {
-  padding: 20px 25px;
+  padding: 50px;
   background: var(--white);
+  background-image: url(../image/home2/tesimonial-slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-position-x: 250px;
+  background-position-y:50px;
+  margin-right: -125px;
+  z-index: 10;
+  max-height: 500px;
 }
 .tesimonial__quote__icon {
   height: 55px;
   width: 54px;
 }
-/* .testimonials .project__slider__image {
-  height: 680px;
-  width: 900px;
+.testimonials .testimonial__arrow__icon{
+  height: 20px;
+  width: 16px;
+  fill: var(--primary);
 }
-.testmonial__image_1 {
-  background: url("../image/home2/testimonial-people.jpg");
-} */
+.testimonials .process__icon-container{
+  margin: 0 0 20px 0;
+}
+.testimonials .section__description{
+  margin: 20px 0 ;
+}
+.testimonials .slider__footer{
+  margin: 50px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .person__info{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.testimonials .person__designation{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.testimonials .person__title{
+  font-size: 16px;
+  color: var(--gery-1);
+}
+.testimonials .testimonial__title__btn{
+  display: flex;
+  gap: 10px;
+}
+
 /* CLIENT SECTION */
 .client img {
   opacity: 0.5;
@@ -943,6 +979,14 @@ select {
     justify-content: center;
     margin: 0 0 30px;
   }
+}
+/* MAP SECTION */
+.map{
+  background: url(../image/home2/map-bg.jpg);
+  height: 825px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 /* FOOTER SECTION */
 #footer {
