@@ -987,7 +987,39 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
+.map form h3{
+  margin: 0 0 20px 0;
+}
+.map form{
+  background: var(--white);
+  width: 500px;
+  height: 625px;
+  padding: 50px 50px;
+}
+.map .form-control{
+  padding: 2rem 1.5rem;
+}
+.map select option {
+  padding: 1.8rem 1.5rem;
+}
+
+.map textarea {
+  max-height: 150px;
+  resize: none;
+}
+.map .btn_primary{
+  padding: 18px ;
+}
+.map .map__pin__icon{
+  height: 66px;
+  width: 55px;
+  position: absolute;
+  top: 50%;
+  right: 35%;
+}
+
 /* FOOTER SECTION */
 #footer {
   padding: 100px 0 0px 0;
