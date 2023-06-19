@@ -74,6 +74,23 @@ const home__2__project__slider = new Swiper(".home-2-project-slider", {
   },
 });
 
+const home__2__testimonial__slider = new Swiper(".home-2-testimonial-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // breakpoints: {
+  //   375: {
+  //     slidesPerView: 1,
+  //   },
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".project__slider_next",
+    prevEl: ".project__slider_prev",
+  },
+});
+
 function classToggle() {
   const navs = document.querySelectorAll(".navbar__Items");
 

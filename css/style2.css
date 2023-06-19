@@ -292,8 +292,7 @@ button {
   background-color: #cccccc;
   background-repeat: no-repeat;
   max-height: 100vh;
-  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
-    url("../image/home2/home-2\ hero.png");
+  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)), url("../image/home2/home-2\ hero.png");
   background-size: cover;
   background-position: center;
 }
@@ -674,8 +673,7 @@ select {
 .feature {
   display: flex;
   gap: 50px;
-  background: url(../image/home2/feature-bg.png),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/feature-bg.png), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: 262px;
@@ -822,12 +820,7 @@ select {
   place-items: center;
 }
 .project__slider__image_1 {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 25, 34, 0.4),
-      rgba(19, 25, 34, 0.4)
-    ),
-    url("../image/home2/project-slider-1.png");
+  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/home2/project-slider-1.png");
 }
 .project__slider__image_2 {
   background: url("../image/home2/project-slider-2.png");
@@ -882,8 +875,7 @@ select {
   margin-left: 262px;
 }
 .testimonials {
-  background: url(../image/home2/testimonial-bg.jpg),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/testimonial-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -910,6 +902,14 @@ select {
   left: 399px;
   padding: 20px 25px;
   border-radius: 50%;
+}
+.testimonial__card {
+  padding: 20px 25px;
+  background: var(--white);
+}
+.tesimonial__quote__icon {
+  height: 55px;
+  width: 54px;
 }
 /* .testimonials .project__slider__image {
   height: 680px;
