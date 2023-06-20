@@ -286,6 +286,10 @@ button {
   .process__container {
     margin: 25px 0;
   }
+  .section__heading {
+    font-size: 35px !important;
+    width: 100% !important;
+  }
 }
 
 /* ============= Home 2 ======================== */
@@ -510,8 +514,8 @@ button {
   }
   .hero__title {
     font-weight: 700;
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 45px;
+    line-height: 48px;
     text-transform: uppercase;
     color: #ffffff;
     width: 100%;
@@ -739,7 +743,7 @@ select {
   .service__slider__button__container {
     display: flex;
     position: absolute;
-    bottom: 215px;
+    bottom: 535px;
   }
   .service__slider_prev {
     left: 60px;
@@ -748,6 +752,9 @@ select {
   .service__slider_next {
     right: -250px;
     bottom: 263px;
+  }
+  .service .swiper__content {
+    flex-direction: column;
   }
   /* .swiper__slider {
     padding: 30px 0 0;
@@ -895,7 +902,7 @@ select {
   z-index: 10;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 .team .social_icons i {
   font-size: 18px;
@@ -903,6 +910,18 @@ select {
   padding: 14px 18.5px;
   font-weight: 400;
   border-bottom: 7px solid var(--primary);
+}
+/* team responsive */
+@media (max-width: 375px) {
+  .team__card {
+    margin: 0 0 20px;
+  }
+  .team__card img {
+    width: 310px;
+  }
+  .team__share__btn {
+    left: 130px;
+  }
 }
 /* PROJECT SECTION */
 #project {
@@ -1043,7 +1062,7 @@ select {
   background-position-y: 50px;
   margin-right: -125px;
   z-index: 10;
-  max-height: 500px;
+  min-height: 500px;
 }
 .tesimonial__quote__icon {
   height: 55px;
@@ -1084,7 +1103,40 @@ select {
   display: flex;
   gap: 10px;
 }
-
+/* testimonial responsive */
+@media (max-width: 375px) {
+  .testimonials {
+    margin-left: 0px;
+  }
+  .testimonials .about-us-image-sideborder {
+    display: none;
+    visibility: hidden;
+  }
+  .testimonials__container {
+    padding: 0;
+  }
+  .testimonial__content {
+    padding: 0 30px;
+  }
+  .testimonial__card {
+    margin-right: 0px;
+    padding: 20px;
+  }
+  .testimonials .slider__footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonials .about-us-right-image-container img {
+    width: 310px;
+    margin-top: 20px;
+  }
+  .order__video {
+    order: 1;
+  }
+  .order__slider {
+    order: 0;
+  }
+}
 /* CLIENT SECTION */
 .client img {
   opacity: 0.5;
@@ -1150,6 +1202,17 @@ select {
   top: 50%;
   right: 35%;
 }
+@media (max-width: 375px) {
+  .map form {
+    width: auto;
+    height: auto;
+    padding: 30px 25px;
+  }
+  .map__pin__icon {
+    display: none;
+    visibility: hidden;
+  }
+}
 
 /* FOOTER SECTION */
 #footer {
@@ -1160,6 +1223,7 @@ select {
   background-image: url(../image/home2/footer-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .footer__cta {
   padding: 36px 80px;
@@ -1281,6 +1345,10 @@ p {
 .footer a:hover {
   color: var(--primary);
 }
+.footer__links {
+  display: flex;
+  gap: 20px;
+}
 /* footer responsive */
 @media (max-width: 768px) {
   #footer {
@@ -1323,5 +1391,11 @@ p {
   }
   .footer__copyright {
     flex-direction: column;
+  }
+  .footer__widget {
+    padding: 0px 0px 40px 0;
+  }
+  .copyright__text {
+    padding-bottom: 30px;
   }
 }
