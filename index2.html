@@ -230,7 +230,7 @@
                 <div class="hero__tile__navigation__container">
                   <div class="hero__content">
                     <div class="hero__section__title">
-                      <!-- <span class="hero__badge">We care your business</span> -->
+                      <span class="hero__badge">We care your business</span>
                       <h1 class="hero__title">
                         best consulting
                         <span class="active">experience</span> for your next
@@ -274,17 +274,17 @@
           <div class="appointment__form">
             <form>
               <div class="form-row">
-                <div class="col-3">
+                <div class="col-sm-12 col-md-3 col-lg-3">
                   <input
                     type="text"
                     class="form-control"
                     placeholder="Full Name"
                   />
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-md-3 col-lg-3">
                   <input type="text" class="form-control" placeholder="Email" />
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-md-3 col-lg-3">
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>Select Subject*</option>
                     <option>2</option>
@@ -293,7 +293,7 @@
                     <option>5</option>
                   </select>
                 </div>
-                <div class="col-3">
+                <div class="col-sm-12 col-md-3 col-lg-3">
                   <button type="button" class="btn btn-primary btn_primary">
                     <svg class="icon nav__arrow__icon">
                       <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -308,7 +308,7 @@
       </section>
       <!-- Appointment End -->
       <!-- About us Start -->
-      <section id="about-us" class="about-us">
+      <section id="about-us" class="about-us hidden">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -432,16 +432,18 @@
             </div>
           </div>
 
-          <button class="btn btn_secondary service__slider_prev">
-            <svg class="icon service___right__arrow__icon">
-              <use xlink:href="./icon/sprite.svg#left-arrow"></use>
-            </svg>
-          </button>
-          <button class="btn btn-primary btn_primary service__slider_next">
-            <svg class="icon service___right__arrow__icon">
-              <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-            </svg>
-          </button>
+          <div class="service__slider__button__container">
+            <button class="btn btn_secondary service__slider_prev">
+              <svg class="icon service___right__arrow__icon">
+                <use xlink:href="./icon/sprite.svg#left-arrow"></use>
+              </svg>
+            </button>
+            <button class="btn btn-primary btn_primary service__slider_next">
+              <svg class="icon service___right__arrow__icon">
+                <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+              </svg>
+            </button>
+          </div>
           <!-- service slider -->
           <div class="swiper__slider">
             <!-- Slider main container -->
@@ -581,7 +583,7 @@
           </p>
           <!-- acc test -->
 
-          <div class="accordion" id="accordionExample">
+          <div class="accordion feature__accondion" id="accordionExample">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                 <button
@@ -704,7 +706,7 @@
       </section>
       <!-- Feature end -->
       <!-- Team Start -->
-      <section id="team" class="team">
+      <section id="team" class="hidden team">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section__info__container">
@@ -723,6 +725,11 @@
                 <div class="team__card">
                   <img src="./image/home2/team-1.png" alt="" />
                   <div class="team__share__btn">
+                    <div class="social_icons">
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
                     <svg class="icon team__share__icon mb-3">
                       <use xlink:href="./icon/sprite.svg#team-share-btn"></use>
                     </svg>
@@ -736,13 +743,13 @@
               </div>
               <div class="col-md-4">
                 <div class="team__card">
-                  <div class="social_icons">
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                  </div>
                   <img src="./image/home2/team-2.png" alt="" />
                   <div class="team__share__btn">
+                    <div class="social_icons">
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
                     <svg class="icon team__share__icon mb-3">
                       <use xlink:href="./icon/sprite.svg#team-share-btn"></use>
                     </svg>
@@ -758,6 +765,11 @@
                 <div class="team__card">
                   <img src="./image/home2/team-3.png" alt="" />
                   <div class="team__share__btn">
+                    <div class="social_icons">
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
                     <svg class="icon team__share__icon mb-3">
                       <use xlink:href="./icon/sprite.svg#team-share-btn"></use>
                     </svg>
@@ -775,7 +787,7 @@
       </section>
       <!-- Team End -->
       <!-- project start-->
-      <section id="project" class="project">
+      <section id="project" class="hidden project">
         <div class="row">
           <div class="col-md-4">
             <div class="project__left">
@@ -924,7 +936,7 @@
       </section>
       <!-- project end-->
       <!-- blog start -->
-      <section id="blog" class="blog">
+      <section id="blog" class="hidden blog">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section__info__container">
@@ -1030,7 +1042,7 @@
       </section>
       <!-- blog end -->
       <!-- testimonial Start -->
-      <section id="testimonials" class="testimonials">
+      <section id="testimonials" class="hidden testimonials">
         <div class="testimonial__content">
           <div class="row">
             <div class="col-md-5">
@@ -1327,7 +1339,7 @@
       <!-- testimonial end -->
 
       <!-- Client Start -->
-      <section id="client" class="client">
+      <section id="client" class="hidden client">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section__info__container">
@@ -1379,7 +1391,7 @@
       </section>
       <!-- Client End -->
       <!--  Map start -->
-      <section id="map" class="map">
+      <section id="map" class="map hidden">
         <div class="container">
           <form>
             <h3>Contact Us</h3>
@@ -1440,7 +1452,7 @@
       </section>
       <!--  Map end -->
       <!-- Footer Start -->
-      <section id="footer" class="footer">
+      <section id="footer" class="footer hidden">
         <div class="container">
           <div class="footer__widget">
             <div class="row">
