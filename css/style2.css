@@ -275,8 +275,17 @@ button {
     padding: 0px 30px;
     /* max-width: 1320px; */
   }
+  section {
+    padding: 50px 0;
+  }
+
+  .section__heading {
+    font-size: 30px !important;
+    width: 100% !important;
+    line-height: 1.5;
+  }
 }
-@media (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
   section {
     padding: 50px 0;
   }
@@ -288,6 +297,26 @@ button {
     font-size: 30px !important;
     width: 100% !important;
     line-height: 1.5;
+  }
+}
+@media screen and (max-width: 374px) {
+  section {
+    padding: 50px 0;
+  }
+
+  .process__container {
+    margin: 25px 0;
+  }
+  .section__heading {
+    font-size: 25px !important;
+    width: 100% !important;
+    line-height: 1.2;
+  }
+  /* section img {
+    width: 280px;
+  } */
+  section img {
+    width: -webkit-fill-available !important;
   }
 }
 
@@ -499,8 +528,17 @@ button {
     /* padding: 0px 30px; */
     /* max-width: 1320px; */
   }
+  .hero__topbar {
+    display: none;
+  }
+  .hero__title {
+    font-size: 65px;
+    line-height: 70px;
+  }
 }
-@media (max-width: 375px) {
+/* @media screen and (min-width: 375px) and (max-width: 424px) */
+
+@media screen and (max-width: 424px) {
   .navbar-toggler-icon {
     bottom: 10px;
     left: 220px;
@@ -569,7 +607,18 @@ select {
   height: 100% !important;
 }
 /* appointment responsive */
-@media (max-width: 375px) {
+/* @media screen and (min-width: 375px) and (max-width: 424px) {
+ 
+} */
+@media screen and (max-width: 768px) {
+  .appoinment__container {
+    flex-direction: column;
+  }
+  .appoinment__title {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 424px) {
   .appoinment__container {
     flex-direction: column;
   }
@@ -605,7 +654,7 @@ select {
   gap: 20px;
 }
 /* about-us responsive */
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .about-us-image-sideborder {
     display: none;
   }
@@ -675,15 +724,14 @@ select {
   fill: #a2a6ad;
 }
 /* Fun facts responsive */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .fun-facts__card {
     padding: 50px 30px;
-  }
-  .appointment__image {
-    margin-top: -70px;
+    margin-bottom: 20px;
   }
 }
-@media (max-width: 375px) {
+/* @media screen and (min-width: 375px) and (max-width: 424px) */
+@media screen and (max-width: 424px) {
   .fun-facts {
     padding: 50px 0 50px;
   }
@@ -750,15 +798,20 @@ select {
   border-radius: 50%;
 }
 /* service responsive */
-@media (max-width: 375px) {
+@media screen and (min-width: 768px) {
+  .service__slider__button__container {
+    display: none;
+  }
+}
+@media screen and (max-width: 424px) {
   .service .section__heading {
     width: 100%;
-    margin: 0 0 80px 0;
+    margin: 0 0 120px 0;
   }
   .service__slider__button__container {
     display: flex;
     position: absolute;
-    bottom: 535px;
+    bottom: 565px;
   }
   .service__slider_prev {
     left: 60px;
@@ -775,6 +828,29 @@ select {
     padding: 30px 0 0;
   } */
 }
+@media screen and (max-width: 374px) {
+  .service .section__heading {
+    width: 100%;
+    margin: 0 0 80px 0;
+  }
+  .service__slider__button__container {
+    display: flex;
+    position: absolute;
+    bottom: 515px;
+  }
+  .service__slider_prev {
+    left: 60px;
+    bottom: 263px;
+  }
+  .service__slider_next {
+    right: -250px;
+    bottom: 263px;
+  }
+  .service .swiper__content {
+    flex-direction: column;
+  }
+}
+
 /* FEATURE SECTION */
 .feature {
   display: flex;
@@ -862,7 +938,12 @@ select {
   transition: all 0.5s ease-in-out;
 }
 /* feature responsive */
-@media (max-width: 375px) {
+/* @media screen and (min-width: 375px) and (max-width: 424px) {
+  
+} */
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 424px) {
   .feature {
     margin-right: 0;
     flex-direction: column;
@@ -952,7 +1033,18 @@ select {
   border-bottom: 7px solid var(--primary);
 }
 /* team responsive */
-@media (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 424px) {
+  .team__card {
+    margin: 0 0 20px;
+  }
+  .team__card img {
+    width: 310px;
+  }
+  .team__share__btn {
+    left: 130px;
+  }
+}
+@media screen and (max-width: 374px) {
   .team__card {
     margin: 0 0 20px;
   }
@@ -1022,7 +1114,29 @@ select {
   color: var(--white);
 }
 /* project responsive */
-@media (max-width: 375px) {
+@media screen and (max-width: 374px) {
+  .project .project__left {
+    padding: 30px 20px;
+  }
+  .project__title__btn {
+    margin: 50px 0 0;
+  }
+  .project .swiper__content {
+    padding: 20px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project__slider__image {
+    width: 310px;
+    height: 290px;
+  }
+  .project .project__right {
+    border-left: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 424px) {
   .project .project__left {
     padding: 50px 30px;
   }
@@ -1031,6 +1145,10 @@ select {
   }
   .project .swiper__content {
     padding: 30px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .project__slider__image {
     width: 310px;
@@ -1044,15 +1162,14 @@ select {
 .blog .section__heading {
   width: 50%;
 }
-.blog .team__card {
-  text-align: left;
-}
+
 .blog .card__text {
   padding: 30px 30px;
   display: flex;
   flex-direction: column;
   gap: 18px;
   width: 95%;
+  text-align: left;
 }
 .blog__badge__container {
   display: flex;
@@ -1165,7 +1282,8 @@ select {
   gap: 10px;
 }
 /* testimonial responsive */
-@media (max-width: 375px) {
+/* @media screen and (min-width: 375px) and (max-width: 424px) */
+@media screen and (max-width: 424px) {
   .testimonials {
     margin-left: 0px;
   }
@@ -1202,6 +1320,7 @@ select {
     order: 0;
   }
 }
+
 /* CLIENT SECTION */
 .client img {
   opacity: 0.5;
@@ -1220,7 +1339,7 @@ select {
     margin-bottom: 30px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .client__image__container {
     display: flex;
     align-items: center;
@@ -1267,7 +1386,7 @@ select {
   top: 50%;
   right: 35%;
 }
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .map form {
     width: auto;
     height: auto;
@@ -1431,7 +1550,7 @@ p {
     width: 115px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   #footer {
     padding: 100px 0 20px 0;
   }

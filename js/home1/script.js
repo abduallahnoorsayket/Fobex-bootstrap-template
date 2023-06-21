@@ -43,7 +43,7 @@ const testimonial__slider = new Swiper(".testimonial-slider", {
 
 const home__2__service__slider = new Swiper(".home-2-service-slider", {
   loop: true,
-  slidesPerView: 2,
+  slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
     1650: {
@@ -69,7 +69,7 @@ const home__2__service__slider = new Swiper(".home-2-service-slider", {
 });
 const home__2__project__slider = new Swiper(".home-2-project-slider", {
   loop: true,
-  slidesPerView: 1.5,
+  slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
     1650: {
