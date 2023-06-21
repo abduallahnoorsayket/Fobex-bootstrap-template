@@ -983,8 +983,13 @@ select {
   text-align: center;
   position: relative;
 }
+.team__card img {
+  width: inherit;
+}
 .card__text {
   padding: 20px 20px;
+  background: #f5f6f0;
+  width: 100%;
 }
 .section__description {
   width: 100%;
@@ -1044,16 +1049,10 @@ select {
     flex-direction: column;
     align-items: center;
   }
-  .team__card img {
-    width: 310px;
-  }
-  .card__text {
-    background: #f5f6f0;
-    width: 310px;
-  }
-  .team__share__btn {
+
+  /* .team__share__btn {
     left: 320px;
-  }
+  } */
 }
 @media screen and (min-width: 375px) and (max-width: 424px) {
   .team__card {
@@ -1062,16 +1061,16 @@ select {
   .team__card img {
     width: 310px;
   }
-  .team__share__btn {
+  /* .team__share__btn {
     left: 130px;
-  }
+  } */
 }
 @media screen and (max-width: 374px) {
   .team__card {
     margin: 0 0 20px;
   }
   .team__card img {
-    width: 310px;
+    /* width: 310px; */
   }
   .team__share__btn {
     left: 130px;
@@ -1184,13 +1183,15 @@ select {
 .blog .section__heading {
   width: 50%;
 }
-
+.blog .team__card img {
+  width: inherit;
+}
 .blog .card__text {
   padding: 30px 30px;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  width: 95%;
+  width: 100%;
   text-align: left;
 }
 .blog__badge__container {
@@ -1212,9 +1213,6 @@ select {
 }
 /* blog responsive */
 @media screen and (max-width: 768px) {
-  .blog .card__text {
-    width: 310px;
-  }
 }
 
 /* TESTIMONIAL SECTION */
@@ -1309,6 +1307,13 @@ select {
 .testimonials .testimonial__title__btn {
   display: flex;
   gap: 10px;
+}
+.tesimonial__video__image {
+  background-image: url(../image/home2/testimonial-people.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
 }
 /* testimonial responsive */
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
