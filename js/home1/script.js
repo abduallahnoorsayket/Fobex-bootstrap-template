@@ -71,12 +71,22 @@ const home__2__project__slider = new Swiper(".home-2-project-slider", {
   loop: true,
   slidesPerView: 1.5,
   spaceBetween: 20,
-  // breakpoints: {
-  //   375: {
-  //     slidesPerView: 1,
-  //   },
-  // },
+  breakpoints: {
+    1650: {
+      slidesPerView: 1.5,
+    },
 
+    1300: {
+      slidesPerView: 1.5,
+    },
+
+    1024: {
+      slidesPerView: 1.5,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+  },
   // Navigation arrows
   navigation: {
     nextEl: ".project__slider_next",
