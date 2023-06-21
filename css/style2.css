@@ -617,15 +617,15 @@ select {
   .appoinment__title {
     width: 100%;
   }
-}
-@media screen and (max-width: 424px) {
-  .appoinment__container {
-    flex-direction: column;
-  }
   .form-row {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .appoinment__container {
+    flex-direction: column;
   }
 }
 /* ABOUT US SECTION */
@@ -724,10 +724,9 @@ select {
   fill: #a2a6ad;
 }
 /* Fun facts responsive */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .fun-facts__card {
     padding: 50px 30px;
-    margin-bottom: 20px;
   }
 }
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
@@ -942,8 +941,11 @@ select {
   
 } */
 @media screen and (max-width: 768px) {
+  /* .about-us-right-image-container img {
+    width: 410px;
+  } */
 }
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 768px) {
   .feature {
     margin-right: 0;
     flex-direction: column;
@@ -1033,6 +1035,26 @@ select {
   border-bottom: 7px solid var(--primary);
 }
 /* team responsive */
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .team__card {
+    margin: 0 0 30px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team__card img {
+    width: 310px;
+  }
+  .card__text {
+    background: #f5f6f0;
+    width: 310px;
+  }
+  .team__share__btn {
+    left: 320px;
+  }
+}
 @media screen and (min-width: 375px) and (max-width: 424px) {
   .team__card {
     margin: 0 0 20px;
@@ -1188,6 +1210,13 @@ select {
 .blog .anchor__more {
   color: var(--gery-1);
 }
+/* blog responsive */
+@media screen and (max-width: 768px) {
+  .blog .card__text {
+    width: 310px;
+  }
+}
+
 /* TESTIMONIAL SECTION */
 .testimonials {
   /* width: 1200px; */
@@ -1283,7 +1312,14 @@ select {
 }
 /* testimonial responsive */
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
-@media screen and (max-width: 424px) {
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
+  .testimonial__content .row {
+    display: flex;
+    flex-direction: column;
+  }
   .testimonials {
     margin-left: 0px;
   }
