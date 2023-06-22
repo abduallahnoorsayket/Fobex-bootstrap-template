@@ -4,13 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Bootstrap CSS -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    /> -->
     <!-- New Bootstrap CDN -->
     <link
       rel="stylesheet"
@@ -86,7 +79,7 @@
               </div>
             </div>
           </div>
-          <nav class="hidden navbar navbar-dark navbar-expand-sm nav-custom >
+          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -434,19 +427,7 @@
               </h2>
             </div>
           </div>
-
-          <div class="service__slider__button__container">
-            <button class="btn btn_secondary service__slider_prev">
-              <svg class="icon service___right__arrow__icon">
-                <use xlink:href="./icon/sprite.svg#left-arrow"></use>
-              </svg>
-            </button>
-            <button class="btn btn-primary btn_primary service__slider_next">
-              <svg class="icon service___right__arrow__icon">
-                <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-              </svg>
-            </button>
-          </div>
+          <!-- service button container -->
           <!-- service slider -->
           <div class="swiper__slider">
             <!-- Slider main container -->
@@ -565,6 +546,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="service__slider__button__container">
+          <button class="btn btn_secondary service__slider_prev">
+            <svg class="icon service___right__arrow__icon">
+              <use xlink:href="./icon/sprite.svg#left-arrow"></use>
+            </svg>
+          </button>
+          <button class="btn btn-primary btn_primary service__slider_next">
+            <svg class="icon service___right__arrow__icon">
+              <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <!-- Servie End -->
@@ -801,7 +794,7 @@
       <!-- project start-->
       <section id="project" class="project">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-12 col-lg-4">
             <div class="project__left">
               <h6 class="section__sub_heading section__sub_heading--active">
                 latest project
@@ -830,7 +823,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-12 col-lg-8">
             <div class="project__right">
               <!-- project slider -->
               <div class="swiper__slider">
@@ -1057,7 +1050,7 @@
       <section id="testimonials" class="testimonials">
         <div class="testimonial__content">
           <div class="row">
-            <div class="col-sm-12 col-md-5 order__slider">
+            <div class="col-sm-12 col-md-12 col-lg-5 order__slider">
               <div class="testimonials__container">
                 <h6 class="section__sub_heading section__sub_heading--active">
                   Our client feedback
@@ -1332,7 +1325,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-7 order__video">
+            <div class="col-sm-12 col-md-12 col-lg-7 order__video">
               <div class="about-us-right-image-container">
                 <!-- <img src="./image/home2/testimonial-people.jpg" alt="" /> -->
                 <div class="tesimonial__video__image">
