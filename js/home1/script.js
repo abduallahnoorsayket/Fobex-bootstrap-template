@@ -75,13 +75,15 @@ const home__2__project__slider = new Swiper(".home-2-project-slider", {
     1650: {
       slidesPerView: 1.5,
     },
-
+    1500: {
+      slidesPerView: 1.2,
+    },
     1300: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
 
     1024: {
-      slidesPerView: 1.5,
+      slidesPerView: 1,
     },
     375: {
       slidesPerView: 1,

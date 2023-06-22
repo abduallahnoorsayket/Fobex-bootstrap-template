@@ -346,7 +346,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 .hero__badge {
@@ -356,9 +356,9 @@ button {
   font-size: 20px;
   font-weight: 600;
   color: #ffffff;
-  position: absolute;
+  /* position: absolute;
   top: 18%;
-  left: 0%;
+  left: 0%; */
   padding: 4px 10px;
 }
 .hero__title {
@@ -369,7 +369,8 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   width: 60%;
-  margin-top: -60px;
+  margin-top: 15px;
+  /* margin-top: -60px; */
 }
 .hero__button {
   margin-top: 40px;
@@ -534,11 +535,19 @@ button {
   .hero__title {
     font-size: 65px;
     line-height: 70px;
+    margin-top: 15px;
   }
 }
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
 
 @media screen and (max-width: 424px) {
+  .navbar-dark .navbar-brand {
+    width: 140px;
+    height: 45px;
+  }
+  .hero__container .container {
+    padding: 0 0;
+  }
   .navbar-toggler-icon {
     bottom: 10px;
     left: 220px;
@@ -556,7 +565,6 @@ button {
     text-transform: uppercase;
     color: #ffffff;
     width: 100%;
-    margin-top: 0px;
   }
   .hero__badge {
     top: 10%;
@@ -806,10 +814,10 @@ select {
 /* service responsive */
 @media screen and (min-width: 768px) {
   .service__slider__button__container {
-    display: none;
+    /* display: none; */
   }
 }
-@media screen and (max-width: 424px) {
+@media screen and (max-width: 600px) {
   .service .section__heading {
     width: 100%;
     margin: 0 0 120px 0;
@@ -963,9 +971,11 @@ select {
   }
   .feature .about-us-right-image-container {
     justify-content: center;
+    padding: 0 30px;
   }
   .feature .about-us-right-image-container img {
-    width: 310px;
+    /* width: 310px; */
+    width: 100%;
   }
   .about-us-image-sideborder {
     display: none;
@@ -997,6 +1007,7 @@ select {
   padding: 20px 20px;
   background: #f5f6f0;
   width: 100%;
+  position: relative;
 }
 .section__description {
   width: 100%;
@@ -1009,9 +1020,10 @@ select {
   width: 60px;
   height: 60px;
   position: absolute;
-  bottom: 100px;
-  left: 186px;
   cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
 }
 .team__share__btn:hover .social_icons {
   opacity: 1;
@@ -1076,12 +1088,6 @@ select {
   .team__card {
     margin: 0 0 20px;
   }
-  .team__card img {
-    /* width: 310px; */
-  }
-  .team__share__btn {
-    left: 130px;
-  }
 }
 /* PROJECT SECTION */
 #project {
@@ -1114,6 +1120,7 @@ select {
   width: 770px;
   display: grid;
   place-items: center;
+  /* margin: 0 20px 0 0; */
 }
 .project__slider__image_1 {
   background: linear-gradient(
@@ -1124,11 +1131,13 @@ select {
     url("../image/home2/project-slider-1.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .project__slider__image_2 {
   background: url("../image/home2/project-slider-2.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .project__slider__next {
   padding: 15px 20px;
@@ -1142,23 +1151,27 @@ select {
   color: var(--white);
 }
 /* project responsive */
-@media screen and (max-width: 374px) {
-  .project .project__left {
-    padding: 30px 20px;
+@media screen and (max-width: 768px) {
+  /* .container__responsive {
+    padding: 0 20px;
+  } */
+  .project .project__left,
+  .project__right {
+    padding: 30px 30px;
   }
   .project__title__btn {
     margin: 50px 0 0;
   }
   .project .swiper__content {
-    padding: 20px 0 20px 20px;
+    padding: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .project__slider__image {
-    width: 310px;
-    height: 290px;
+    width: 100%;
+    height: 300px;
   }
   .project .project__right {
     border-left: none;
@@ -1180,7 +1193,6 @@ select {
   }
   .project__slider__image {
     width: 310px;
-    height: 290px;
   }
   .project .project__right {
     border-left: none;
@@ -1259,9 +1271,6 @@ select {
   gap: 10px;
 }
 .tesimonial__btn {
-  position: absolute;
-  top: 324px;
-  left: 399px;
   padding: 20px 25px;
   border-radius: 50%;
 }
@@ -1316,17 +1325,17 @@ select {
   gap: 10px;
 }
 .tesimonial__video__image {
-  background-image: url(../image/home2/testimonial-people.jpg);
+  background: url(../image/home2/testimonial-people.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  width: 100%;
+  display: grid;
+  place-items: center;
 }
 /* testimonial responsive */
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
 
-@media screen and (max-width: 768px) {
-}
 @media screen and (max-width: 768px) {
   .testimonial__content .row {
     display: flex;
@@ -1353,13 +1362,9 @@ select {
     flex-direction: column;
     gap: 20px;
   }
-  .testimonials .about-us-right-image-container img {
-    width: 310px;
+  .tesimonial__video__image {
     margin-top: 20px;
-  }
-  .tesimonial__btn {
-    top: 120px;
-    left: 120px;
+    height: 300px;
   }
   .order__video {
     order: 1;
