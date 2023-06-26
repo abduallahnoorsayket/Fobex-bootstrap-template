@@ -537,8 +537,7 @@ button {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
-    url("../image/home2/home-2\ hero.png");
+  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)), url("../image/home2/home-2\ hero.png");
   background-size: cover;
   background-position: center;
 }
@@ -913,8 +912,7 @@ select {
 .feature {
   display: flex;
   gap: 50px;
-  background: url(../image/home2/feature-bg.png),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/feature-bg.png), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: auto;
@@ -1192,12 +1190,7 @@ select {
   /* margin: 0 20px 0 0; */
 }
 .project__slider__image_1 {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 25, 34, 0.4),
-      rgba(19, 25, 34, 0.4)
-    ),
-    url("../image/home2/project-slider-1.png");
+  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/home2/project-slider-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1320,8 +1313,7 @@ select {
 }
 
 .testimonials {
-  background: url(../image/home2/testimonial-bg.jpg),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/testimonial-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -1721,18 +1713,13 @@ p {
     padding-bottom: 30px;
   }
 }
-/* ================= Service  page =============*/
+/* ================= Service page =============*/
 /* SERVICE HERO SECTION */
 #service .hero {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 60vh;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 25, 34, 0.4),
-      rgba(19, 25, 34, 0.4)
-    ),
-    url("../image/service/service-hero-bg.jpg");
+  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/service/service-hero-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1754,9 +1741,9 @@ p {
 }
 
 /* SERVICE WORKING PROCESS */
-#working-process {
-  /* padding-top: 0; */
-}
+/* #working-process {
+  padding-top: 0;
+} */
 .working-process .section__sub_heading {
   color: #131922;
 }
@@ -1810,22 +1797,32 @@ p {
     order: 2;
   }
 }
-/* SERVICE  SERVICE  SECTION */
+/* SERVICE SERVICE  SECTION */
 #service .service {
   position: relative;
   background: url("../image/home1/service_bg_.jpg");
   padding: 50px 0 100px;
 }
 
+#service .service__heading__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#service .service__heading__container {
+  width: 70%;
+}
 #service .service .section__heading {
   color: var(--white);
+  width: 100%;
 }
 
 #service .service__card__container {
   padding: 50px 0 100px 0;
 }
 #service .service__card {
-  padding: 50px 50px;
+  padding: 40px;
   background: #131922;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -1839,13 +1836,15 @@ p {
 }
 #service .service__content {
   padding: 0px 0px 0px 30px;
-  width: 75%;
+  width: 85%;
 }
 /* .service__arrow__icon{
   fill: ;
 } */
 #service .service .feature__arrow__icon {
   fill: #a2a6ad;
+  width: 18px;
+  height: 17px;
 }
 #service .service__title {
   font-weight: 500;
@@ -1886,8 +1885,8 @@ p {
   }
 }
 /* SERVICE FOOTER SECTION */
-#footer {
-}
+/* #footer {
+} */
 #service .footer {
   background: var(--secondary);
   padding: 100px 0 20px 0;
