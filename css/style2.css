@@ -2192,3 +2192,9 @@ input[type="radio"] {
     flex-direction: column;
   }
 }
+/* ============= About Us ========= */
+
+/* ABOUT US CLIENT */
+#about-us .section__description {
+  width: 50%;
+}
