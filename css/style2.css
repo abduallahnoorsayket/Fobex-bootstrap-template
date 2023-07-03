@@ -2265,6 +2265,17 @@ input[type="radio"] {
   width: 59px;
   height: 67px;
 }
+@media (max-width: 424px) {
+  #about-us-page .about-section .container img {
+    width: 310px;
+  }
+  #about-us-page .about-section .container {
+    flex-direction: column;
+  }
+  #about-us-page .about-section .feature__accordion__container {
+    width: 100%;
+  }
+}
 /* ABOUT US SERVICE SECTION */
 
 #about-us-page .service {
@@ -2355,7 +2366,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .project__title__divider {
     margin: 30px 0 50px 20px;
   }
