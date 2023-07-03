@@ -113,6 +113,33 @@ const home__2__testimonial__slider = new Swiper(".home-2-testimonial-slider", {
   },
 });
 
+const about__us__team__slider = new Swiper(".team-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    1650: {
+      slidesPerView: 3.7,
+    },
+
+    1300: {
+      slidesPerView: 3,
+    },
+
+    1024: {
+      slidesPerView: 2,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".team__slider_next",
+    prevEl: ".team__slider_prev",
+  },
+});
 function classToggle() {
   const navs = document.querySelectorAll(".navbar__Items");
 
