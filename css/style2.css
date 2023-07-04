@@ -2215,6 +2215,11 @@ input[type="radio"] {
 #about-us-page .section__description {
   width: 50%;
 }
+@media (max-width: 768px) {
+  #about-us-page .client .client__image__container img {
+    width: auto !important;
+  }
+}
 /* ABOUT US ABOUT US SECTION */
 #about-us-page .about-section {
   background: #fff;
@@ -2265,15 +2270,39 @@ input[type="radio"] {
   width: 59px;
   height: 67px;
 }
-@media (max-width: 424px) {
+.about__us__imagebar {
+  background: #ffffff;
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+#about-us .focus-quality__image_container {
+  position: relative;
+  margin-right: 30px;
+}
+@media (max-width: 992px) {
+  #about-us .focus-quality__image_container {
+    margin-right: 0px;
+  }
   #about-us-page .about-section .container img {
-    width: 310px;
+    width: 100%;
   }
   #about-us-page .about-section .container {
     flex-direction: column;
   }
   #about-us-page .about-section .feature__accordion__container {
     width: 100%;
+  }
+  .feature__accordion__container {
+    padding: 0 0;
+  }
+}
+@media (max-width: 424px) {
+  #about-us-page .about-section .container img {
+    width: 310px;
   }
 }
 /* ABOUT US SERVICE SECTION */
@@ -2498,103 +2527,101 @@ input[type="radio"] {
 }
 
 /* ABOUT US FOCUS QUALITY  SECTION */
-.focus-quality__image_container {
-  padding-left: 16px;
-}
-.focus-quality__image {
-  background-image: url(../image/about-us/about-us-focus-quality.jpg);
+
+#about-us-page .focus-quality__image_container img {
+  object-fit: cover;
   width: 100%;
-  height: 710px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* padding-left: 15px; */
 }
-/* .focus-quality__content {
-  padding: 80px 40px 80px 260px;
-} */
-.about-us__focus-quality img {
+
+#about-us-page .about-us__focus-quality img {
   width: 100%;
-  padding-left: 15px;
+  padding-left: 0px;
 }
-.focus__quality_progress {
+#about-us-page .focus__quality_progress {
   margin-top: 40px;
 }
-.focus__quality_progress_title {
+#about-us-page .focus__quality_progress_title {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
 }
-.focus__quality__progress_bar {
+#about-us-page .focus__quality__progress_bar {
   height: 10px;
   background: var(--primary);
   margin-bottom: 2px;
   border-bottom: 2px solid var(--primary);
 }
-.focus__quality__progress_line {
+#about-us-page .focus__quality__progress_line {
   background: var(--primary);
   height: 2px;
 }
-.focus__quality__progress_bar--consulting {
+#about-us-page .focus__quality__progress_bar--consulting {
   width: 60%;
 }
-.focus__quality__progress_bar--finance {
+#about-us-page .focus__quality__progress_bar--finance {
   width: 80%;
 }
-.focus__quality__progress_bar--start-up {
+#about-us-page .focus__quality__progress_bar--start-up {
   width: 65%;
 }
-.order-about {
+#about-us-page .order-about {
   order: 0;
 }
-.order-quality {
+#about-us-page .order-quality {
   order: 1;
 }
 /* About-us responsive */
 @media (max-width: 768px) {
-  .welcome__content {
+  #about-us-page .welcome__content {
     width: 100%;
     padding: 50px 0;
   }
-  .about-us__welcome ul li {
+  #about-us-page .about-us__welcome ul li {
     padding: 10px 0;
   }
-  .focus-quality__content {
-    padding: 80px 30px 0px 30px;
+  #about-us-page .focus-quality__content {
+    padding: 30px 0px;
   }
-  .focus-quality__image_container {
-    padding-right: 16px;
+  #about-us-page .focus-quality__image_container {
+    padding-right: 0px;
   }
-  .order-about {
+  #about-us-page .focus-quality__image_container {
+    padding-left: 0px;
+  }
+  #about-us-page .order-about {
     order: 10;
+  }
+  #about-us-page .about-us__focus-quality img {
+    padding-left: 0px;
   }
 }
 @media (max-width: 424px) {
   /* #about-us {
     padding: 100px 0 100px 0;
   } */
-  .welcome__image {
+  #about-us-page .welcome__image {
     max-height: 350px;
   }
-  .welcome__content {
+  #about-us-page .welcome__content {
     width: 100%;
     padding: 50px 0px;
   }
-  .about-us__welcome ul li {
+  #about-us-page .about-us__welcome ul li {
     padding: 15px 0;
   }
-  .about-us__welcome .btn_primary {
+  #about-us-page .about-us__welcome .btn_primary {
     width: 100%;
   }
-  .about-us__focus-quality {
-    padding: 0 30px;
+  #about-us-page .about-us__focus-quality {
+    padding: 0 0;
   }
-  .focus-quality__content {
+  #about-us-page .focus-quality__content {
     padding: 20px 0px;
   }
-  .focus-quality__image_container {
+  #about-us-page .focus-quality__image_container {
     padding: 20px 0px;
   }
-  .focus-quality__image {
+  #about-us-page .focus-quality__image {
     height: 310px;
     background-size: contain;
     margin-top: 15px;
