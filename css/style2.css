@@ -278,7 +278,7 @@ button {
     object-fit: cover;
   } */
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .container {
     padding: 0px 30px;
     /* max-width: 1320px; */
@@ -1748,6 +1748,7 @@ p {
   font-weight: 600;
   color: var(--secondary);
   padding: 4px 10px;
+  text-transform: uppercase;
 }
 
 #hero-main .hero__title {
@@ -2224,6 +2225,7 @@ input[type="radio"] {
 #about-us-page .about-section {
   background: #fff;
 }
+
 #about-us-page .about-section .container {
   display: flex;
   gap: 70px;
@@ -2283,6 +2285,7 @@ input[type="radio"] {
   position: relative;
   margin-right: 30px;
 }
+/* About us  about us responsive */
 @media (max-width: 992px) {
   #about-us .focus-quality__image_container {
     margin-right: 0px;
@@ -2335,6 +2338,9 @@ input[type="radio"] {
 
 #about-us-page .service .anchor__more {
   color: #5f6165;
+}
+#about-us-page .anchor__link:hover .anchor__more {
+  color: var(--primary);
 }
 /* ABOUT US TEAM SECTION */
 #about-us-page .team .section__heading {
@@ -2527,7 +2533,9 @@ input[type="radio"] {
 }
 
 /* ABOUT US FOCUS QUALITY  SECTION */
-
+#about-us-page #focus-quality {
+  padding: 0 0;
+}
 #about-us-page .focus-quality__image_container img {
   object-fit: cover;
   width: 100%;
@@ -2552,7 +2560,7 @@ input[type="radio"] {
   border-bottom: 2px solid var(--primary);
 }
 #about-us-page .focus__quality__progress_line {
-  background: var(--primary);
+  background: #e1e1e1;
   height: 2px;
 }
 #about-us-page .focus__quality__progress_bar--consulting {
@@ -2570,7 +2578,22 @@ input[type="radio"] {
 #about-us-page .order-quality {
   order: 1;
 }
-/* About-us responsive */
+/*about-us-page bootstrap progress bar */
+#about-us-page .focus-quality__content .progress {
+  background: none;
+  border-radius: 0;
+  height: 10px;
+  margin-bottom: 2px;
+}
+#about-us-page .focus-quality__content .progress-bar {
+  background-color: var(--primary);
+  width: 0;
+  transition: all 0.5s ease-in;
+}
+#about-us-page .focus-quality__image_container {
+  margin-right: 30px;
+}
+/* About us focus quality responsive */
 @media (max-width: 768px) {
   #about-us-page .welcome__content {
     width: 100%;
@@ -2584,10 +2607,10 @@ input[type="radio"] {
   }
   #about-us-page .focus-quality__image_container {
     padding-right: 0px;
-  }
-  #about-us-page .focus-quality__image_container {
+    margin-right: 0px;
     padding-left: 0px;
   }
+
   #about-us-page .order-about {
     order: 10;
   }
@@ -2596,9 +2619,6 @@ input[type="radio"] {
   }
 }
 @media (max-width: 424px) {
-  /* #about-us {
-    padding: 100px 0 100px 0;
-  } */
   #about-us-page .welcome__image {
     max-height: 350px;
   }
@@ -2627,3 +2647,196 @@ input[type="radio"] {
     margin-top: 15px;
   }
 }
+/*==================== Service Details page ========= */
+
+/* SERVICE DETAILS CLINET SECTION */
+#service-details .client .container {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 30px;
+}
+/* SERVICE DETAILS FOCUS QUALITY SECTION */
+#service-details .focus-quality .focus-quality__content {
+  margin-right: 55px;
+}
+
+#service-details #focus-quality {
+  padding: 100px 0 0;
+}
+#service-details .focus-quality__image_container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+#service-details .about-us__focus-quality img {
+  width: 100%;
+  padding-left: 0px;
+}
+#service-details .focus__quality_progress {
+  margin-top: 40px;
+}
+#service-details .focus__quality_progress_title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+#service-details .focus__quality__progress_bar {
+  height: 10px;
+  background: var(--primary);
+  margin-bottom: 2px;
+  border-bottom: 2px solid var(--primary);
+}
+#service-details .focus__quality__progress_line {
+  background: #e1e1e1;
+  height: 2px;
+}
+
+#service-details .focus-quality .quality-image {
+  order: 1;
+}
+
+#service-details .focus-quality .quality-progress {
+  order: 0;
+}
+/*about-us-page bootstrap progress bar */
+#service-details .focus-quality__content .progress {
+  background: none;
+  border-radius: 0;
+  height: 10px;
+  margin-bottom: 2px;
+}
+
+#service-details .focus-quality__content .progress-bar {
+  background-color: var(--primary);
+  width: 0;
+  transition: all 0.5s ease-in;
+}
+
+/* About us focus quality responsive */
+@media (max-width: 992px) {
+  #service-details .focus-quality .focus-quality__content {
+    margin-right: 0px;
+  }
+  #service-details .focus-quality__content {
+    padding: 30px 0px;
+  }
+  #service-details .focus-quality__image_container {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  #service-details .order-about {
+    order: 10;
+  }
+  #service-details .about-us__focus-quality img {
+    padding-left: 0px;
+  }
+  #service-details .focus-quality .quality-image {
+    order: 0;
+  }
+
+  #service-details .focus-quality .quality-progress {
+    order: 1;
+  }
+}
+@media (max-width: 424px) {
+  #service-details .about-us__focus-quality {
+    padding: 0 0;
+  }
+  #service-details .focus-quality__content {
+    padding: 20px 0px;
+  }
+  #service-details .focus-quality__image_container {
+    padding: 20px 0px;
+  }
+  #service-details .focus-quality__image {
+    height: 310px;
+    background-size: contain;
+    margin-top: 15px;
+  }
+}
+
+/*SERVICE DETAILS  APPOINMENT SECTION */
+#service-details .appointment {
+  background: #fff;
+  padding: 0px 0px;
+}
+#service-details .appointment .container {
+  margin-top: 0;
+  position: relative;
+  z-index: 10;
+  background: #f5f6f0;
+}
+
+#service-details .appointment__image {
+  height: 100%;
+  width: 100%;
+}
+#service-details .appointment__content {
+  padding: 70px 80px;
+}
+#service-details .appointment .section__sub_heading_line {
+  margin: 10px;
+}
+#service-details .appointment .welcome__desc {
+  margin-top: 30px;
+}
+#service-details .appointment__form {
+  margin-top: 30px;
+}
+#service-details .appointment .btn_primary {
+  border-radius: 10px;
+}
+#service-details .appointment .form-control {
+  padding: 18px 25px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #e3e4dd;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #5f6165;
+}
+#service-details .appointment select option {
+  padding: 18px 25px;
+}
+#service-details .appointment__top__arrow {
+  position: absolute;
+  fill: #e6e8e0;
+  width: 20px;
+  height: 109px;
+  right: 100px;
+  top: 50px;
+}
+#service-details .appointment__bottom_right__arrow {
+  position: absolute;
+  fill: #e6e8e0;
+  width: 109px;
+  height: 20px;
+  right: 150px;
+  bottom: 70px;
+}
+#service-details .appointment textarea {
+  max-height: 150px;
+  resize: none;
+}
+/* appointment responsive */
+@media (max-width: 992px) {
+  #service-details .appointment__content {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 424px) {
+  #service-details .appointment__content {
+    padding: 50px 0px;
+  }
+  #service-details .appointment__top__arrow {
+    right: 30px;
+  }
+  #service-details .appointment__bottom_right__arrow {
+    right: 30px;
+  }
+  #service-details .appointment__image {
+    margin-top: -50px;
+  }
+}
+/* SERVICE DETAILS SERVICE SECTION */

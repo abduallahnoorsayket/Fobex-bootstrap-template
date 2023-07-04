@@ -140,6 +140,19 @@ const about__us__team__slider = new Swiper(".team-slider", {
     prevEl: ".team__slider_prev",
   },
 });
+// PROGRESS BAR
+const progressObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.dataset.parcent + "%";
+    }
+  });
+});
+
+const progressElements = document.querySelectorAll(".progress-bar");
+
+progressElements.forEach((element) => progressObserver.observe(element));
+// PROGRESS BAR
 function classToggle() {
   const navs = document.querySelectorAll(".navbar__Items");
 
