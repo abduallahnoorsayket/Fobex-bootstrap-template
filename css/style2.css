@@ -2977,7 +2977,7 @@ input[type="radio"] {
   margin: 0;
   width: 90%;
 }
-.personal__content {
+#service-details .personal__content {
   background-repeat: no-repeat;
   height: 721px;
   background: url("../image/service-details/personal-expertice.jpg");
@@ -2985,11 +2985,11 @@ input[type="radio"] {
   background-position: center;
   position: relative;
 }
-.personal__content .icon__btn {
+#service-details .personal__content .icon__btn {
   fill: #5f6165;
   margin-top: 5px;
 }
-.personal__note {
+#service-details .personal__note {
   padding: 50px;
   border-left: 10px solid var(--primary);
   background: #ffffff;
@@ -3004,15 +3004,47 @@ input[type="radio"] {
   width: 30%;
   margin-top: -57px;
 }
-.personal-expertise .expertise__list {
+#service-details .personal-expertise .expertise__list {
   display: flex;
   gap: 15px;
 }
 @media (max-width: 992px) {
-  .personal-expertise .personal__note {
+  #service-details .personal-expertise .personal__note {
     left: 50%;
     width: 100%;
   }
 }
-@media (max-width: 424px) {
+/* ========= Case Studies page start ========*/
+
+/*  CASE STUDIES CLIENT SECTION */
+#case-studies .client {
+  padding-bottom: 100px;
+}
+#case-studies .client .section__description {
+  width: 45%;
+}
+/* CASE STUDIES CTA SECTION */
+#case-studies .personal__content {
+  background-repeat: no-repeat;
+  height: 600px;
+  background: url("../image/case-studies/cta-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#case-studies .personal__note {
+  padding: 50px;
+  background: url("../image/case-studies/cta-card-bg.png"),
+    linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
+  box-shadow: 6px 0px 8px 0px rgba(106, 108, 113, 0.1);
+  position: absolute;
+  left: 60%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  margin-top: -57px;
 }
