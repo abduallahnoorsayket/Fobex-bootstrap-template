@@ -2628,10 +2628,14 @@ input[type="radio"] {
 /*==================== Service Details page ========= */
 
 /* SERVICE DETAILS CLINET SECTION */
+#service-details .client {
+  padding-bottom: 100px;
+}
 #service-details .client .container {
   border-top: 1px solid #e1e1e1;
   padding-top: 30px;
 }
+
 /* SERVICE DETAILS FOCUS QUALITY SECTION */
 #service-details .focus-quality .focus-quality__content {
   margin-right: 55px;
@@ -2867,7 +2871,7 @@ input[type="radio"] {
   height: 250px;
   border-radius: 50%;
 }
-#service-details .feature__title {
+#service-details .feature .feature__title {
   font-size: 30px;
   line-height: 40px;
   text-transform: capitalize;
@@ -3032,19 +3036,127 @@ input[type="radio"] {
   background-position: center;
   position: relative;
 }
+#case-studies .personal__content .container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
 
 #case-studies .personal__note {
   padding: 50px;
   background: url("../image/case-studies/cta-card-bg.png"),
     linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
-  box-shadow: 6px 0px 8px 0px rgba(106, 108, 113, 0.1);
-  position: absolute;
-  left: 60%;
-  top: 0;
-  transform: translateX(-50%);
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 30%;
-  margin-top: -57px;
+  gap: 15px;
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 200px;
+}
+#case-studies .personal__note .btn_primary {
+  background: var(--secondary);
+  align-self: center;
+  color: #ffffff;
+}
+#case-studies .personal__note .btn_primary .nav__arrow__icon {
+  fill: #ffffff;
+}
+@media (max-width: 992px) {
+  #case-studies .personal__note {
+    margin-right: 0;
+  }
+  #case-studies .personal__content .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+/* CASE STUDIES CASE STUDIES SECTION */
+
+#case-studies .swiper__content {
+  height: 490px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 30px 25px 30px;
+  /* margin-bottom: 30px; */
+}
+#case-studies .case-studies .row:nth-child(1) {
+  margin-bottom: 30px;
+}
+#case-studies .swiper__image-1 {
+  background-image: url(../image/case-studies/case-1.jpg);
+}
+#case-studies .swiper__image-2 {
+  background-image: url(../image/case-studies/case-2.jpg);
+}
+#case-studies .swiper__image-3 {
+  background-image: url(../image/case-studies/case-3.jpg);
+}
+#case-studies .swiper__image-4 {
+  background-image: url(../image/case-studies/case-4.jpg);
+}
+#case-studies .swiper__image-5 {
+  background-image: url(../image/case-studies/case-5.jpg);
+}
+#case-studies .swiper__image-6 {
+  background-image: url(../image/case-studies/case-6.jpg);
+}
+
+#case-studies .slider__title {
+  background: var(--white);
+  padding: 18px 30px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #131922;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+#case-studies .slider__title:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+#case-studies .slider__btn {
+  border-radius: 20px;
+  padding: 5px 16px;
+  background: var(--secondary);
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+#case-studies .slider__right__arrow__icon {
+  height: 13px;
+  width: 26px;
+  fill: var(--primary);
+}
+#case-studies .slider__title:hover .slider__btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+#case-studies .slider__title:hover {
+  background: var(--primary);
+  color: var(--secondary);
+}
+@media (max-width: 992px) {
+  #case-studies .case-studies .row:nth-child(1) .swiper__content {
+    margin-bottom: 30px;
+  }
+  #case-studies .case-studies .row:nth-child(2) .swiper__content {
+    margin-bottom: 30px;
+  }
 }
