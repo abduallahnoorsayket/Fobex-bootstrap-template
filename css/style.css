@@ -599,6 +599,7 @@ button {
   right: 130px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
+  fill: var(--primary);
 }
 .feature__content:hover .feature__circle__icon {
   opacity: 1;

@@ -84,7 +84,7 @@ label {
 }
 
 section {
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
 }
 .section__content {
   margin: 50px 0 0 0;
@@ -284,7 +284,7 @@ button {
     /* max-width: 1320px; */
   }
   section {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   .section__heading {
@@ -295,7 +295,7 @@ button {
 }
 @media screen and (min-width: 375px) and (max-width: 424px) {
   section {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   .process__container {
@@ -309,7 +309,7 @@ button {
 }
 @media screen and (max-width: 374px) {
   section {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 
   .process__container {
@@ -884,28 +884,6 @@ select {
   }
   /* .swiper__slider {
     padding: 30px 0 0;
-  } */
-}
-@media screen and (max-width: 374px) {
-  /* .service .section__heading {
-    width: 100%;
-    margin: 0 0 80px 0;
-  }
-  .service__slider__button__container {
-    display: flex;
-    position: absolute;
-    bottom: 515px;
-  }
-  .service__slider_prev {
-    left: 60px;
-    bottom: 263px;
-  }
-  .service__slider_next {
-    right: -250px;
-    bottom: 263px;
-  }
-  .service .swiper__content {
-    flex-direction: column;
   } */
 }
 
@@ -2697,6 +2675,7 @@ input[type="radio"] {
 #service-details .focus-quality .quality-progress {
   order: 0;
 }
+
 /*about-us-page bootstrap progress bar */
 #service-details .focus-quality__content .progress {
   background: none;
@@ -2711,8 +2690,11 @@ input[type="radio"] {
   transition: all 0.5s ease-in;
 }
 
-/* About us focus quality responsive */
+/* service details focus quality responsive */
 @media (max-width: 992px) {
+  #service-details #focus-quality {
+    padding: 50px 0 0;
+  }
   #service-details .focus-quality .focus-quality__content {
     margin-right: 0px;
   }
@@ -2819,7 +2801,7 @@ input[type="radio"] {
   max-height: 150px;
   resize: none;
 }
-/* appointment responsive */
+/* service details appointment responsive */
 @media (max-width: 992px) {
   #service-details .appointment__content {
     padding: 50px 0px;
@@ -2840,3 +2822,197 @@ input[type="radio"] {
   }
 }
 /* SERVICE DETAILS SERVICE SECTION */
+#service-details .service__realated__card__container {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  #service-details .service .swiper__content {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #service-details .service .swiper__content img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 424px) {
+  #service-details .service__realated__card__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+/* SERVICE DETAILS FEATURE SECTION */
+
+#service-details .feature {
+  background: #fff;
+  position: relative;
+  margin-right: unset;
+  max-width: unset;
+}
+
+#service-details .feature__content {
+  padding: 50px 0px;
+  width: 85%;
+}
+#service-details .feature .section__heading {
+  width: 45%;
+}
+#service-details .feature .feature__image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+#service-details .feature__title {
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #131922;
+  margin: 35px 0px 0px 0px;
+}
+#service-details .feature__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #5f6165;
+  margin: 30px 0px 30px 0px;
+}
+#service-details .feature__link {
+  margin: 30px 0px 0px 0px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  /* identical to box height, or 167% */
+
+  text-transform: uppercase;
+
+  color: #5f6165;
+}
+#service-details .feature__arrow__icon {
+  width: 17px;
+  height: 14px;
+  margin: 0px 5px 0 0;
+}
+#service-details .feature__link:hover .feature__arrow__icon {
+  fill: var(--primary);
+  color: var(--primary);
+}
+#service-details .feature__link:hover {
+  color: var(--primary);
+}
+#service-details .feature__link--active {
+  color: var(--primary);
+  fill: var(--primary);
+}
+
+#service-details .feature__image__container {
+  position: relative;
+}
+#service-details .feature__circle__icon {
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  top: 0px;
+  right: 130px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  fill: var(--primary);
+}
+#service-details .feature__content:hover .feature__circle__icon {
+  opacity: 1;
+}
+
+#service-details .feature__content:hover .feature__arrow__icon {
+  fill: var(--primary);
+  color: var(--primary);
+}
+#service-details .feature__content:hover .feature__more {
+  color: var(--primary);
+}
+
+/* service details feature responsive */
+@media (max-width: 992px) {
+  #service-details .feature__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #service-details .feature .feature__image {
+    width: 179px;
+    height: 177px;
+    border-radius: 50%;
+  }
+
+  #service-details .feature__title {
+    font-size: 24px;
+    line-height: 35px;
+    margin: 35px 0px 0px 0px;
+  }
+  #service-details .feature__circle__icon {
+    height: 177px;
+    width: 179px;
+    right: 18px;
+  }
+}
+@media (max-width: 424px) {
+  #service-details .feature__content {
+    text-align: center;
+    width: 100%;
+    padding: 25px 0;
+  }
+
+  #service-details .feature__desc {
+    margin: 30px 0px 20px 0px;
+  }
+}
+/* SERVICE DETAILS PERSONAL EXPERITISE */
+#service-details .feature__title {
+  margin: 0;
+  width: 90%;
+}
+.personal__content {
+  background-repeat: no-repeat;
+  height: 721px;
+  background: url("../image/service-details/personal-expertice.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.personal__content .icon__btn {
+  fill: #5f6165;
+  margin-top: 5px;
+}
+.personal__note {
+  padding: 50px;
+  border-left: 10px solid var(--primary);
+  background: #ffffff;
+  box-shadow: 6px 0px 8px 0px rgba(106, 108, 113, 0.1);
+  position: absolute;
+  left: 60%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  margin-top: -57px;
+}
+.personal-expertise .expertise__list {
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 992px) {
+  .personal-expertise .personal__note {
+    left: 50%;
+    width: 100%;
+  }
+}
+@media (max-width: 424px) {
+}
