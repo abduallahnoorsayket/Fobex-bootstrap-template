@@ -483,7 +483,7 @@ button {
   cursor: pointer;
 }
 /* header responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-collapse {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -2027,7 +2027,7 @@ p {
 } */
 .footer-main {
   background: var(--secondary) !important;
-  padding: 100px 0 20px 0;
+  padding: 100px 0 0 0;
 }
 #footer-main .footer__cta {
   padding: 36px 80px;
@@ -2124,7 +2124,7 @@ input[type="radio"] {
   height: 1px;
 }
 #footer-main .footer__copyright {
-  padding: 40px 0;
+  padding: 30px 0 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -3160,3 +3160,104 @@ input[type="radio"] {
     margin-bottom: 30px;
   }
 }
+/* ============== case details page start=========== */
+
+/* CASE DETAILS DESCRIPTION SECTION  */
+#case-details .description__container {
+  max-width: 870px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#case-details .description .description__image {
+  margin: 30px 0;
+}
+
+#case-details .case__info {
+  padding: 35px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5f6f0;
+}
+#case-details .case__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#case-details .case__content {
+  display: flex;
+  gap: 60px;
+}
+/* CASE DETAILS PROJECT OVERVIEW SECTION */
+
+#case-details .project-overview,
+.working-process {
+  padding: 60px 0 0 0;
+}
+#case-details .project-overview .project__overview__title {
+  font-size: 30px;
+}
+
+/* CASE DETAILS WORKING PROCESS  */
+#case-details .working-process .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#case-details .team__card {
+  background: #f5f6f0;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+#case-details .team__card img {
+  width: inherit;
+}
+#case-details .working-process .card__text {
+  padding: 20px 20px;
+  background: #ffffff;
+  width: 100%;
+  position: relative;
+}
+#case-details .working-process .card__text h3 {
+  margin-top: 25px;
+  text-transform: capitalize;
+}
+#case-details .working-process .section__description {
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+  margin-top: 25px;
+}
+#case-details .working-process .team__share__btn {
+  padding: 10px 15px;
+  background: var(--primary);
+  width: 112px;
+  height: 42px;
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -23px;
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+#case-details .team__share__btn:hover .social_icons {
+  opacity: 1;
+  visibility: visible;
+}
+#case-details .working-process .team__share__icon {
+  width: 21px;
+  height: 28px;
+  fill: #6a6c71;
+}
+#case-details .working-process .working__process__divider {
+  height: 1px;
+  background: #e1e1e1;
+  margin-top: 50px;
+}
+/* CASE DETAILS PROJECT RESULTS SECTION */
