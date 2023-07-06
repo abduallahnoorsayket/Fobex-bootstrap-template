@@ -674,6 +674,9 @@ select {
   }
 }
 /* ABOUT US SECTION */
+#home-2 #about-us {
+  padding-bottom: 100px;
+}
 .about-us {
   background-image: url(../image/home2/about-us-bg.jpg);
   background-position: right 79px top -83px;
@@ -725,6 +728,9 @@ select {
  
 } */
 /* FUN FACTS */
+#home-2 #fun-facts {
+  padding-bottom: 100px;
+}
 .fun-facts {
   position: relative;
   background: var(--secondary);
@@ -1038,6 +1044,9 @@ select {
 /* TEAM SECTION */
 /* .team {
 } */
+#home-2 #team {
+  padding-bottom: 100px;
+}
 .team .section__heading {
   width: 60%;
 }
@@ -1254,6 +1263,9 @@ select {
   }
 }
 /* BLOG SECTION */
+#home-2 #blog {
+  padding-bottom: 100px;
+}
 .blog .section__heading {
   width: 50%;
 }
@@ -1290,6 +1302,9 @@ select {
 }
 
 /* TESTIMONIAL SECTION */
+#home-2 #testimonials {
+  padding-bottom: 100px;
+}
 .testimonials {
   /* width: 1200px; */
   /* padding-left: 100px;
@@ -1432,6 +1447,9 @@ select {
 }
 
 /* CLIENT SECTION */
+#home-2 #client {
+  padding-bottom: 100px;
+}
 .client img {
   opacity: 0.5;
 }
@@ -1812,7 +1830,7 @@ p {
 }
 
 #service .service__card__container {
-  padding: 50px 0 100px 0;
+  padding: 50px 0 0 0;
 }
 #service .service__card {
   padding: 40px;
@@ -1878,6 +1896,9 @@ p {
   }
 }
 /* SERVICE FEATURE SECTION */
+#service #feature {
+  padding-bottom: 100px;
+}
 #service .feature {
   background: none;
 }
@@ -1890,6 +1911,9 @@ p {
 }
 
 /* SERVICE FUN-FACTS SECTION */
+#service #fun-facts {
+  padding-bottom: 100px;
+}
 #service .fun-facts {
   background: #f5f6f0;
 }
@@ -1931,6 +1955,9 @@ p {
   }
 }
 /* SERVICE PRICE SECTION */
+#service #price {
+  padding-bottom: 100px;
+}
 #service .price__card {
   border: 20px solid #f5f6f0;
   width: 97%;
