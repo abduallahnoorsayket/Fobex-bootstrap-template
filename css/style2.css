@@ -3172,6 +3172,11 @@ input[type="radio"] {
 #case-details .description .description__image {
   margin: 30px 0;
 }
+#case-details .description .description__image img {
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
 #case-details .case__info {
   padding: 35px;
@@ -3189,6 +3194,22 @@ input[type="radio"] {
   display: flex;
   gap: 60px;
 }
+@media (max-width: 992px) {
+  #case-details .description .case__content {
+    gap: 20px;
+  }
+}
+@media (max-width: 424px) {
+  #case-details .description .case__info {
+    display: block;
+    padding: 35px 30px;
+  }
+  #case-details .description .case__content {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
 /* CASE DETAILS PROJECT OVERVIEW SECTION */
 
 #case-details .project-overview,
@@ -3261,3 +3282,39 @@ input[type="radio"] {
   margin-top: 50px;
 }
 /* CASE DETAILS PROJECT RESULTS SECTION */
+#case-details .project-result {
+  padding: 100px 0px 100px;
+}
+#case-details .project-result .case__info .btn_primary {
+  background: #f5f6f0;
+}
+
+#case-details .project-result .case__info .btn_primary:hover {
+  background: #f5f6f0;
+  color: var(--secondary);
+}
+#case-details .project-result .pagination__center__icon {
+  width: 42px;
+  height: 42px;
+}
+
+#case-details .project-result .case__info .btn_primary:hover .nav__arrow__icon {
+  fill: var(--secondary);
+}
+
+#case-details .project-result .case__info {
+  display: block;
+  margin-top: 30px;
+}
+#case-details .project-result .case__content {
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  #case-details .project-result .case__info {
+    padding: 35px 10px;
+  }
+  #case-details .project-result .case__content {
+    gap: 10px;
+  }
+}

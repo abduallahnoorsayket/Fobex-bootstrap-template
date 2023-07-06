@@ -121,7 +121,7 @@
                 <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
-                    href="#"
+                    href="./service.html"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-toggle="dropdown"
@@ -134,8 +134,10 @@
                     class="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="./service.html">Service</a>
+                    <a class="dropdown-item" href="./service-details.html"
+                      >Service Details</a
+                    >
                   </div>
                 </li>
                 <li class="nav-item">
@@ -151,7 +153,7 @@
                     Portfolio +
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item dropdown">
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -163,6 +165,18 @@
                   >
                     Pages +
                   </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./about-us.html">About Us</a>
+                    <a class="dropdown-item" href="./case-studies.html"
+                      >Case Studies</a
+                    >
+                    <a class="dropdown-item" href="./case-details.html"
+                      >Case Details</a
+                    >
+                  </div>
                 </li>
                 <li class="nav-item">
                   <a
@@ -267,10 +281,10 @@
             </p>
           </div>
           <div class="row description__image">
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
               <img src="./image/case-details/case-detail-1.jpg" alt="" />
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
               <img src="./image/case-details/case-detail-2.jpg" alt="" />
             </div>
           </div>
@@ -299,7 +313,6 @@
         </div>
       </section>
       <!-- Description End -->
-      <!-- Project overview start -->
       <!-- Project overview start -->
       <section id="project-overview" class="project-overview">
         <div class="container">
@@ -416,6 +429,7 @@
         </div>
       </section>
       <!-- working process end -->
+      <!--project results start -->
       <section id="project-result" class="project-result">
         <div class="container">
           <div class="description__container mx-auto">
@@ -442,27 +456,27 @@
             </p>
             <div class="case__info">
               <div class="case__content">
-                <div class="case__item">
-                  <p class="section__description">Client:</p>
-                  <h5>Marico Wonder</h5>
-                </div>
-                <div class="case__item">
-                  <p class="section__description">Category:</p>
-                  <h5>Consultancy</h5>
-                </div>
-                <div class="case__item">
-                  <p class="section__description">Start Time:</p>
-                  <h5>15 Feb 2023</h5>
-                </div>
-                <div class="case__item">
-                  <p class="section__description">Website:</p>
-                  <h5>maricowonder.com</h5>
-                </div>
+                <button type="button" class="btn btn-primary btn_primary">
+                  <svg class="icon nav__arrow__icon">
+                    <use xlink:href="./icon/sprite.svg#left-arrow"></use>
+                  </svg>
+                  Prev project
+                </button>
+                <svg class="icon pagination__center__icon">
+                  <use xlink:href="./icon/sprite.svg#pagination-center"></use>
+                </svg>
+                <button type="button" class="btn btn-primary btn_primary">
+                  <svg class="icon nav__arrow__icon">
+                    <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                  </svg>
+                  Next project
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!--project results end-->
       <!-- Footer Start -->
       <section id="footer-main" class="footer-main">
         <div class="container">
