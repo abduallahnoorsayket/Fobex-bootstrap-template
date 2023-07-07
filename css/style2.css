@@ -86,6 +86,9 @@ label {
 section {
   padding: 100px 0px 0px;
 }
+.section__padding__bottom {
+  padding-bottom: 100px;
+}
 .section__content {
   margin: 50px 0 0 0;
 }
@@ -1717,7 +1720,7 @@ p {
     padding-bottom: 30px;
   }
 }
-/* ================= Service page =============*/
+/* ================= Service page start =============*/
 /* SERVICE HERO SECTION */
 .hero-main {
   background-color: #cccccc;
@@ -1896,9 +1899,7 @@ p {
   }
 }
 /* SERVICE FEATURE SECTION */
-#service #feature {
-  padding-bottom: 100px;
-}
+
 #service .feature {
   background: none;
 }
@@ -1911,9 +1912,7 @@ p {
 }
 
 /* SERVICE FUN-FACTS SECTION */
-#service #fun-facts {
-  padding-bottom: 100px;
-}
+
 #service .fun-facts {
   background: #f5f6f0;
 }
@@ -1955,9 +1954,7 @@ p {
   }
 }
 /* SERVICE PRICE SECTION */
-#service #price {
-  padding-bottom: 100px;
-}
+
 #service .price__card {
   border: 20px solid #f5f6f0;
   width: 97%;
@@ -2035,7 +2032,7 @@ p {
 }
 
 /* service price responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   #service .price__card {
     margin-bottom: 30px;
   }
@@ -2215,9 +2212,12 @@ input[type="radio"] {
     flex-direction: column;
   }
 }
-/* ============= About Us page start ========= */
+/* ============= About us page start ========= */
 
 /* ABOUT US CLIENT SECTION */
+/* #about-us-page #client {
+  padding-bottom: 100px;
+} */
 #about-us-page .section__description {
   width: 50%;
 }
@@ -2348,6 +2348,9 @@ input[type="radio"] {
   color: var(--primary);
 }
 /* ABOUT US TEAM SECTION */
+/* #about-us-page .team {
+  padding-bottom: 100px;
+} */
 #about-us-page .team .section__heading {
   width: 100%;
 }
@@ -2652,12 +2655,10 @@ input[type="radio"] {
     margin-top: 15px;
   }
 }
-/*==================== Service Details page ========= */
+/*==================== Service details page ========= */
 
 /* SERVICE DETAILS CLINET SECTION */
-#service-details .client {
-  padding-bottom: 100px;
-}
+
 #service-details .client .container {
   border-top: 1px solid #e1e1e1;
   padding-top: 30px;
@@ -2853,6 +2854,9 @@ input[type="radio"] {
   }
 }
 /* SERVICE DETAILS SERVICE SECTION */
+#service-details .service {
+  padding: 100px 0 100px;
+}
 #service-details .service__realated__card__container {
   display: flex;
   gap: 20px;
@@ -3045,12 +3049,10 @@ input[type="radio"] {
     width: 100%;
   }
 }
-/* ========= Case Studies page start ========*/
+/* ========= Case studies page start ========*/
 
 /*  CASE STUDIES CLIENT SECTION */
-#case-studies .client {
-  padding-bottom: 100px;
-}
+
 #case-studies .client .section__description {
   width: 45%;
 }
@@ -3309,9 +3311,7 @@ input[type="radio"] {
   margin-top: 50px;
 }
 /* CASE DETAILS PROJECT RESULTS SECTION */
-#case-details .project-result {
-  padding: 100px 0px 100px;
-}
+
 #case-details .project-result .case__info .btn_primary {
   background: #f5f6f0;
 }
