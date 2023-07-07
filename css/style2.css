@@ -239,6 +239,10 @@ button {
 .hidden {
   display: none !important;
 }
+section img {
+  object-fit: cover;
+  width: 100%;
+}
 /* Anchor link css */
 .anchor__link {
   margin: 0px 0px 0px 0px;
@@ -325,7 +329,8 @@ button {
   }
 
   section img {
-    width: -webkit-fill-available !important;
+    /* width: -webkit-fill-available !important; */
+    object-fit: cover;
   }
 }
 
@@ -3343,5 +3348,176 @@ input[type="radio"] {
   }
   #case-details .project-result .case__content {
     gap: 10px;
+  }
+}
+
+/* ============ Team page start ============== */
+/* TEAM VIDEO SECTION */
+
+#team .team .section__content .row:nth-child(1) {
+  margin-bottom: 30px;
+}
+#team .video {
+  background: linear-gradient(
+      0deg,
+      rgba(2, 14, 32, 0.5) 0%,
+      rgba(2, 14, 32, 0.5) 100%
+    ),
+    url(../image/team/team-page-video.jpg), lightgray 50% / cover no-repeat;
+  height: 700px;
+  display: grid;
+  place-items: center;
+}
+#team .video__icon__container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#team .video__icon__container .video__title {
+  width: 60%;
+}
+#team .video__icon {
+  width: 115px;
+  height: 115px;
+}
+#team .video__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+/* TEAM MEET OUT TEAM SECTION */
+#team .meet-team {
+  background-image: url("../image/team/team-meet-bg.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -224px;
+}
+
+#team .meet-team img {
+  object-fit: cover;
+  width: 100%;
+}
+#team .meet-team .container {
+  margin-top: 0;
+  position: relative;
+  z-index: 10;
+  background: none;
+}
+
+#team .appointment__image {
+  height: 100%;
+  width: 100%;
+}
+#team .meet-team .appointment__content {
+  padding: 0px 20px;
+}
+#team .meet-team .section__sub_heading_line {
+  margin: 10px;
+}
+#team .meet-team .welcome__desc {
+  margin-top: 12px;
+}
+#team .appointment__form {
+  margin-top: 30px;
+}
+#team .meet-team .btn_primary {
+  border-radius: 0px;
+}
+#team .meet-team .form-control {
+  padding: 15px 25px;
+  height: auto;
+  border-radius: 0px;
+  border: 1px solid #e3e4dd;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: initial;
+  color: #5f6165;
+}
+#team .meet-team select option {
+  padding: 18px 25px;
+}
+#team .appointment__top__arrow {
+  position: absolute;
+  fill: #e6e8e0;
+  width: 20px;
+  height: 109px;
+  right: 100px;
+  top: 50px;
+}
+#team .appointment__bottom_right__arrow {
+  position: absolute;
+  fill: #e6e8e0;
+  width: 109px;
+  height: 20px;
+  right: 150px;
+  bottom: 70px;
+}
+#team .meet-team textarea {
+  max-height: 150px;
+  resize: none;
+}
+/* team meet team responsive */
+@media (max-width: 992px) {
+  #team .meet-team .appointment__content {
+    padding: 50px 0px;
+  }
+  #team .meet-team .meet__team__image__container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 424px) {
+  #team .meet-team .appointment__content {
+    padding: 50px 0px;
+  }
+  #team .meet-team .appointment__top__arrow {
+    right: 30px;
+  }
+  #team .meet-team .appointment__bottom_right__arrow {
+    right: 30px;
+  }
+  #team .meet-team .appointment__image {
+    margin-top: -50px;
+  }
+}
+/* TEAM GREAT PLATFORM */
+#team .great-platform .container {
+  background: #f5f6f0;
+}
+#team .great-platform .feature__accordion__container {
+  width: 100%;
+  padding: 80px 80px 0px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#team .great-platform .feature__accordion__container .btn_primary {
+  align-self: flex-start;
+}
+#team .great-platform .order-platform-image {
+  order: 1;
+}
+
+#team .great-platform .order-platform-content {
+  order: 0;
+}
+
+/* team great platform responsive */
+@media (max-width: 992px) {
+  #team .great-platform .feature__accordion__container {
+    padding: 80px 0px 80px 0px;
+  }
+}
+@media (max-width: 768px) {
+  #team .great-platform .container {
+    padding-top: 50px;
+  }
+  #team .great-platform .order-platform-image {
+    order: 0;
+  }
+
+  #team .great-platform .order-platform-content {
+    order: 1;
   }
 }

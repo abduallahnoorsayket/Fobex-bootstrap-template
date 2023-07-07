@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- New Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Jqery CDN for Bootstrap  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- custom Css -->
+    <link rel="stylesheet" href="./css/style2.css" />
+    <title>Team</title>
+  </head>
+  <body id="team">
+    <main>
+      <!-- Header start -->
+      <header id="header" class="header">
+        <div class="container header__container">
+          <div class="top__container">
+            <div class="header__topbar">
+              <div class="topbar__left">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#location"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >23/A28 Drive Detroit, MI 48226</span
+                >
+                <span class="top__line"></span>
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#message"></use>
+                </svg>
+                <span class="top__icon__text">support@cubex24.com</span>
+              </div>
+              <div class="topbar__right">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#history"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >Opening Hours: Mon - Fri: 09:00 - 05:00</span
+                >
+                <span class="top__line"></span>
+                <div class="social_icons">
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+            <a class="navbar-brand" href="#">
+              <img src="./image/home2/Logo-2.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-list-3"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fas fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-3">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Home +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./index.html">Home 1</a>
+                    <a class="dropdown-item" href="./index2.html">Home 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./service.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./service.html">Service</a>
+                    <a class="dropdown-item" href="./service-details.html"
+                      >Service Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Portfolio +
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Pages +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./about-us.html">About Us</a>
+                    <a class="dropdown-item" href="./case-studies.html"
+                      >Case Studies</a
+                    >
+                    <a class="dropdown-item" href="./case-details.html"
+                      >Case Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    News +
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__search__container">
+              <div class="nav__phone__search__container">
+                <svg class="icon search__icon">
+                  <use xlink:href="./icon/sprite.svg#Search"></use>
+                </svg>
+                <span class="phone__image__container">
+                  <img src="./image/home2/navTelephone.png" alt="" />
+                </span>
+                <span class="nav__number__container">
+                  <span class="nav__free">Free Call</span>
+                  <span class="nav__number">02 (256) 256 025 </span>
+                </span>
+              </div>
+              <a
+                type="button"
+                href="#"
+                class="btn btn-primary btn_primary button-rounded"
+              >
+                <svg class="icon nav__arrow__icon">
+                  <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                </svg>
+                Free Quote
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Header end -->
+
+      <!-- Hero start -->
+      <section id="hero-main" class="hero-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="hero__tile__navigation__container">
+                <div class="hero__content text-center">
+                  <div class="hero__section__title">
+                    <span class="hero__badge">Home - our team</span>
+                    <h1 class="hero__title">our team</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+      <!--great-platform Start -->
+      <section id="great-platform" class="great-platform about-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 order-platform-content">
+              <div class="feature__accordion__container">
+                <h6 class="section__sub_heading section__sub_heading--active">
+                  great platform
+                  <hr class="section__sub_heading_line" />
+                </h6>
+                <h2 class="section__heading">
+                  hubal is the best platform to your business
+                </h2>
+                <p class="section__description">
+                  Rutrum sociosqu ametour nisida nibhes felise magna dignissim
+                  placerat senectus none litora feugiat lacus pulvinar natoque
+                  nostra torquent.
+                </p>
+
+                <button type="button" class="btn btn-primary btn_primary">
+                  <svg class="icon nav__arrow__icon">
+                    <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                  </svg>
+                  learn more
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-md-6 about-us-right-image-container order-platform-image"
+            >
+              <div class="about-us-right-image-container">
+                <img src="./image/team/great-platform.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--great-platform End -->
+      <!-- Team Start -->
+      <section id="team" class="team section__padding__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center section__info__container">
+              <svg class="icon client__plane__icon mb-3">
+                <use xlink:href="./icon/sprite.svg#service-paper-plane"></use>
+              </svg>
+              <h6 class="section__sub_heading mb-3">senior team leader</h6>
+              <h2 class="section__heading">
+                Developing leaders and high performance teams
+              </h2>
+            </div>
+          </div>
+          <div class="section__content">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/team/team-page-team-1.jpg" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Christine R. King</h3>
+
+                    <div class="section__description">Marketing Consultant</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/about-us/team-5.jpg" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Harold A. Robin</h3>
+
+                    <div class="section__description">Business Consultant</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/home2/team-3.png" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Robert K. Beber</h3>
+
+                    <div class="section__description">Senior Consultant</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/about-us/team-4.jpg" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Robert K. Beber</h3>
+
+                    <div class="section__description">Senior Consultant</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/home2/team-2.png" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Harold A. Robin</h3>
+
+                    <div class="section__description">Business Consultant</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="team__card">
+                  <img src="./image/home2/team-1.png" alt="" />
+
+                  <div class="card__text text-center">
+                    <div class="team__share__btn">
+                      <div class="social_icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                      </div>
+                      <svg class="icon team__share__icon mb-3">
+                        <use
+                          xlink:href="./icon/sprite.svg#team-share-btn"
+                        ></use>
+                      </svg>
+                    </div>
+                    <h3>Christine R. King</h3>
+
+                    <div class="section__description">Marketing Consultant</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Team End -->
+      <!-- Video start-->
+      <section id="video" class="video">
+        <div class="video__icon__container">
+          <svg class="icon video__icon">
+            <use xlink:href="./icon/sprite.svg#team-video-play"></use>
+          </svg>
+          <h5 class="video__title">Watch our team working</h5>
+        </div>
+      </section>
+      <!-- Video end-->
+      <!-- Meet our team start-->
+      <section id="meet-team" class="meet-team">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 meet__team__image__container">
+              <div class="">
+                <img src="./image/team/team-people.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+              <div class="appointment__content">
+                <h6 class="section__sub_heading section__sub_heading--active">
+                  get estimeate
+                  <hr class="section__sub_heading_line" />
+                </h6>
+
+                <h2 class="section__heading">meet our team</h2>
+                <div class="welcome__desc">
+                  The more detail you provide the easier it will be for to
+                  connect you with the right person as quickly as possible
+                </div>
+                <div class="appointment__form">
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Full Name*"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput2"
+                        placeholder="Email Address*"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <select
+                        class="form-control"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>Select Subject*</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                        placeholder="Write your comment*"
+                      ></textarea>
+                    </div>
+                    <button
+                      type="button"
+                      href="#"
+                      class="btn btn-primary btn_primary"
+                    >
+                      <svg class="icon nav__arrow__icon">
+                        <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                      </svg>
+                      send message
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Meet our team end-->
+
+      <!-- Footer Start -->
+      <section id="footer-main" class="footer-main">
+        <div class="container">
+          <div class="footer__cta">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="cta__icon__container">
+                  <svg class="icon footer__phone_icon">
+                    <use xlink:href="./icon/sprite.svg#footer-phone"></use>
+                  </svg>
+                  <h3 class="footer__cta__title">
+                    Strategic consultants experts in accelerating change for
+                    business and individuals cause
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="float-right footer__btn_container">
+                  <button type="button" class="btn btn-primary btn_primary">
+                    <svg class="icon nav__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                    project with us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__widget">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <img src="./image/service/Logo.png" alt="" />
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top"
+                  >
+                    Neque porttitor fermentum congue duis natoque had amcorp
+                    torquent vulputate donec tren conubian
+                  </div>
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top footer__widget__des--emergency"
+                  >
+                    Emergency
+                  </div>
+                  <h5 class="footer__widget__number">02 (256) 256 025</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <div class="footer__widget__title">Our Service</div>
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top"
+                  >
+                    <ul class="footer__service__list">
+                      <li><a href="#"> Customer Experience</a></li>
+                      <li><a href="#">Business Strategy </a></li>
+                      <li><a href="#">Leadership Development </a></li>
+                      <li><a href="#">Culture Change </a></li>
+                      <li><a href="#">Engineering & Optimization </a></li>
+                      <li><a href="#">Human Resource </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <div class="footer__widget__title">Contact us</div>
+                  <div class="footer__widget__des--white">Phone</div>
+                  <div class="footer__widget__des">02 (520) 2365 250</div>
+                  <div class="footer__widget__des--white">Location</div>
+                  <div class="footer__widget__des">
+                    Location 62/B Norman Street Los Angeles, 90017
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__widget__content">
+                  <div class="footer__widget__title">Newsletter</div>
+                  <form class="footer__widget__des--margin-top">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control footer__newsletter"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email *"
+                      />
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >I have read the privacy & policy</label
+                      >
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button> -->
+                  </form>
+                  <div
+                    class="footer__widget__title footer__widget__des--margin-top"
+                  >
+                    Follow us
+                  </div>
+                  <div class="social_icons">
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer__copyright">
+                <div class="copyright__text">
+                  <p>
+                    Copyright © 2023 Cube by
+                    <span class="footer__bold">HR Design</span>. All Rights
+                    Reserved.
+                  </p>
+                </div>
+                <div class="copyright__links">
+                  <ul class="list-inline">
+                    <li><a href="#"> About us</a></li>
+                    <li><a href="#"> Careers</a></li>
+                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="#">Cookie Policy </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer End -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/home1/script.js"></script>
+  </body>
+</html>
