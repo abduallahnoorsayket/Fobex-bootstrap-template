@@ -239,10 +239,7 @@ button {
 .hidden {
   display: none !important;
 }
-section img {
-  object-fit: cover;
-  width: 100%;
-}
+
 /* Anchor link css */
 .anchor__link {
   margin: 0px 0px 0px 0px;
@@ -1162,7 +1159,7 @@ select {
   border-bottom: 1px solid #888888;
 }
 .project .project__left {
-  padding: 90px 90px;
+  padding: 90px 90px 75px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -2172,6 +2169,12 @@ input[type="radio"] {
 #footer-main .footer__bold {
   color: var(--primary);
 }
+.footer-main .social_icons {
+  margin-top: 10px;
+}
+.footer-main .social_icons a i:hover {
+  color: var(--primary);
+}
 /* service footer responsive */
 @media (max-width: 768px) {
   .footer-main {
@@ -2356,6 +2359,11 @@ input[type="radio"] {
 /* #about-us-page .team {
   padding-bottom: 100px;
 } */
+#about-us-page .team .team__container {
+  margin-left: auto;
+  max-width: 1610px;
+  /* padding-left: 260px; */
+}
 #about-us-page .team .section__heading {
   width: 100%;
 }
@@ -2390,15 +2398,19 @@ input[type="radio"] {
 .project__title__btn {
   padding-top: 30px;
 }
-.project__title__divider {
+#about-us-page .project__title__divider {
   height: 1px;
   background: #888888;
-  margin: 30px 0 50px 260px;
+  margin: 30px 0 50px 0px;
 }
 #about-us-page .team .swiper__slider {
-  padding-left: 260px;
+  padding-left: 0px;
 }
-
+@media (max-width: 1400px) {
+  .team__container {
+    padding: 0 10px;
+  }
+}
 /* about us team responsive */
 @media (max-width: 768px) {
   #about-us-page .team .swiper__slider {
