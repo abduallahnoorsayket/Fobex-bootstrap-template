@@ -266,7 +266,9 @@ button {
   margin: 0px 5px 0 0;
   fill: var(--secondary);
 }
-
+.display__flex {
+  display: flex;
+}
 /* general global Responsive */
 @media (max-width: 1400px) {
   .container {
@@ -1121,7 +1123,7 @@ select {
 }
 /* team responsive */
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
+@media screen and (min-width: 500px) and (max-width: 992px) {
   .team__card {
     margin: 0 0 30px;
     background: none;
@@ -1723,7 +1725,7 @@ p {
   }
 }
 /* ================= Service page start =============*/
-/* SERVICE HERO SECTION */
+/* SERVICE HERO-MAIN SECTION */
 .hero-main {
   background-color: #cccccc;
   background-repeat: no-repeat;
@@ -1957,29 +1959,29 @@ p {
 }
 /* SERVICE PRICE SECTION */
 
-#service .price__card {
+#price-main .price__card {
   border: 20px solid #f5f6f0;
   width: 97%;
   transition: all 0.5s ease-in-out;
 }
-#service .price__card:hover {
+#price-main .price__card:hover {
   border-color: var(--primary);
 }
-#service .price__card-content {
+#price-main .price__card-content {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(19, 25, 34, 0.04);
   padding: 45px 30px;
   gap: 20;
 }
-#service .price__card__header {
+#price-main .price__card__header {
   display: flex;
 }
-#service .price .process__icon {
+#price-main .process__icon {
   width: 44px;
   height: 42px;
   fill: var(--secondary);
 }
-#service .price .process__icon-container {
+#price-main .process__icon-container {
   padding: 19px 18px;
   background: var(--primary);
   border-radius: 50%;
@@ -1987,37 +1989,37 @@ p {
   width: 80px;
   margin: 0 20px 0 0;
 }
-#service .price__plan {
+#price-main .price__plan {
   font-weight: 400;
   color: #131922;
 }
-#service .price__line {
+#price-main .price__line {
   background: #e1e1e1;
   height: 1px;
   margin: 20px 0 25px 0;
 }
-#service .price ul li span {
+#price-main ul li span {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   color: #5f6165;
 }
-#service .price ul li {
+#price-main ul li {
   display: flex;
   align-items: center;
   margin: 0 0 15px 0;
 }
-#service .price__check__icon {
+#price-main .price__check__icon {
   fill: #5f6165;
   height: 15px;
   width: 15px;
   margin: 0 10px 0 0;
 }
-#service .price .nav__arrow__icon {
+#price-main .nav__arrow__icon {
   fill: var(--secondary);
 }
 
-#service .buy__button {
+#price-main .buy__button {
   padding: 17px 0;
   background: #f5f6f0;
   border: 1px solid #e3e4dd;
@@ -2025,26 +2027,26 @@ p {
   text-transform: uppercase;
   color: #131922;
 }
-#service .price__card:hover .buy__button {
+#price-main .price__card:hover .buy__button {
   background: var(--secondary);
   color: var(--white);
 }
-#service .price__card:hover .nav__arrow__icon {
+#price-main .price__card:hover .nav__arrow__icon {
   fill: var(--white);
 }
 
 /* service price responsive */
 @media (max-width: 992px) {
-  #service .price__card {
+  #price-main .price__card {
     margin-bottom: 30px;
   }
 }
 @media (max-width: 424px) {
-  #service .price__card {
+  #price-main .price__card {
     width: 100%;
     margin: 0 0 20px 0;
   }
-  #service .price__card-content {
+  #price-main .price__card-content {
     padding: 30px 20px;
   }
 }
@@ -3497,6 +3499,10 @@ input[type="radio"] {
 #team .great-platform .container {
   background: #f5f6f0;
 }
+#team .great-platform .container .about-us-right-image-container img {
+  object-fit: cover;
+  width: 100%;
+}
 #team .great-platform .feature__accordion__container {
   width: 100%;
   padding: 80px 80px 0px 80px;
@@ -3532,4 +3538,160 @@ input[type="radio"] {
   #team .great-platform .order-platform-content {
     order: 1;
   }
+}
+
+/*================ Price page start ====================*/
+/* PRICE SERVICE SECTION */
+#price .service {
+  display: flex;
+  gap: 50px;
+  background: url(../image/about-us/service-bg.jpg),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+#price .service .swiper__content {
+  background: #fff;
+}
+#price .service .project__title__btn {
+  margin: 15px 0 0;
+}
+#price .service .section__heading {
+  width: 80%;
+}
+
+#price .service .swiper__slider {
+  padding-top: 30px;
+  padding-left: 0px;
+}
+#price .service .section__heading {
+  margin: 0px;
+}
+/* PRICE FAQ SECTION */
+
+.accordion__container {
+  margin: 0 auto;
+  padding: 50px 0px;
+  max-width: 870px;
+}
+.accordion-main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.accordion-main .accordion-item {
+  border: 1px solid #888;
+  padding: 5px 20px;
+  background: rgba(217, 217, 217, 0);
+}
+
+.accordion-main .accordion-item button[aria-expanded="true"] {
+  /* border-bottom: 1px solid #03b5d2; */
+}
+
+.accordion-main button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion-main button:hover,
+.accordion-main button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.accordion-main button:hover::after,
+.accordion-main button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion-main button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion-main button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion-main button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion-main button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion-main button[aria-expanded="true"] {
+  color: #03b5d2;
+}
+.accordion-main button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+.accordion-main button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion-main .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion-main .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+.accordion__serial {
+  color: var(--secondary);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 1px solid #888;
+  background: rgba(217, 217, 217, 0);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 70px;
+  height: 75px;
+}
+
+.accordion-main button[aria-expanded="true"] .accordion__serial {
+  background: red;
 }

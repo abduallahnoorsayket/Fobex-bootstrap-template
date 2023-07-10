@@ -140,6 +140,32 @@ const about__us__team__slider = new Swiper(".team-slider", {
     prevEl: ".team__slider_prev",
   },
 });
+const price__service__slider = new Swiper(".price-service-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    1650: {
+      slidesPerView: 2,
+    },
+
+    1300: {
+      slidesPerView: 2,
+    },
+
+    1024: {
+      slidesPerView: 2,
+    },
+    375: {
+      slidesPerView: 1,
+    },
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".price__service__slider_next",
+    prevEl: ".price__service__slider_prev",
+  },
+});
 // PROGRESS BAR
 const progressObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -196,3 +222,19 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
   // });
   // event end
 });
+// price page accordion
+const items = document.querySelectorAll(".accordion-main button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute("aria-expanded");
+
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute("aria-expanded", "false");
+  }
+
+  if (itemToggle == "false") {
+    this.setAttribute("aria-expanded", "true");
+  }
+}
+
+items.forEach((item) => item.addEventListener("click", toggleAccordion));
