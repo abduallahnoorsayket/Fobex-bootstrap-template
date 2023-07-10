@@ -3585,10 +3585,10 @@ input[type="radio"] {
   padding: 5px 20px;
   background: rgba(217, 217, 217, 0);
 }
-
+/* 
 .accordion-main .accordion-item button[aria-expanded="true"] {
-  /* border-bottom: 1px solid #03b5d2; */
-}
+  border-bottom: 1px solid #03b5d2;
+} */
 
 .accordion-main button {
   position: relative;
@@ -3596,7 +3596,7 @@ input[type="radio"] {
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7288a2;
+  color: var(--secondary);
   font-size: 1.15rem;
   font-weight: 400;
   border: none;
@@ -3607,7 +3607,6 @@ input[type="radio"] {
 .accordion-main button:hover,
 .accordion-main button:focus {
   cursor: pointer;
-  color: #03b5d2;
 }
 
 .accordion-main button:hover::after,
@@ -3619,46 +3618,58 @@ input[type="radio"] {
 
 .accordion-main button .accordion-title {
   padding: 1em 1.5em 1em 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.accordion-main button .icon {
+.accordion-main button .accordion__icon {
   display: inline-block;
   position: absolute;
-  top: 18px;
-  right: 0;
+  top: 10px;
+  right: 25px;
   width: 22px;
   height: 22px;
-  border: 1px solid;
-  border-radius: 22px;
+  /* border: 1px solid;
+  border-radius: 22px; */
 }
 
-.accordion-main button .icon::before {
+.accordion-main button .accordion__icon::before {
   display: block;
   position: absolute;
-  content: "";
   top: 9px;
   left: 5px;
-  width: 10px;
-  height: 2px;
+  width: 0px;
+  height: 0px;
   background: currentColor;
+  font: normal normal normal 20px/1 FontAwesome;
+  content: "\f103";
+  font-size: 25px;
+  transition: all 0.2s ease-in;
 }
-.accordion-main button .icon::after {
+/* .accordion-main button .icon::after {
   display: block;
   position: absolute;
-  content: "";
-  top: 5px;
-  left: 9px;
-  width: 2px;
-  height: 10px;
+  top: 9px;
+  left: 5px;
+  width: 0px;
+  height: 0px;
   background: currentColor;
-}
-
+  font: normal normal normal 20px/1 FontAwesome;
+  content: "\f103";
+  font-size: 25px;
+} */
+/* 
 .accordion-main button[aria-expanded="true"] {
   color: #03b5d2;
+} */
+.accordion-main button[aria-expanded="true"] .accordion__icon::before {
+  transform: rotate(180deg);
+  top: 29px;
+  left: 25px;
 }
-.accordion-main button[aria-expanded="true"] .icon::after {
+/* .accordion-main button[aria-expanded="true"] .icon::after {
   width: 0;
-}
+} */
 .accordion-main button[aria-expanded="true"] + .accordion-content {
   opacity: 1;
   max-height: 9em;
@@ -3674,8 +3685,10 @@ input[type="radio"] {
 }
 .accordion-main .accordion-content p {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0.5rem 0;
+  color: var(--gery-1);
+  font-size: 16px;
 }
 .accordion__serial {
   color: var(--secondary);
@@ -3690,8 +3703,4 @@ input[type="radio"] {
   flex-shrink: 0;
   width: 70px;
   height: 75px;
-}
-
-.accordion-main button[aria-expanded="true"] .accordion__serial {
-  background: red;
 }

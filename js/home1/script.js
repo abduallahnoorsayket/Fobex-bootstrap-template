@@ -238,3 +238,37 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+const btns = document.querySelectorAll("#accordion-button-1");
+btns.forEach((btn) => {
+  console.log("2==", btn.getAttribute("aria-expanded"));
+  btn.addEventListener("click", function onClick(event) {
+    // console.log("24==", event.target);
+    // console.log("245==", btn.getAttribute("aria-expanded"));
+
+    const box = document.getElementById("accordion__serial");
+
+    if (btn.getAttribute("aria-expanded") === "true") {
+      box.style.backgroundColor = "red";
+    } else {
+      box.style.backgroundColor = "transparent";
+    }
+
+    // 👇️ optionally change text color
+    // box.style.color = 'white';
+  });
+});
+// accordion number color
+// btn.addEventListener("click", function onClick(event) {
+//   console.log("245==", event.target.getAttribute("aria-expanded"));
+
+//   const box = document.getElementById("accordion__serial");
+
+//   if (event.target !== box) {
+//     box.style.backgroundColor = "transparent";
+//   } else {
+//     box.style.backgroundColor = "red";
+//   }
+//   // 👇️ optionally change text color
+//   // box.style.color = 'white';
+// });
