@@ -224,40 +224,50 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 });
 // price page accordion
 const items = document.querySelectorAll(".accordion-main button");
-
+console.log("227==== ", items);
 function toggleAccordion() {
   const itemToggle = this.getAttribute("aria-expanded");
 
   for (i = 0; i < items.length; i++) {
+    console.log("232==== ", items[i].parentNode.parentNode.childNodes[1]);
     items[i].setAttribute("aria-expanded", "false");
   }
-
+  console.log("240==== ", itemToggle);
   if (itemToggle == "false") {
     this.setAttribute("aria-expanded", "true");
   }
+
+  items.forEach((item) => {
+    console.log(this.getAttribute("aria-expanded"));
+
+    item.parentNode.parentNode.childNodes[1].style.backgroundColor = "";
+    if (this.getAttribute("aria-expanded") === false) {
+      item.parentNode.parentNode.childNodes[1].style.backgroundColor = "green";
+    }
+  });
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
-const btns = document.querySelectorAll("#accordion-button-1");
-btns.forEach((btn) => {
-  console.log("2==", btn.getAttribute("aria-expanded"));
-  btn.addEventListener("click", function onClick(event) {
-    // console.log("24==", event.target);
-    // console.log("245==", btn.getAttribute("aria-expanded"));
+// const btns = document.querySelectorAll("#accordion-button-1");
+// btns.forEach((btn) => {
+//   console.log("2==", btn.getAttribute("aria-expanded"));
+//   btn.addEventListener("click", function onClick(event) {
+//     console.log("24==", event.target);
+//     console.log("245==", btn.getAttribute("aria-expanded"));
 
-    const box = document.getElementById("accordion__serial");
+//     const box = document.getElementById("accordion__serial");
 
-    if (btn.getAttribute("aria-expanded") === "true") {
-      box.style.backgroundColor = "red";
-    } else {
-      box.style.backgroundColor = "transparent";
-    }
+//     if (btn.getAttribute("aria-expanded") === "true") {
+//       box.style.backgroundColor = "red";
+//     } else {
+//       box.style.backgroundColor = "transparent";
+//     }
 
-    // 👇️ optionally change text color
-    // box.style.color = 'white';
-  });
-});
+//      optionally change text color
+//     box.style.color = 'white';
+//   });
+// });
 // accordion number color
 // btn.addEventListener("click", function onClick(event) {
 //   console.log("245==", event.target.getAttribute("aria-expanded"));

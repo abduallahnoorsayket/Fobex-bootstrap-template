@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="./css/style2.css" />
     <title>Faq</title>
   </head>
-  <body id="price">
+  <body id="faq">
     <main>
       <!-- Header start -->
       <header id="header" class="header">
@@ -272,38 +272,29 @@
       </section>
       <!-- Hero End -->
       <!--Search field Start -->
-      <section id="great-platform" class="great-platform about-section">
-        <div class="container">
-          <div class="row">
-            <div
-              class="col-md-6 about-us-right-image-container order-platform-image"
-            >
-              <div class="about-us-right-image-container">
-                <img src="./image/faq/fag-search.jpg" alt="" />
-              </div>
-            </div>
-            <div class="col-md-6 order-platform-content">
-              <div class="feature__accordion__container">
-                <h6 class="section__sub_heading section__sub_heading--active">
-                  great platform
-                  <hr class="section__sub_heading_line" />
-                </h6>
-                <h2 class="section__heading">
-                  hubal is the best platform to your business
-                </h2>
-                <p class="section__description">
-                  Rutrum sociosqu ametour nisida nibhes felise magna dignissim
-                  placerat senectus none litora feugiat lacus pulvinar natoque
-                  nostra torquent.
-                </p>
-
-                <button type="button" class="btn btn-primary btn_primary">
-                  <svg class="icon nav__arrow__icon">
-                    <use xlink:href="./icon/sprite.svg#right-arrow"></use>
-                  </svg>
-                  learn more
-                </button>
-              </div>
+      <section id="search-field" class="search-field">
+        <div class="container search__container display__flex">
+          <div class="search__image">
+            <img src="./image/faq/fag-search.jpg" alt="" />
+          </div>
+          <div class="search__input__container">
+            <h4 class="seach__input__title">How can we help you</h4>
+            <div class="search__input">
+              <form action="">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Search your query*"
+                  />
+                  <button type="submit" class="btn btn-primary btn_primary">
+                    <svg class="icon icon__btn">
+                      <use xlink:href="./icon/sprite.svg#Search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -322,10 +313,11 @@
               <h2 class="section__heading">client frequent question</h2>
             </div>
           </div>
-        </div>
-        <div class="accordion__container">
-          <div class="accordion-main">
-            <!-- <div class="accordion__item__container display__flex">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="accordion__container">
+                <div class="accordion-main">
+                  <!-- <div class="accordion__item__container display__flex">
               <span class="accordion__serial">Q:1</span>
               <div class="accordion-item">
                 <div class="accordion__item__contents">
@@ -350,125 +342,166 @@
               </div>
             </div> -->
 
-            <div class="accordion__item__container display__flex">
-              <span class="accordion__serial">Q:1</span>
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="accordion-title"
-                    >Why is the moon sometimes out during the day?</span
-                  >
-                  <span class="accordion__icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  <div class="accordion__item__container display__flex">
+                    <span
+                      id="accordion__serial"
+                      class="accordion__serial"
+                      aria-expanded="false"
+                    >
+                      Q:1
+                    </span>
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >How can we improve our digital presence?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Dignissim mollis taciti netus nisl congue cubilia
+                          antena dictum porta vehicula name cubilia lorem mattis
+                          fermentum mauris pulvinar montes tortor rhoncus
+                          vulputate platea faucibus vitae ullamcorper urna
+                          montes facilisi aenean agna purus enime ton amet
+                          ridiculus penatibus lacinia an adipiscing libero erose
+                          massa conubia phasellus adipisci nulla aliquam quisque
+                          curabitur quis convallis diam natoque sed.metus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="accordion__item__container display__flex">
-              <span class="accordion__serial">Q:1</span>
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="accordion-title"
-                    >Why is the moon sometimes out during the day?</span
-                  >
-                  <span class="accordion__icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
-            </div>
+                  <div class="accordion__item__container display__flex">
+                    <span id="accordion__serial" class="accordion__serial"
+                      >Q:2</span
+                    >
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >How can we increase our profitability and
+                          revenue?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis ut. Ut tortor pretium viverra suspendisse
+                          potenti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="accordion__item__container display__flex">
-              <span id="accordion__serial" class="accordion__serial">Q:1</span>
-              <div class="accordion-item">
-                <button id="accordion-button-1" aria-expanded="false">
-                  <span class="accordion-title"
-                    >Why is the moon sometimes out during the day?</span
-                  >
-                  <span class="accordion__icon" aria-hidden="true"></span>
-                </button>
-                <div class="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
+                  <div class="accordion__item__container display__flex">
+                    <span id="accordion__serial" class="accordion__serial"
+                      >Q:3</span
+                    >
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >How can we optimize our supply chain costs?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis ut. Ut tortor pretium viverra suspendisse
+                          potenti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion__item__container display__flex">
+                    <span
+                      id="accordion__serial"
+                      class="accordion__serial"
+                      aria-expanded="false"
+                    >
+                      Q:4
+                    </span>
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >How can we develop and implement business
+                          strategy?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Elementum sagittis vitae et leo
+                          duis ut. Ut tortor pretium viverra suspendisse
+                          potenti.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item__container display__flex">
+                    <span id="accordion__serial" class="accordion__serial"
+                      >Q:5</span
+                    >
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >What are the current and best practices in our
+                          industry?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Dignissim mollis taciti netus nisl congue cubilia
+                          antena dictum porta vehicula name cubilia lorem mattis
+                          fermentum mauris pulvinar montes tortor rhoncus
+                          vulputate platea faucibus vitae ullamcorper urna
+                          montes facilisi aenean agna purus enime ton amet
+                          ridiculus penatibus lacinia an adipiscing libero erose
+                          massa conubia phasellus adipisci nulla aliquam quisque
+                          curabitur quis convallis diam natoque sed.metus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion__item__container display__flex">
+                    <span id="accordion__serial" class="accordion__serial"
+                      >Q:6</span
+                    >
+                    <div class="accordion-item">
+                      <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title"
+                          >How can we develop and implement business
+                          strategy?</span
+                        >
+                        <span class="accordion__icon" aria-hidden="true"></span>
+                      </button>
+                      <div class="accordion-content">
+                        <p>
+                          Dignissim mollis taciti netus nisl congue cubilia
+                          antena dictum porta vehicula name cubilia lorem mattis
+                          fermentum mauris pulvinar montes tortor rhoncus
+                          vulputate platea faucibus vitae ullamcorper urna
+                          montes facilisi aenean agna purus enime ton amet
+                          ridiculus penatibus lacinia an adipiscing libero erose
+                          massa conubia phasellus adipisci nulla aliquam quisque
+                          curabitur quis convallis diam natoque sed.metus
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="accordion-item">
-              <button id="accordion-button-2" aria-expanded="false">
-                <span class="accordion-title">Why is the sky blue?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-3" aria-expanded="false">
-                <span class="accordion-title"
-                  >Will we ever discover aliens?</span
-                >
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-4" aria-expanded="false">
-                <span class="accordion-title"
-                  >How much does the Earth weigh?</span
-                >
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <button id="accordion-button-5" aria-expanded="false">
-                <span class="accordion-title">How do airplanes stay up?</span>
-                <span class="icon" aria-hidden="true"></span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
-                  viverra suspendisse potenti.
-                </p>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>

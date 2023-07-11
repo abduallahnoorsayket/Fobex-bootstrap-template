@@ -269,6 +269,18 @@ button {
 .display__flex {
   display: flex;
 }
+/* general form control */
+.form-control {
+  padding: 20px 25px;
+  height: auto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: initial;
+  color: #5f6165;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #888;
+}
 /* general global Responsive */
 @media (max-width: 1400px) {
   .container {
@@ -3572,7 +3584,7 @@ input[type="radio"] {
 
 .accordion__container {
   margin: 0 auto;
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
   max-width: 870px;
 }
 .accordion-main {
@@ -3662,6 +3674,10 @@ input[type="radio"] {
 .accordion-main button[aria-expanded="true"] {
   color: #03b5d2;
 } */
+/* .accordion-main button[aria-expanded="true"] {
+  color: #03b5d2;
+  background: red;
+} */
 .accordion-main button[aria-expanded="true"] .accordion__icon::before {
   transform: rotate(180deg);
   top: 29px;
@@ -3695,12 +3711,182 @@ input[type="radio"] {
   font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: 3px;
-  border: 1px solid #888;
+  border-radius: 1px;
   background: rgba(217, 217, 217, 0);
   display: grid;
   place-items: center;
   flex-shrink: 0;
   width: 70px;
-  height: 75px;
+  height: 76px;
+  border-top: 1px solid rgb(136, 136, 136);
+  border-left: 1px solid rgb(136, 136, 136);
+  border-bottom: 1px solid rgb(136, 136, 136);
+  border-right: 0;
+}
+/* price faq accordion responsive */
+@media screen and (max-width: 500px) {
+  .accordion-main .display__flex {
+    flex-direction: column;
+  }
+  .accordion-main .accordion__serial {
+    border-right: 1px solid rgb(136, 136, 136);
+    width: 100%;
+  }
+  .accordion-main button .accordion__icon::before {
+    left: 26px;
+  }
+}
+
+/* ========== Faq page start ================ */
+/* FAQ SEACH FIELD */
+
+#faq .seach__input__title {
+  font-size: 30px;
+}
+#faq .search__container .search__image {
+  flex: 0 0 35%;
+}
+#faq .search-field img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#faq .search__input__container {
+  display: flex;
+  padding: 65px 50px;
+  background: #f5f6f0;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+#faq .search__input__container .form-control {
+  box-shadow: 0px 3px 4px 0px rgba(190, 190, 190, 0.1);
+  border: none;
+}
+#faq .search__input {
+  width: 100%;
+}
+#faq .search__input .form-group {
+  display: flex;
+}
+#faq .search__input .form-group .icon__btn {
+  width: 25px;
+  height: 25px;
+}
+
+#faq .search__input .btn_primary {
+  width: 56px;
+  height: 51px;
+  margin: 5px 0 5px -60px;
+  padding: 0px;
+}
+@media screen and (max-width: 900px) {
+  #faq .search-field .display__flex {
+    flex-direction: column;
+  }
+}
+/* ============= Contact  us ============ */
+/* CONTACT CONTACT SECTION */
+
+#contact-section .container img {
+  object-fit: cover;
+  width: 100%;
+  flex: 0 0 50%;
+}
+#contact-section .contact__item__container {
+  display: flex;
+  gap: 50px;
+}
+
+#contact-section .contact__item__container .appointment__content {
+  flex-direction: column;
+  gap: 35px;
+  display: flex;
+}
+
+#contact-section .appointment__form .welcome__desc {
+  width: 80%;
+}
+
+#contact-section .appointment__form form .form-row {
+  margin: 15px 0px;
+}
+#contact-section .appointment__content {
+  padding: 20px 0px;
+}
+@media screen and (max-width: 900px) {
+  #contact-section .contact__item__container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+/* CONTACT CONTACT MAP SECTION */
+#contact .contact-map {
+  background: url(../image/contact/contact-map-bg.jpg);
+  height: 825px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+#contact .contact-map .container {
+  display: grid;
+  place-items: center;
+}
+#contact .map__icon__container {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact-map .map__pin__icon__1 {
+  height: 66px;
+  width: 55px;
+  /* position: absolute;
+  top: 47%;
+  right: 30%; */
+}
+#contact .contact-map .map__pin__icon__2 {
+  height: 66px;
+  width: 55px;
+  /* position: absolute;
+  top: 44%;
+  left: 28%; */
+}
+@media screen and (max-width: 574px) {
+  #contact .map__icon__container {
+    max-width: 350px;
+  }
+}
+
+/* CONTACT CONTACT INFO SECTION */
+#contact .contact__item__container {
+  display: flex;
+  gap: 80px;
+}
+#contact .contact__item__container .appointment__content {
+  flex: 0 0 55%;
+}
+#contact .contact__icons__container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+#contact .contact__icon {
+  width: 87px;
+  height: 110px;
+}
+#contact .contact__line {
+  background: #888;
+}
+#contact .contact-info .contact__icons__container h5 {
+  font-size: 18px;
 }
