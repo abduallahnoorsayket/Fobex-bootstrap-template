@@ -70,8 +70,8 @@ h5 {
 h6 {
   font-size: 16px;
 }
-p {
-}
+/* p {
+} */
 
 label {
   font-family: "Roboto", sans-serif;
@@ -3911,12 +3911,15 @@ input[type="radio"] {
 
 /* ======= Blog page start ========== */
 /* BLOG POST SECTION */
-#blog .all-posts .display__flex {
-  gap: 20px;
+#blog .all-posts {
+  background: var(--white);
+}
+#blog .all-posts img {
+  object-fit: cover;
+  width: 100%;
 }
 
 #blog .all-posts .post__cotainer {
-  flex: 0 0 70%;
   flex-direction: column;
   gap: 50px;
 }
@@ -4009,8 +4012,64 @@ input[type="radio"] {
 #blog .all-posts .pagination__container .pagination__number__btn:hover {
   background: var(--primary);
 }
+#blog .all-posts .sidebar__cotainer .section__sub_heading {
+  font-size: 22px;
+}
+
+/* blog sidebar */
 #blog .all-posts .sidebar__cotainer {
-  flex: 0 0 30%;
+  flex-direction: column;
+  gap: 45px;
+}
+#blog .all-posts .recent__post__container {
+  flex-direction: column;
+  gap: 20px;
+}
+#blog .all-posts .recent__post__item {
+  gap: 25px;
+  align-items: center;
+}
+#blog .all-posts .recent__post__item .recent__post__text {
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 60%;
+}
+#blog .all-posts .sidebar__cotainer .category__item {
+  padding: 15px 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #888888;
+  background: rgba(217, 217, 217, 0);
+}
+#blog .all-posts .sidebar__cotainer .recent__post__support .support__image {
+  background-repeat: no-repeat;
+  height: 400px;
+  background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)),
+    url("../image/blog/blog-contact-us.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+#blog .all-posts .sidebar__cotainer .recent__post__support .support__content {
+  padding-left: 45px;
+  width: 80%;
+}
+#blog .all-posts .sidebar__cotainer .tag__container {
+  flex-wrap: wrap;
+}
+#blog .all-posts .sidebar__cotainer .tag__container .category__item {
+  padding: 12px 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #888888;
+  background: rgba(217, 217, 217, 0);
+  margin: 0 5px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gery-1);
 }
 /* blog responsive */
 @media (max-width: 768px) {
