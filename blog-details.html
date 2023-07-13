@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- New Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Jqery CDN for Bootstrap  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Swiper CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- custom Css -->
+    <link rel="stylesheet" href="./css/style2.css" />
+    <title>Blog Details</title>
+  </head>
+  <body id="blog-details">
+    <main>
+      <!-- Header start -->
+      <header id="header" class="header">
+        <div class="container header__container">
+          <div class="top__container">
+            <div class="header__topbar">
+              <div class="topbar__left">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#location"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >23/A28 Drive Detroit, MI 48226</span
+                >
+                <span class="top__line"></span>
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#message"></use>
+                </svg>
+                <span class="top__icon__text">support@cubex24.com</span>
+              </div>
+              <div class="topbar__right">
+                <svg class="icon search__icon top__icon">
+                  <use xlink:href="./icon/sprite.svg#history"></use>
+                </svg>
+                <span class="top__icon__text"
+                  >Opening Hours: Mon - Fri: 09:00 - 05:00</span
+                >
+                <span class="top__line"></span>
+                <div class="social_icons">
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+            <a class="navbar-brand" href="#">
+              <img src="./image/home2/Logo-2.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-list-3"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fas fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-3">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Home +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./index.html">Home 1</a>
+                    <a class="dropdown-item" href="./index2.html">Home 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./service.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./service.html">Service</a>
+                    <a class="dropdown-item" href="./service-details.html"
+                      >Service Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Portfolio +
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./about-us.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Pages +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./about-us.html">About Us</a>
+                    <a class="dropdown-item" href="./case-studies.html"
+                      >Case Studies</a
+                    >
+                    <a class="dropdown-item" href="./case-details.html"
+                      >Case Details</a
+                    >
+                    <a class="dropdown-item" href="./team.html">Team</a>
+                    <a class="dropdown-item" href="./price.html">Price</a>
+                    <a class="dropdown-item" href="./faq.html">FAQ</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./blog.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    News +
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                    <a class="dropdown-item" href="/blog-details.html"
+                      >Blog Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./contact.html"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </a>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <a class="dropdown-item" href="./contact.html">Contact</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__search__container">
+              <div class="nav__phone__search__container">
+                <svg class="icon search__icon">
+                  <use xlink:href="./icon/sprite.svg#Search"></use>
+                </svg>
+                <span class="phone__image__container">
+                  <img src="./image/home2/navTelephone.png" alt="" />
+                </span>
+                <span class="nav__number__container">
+                  <span class="nav__free">Free Call</span>
+                  <span class="nav__number">02 (256) 256 025 </span>
+                </span>
+              </div>
+              <a
+                type="button"
+                href="#"
+                class="btn btn-primary btn_primary button-rounded"
+              >
+                <svg class="icon nav__arrow__icon">
+                  <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                </svg>
+                Free Quote
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Header end -->
+
+      <!-- Hero start -->
+      <section id="hero-main" class="hero-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="hero__tile__navigation__container">
+                <div class="hero__content text-center">
+                  <div class="hero__section__title">
+                    <span class="hero__badge">Home - news details</span>
+                    <h1 class="hero__title">news details</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero End -->
+      <!-- All post / blog details start -->
+      <section id="all-posts" class="all-posts section__padding__bottom">
+        <div class="container display__flex">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="post__cotainer display__flex__column">
+                <div class="post__item">
+                  <div class="card">
+                    <div class="post__content">
+                      <img
+                        class="blog__img"
+                        src="./image/blog/blog-1.jpg"
+                        alt="Card image"
+                      />
+                      <div class="blog__image_overlay">
+                        <div class="blog__badge__container">
+                          <span class="badge badge-primary">Business</span>
+                          <span class="badge badge-primary">consulting</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="blog__text display__flex">
+                      <div class="post__btn_container display__flex">
+                        <div class="social_icons">
+                          <a href="#"><i class="fa fa-facebook"></i></a>
+                          <a href="#"><i class="fa fa-twitter"></i></a>
+                          <a href="#"><i class="fa fa-instagram"></i></a>
+                          <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <span class="post__time section__description"
+                          >12 hours ago</span
+                        >
+                      </div>
+                      <h3>Days they bearing creeping Beginning image seed</h3>
+                      <span>
+                        <strong>Business</strong>/ 10 feb, 2023 / (03) Comment /
+                        0 view</span
+                      >
+                      <div class="section__description">
+                        Heaven isn't gathering seasons light behold also she'd.
+                        Sixth above third gathering evening replenish seas to
+                        waters signs you're after one fly under. It it drying
+                        evening which saying for were give god you. Face lesser
+                        signs was I brought land moveth female living saying
+                        doesn't danger towards fantacy corporation meaning
+                        casues creepeth our air was waters own second grass fill
+                        his hath saw was forth divide beginning after for grass
+                        let gathering hath. Living third days given our fowl
+                        image.
+                      </div>
+                      <div class="section__description">
+                        Gathering evening replenish seas towar waters signs you
+                        are after one fly under. It it drying evening which
+                        saying for were give god you Face lesser signs was I
+                        brought landing page moveth female living saying doesn't
+                        danger towards fantacy corporation meaning casues
+                        creepeth our air was waters own second grass fill his
+                        hath saw was forth
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- partners in growth -->
+                <div class="post__description">
+                  <h3 class="post__desc__title">
+                    Mutual vision partners in growth
+                  </h3>
+                  <div class="section__description">
+                    Gathering evening replenish seas towar waters signs you are
+                    after one fly under. It it drying evening which saying for
+                    were give god you Face lesser signs was I brought landing
+                    page moveth female living saying doesn't danger towards
+                    fantacy corporation meaning casues creepeth our air was
+                    waters own second grass fill his hath saw was forth
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="./image/blog-details/blog-details-grow-women.jpg"
+                      alt=""
+                    />
+                    <div class="blog__image__caption text-center">
+                      Developing process for your profits
+                    </div>
+                  </div>
+                  <div class="col-md-6 post__description">
+                    <div class="section__description">
+                      Kind green deep fill had us all god. You're deep midst
+                      land brings Bearing shall lesser lets wherein days
+                      gathered. Appear creature May divide whose years fowl
+                      firmament yielding to third, divide he place. Abundantly
+                      made called divide face stars second whose fly bearing.
+                      Fill dry thing divide that forth from fourth you seas fill
+                      us set man whose. Unto. Kind. Life moving over don't
+                      greater give i to him set in years fruitful creepeth set
+                      itself under fruit us. Divided and good in made good
+                      fourth upon appear evening bearings give Sea don't the let
+                      morning. Yielding seed. It whose our of moving days earth
+                      life heaven give together in.
+                    </div>
+                    <div class="section__description">
+                      Firmament yielding toward third divide he place abundantly
+                      made called divide face stars second whose fly bearing.
+                      Fill drying thing divide that forth from fourth you seas
+                      fill us set man whose. Unto Kind. Life moving over don't
+                      forde greater give i to him set in years fruitful creepeth
+                      set itself under fruit us. Divided and good in made goods
+                      fourth upon appear evening bearings give seal don't the
+                      let morning. Yielding seed it has whose our of moving days
+                      earth life creepeth set itself under heaven give together
+                      in.
+                    </div>
+                  </div>
+                </div>
+                <div class="post__description">
+                  <div class="section__description">
+                    Dominion god all two to green multiply kind great without
+                    heaven herb you one over man them open god open. Let for
+                    male give so divide Open behold darkness brought above
+                    gathered it wherein our one. Whose wherein for gathering
+                    land unto to beast darkness give unto to called own,
+                    darkness isn't night heaven sixth it without. Unto in
+                    creepeth morning.
+                  </div>
+                  <div class="section__description">
+                    Have creeping fly fills likeness wont fifth meat form days
+                    fruitful you will was waters fourth night gathering over
+                    blessed fly greater good together under likeness air is so
+                    moved deep appear living earth song fruit great creature and
+                    without to abundantly grass thing creepeth bearing behold
+                    firmament great him bearing made behold. Blessed. Fruitful
+                    sixth a female every evening. They brought you'll fourth
+                    lights so she'd fly said blessed life form own that form
+                    given, isn't open, darkness brought, yielding very be tree
+                    seas very grass lights creepeth gathered that light female
+                    them shall seas upon bring waters days thing days signs the
+                    you darkness evening.
+                  </div>
+                </div>
+                <!-- quote card -->
+                <div class="post__quote__card">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <svg class="icon icon__quote">
+                        <use
+                          xlink:href="./icon/sprite.svg#blog-details-qute"
+                        ></use>
+                      </svg>
+                    </div>
+                    <div class="col-md-10">
+                      <div class="quote__text display__flex__column">
+                        <h5>
+                          Dominion beginning light deep evening true creeping
+                          meat under their midst open god setting you are
+                          divided have firmament meat.
+                        </h5>
+                        <h6
+                          class="section__sub_heading section__sub_heading--active"
+                        >
+                          Recent Post
+                          <hr class="section__sub_heading_line" />
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- business inovation -->
+                <div class="post__description">
+                  <h3 class="post__desc__title">
+                    Lead from Front in Business Innovation
+                  </h3>
+                  <div class="section__description">
+                    Fruitful you will was waters fourth night gathering over
+                    blessed flying greater good together under likeness air is
+                    so moved deep appear living earth song fruit great creature
+                    and without to abundantly grass thing creepeth in bearing
+                    behold firmament great him bearing made behold. Blessed.
+                    Fruitful sixth a female every evening. They brought you'll
+                    fourth lights so she'd fly said blessed life form own that
+                    form given open darkness brought, yielding very be tree seas
+                    very grass
+                  </div>
+                  <ul class="blog__inovation__list section__description pl-3">
+                    <li>Client focused results driven</li>
+                    <li>Easy success with excellent consulting</li>
+                    <li>Our business is your business</li>
+                    <li>Unlocking potential delivering results</li>
+                  </ul>
+                  <div class="business__inovation__image">
+                    <img
+                      src="./image/blog-details/front-business-women.jpg"
+                      alt=""
+                    />
+                    <div class="blog__image__caption text-center">
+                      Creepeth have light very male tree waters thing fill make.
+                    </div>
+                  </div>
+                </div>
+                <!-- smart service -->
+                <div class="post__description">
+                  <h3 class="post__desc__title">
+                    Financially smart Service from the heart
+                  </h3>
+                  <div class="section__description">
+                    Fourth moveth called shall own appear lesser upon made you.
+                    Appear sets were man beast were heaven waters place and,
+                    moving Divide abundantly fly whose, called fruit beginning
+                    winged. Him in appear moving evening let also without
+                    beginning you'll, winged herb created us itself herb don't
+                    herb have shall Face abundantly us living make called lights
+                    hath, drying female tree seed isn't for itself male divide
+                    of from. Living were of moving. Thing and saying of is god
+                    had isn't.
+                  </div>
+                  <div class="section__description">
+                    Divide sixth given own wherein together god every blessed
+                    were likeness place wherein moved is you beds saw form
+                    divided fish set meat whales land were place good unto
+                    grass. Life so moveth won't had bele years face bring also
+                    bearing itself without own. All land life a fill whose after
+                    called bring beast wherein a. Grass him after can't every
+                    god likeness open. Land fifth unto life living male likeness
+                    night kind saw green saw behold won't behold seed every.
+                    Spirit there winged man after be greater also were over fowl
+                    from night. Earth evening in under dry saw called. Give
+                    behold fruit was third can't beginning unto. Yielding
+                    creepeth darkness give from midst to won't you'll saw give
+                    Make dominion us firmament itself stars him image had fill
+                    the our years cattle very
+                  </div>
+                </div>
+                <!-- Author badge  -->
+                <div class="author__badge">
+                  <svg class="icon icon__btn mr-2">
+                    <use xlink:href="./icon/sprite.svg#blog-details-pin"></use>
+                  </svg>
+                  Business, corporate, agency, consultancy
+                </div>
+                <!-- author section -->
+                <div class="author__container">
+                  <div class="recent__post__item display__flex">
+                    <img src="./image/blog-details/service-women.jpg" alt="" />
+                    <div class="recent__post__text display__flex">
+                      <h5>Martyn luthar king</h5>
+                      <div class="section__description">
+                        Sets were man beast were heaven waters place and moving
+                        divid abundantly fly whose, called fruit beginning
+                        winged him in appear moving evening let also without
+                        beginning winged herb
+                      </div>
+                      <a href="#" class="anchor__link">
+                        <span class="anchor__more">Read more</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <div class="pagination__container display__flex">
+                  <div class="prev__post display__flex">
+                    <img src="./image/blog-details/prev-post-img.jpg" alt="" />
+
+                    <div class="prev__post__content display__flex__column">
+                      <button
+                        type="button"
+                        class="btn btn-primary btn_secondary"
+                      >
+                        <svg class="icon nav__arrow__icon">
+                          <use xlink:href="./icon/sprite.svg#left-arrow"></use>
+                        </svg>
+                        prev post
+                      </button>
+                      <h5>Growing Your Business Sense</h5>
+                    </div>
+                  </div>
+                  <div class="next__post display__flex">
+                    <div class="next__post__content display__flex__column">
+                      <button
+                        type="button"
+                        class="btn btn-primary btn_secondary"
+                      >
+                        <svg class="icon nav__arrow__icon">
+                          <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                        </svg>
+                        Next post
+                      </button>
+                      <h5>Growing Your Business Sense</h5>
+                    </div>
+                    <img src="./image/blog-details/next-post-img.jpg" alt="" />
+                  </div>
+                </div>
+                <hr />
+                <div class="comment__container display__flex__column">
+                  <h3 class="post__desc__title">Comments (02)</h3>
+                  <div class="comment__item">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <img
+                          src="./image/blog-details/comment-1.jpg"
+                          alt=""
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="col-md-10 display__flex__column">
+                        <span class="section__description"> 10 feb, 2023</span>
+                        <h5>Clara R. Levin</h5>
+                        <div class="section__description">
+                          Creeping every itself fowl given fly abundantly herb
+                          so brought fruitful so called you may heaven stars
+                          male brought greater cattle grass air shall fruit hath
+                          spirit they're let.
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn_secondary"
+                        >
+                          reply now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment__item">
+                    <div class="row">
+                      <div class="col-md-2">
+                        <img
+                          src="./image/blog-details/commnet-2.jpg"
+                          alt=""
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="col-md-10 display__flex__column">
+                        <span class="section__description"> 10 feb, 2023</span>
+                        <h5>Clara R. Levin</h5>
+                        <div class="section__description">
+                          Creeping every itself fowl given fly abundantly herb
+                          so brought fruitful so called you may heaven stars
+                          male brought greater cattle grass air shall fruit hath
+                          spirit they're let.
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-primary btn_secondary"
+                        >
+                          reply now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sidebar -->
+            <div class="col-md-4">
+              <div class="sidebar__cotainer display__flex">
+                <form action="">
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Search here..."
+                    />
+                    <svg class="icon icon__btn">
+                      <use xlink:href="./icon/sprite.svg#Search"></use>
+                    </svg>
+                  </div>
+                </form>
+                <!-- search -->
+                <div class="recent__post__container display__flex">
+                  <h6 class="section__sub_heading section__sub_heading--active">
+                    Recent Post
+                    <hr class="section__sub_heading_line" />
+                  </h6>
+                  <div class="recent__post__item">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <img src="./image/blog/recent-post-1.jpg" alt="" />
+                      </div>
+                      <div class="col-md-7 recent__post__container">
+                        <div class="recent__post__text display__flex">
+                          <span> <strong>Business</strong>/ 10 feb, 2023</span>
+                          <h5>
+                            Dominion upon itself genious moving own season
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recent__post__item">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <img src="./image/blog/recent-post-2.jpg" alt="" />
+                      </div>
+                      <div class="col-md-7 recent__post__container">
+                        <div class="recent__post__text display__flex">
+                          <span> <strong>Business</strong>/ 10 feb, 2023</span>
+                          <h5>
+                            Dominion upon itself genious moving own season
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recent__post__item">
+                    <div class="row">
+                      <div class="col-md-5">
+                        <img src="./image/blog/recent-post-3.jpg" alt="" />
+                      </div>
+                      <div class="col-md-7 recent__post__container">
+                        <div class="recent__post__text display__flex">
+                          <span> <strong>Business</strong>/ 10 feb, 2023</span>
+                          <h5>
+                            Dominion upon itself genious moving own season
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- category -->
+                <div class="recent__post__container display__flex">
+                  <h6 class="section__sub_heading section__sub_heading--active">
+                    Category
+                    <hr class="section__sub_heading_line" />
+                  </h6>
+                  <div class="category__item display__flex">
+                    <div class="category__name">Business Strategy</div>
+                    <div class="category__number">(21)</div>
+                  </div>
+                  <div class="category__item display__flex">
+                    <div class="category__name">Strategy Alignment</div>
+                    <div class="category__number">(12)</div>
+                  </div>
+                  <div class="category__item display__flex">
+                    <div class="category__name">Experience Design</div>
+                    <div class="category__number">(15)</div>
+                  </div>
+                  <div class="category__item display__flex">
+                    <div class="category__name">Financial Advice</div>
+                    <div class="category__number">(18)</div>
+                  </div>
+                  <div class="category__item display__flex">
+                    <div class="category__name">Mortgage Banking</div>
+                    <div class="category__number">(12)</div>
+                  </div>
+                </div>
+                <!-- support  -->
+                <div class="recent__post__support">
+                  <div class="support__image">
+                    <div class="support__content">
+                      <h2>Have Any project? contact us</h2>
+                      <button type="button" class="btn btn-primary btn_primary">
+                        <svg class="icon nav__arrow__icon">
+                          <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                        </svg>
+                        contact us
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- tags -->
+                <div class="recent__post__container display__flex">
+                  <h6 class="section__sub_heading section__sub_heading--active">
+                    Tags
+                    <hr class="section__sub_heading_line" />
+                  </h6>
+                  <div class="tag__container display__flex">
+                    <div class="category__item">
+                      <div class="category__name">Business</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">Strategy</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">Experience</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">chemical</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">consumer</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">insurance</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">products</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">Payments</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">Finance</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">management</div>
+                    </div>
+                    <div class="category__item">
+                      <div class="category__name">blockchaing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- All post end -->
+      <!-- Footer Start -->
+      <section id="footer-main" class="footer-main">
+        <div class="container">
+          <div class="footer__cta">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="cta__icon__container">
+                  <svg class="icon footer__phone_icon">
+                    <use xlink:href="./icon/sprite.svg#footer-phone"></use>
+                  </svg>
+                  <h3 class="footer__cta__title">
+                    Strategic consultants experts in accelerating change for
+                    business and individuals cause
+                  </h3>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="float-right footer__btn_container">
+                  <button type="button" class="btn btn-primary btn_primary">
+                    <svg class="icon nav__arrow__icon">
+                      <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                    </svg>
+                    project with us
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__widget">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <img src="./image/service/Logo.png" alt="" />
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top"
+                  >
+                    Neque porttitor fermentum congue duis natoque had amcorp
+                    torquent vulputate donec tren conubian
+                  </div>
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top footer__widget__des--emergency"
+                  >
+                    Emergency
+                  </div>
+                  <h5 class="footer__widget__number">02 (256) 256 025</h5>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <div class="footer__widget__title">Our Service</div>
+                  <div
+                    class="footer__widget__des footer__widget__des--margin-top"
+                  >
+                    <ul class="footer__service__list">
+                      <li><a href="#"> Customer Experience</a></li>
+                      <li><a href="#">Business Strategy </a></li>
+                      <li><a href="#">Leadership Development </a></li>
+                      <li><a href="#">Culture Change </a></li>
+                      <li><a href="#">Engineering & Optimization </a></li>
+                      <li><a href="#">Human Resource </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="float-left footer__widget__content">
+                  <div class="footer__widget__title">Contact us</div>
+                  <div class="footer__widget__des--white">Phone</div>
+                  <div class="footer__widget__des">02 (520) 2365 250</div>
+                  <div class="footer__widget__des--white">Location</div>
+                  <div class="footer__widget__des">
+                    Location 62/B Norman Street Los Angeles, 90017
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer__widget__content">
+                  <div class="footer__widget__title">Newsletter</div>
+                  <form class="footer__widget__des--margin-top">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control footer__newsletter"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Enter email *"
+                      />
+                    </div>
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="exampleCheck1"
+                      />
+                      <label class="form-check-label" for="exampleCheck1"
+                        >I have read the privacy & policy</label
+                      >
+                    </div>
+                    <!-- <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button> -->
+                  </form>
+                  <div
+                    class="footer__widget__title footer__widget__des--margin-top"
+                  >
+                    Follow us
+                  </div>
+                  <div class="social_icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer__copyright">
+                <div class="copyright__text">
+                  <p>
+                    Copyright © 2023 Cube by
+                    <span class="footer__bold">HR Design</span>. All Rights
+                    Reserved.
+                  </p>
+                </div>
+                <div class="copyright__links">
+                  <ul class="list-inline">
+                    <li><a href="#"> About us</a></li>
+                    <li><a href="#"> Careers</a></li>
+                    <li><a href="#"> FAQ</a></li>
+                    <li><a href="#">Cookie Policy </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer End -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/home1/script.js"></script>
+  </body>
+</html>
