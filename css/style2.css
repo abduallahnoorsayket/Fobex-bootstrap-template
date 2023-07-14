@@ -411,6 +411,7 @@ button {
   color: var(--secondary);
   border-radius: 34px;
   padding: 10px 20px;
+  position: relative;
 }
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 500 !important;
@@ -437,9 +438,9 @@ button {
   height: 24px;
   margin: 0px 20px 0px 0px;
 }
-.navbar-dark .navbar-toggler {
+/* .navbar-dark .navbar-toggler {
   position: relative;
-}
+} */
 
 .nav__item__line {
   height: 30px;
@@ -553,13 +554,22 @@ button {
   }
   .navbar-toggler-icon {
     bottom: 10px;
-    left: 220px;
+    /* left: 220px; */
+    left: 300px;
     position: absolute;
   }
   .header__topbar,
   .nav__search__container {
     display: none;
     visibility: hidden;
+  }
+}
+/* @media only screen and (min-width: 378px) and (max-width: 424px) */
+@media only screen and (max-width: 375px) {
+  .navbar-toggler-icon {
+    bottom: 15px;
+    left: 240px;
+    position: absolute;
   }
 }
 /* HERO SECTION */
