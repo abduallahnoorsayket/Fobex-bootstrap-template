@@ -275,7 +275,7 @@
       <section id="all-posts" class="all-posts section__padding__bottom">
         <div class="container display__flex">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-7 col-lg-8">
               <div class="post__cotainer display__flex__column">
                 <div class="post__item">
                   <div class="card">
@@ -416,14 +416,14 @@
                 <!-- quote card -->
                 <div class="post__quote__card">
                   <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-sm-3 col-md-2">
                       <svg class="icon icon__quote">
                         <use
                           xlink:href="./icon/sprite.svg#blog-details-qute"
                         ></use>
                       </svg>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-sm-9 col-md-10">
                       <div class="quote__text display__flex__column">
                         <h5>
                           Dominion beginning light deep evening true creeping
@@ -536,10 +536,7 @@
                     <img src="./image/blog-details/prev-post-img.jpg" alt="" />
 
                     <div class="prev__post__content display__flex__column">
-                      <button
-                        type="button"
-                        class="btn btn-primary btn_secondary"
-                      >
+                      <button type="button" class="btn btn_secondary">
                         <svg class="icon nav__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#left-arrow"></use>
                         </svg>
@@ -550,10 +547,7 @@
                   </div>
                   <div class="next__post display__flex">
                     <div class="next__post__content display__flex__column">
-                      <button
-                        type="button"
-                        class="btn btn-primary btn_secondary"
-                      >
+                      <button type="button" class="btn btn_secondary">
                         <svg class="icon nav__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#right-arrow"></use>
                         </svg>
@@ -565,18 +559,19 @@
                   </div>
                 </div>
                 <hr />
+                <!-- comment section -->
                 <div class="comment__container display__flex__column">
                   <h3 class="post__desc__title">Comments (02)</h3>
                   <div class="comment__item">
                     <div class="row">
-                      <div class="col-md-2">
+                      <div class="col-sm-3 col-md-2">
                         <img
                           src="./image/blog-details/comment-1.jpg"
                           alt=""
                           class="rounded-circle"
                         />
                       </div>
-                      <div class="col-md-10 display__flex__column">
+                      <div class="col-sm-9 col-md-10 display__flex__column">
                         <span class="section__description"> 10 feb, 2023</span>
                         <h5>Clara R. Levin</h5>
                         <div class="section__description">
@@ -585,10 +580,7 @@
                           male brought greater cattle grass air shall fruit hath
                           spirit they're let.
                         </div>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn_secondary"
-                        >
+                        <button type="button" class="btn btn_secondary">
                           reply now
                         </button>
                       </div>
@@ -596,14 +588,14 @@
                   </div>
                   <div class="comment__item">
                     <div class="row">
-                      <div class="col-md-2">
+                      <div class="col-sm-3 col-md-2">
                         <img
                           src="./image/blog-details/commnet-2.jpg"
                           alt=""
                           class="rounded-circle"
                         />
                       </div>
-                      <div class="col-md-10 display__flex__column">
+                      <div class="col-sm-9 col-md-10 display__flex__column">
                         <span class="section__description"> 10 feb, 2023</span>
                         <h5>Clara R. Levin</h5>
                         <div class="section__description">
@@ -612,12 +604,68 @@
                           male brought greater cattle grass air shall fruit hath
                           spirit they're let.
                         </div>
-                        <button
-                          type="button"
-                          class="btn btn-primary btn_secondary"
-                        >
+                        <button type="button" class="btn btn_secondary">
                           reply now
                         </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- reply form section -->
+                <div class="comment__container display__flex__column">
+                  <h3 class="post__desc__title">Leave A reply</h3>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="appointment__form">
+                        <form class="">
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="exampleFormControlInput1"
+                                  placeholder="Full Name*"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleFormControlInput2"
+                                  placeholder="Email Address*"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control"
+                                  id="exampleFormControlTextarea1"
+                                  rows="5"
+                                  placeholder="Write your comment*"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <button
+                            type="button"
+                            href="#"
+                            class="btn btn-primary btn_primary"
+                          >
+                            <svg class="icon nav__arrow__icon">
+                              <use
+                                xlink:href="./icon/sprite.svg#right-arrow"
+                              ></use>
+                            </svg>
+                            submit request
+                          </button>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -625,8 +673,8 @@
               </div>
             </div>
             <!-- sidebar -->
-            <div class="col-md-4">
-              <div class="sidebar__cotainer display__flex">
+            <div class="col-md-5 col-lg-4">
+              <div class="sidebar__container display__flex">
                 <form action="">
                   <div class="form-group">
                     <input
