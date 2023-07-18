@@ -223,72 +223,103 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 });
 // price page accordion
 
-const items = document.querySelectorAll(".accordion-main button");
+// const items = document.querySelectorAll(".accordion-main button");
 // console.log("227==== ", items);
 
-function toggleAccordion() {
-  const itemToggle = this.getAttribute("aria-expanded");
+// function toggleAccordion() {
+//   const itemToggle = this.getAttribute("aria-expanded");
 
-  for (i = 0; i < items.length; i++) {
-    // console.log("232==== ", items[i].parentNode.parentNode.childNodes[1]);
-    items[i].setAttribute("aria-expanded", "false");
-  }
-  // console.log("240==== ", itemToggle);
-  if (itemToggle == "false") {
-    this.setAttribute("aria-expanded", "true");
-  }
-
-  // items.forEach((item) => {
-  //   console.log(this.getAttribute("aria-expanded"));
-  //   item.parentNode.parentNode.childNodes[1].style.backgroundColor = "";
-  //   if (this.getAttribute("aria-expanded") === false) {
-  //     item.parentNode.parentNode.childNodes[1].style.backgroundColor = "green";
-  //   }
-  // });
-}
-
-items.forEach((item) => item.addEventListener("click", toggleAccordion));
-
-function OpenMenu(e) {
-  // setting the accordion
-
-  //  set accordion end
-  e.target.parentNode.parentNode.parentNode.childNodes[1].classList.toggle(
-    "mm-show"
-  );
-  console.log("254 ==", e.target.parentNode.getAttribute("aria-expanded"));
-  console.log("255 ++++++", e);
-}
-// const btns = document.querySelectorAll("#accordion-button-1");
-// btns.forEach((btn) => {
-//   console.log("2==", btn.getAttribute("aria-expanded"));
-//   btn.addEventListener("click", function onClick(event) {
-//     console.log("24==", event.target);
-//     console.log("245==", btn.getAttribute("aria-expanded"));
-
-//     const box = document.getElementById("accordion__serial");
-
-//     if (btn.getAttribute("aria-expanded") === "true") {
-//       box.style.backgroundColor = "red";
-//     } else {
-//       box.style.backgroundColor = "transparent";
-//     }
-
-//      optionally change text color
-//     box.style.color = 'white';
-//   });
-// });
-// accordion number color
-// btn.addEventListener("click", function onClick(event) {
-//   console.log("245==", event.target.getAttribute("aria-expanded"));
-
-//   const box = document.getElementById("accordion__serial");
-
-//   if (event.target !== box) {
-//     box.style.backgroundColor = "transparent";
-//   } else {
-//     box.style.backgroundColor = "red";
+//   for (i = 0; i < items.length; i++) {
+//     // console.log("232==== ", items[i].parentNode.parentNode.childNodes[1]);
+//     items[i].setAttribute("aria-expanded", "false");
 //   }
-//   // 👇️ optionally change text color
-//   // box.style.color = 'white';
-// });
+//   // console.log("240==== ", itemToggle);
+//   if (itemToggle == "false") {
+//     this.setAttribute("aria-expanded", "true");
+//   }
+
+//   // items.forEach((item) => {
+//   //   console.log(this.getAttribute("aria-expanded"));
+//   //   item.parentNode.parentNode.childNodes[1].style.backgroundColor = "";
+//   //   if (this.getAttribute("aria-expanded") === false) {
+//   //     item.parentNode.parentNode.childNodes[1].style.backgroundColor = "green";
+//   //   }
+//   // });
+// }
+
+// items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+// function OpenMenu(e) {
+//   // setting the accordion
+
+//   //  set accordion end
+//   e.target.parentNode.parentNode.parentNode.childNodes[1].classList.toggle(
+//     "mm-show"
+//   );
+//   console.log("254 ==", e.target.parentNode.getAttribute("aria-expanded"));
+//   console.log("255 ++++++", e);
+// }
+// // const btns = document.querySelectorAll("#accordion-button-1");
+// // btns.forEach((btn) => {
+// //   console.log("2==", btn.getAttribute("aria-expanded"));
+// //   btn.addEventListener("click", function onClick(event) {
+// //     console.log("24==", event.target);
+// //     console.log("245==", btn.getAttribute("aria-expanded"));
+
+// //     const box = document.getElementById("accordion__serial");
+
+// //     if (btn.getAttribute("aria-expanded") === "true") {
+// //       box.style.backgroundColor = "red";
+// //     } else {
+// //       box.style.backgroundColor = "transparent";
+// //     }
+
+// //      optionally change text color
+// //     box.style.color = 'white';
+// //   });
+// // });
+// // accordion number color
+// // btn.addEventListener("click", function onClick(event) {
+// //   console.log("245==", event.target.getAttribute("aria-expanded"));
+
+// //   const box = document.getElementById("accordion__serial");
+
+// //   if (event.target !== box) {
+// //     box.style.backgroundColor = "transparent";
+// //   } else {
+// //     box.style.backgroundColor = "red";
+// //   }
+// //   // 👇️ optionally change text color
+// //   // box.style.color = 'white';
+// // });
+
+const items = document.querySelectorAll(".accordion__item__container");
+
+items.forEach((item, i) => {
+  const accordionItem = item.querySelector("#accordion-button-1");
+  const activeDiv = item.querySelector(".accordion__serial");
+
+  accordionItem.addEventListener("click", (e) => {
+    if (accordionItem.getAttribute("aria-expanded") === "false") {
+      accordionItem.setAttribute("aria-expanded", "true");
+      activeDiv.classList.toggle("mm-show");
+    } else {
+      accordionItem.setAttribute("aria-expanded", "false");
+      activeDiv.classList.toggle("mm-show");
+    }
+
+    removeOpen(i);
+  });
+});
+
+function removeOpen(index1) {
+  items.forEach((accordionItem, index2) => {
+    const accordionItem2 = accordionItem.querySelector("#accordion-button-1");
+    const activeDiv = accordionItem.querySelector(".accordion__serial");
+
+    if (index1 !== index2) {
+      accordionItem2.setAttribute("aria-expanded", "false");
+      activeDiv.classList.remove("mm-show");
+    }
+  });
+}
