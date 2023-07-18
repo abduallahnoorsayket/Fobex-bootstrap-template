@@ -105,6 +105,18 @@ section {
   line-height: 25px;
   text-transform: uppercase;
   color: #5f6165;
+  position: relative;
+  display: inline;
+}
+.section__sub_heading::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: #5f6165;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
 }
 .section__description {
   color: #5f6165;
