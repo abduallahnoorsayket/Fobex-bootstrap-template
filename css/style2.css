@@ -3755,6 +3755,10 @@ input[type="radio"] {
   border-bottom: 1px solid rgb(136, 136, 136);
   border-right: 0;
 }
+
+.mm-show {
+  background: var(--primary);
+}
 /* price faq accordion responsive */
 @media screen and (max-width: 500px) {
   .accordion-main .display__flex {

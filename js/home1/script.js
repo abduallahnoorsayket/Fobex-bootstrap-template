@@ -190,7 +190,6 @@ if (navtoggle) {
 }
 // for Home 2 feature accordion bullet
 const accordionItemHeaders = document.querySelectorAll(".card-header");
-// console.log("105====", accordionItemHeaders);
 
 accordionItemHeaders.forEach((accordionItemHeader) => {
   const accordionItemBody = accordionItemHeader.nextElementSibling;
@@ -223,32 +222,43 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
   // event end
 });
 // price page accordion
+
 const items = document.querySelectorAll(".accordion-main button");
-console.log("227==== ", items);
+// console.log("227==== ", items);
+
 function toggleAccordion() {
   const itemToggle = this.getAttribute("aria-expanded");
 
   for (i = 0; i < items.length; i++) {
-    console.log("232==== ", items[i].parentNode.parentNode.childNodes[1]);
+    // console.log("232==== ", items[i].parentNode.parentNode.childNodes[1]);
     items[i].setAttribute("aria-expanded", "false");
   }
-  console.log("240==== ", itemToggle);
+  // console.log("240==== ", itemToggle);
   if (itemToggle == "false") {
     this.setAttribute("aria-expanded", "true");
   }
 
-  items.forEach((item) => {
-    console.log(this.getAttribute("aria-expanded"));
-
-    item.parentNode.parentNode.childNodes[1].style.backgroundColor = "";
-    if (this.getAttribute("aria-expanded") === false) {
-      item.parentNode.parentNode.childNodes[1].style.backgroundColor = "green";
-    }
-  });
+  // items.forEach((item) => {
+  //   console.log(this.getAttribute("aria-expanded"));
+  //   item.parentNode.parentNode.childNodes[1].style.backgroundColor = "";
+  //   if (this.getAttribute("aria-expanded") === false) {
+  //     item.parentNode.parentNode.childNodes[1].style.backgroundColor = "green";
+  //   }
+  // });
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
+function OpenMenu(e) {
+  // setting the accordion
+
+  //  set accordion end
+  e.target.parentNode.parentNode.parentNode.childNodes[1].classList.toggle(
+    "mm-show"
+  );
+  console.log("254 ==", e.target.parentNode.getAttribute("aria-expanded"));
+  console.log("255 ++++++", e);
+}
 // const btns = document.querySelectorAll("#accordion-button-1");
 // btns.forEach((btn) => {
 //   console.log("2==", btn.getAttribute("aria-expanded"));
