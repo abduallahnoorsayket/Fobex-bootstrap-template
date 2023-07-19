@@ -296,7 +296,7 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
 const items = document.querySelectorAll(".accordion__item__container");
 
 items.forEach((item, i) => {
-  const accordionItem = item.querySelector("#accordion-button-1");
+  const accordionItem = item.querySelector(".accordion-button-1");
   const activeDiv = item.querySelector(".accordion__serial");
 
   accordionItem.addEventListener("click", (e) => {
@@ -314,7 +314,7 @@ items.forEach((item, i) => {
 
 function removeOpen(index1) {
   items.forEach((accordionItem, index2) => {
-    const accordionItem2 = accordionItem.querySelector("#accordion-button-1");
+    const accordionItem2 = accordionItem.querySelector(".accordion-button-1");
     const activeDiv = accordionItem.querySelector(".accordion__serial");
 
     if (index1 !== index2) {

@@ -296,6 +296,12 @@ button {
   justify-content: center;
   align-items: center;
 }
+.display__flex__section__sub__heading__icon {
+  display: flex;
+  gap: 0px;
+  align-items: center;
+  flex-direction: column;
+}
 /* general form control */
 .form-control {
   padding: 18px 25px;
@@ -945,7 +951,9 @@ select {
   margin-left: auto;
   margin-top: -200px;
 }
-
+.service .section__sub_heading::after {
+  content: none;
+}
 @media screen and (min-width: 1500px) {
   .service__slider__button__container {
     padding: 0 75px;
@@ -1204,7 +1212,9 @@ select {
   border-bottom: 7px solid var(--primary);
 }
 /* team responsive */
-
+.team .section__sub_heading::after {
+  content: none;
+}
 @media screen and (min-width: 500px) and (max-width: 992px) {
   .team__card {
     margin: 0 0 30px;
@@ -1386,6 +1396,9 @@ select {
 .blog .anchor__more {
   color: var(--gery-1);
 }
+.blog .section__sub_heading::after {
+  content: none;
+}
 /* blog responsive */
 @media screen and (max-width: 768px) {
 }
@@ -1553,6 +1566,9 @@ select {
 /* client responsive */
 /* @media (max-width: 768px) {
 } */
+.client .section__sub_heading::after {
+  content: none;
+}
 @media (max-width: 768px) {
   .client .brand__image__container {
     margin-bottom: 30px;
@@ -1836,6 +1852,10 @@ p {
 /* #working-process {
   padding-top: 0;
 } */
+
+#service-page .working-process .section__sub_heading::after {
+  content: none;
+}
 .working-process .section__sub_heading {
   color: #131922;
 }
@@ -1890,30 +1910,30 @@ p {
   }
 }
 /* SERVICE SERVICE  SECTION */
-#service .service {
+#service-page .service {
   position: relative;
   background: url("../image/home1/service_bg_.jpg");
   padding: 50px 0 100px;
 }
 
-#service .service__heading__section {
+#service-page .service__heading__section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#service .service__heading__container {
+#service-page .service__heading__container {
   width: 70%;
 }
-#service .service .section__heading {
+#service-page .service .section__heading {
   color: var(--white);
   width: 100%;
 }
 
-#service .service__card__container {
+#service-page .service__card__container {
   padding: 50px 0 0 0;
 }
-#service .service__card {
+#service-page .service__card {
   padding: 40px;
   background: #131922;
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -1921,24 +1941,24 @@ p {
   display: flex;
   margin-bottom: 30px;
 }
-#service .service__icon {
+#service-page .service__icon {
   height: 68px;
   width: 68px;
   fill: var(--primary);
 }
-#service .service__content {
+#service-page .service__content {
   padding: 0px 0px 0px 30px;
   width: 85%;
 }
 /* .service__arrow__icon{
   fill: ;
 } */
-#service .service .feature__arrow__icon {
+#service-page .service .feature__arrow__icon {
   fill: #a2a6ad;
   width: 18px;
   height: 17px;
 }
-#service .service__title {
+#service-page .service__title {
   font-weight: 500;
   font-size: 30px;
   line-height: 40px;
@@ -1948,91 +1968,100 @@ p {
 
   color: var(--white);
 }
-#service .service .feature__link {
+#service-page .service .feature__link {
   color: #a2a6ad;
 }
 
-#service .service .feature__arrow__icon:hover {
+#service-page .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
 }
 /* service responsive */
 @media (max-width: 768px) {
-  #service.service__card {
+  #service-page .service__card {
     padding: 50px 30px;
   }
-  #service.appointment__image {
+  #service-page .appointment__image {
     margin-top: -70px;
   }
 }
 @media (max-width: 424px) {
-  #service.service {
+  #service-page .service {
     padding: 50px 0 250px;
   }
-  #service .service__card__container {
+  #service-page .service__card__container {
     padding: 50px 0 0px 0;
   }
-  #service.service__card {
+  #service-page .service__card {
     margin: 0 0 40px 0;
     padding: 25px 25px;
   }
 }
 /* SERVICE FEATURE SECTION */
 
-#service .feature {
+#service-page .feature {
   background: none;
 }
 /* service feature responsive */
 @media screen and (min-width: 800px) and (max-width: 1500px) {
-  #service .feature .about-us-right-image-container img {
+  #service-page .feature .about-us-right-image-container img {
     width: 95%;
     object-fit: cover;
+  }
+}
+@media (max-width: 992px) {
+  #service-page .feature .feature__accordion__container {
+    padding: 0 30px;
   }
 }
 
 /* SERVICE FUN-FACTS SECTION */
 
-#service .fun-facts {
+#service-page .fun-facts {
   background: #f5f6f0;
 }
-#service .fun-facts__title {
+#service-page .fun-facts__title {
   color: var(--secondary);
 }
-#service .fun-facts__icon {
+#service-page .fun-facts__icon {
   fill: var(--secondary);
 }
-#service .fun-facts__card {
+#service-page .fun-facts__card {
   background: #f5f6f0;
 }
-#service .feature__link {
+#service-page .feature__link {
   color: var(--gery-1);
 }
-#service .number__line {
+#service-page .number__line {
   opacity: 0.8;
   width: 2px;
   background: #d4dad8;
 }
 /* Service Fun facts responsive */
 @media (max-width: 992px) {
-  #service .fun-facts__card {
+  #service-page .fun-facts__card {
     padding: 50px 30px;
     margin-bottom: 20px;
   }
 }
 /* @media screen and (min-width: 375px) and (max-width: 424px) */
 @media screen and (max-width: 424px) {
-  #service .fun-facts {
+  #service-page .fun-facts {
     padding: 50px 0 50px;
   }
-  #service .fun-facts__card__container {
+  #service-page .fun-facts__card__container {
     padding: 50px 0 0px 0;
   }
-  #service .fun-facts__card {
+  #service-page .fun-facts__card {
     margin: 0 0 40px 0;
     padding: 25px 25px;
   }
 }
 /* SERVICE PRICE SECTION */
-
+#price-main
+  .display__flex__section__sub__heading__icon
+  .section__sub_heading::after {
+  content: none;
+}
 #price-main .price__card {
   border: 20px solid #f5f6f0;
   width: 97%;
@@ -2964,7 +2993,9 @@ input[type="radio"] {
 }
 
 /* SERVICE DETAILS FEATURE SECTION */
-
+#service-details .feature .section__sub_heading::after {
+  content: none;
+}
 #service-details .feature {
   background: #fff;
   position: relative;
@@ -3135,11 +3166,11 @@ input[type="radio"] {
 
 /*  CASE STUDIES CLIENT SECTION */
 
-#case-studies .client .section__description {
+#case-studies-page .client .section__description {
   width: 45%;
 }
 /* CASE STUDIES CTA SECTION */
-#case-studies .personal__content {
+#case-studies-page .personal__content {
   background-repeat: no-repeat;
   height: 600px;
   background: url("../image/case-studies/cta-bg.jpg");
@@ -3147,13 +3178,13 @@ input[type="radio"] {
   background-position: center;
   position: relative;
 }
-#case-studies .personal__content .container {
+#case-studies-page .personal__content .container {
   display: flex;
   justify-content: flex-end;
   height: 100%;
 }
 
-#case-studies .personal__note {
+#case-studies-page .personal__note {
   padding: 50px;
   background: url("../image/case-studies/cta-card-bg.png"),
     linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
@@ -3169,19 +3200,19 @@ input[type="radio"] {
   text-align: center;
   margin-right: 200px;
 }
-#case-studies .personal__note .btn_primary {
+#case-studies-page .personal__note .btn_primary {
   background: var(--secondary);
   align-self: center;
   color: #ffffff;
 }
-#case-studies .personal__note .btn_primary .nav__arrow__icon {
+#case-studies-page .personal__note .btn_primary .nav__arrow__icon {
   fill: #ffffff;
 }
 @media (max-width: 992px) {
-  #case-studies .personal__note {
+  #case-studies-page .personal__note {
     margin-right: 0;
   }
-  #case-studies .personal__content .container {
+  #case-studies-page .personal__content .container {
     display: flex;
     justify-content: center;
     height: 100%;
@@ -3190,7 +3221,7 @@ input[type="radio"] {
 
 /* CASE STUDIES CASE STUDIES SECTION */
 
-#case-studies .swiper__content {
+#case-studies-page .swiper__content {
   height: 490px;
   width: 100%;
   background-size: cover;
@@ -3200,29 +3231,29 @@ input[type="radio"] {
   padding: 0 30px 25px 30px;
   /* margin-bottom: 30px; */
 }
-#case-studies .case-studies .row:nth-child(1) {
+#case-studies-page .case-studies .row:nth-child(1) {
   margin-bottom: 30px;
 }
 #case-studies .swiper__image-1 {
   background-image: url(../image/case-studies/case-1.jpg);
 }
-#case-studies .swiper__image-2 {
+#case-studies-page .swiper__image-2 {
   background-image: url(../image/case-studies/case-2.jpg);
 }
-#case-studies .swiper__image-3 {
+#case-studies-page .swiper__image-3 {
   background-image: url(../image/case-studies/case-3.jpg);
 }
-#case-studies .swiper__image-4 {
+#case-studies-page .swiper__image-4 {
   background-image: url(../image/case-studies/case-4.jpg);
 }
-#case-studies .swiper__image-5 {
+#case-studies-page .swiper__image-5 {
   background-image: url(../image/case-studies/case-5.jpg);
 }
-#case-studies .swiper__image-6 {
+#case-studies-page .swiper__image-6 {
   background-image: url(../image/case-studies/case-6.jpg);
 }
 
-#case-studies .slider__title {
+#case-studies-page .slider__title {
   background: var(--white);
   padding: 18px 30px;
   width: 100%;
@@ -3236,12 +3267,12 @@ input[type="radio"] {
   align-items: center;
   transition: all 0.5s ease-in-out;
 }
-#case-studies .slider__title:hover {
+#case-studies-page .slider__title:hover {
   background: var(--primary);
   color: var(--white);
 }
 
-#case-studies .slider__btn {
+#case-studies-page .slider__btn {
   border-radius: 20px;
   padding: 5px 16px;
   background: var(--secondary);
@@ -3249,25 +3280,25 @@ input[type="radio"] {
   opacity: 0;
   visibility: hidden;
 }
-#case-studies .slider__right__arrow__icon {
+#case-studies-page .slider__right__arrow__icon {
   height: 13px;
   width: 26px;
   fill: var(--primary);
 }
-#case-studies .slider__title:hover .slider__btn {
+#case-studies-page .slider__title:hover .slider__btn {
   opacity: 1;
   visibility: visible;
 }
 
-#case-studies .slider__title:hover {
+#case-studies-page .slider__title:hover {
   background: var(--primary);
   color: var(--secondary);
 }
 @media (max-width: 992px) {
-  #case-studies .case-studies .row:nth-child(1) .swiper__content {
+  #case-studies-page .case-studies .row:nth-child(1) .swiper__content {
     margin-bottom: 30px;
   }
-  #case-studies .case-studies .row:nth-child(2) .swiper__content {
+  #case-studies-page .case-studies .row:nth-child(2) .swiper__content {
     margin-bottom: 30px;
   }
 }
@@ -3428,13 +3459,13 @@ input[type="radio"] {
   }
 }
 
-/* ============ Team page start ============== */
+/* ============ team page start ============== */
 /* TEAM VIDEO SECTION */
 
-#team .team .section__content .row:nth-child(1) {
+#team-page .team .section__content .row:nth-child(1) {
   margin-bottom: 30px;
 }
-#team .video {
+#team-page .video {
   background: linear-gradient(
       0deg,
       rgba(2, 14, 32, 0.5) 0%,
@@ -3445,69 +3476,69 @@ input[type="radio"] {
   display: grid;
   place-items: center;
 }
-#team .video__icon__container {
+#team-page .video__icon__container {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
 }
-#team .video__icon__container .video__title {
+#team-page .video__icon__container .video__title {
   width: 60%;
 }
-#team .video__icon {
+#team-page .video__icon {
   width: 115px;
   height: 115px;
 }
-#team .video__title {
+#team-page .video__title {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
 }
 /* TEAM MEET OUT TEAM SECTION */
-#team .meet-team {
+#team-page .meet-team {
   background-image: url("../image/team/team-meet-bg.jpg");
   background-repeat: no-repeat;
   background-position-x: 0px;
   background-position-y: -224px;
 }
 
-#team .meet-team img {
+#team-page .meet-team img {
   object-fit: cover;
   width: 100%;
 }
-#team .meet-team .container {
+#team-page .meet-team .container {
   margin-top: 0;
   position: relative;
   z-index: 10;
   background: none;
 }
 
-#team .appointment__image {
+#team-page .appointment__image {
   height: 100%;
   width: 100%;
 }
-#team .meet-team .appointment__content {
+#team-page .meet-team .appointment__content {
   padding: 0px 20px;
 }
-#team .meet-team .section__sub_heading_line {
+#team-page .meet-team .section__sub_heading_line {
   margin: 10px;
 }
-#team .meet-team .welcome__desc {
+#team-page .meet-team .welcome__desc {
   margin-top: 12px;
 }
-#team .appointment__form {
+#team-page .appointment__form {
   margin-top: 30px;
 }
-#team .meet-team .btn_primary {
+#team-page .meet-team .btn_primary {
   border-radius: 0px;
 }
-#team .meet-team .form-control {
+#team-page .meet-team .form-control {
   background: rgba(233, 239, 237, 0);
 }
-#team .meet-team select option {
+#team-page .meet-team select option {
   padding: 18px 25px;
 }
-#team .appointment__top__arrow {
+#team-page .appointment__top__arrow {
   position: absolute;
   fill: #e6e8e0;
   width: 20px;
@@ -3515,7 +3546,7 @@ input[type="radio"] {
   right: 100px;
   top: 50px;
 }
-#team .appointment__bottom_right__arrow {
+#team-page .appointment__bottom_right__arrow {
   position: absolute;
   fill: #e6e8e0;
   width: 109px;
@@ -3523,81 +3554,84 @@ input[type="radio"] {
   right: 150px;
   bottom: 70px;
 }
-#team .meet-team textarea {
+#team-page .meet-team textarea {
   max-height: 150px;
   resize: none;
 }
 /* team meet team responsive */
 @media (max-width: 992px) {
-  #team .meet-team .appointment__content {
+  #team-page .meet-team .appointment__content {
     padding: 50px 0px;
   }
-  #team .meet-team .meet__team__image__container {
+  #team-page .meet-team .meet__team__image__container {
     display: flex;
     align-items: center;
   }
 }
 @media (max-width: 424px) {
-  #team .meet-team .appointment__content {
+  #team-page .meet-team .appointment__content {
     padding: 50px 0px;
   }
-  #team .meet-team .appointment__top__arrow {
+  #team-page .meet-team .appointment__top__arrow {
     right: 30px;
   }
-  #team .meet-team .appointment__bottom_right__arrow {
+  #team-page .meet-team .appointment__bottom_right__arrow {
     right: 30px;
   }
-  #team .meet-team .appointment__image {
+  #team-page .meet-team .appointment__image {
     margin-top: -50px;
   }
 }
 /* TEAM GREAT PLATFORM */
-#team .great-platform .container {
+#team-page .great-platform .container {
   background: #f5f6f0;
 }
-#team .great-platform .container .about-us-right-image-container img {
+#team-page .great-platform .container .about-us-right-image-container img {
   object-fit: cover;
   width: 100%;
 }
-#team .great-platform .feature__accordion__container {
+#team-page .great-platform .feature__accordion__container {
   width: 100%;
   padding: 80px 80px 0px 80px;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-#team .great-platform .feature__accordion__container .btn_primary {
+#team-page .great-platform .feature__accordion__container .btn_primary {
   align-self: flex-start;
 }
-#team .great-platform .order-platform-image {
+#team-page .great-platform .order-platform-image {
   order: 1;
 }
 
-#team .great-platform .order-platform-content {
+#team-page .great-platform .order-platform-content {
   order: 0;
 }
 
 /* team great platform responsive */
 @media (max-width: 992px) {
-  #team .great-platform .feature__accordion__container {
+  #team-page .great-platform .feature__accordion__container {
     padding: 80px 0px 80px 0px;
   }
 }
 @media (max-width: 768px) {
-  #team .great-platform .container {
+  #team-page .great-platform .container {
     padding-top: 50px;
   }
-  #team .great-platform .order-platform-image {
+  #team-page .great-platform .order-platform-image {
     order: 0;
   }
 
-  #team .great-platform .order-platform-content {
+  #team-page .great-platform .order-platform-content {
     order: 1;
   }
 }
 
 /*================ Price page start ====================*/
 /* PRICE SERVICE SECTION */
+#price .service .section__sub_heading::after {
+  content: "";
+}
 #price .service {
   display: flex;
   gap: 50px;
@@ -3624,7 +3658,11 @@ input[type="radio"] {
 #price .service .section__heading {
   margin: 0px;
 }
+
 /* PRICE FAQ SECTION */
+#price .faq-main .section__sub_heading::after {
+  content: none;
+}
 
 .accordion__container {
   margin: 0 auto;
@@ -3914,6 +3952,9 @@ input[type="radio"] {
   /* position: absolute;
   top: 44%;
   left: 28%; */
+}
+#contact .right__icon__container .section__sub_heading::after {
+  content: none;
 }
 @media screen and (max-width: 574px) {
   #contact .map__icon__container {

@@ -88,7 +88,6 @@
               type="button"
               data-toggle="collapse"
               data-target="#navbar-list-3"
-              aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -109,10 +108,7 @@
                   >
                     Home +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./index.html">Home 1</a>
                     <a class="dropdown-item" href="./index2.html">Home 2</a>
                   </div>
@@ -128,10 +124,7 @@
                   >
                     Services +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./service.html">Service</a>
                     <a class="dropdown-item" href="./service-details.html"
                       >Service Details</a
@@ -161,10 +154,7 @@
                   >
                     Pages +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./about-us.html">About Us</a>
                     <a class="dropdown-item" href="./case-studies.html"
                       >Case Studies</a
@@ -188,10 +178,7 @@
                   >
                     News +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./blog.html">Blog</a>
                     <a class="dropdown-item" href="/blog-details.html"
                       >Blog Details</a
@@ -209,10 +196,7 @@
                   >
                     Contact
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./contact.html">Contact</a>
                   </div>
                 </li>
@@ -268,7 +252,9 @@
       <section id="feature" class="feature">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center section__info__container">
+            <div
+              class="col-md-12 text-center section__info__container display__flex__section__sub__heading__icon"
+            >
               <svg class="icon client__plane__icon mb-3">
                 <use xlink:href="./icon/sprite.svg#service-paper-plane"></use>
               </svg>
@@ -434,9 +420,7 @@
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-6 quality-progress">
                 <div class="focus-quality__content">
-                  <h6 class="section__sub_heading section__sub_heading--active">
-                    Focus Quality
-                  </h6>
+                  <h6 class="section__sub_heading">Focus Quality</h6>
 
                   <h2 class="section__heading">
                     conceptual Design delivery exceptional execution
@@ -558,9 +542,7 @@
             </div>
             <div class="col-md-12 col-lg-7">
               <div class="appointment__content">
-                <h6 class="section__sub_heading section__sub_heading--active">
-                  get estimeate
-                </h6>
+                <h6 class="section__sub_heading">get estimeate</h6>
 
                 <h2 class="section__heading">Free Appointment</h2>
                 <div class="welcome__desc">
@@ -576,7 +558,7 @@
                       <input
                         type="email"
                         class="form-control"
-                        id="exampleFormControlInput1"
+                        id="full-name"
                         placeholder="Full Name*"
                       />
                     </div>
@@ -584,7 +566,7 @@
                       <input
                         type="email"
                         class="form-control"
-                        id="exampleFormControlInput1"
+                        id="email"
                         placeholder="Email Address*"
                       />
                     </div>
@@ -609,11 +591,7 @@
                         placeholder="Write your comment*"
                       ></textarea>
                     </div>
-                    <button
-                      type="button"
-                      href="#"
-                      class="btn btn-primary btn_primary"
-                    >
+                    <button type="button" class="btn btn-primary btn_primary">
                       <svg class="icon nav__arrow__icon">
                         <use xlink:href="./icon/sprite.svg#right-arrow"></use>
                       </svg>
@@ -779,7 +757,6 @@
                         type="email"
                         class="form-control footer__newsletter"
                         id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
                         placeholder="Enter email *"
                       />
                     </div>

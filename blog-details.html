@@ -88,7 +88,6 @@
               type="button"
               data-toggle="collapse"
               data-target="#navbar-list-3"
-              aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
@@ -109,10 +108,7 @@
                   >
                     Home +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./index.html">Home 1</a>
                     <a class="dropdown-item" href="./index2.html">Home 2</a>
                   </div>
@@ -128,10 +124,7 @@
                   >
                     Services +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./service.html">Service</a>
                     <a class="dropdown-item" href="./service-details.html"
                       >Service Details</a
@@ -161,10 +154,7 @@
                   >
                     Pages +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./about-us.html">About Us</a>
                     <a class="dropdown-item" href="./case-studies.html"
                       >Case Studies</a
@@ -188,10 +178,7 @@
                   >
                     News +
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./blog.html">Blog</a>
                     <a class="dropdown-item" href="/blog-details.html"
                       >Blog Details</a
@@ -209,10 +196,7 @@
                   >
                     Contact
                   </a>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
+                  <div class="dropdown-menu">
                     <a class="dropdown-item" href="./contact.html">Contact</a>
                   </div>
                 </li>
@@ -423,11 +407,7 @@
                           meat under their midst open god setting you are
                           divided have firmament meat.
                         </h5>
-                        <h6
-                          class="section__sub_heading section__sub_heading--active"
-                        >
-                          Recent Post
-                        </h6>
+                        <h6 class="section__sub_heading">Recent Post</h6>
                       </div>
                     </div>
                   </div>
@@ -616,7 +596,7 @@
                                 <input
                                   type="text"
                                   class="form-control"
-                                  id="exampleFormControlInput1"
+                                  id="full-name"
                                   placeholder="Full Name*"
                                 />
                               </div>
@@ -647,7 +627,6 @@
                           </div>
                           <button
                             type="button"
-                            href="#"
                             class="btn btn-primary btn_primary"
                           >
                             <svg class="icon nav__arrow__icon">
@@ -667,12 +646,12 @@
             <!-- sidebar -->
             <div class="col-md-5 col-lg-4">
               <div class="sidebar__container display__flex">
-                <form action="">
+                <form>
                   <div class="form-group">
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="exampleFormControlInput1"
+                      id="search-box"
                       placeholder="Search here..."
                     />
                     <svg class="icon icon__btn">
@@ -682,9 +661,7 @@
                 </form>
                 <!-- search -->
                 <div class="recent__post__container display__flex">
-                  <h6 class="section__sub_heading section__sub_heading--active">
-                    Recent Post
-                  </h6>
+                  <h6 class="section__sub_heading">Recent Post</h6>
                   <div class="recent__post__item">
                     <div class="row">
                       <div class="col-md-5">
@@ -733,9 +710,7 @@
                 </div>
                 <!-- category -->
                 <div class="recent__post__container display__flex">
-                  <h6 class="section__sub_heading section__sub_heading--active">
-                    Category
-                  </h6>
+                  <h6 class="section__sub_heading">Category</h6>
                   <div class="category__item display__flex">
                     <div class="category__name">Business Strategy</div>
                     <div class="category__number">(21)</div>
@@ -773,9 +748,7 @@
                 </div>
                 <!-- tags -->
                 <div class="recent__post__container display__flex">
-                  <h6 class="section__sub_heading section__sub_heading--active">
-                    Tags
-                  </h6>
+                  <h6 class="section__sub_heading">Tags</h6>
                   <div class="tag__container display__flex">
                     <div class="category__item">
                       <div class="category__name">Business</div>
@@ -902,7 +875,6 @@
                         type="email"
                         class="form-control footer__newsletter"
                         id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
                         placeholder="Enter email *"
                       />
                     </div>
