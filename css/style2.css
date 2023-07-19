@@ -2074,7 +2074,7 @@ p {
   background: #ffffff;
   box-shadow: 0px 2px 4px rgba(19, 25, 34, 0.04);
   padding: 45px 30px;
-  gap: 20;
+  gap: 20px;
 }
 #price-main .price__card__header {
   display: flex;
