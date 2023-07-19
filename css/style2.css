@@ -2441,6 +2441,7 @@ input[type="radio"] {
   flex-direction: column;
   gap: 15px;
   border-radius: 0;
+  margin-bottom: 15px;
 }
 #about-us-page .service .section__description {
   width: 100%;
@@ -2461,6 +2462,9 @@ input[type="radio"] {
 /* #about-us-page .team {
   padding-bottom: 100px;
 } */
+#about-us-page .team .section__sub_heading::after {
+  content: "";
+}
 #about-us-page .team .team__container {
   margin-left: auto;
   max-width: 1610px;
