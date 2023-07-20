@@ -49,7 +49,7 @@
         <div class="container header__container">
           <div class="top__container">
             <div class="header__topbar">
-              <div class="topbar__left">
+              <div class="topbar__left display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#location"></use>
                 </svg>
@@ -62,7 +62,7 @@
                 </svg>
                 <span class="top__icon__text">support@cubex24.com</span>
               </div>
-              <div class="topbar__right">
+              <div class="topbar__right display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#history"></use>
                 </svg>
@@ -70,7 +70,7 @@
                   >Opening Hours: Mon - Fri: 09:00 - 05:00</span
                 >
                 <span class="top__line"></span>
-                <div class="social_icons">
+                <div class="social_icons display__flex">
                   <a href="#"><i class="fa fa-dribbble"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -79,7 +79,9 @@
               </div>
             </div>
           </div>
-          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -202,15 +204,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__search__container">
-              <div class="nav__phone__search__container">
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
                 <svg class="icon search__icon">
                   <use xlink:href="./icon/sprite.svg#Search"></use>
                 </svg>
                 <span class="phone__image__container">
                   <img src="./image/home2/navTelephone.png" alt="" />
                 </span>
-                <span class="nav__number__container">
+                <span
+                  class="nav__number__container display__flex__column__nogap"
+                >
                   <span class="nav__free">Free Call</span>
                   <span class="nav__number">02 (256) 256 025 </span>
                 </span>
@@ -235,7 +243,9 @@
           <div class="row">
             <div class="col-md-12">
               <div class="hero__tile__navigation__container">
-                <div class="hero__content">
+                <div
+                  class="hero__content display__flex__center__vertical_horizontal"
+                >
                   <div class="hero__section__title">
                     <span class="hero__badge">We care your business</span>
                     <h1 class="hero__title">
@@ -273,7 +283,9 @@
       <!-- Hero End -->
       <!-- Appointment Start -->
       <section id="appointment" class="appointment">
-        <div class="container appoinment__container">
+        <div
+          class="container appoinment__container display__flex__align__item__Center"
+        >
           <div class="appoinment__title__container">
             <h3 class="appoinment__title">Booking For Online Appointment</h3>
           </div>
@@ -314,7 +326,7 @@
       </section>
       <!-- Appointment End -->
       <!-- About us Start -->
-      <section id="about-us" class="about-us">
+      <section id="about-us" class="about-us object__fit__w__100">
         <div class="container">
           <div class="row">
             <div class="col-md-4 order__about__left">
@@ -323,12 +335,12 @@
                   <img src="./image/home2/about-left-img.png" alt="" />
                 </div>
 
-                <div class="section__description">
+                <p class="section__description">
                   Nonummy dictum magna inceptos sagittis pharetra etero
                   curabitur ligula placerat nisidana faucibus be massa commodo
                   tempor vivamus dolo vehicula lorem integer aliquet cubilia
                   eget class lobortis erata main
-                </div>
+                </p>
                 <button
                   type="button"
                   class="btn btn-primary btn_primary hero__button"
@@ -341,13 +353,13 @@
               </div>
             </div>
             <div class="col-md-8 order__about__right">
-              <div class="about__right">
+              <div class="about__right display__flex__column">
                 <h6 class="section__sub_heading">About our company</h6>
                 <h2 class="section__heading">
                   Strategic consultants experts in accelerating change for
                   business and individuals
                 </h2>
-                <div class="about-us-right-image-container">
+                <div class="about-us-right-image-container display__flex">
                   <img src="./image/home2/about-right-img.png" alt="" />
                   <div class="about-us-image-sideborder"></div>
                 </div>
@@ -446,9 +458,9 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-1.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -459,10 +471,10 @@
                       <h3 class="swiper__title capitalize">
                         Customer Engagement
                       </h3>
-                      <div class="section__description">
+                      <p class="section__description">
                         Parturient aliquet risus primis nons eudu tincidunt arcu
                         laoree integer pellen tesque aliquet
-                      </div>
+                      </p>
                       <a href="#" class="anchor__link">
                         <svg class="icon button__right__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -473,9 +485,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-2.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -486,10 +498,10 @@
                       <h3 class="swiper__title capitalize">
                         Business Opportunities
                       </h3>
-                      <div class="section__description">
+                      <p class="section__description">
                         Parturient aliquet risus primis nons eudu tincidunt arcu
                         laoree integer pellen tesque aliquet
-                      </div>
+                      </p>
                       <a href="#" class="anchor__link">
                         <svg class="icon button__right__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -500,9 +512,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-1.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -513,10 +525,10 @@
                       <h3 class="swiper__title capitalize">
                         Customer Engagement
                       </h3>
-                      <div class="section__description">
+                      <p class="section__description">
                         Parturient aliquet risus primis nons eudu tincidunt arcu
                         laoree integer pellen tesque aliquet
-                      </div>
+                      </p>
                       <a href="#" class="anchor__link">
                         <svg class="icon button__right__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -527,9 +539,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-2.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -540,10 +552,10 @@
                       <h3 class="swiper__title capitalize">
                         Business Opportunities
                       </h3>
-                      <div class="section__description">
+                      <p class="section__description">
                         Parturient aliquet risus primis nons eudu tincidunt arcu
                         laoree integer pellen tesque aliquet
-                      </div>
+                      </p>
                       <a href="#" class="anchor__link">
                         <svg class="icon button__right__arrow__icon">
                           <use xlink:href="./icon/sprite.svg#right-arrow"></use>
@@ -557,7 +569,9 @@
             </div>
           </div>
         </div>
-        <div class="service__slider__button__container">
+        <div
+          class="service__slider__button__container display__flex__space__between"
+        >
           <button class="btn btn_secondary service__slider_prev">
             <svg class="icon service___right__arrow__icon">
               <use xlink:href="./icon/sprite.svg#left-arrow"></use>
@@ -572,9 +586,9 @@
       </section>
       <!-- Servie End -->
       <!-- Feature Start -->
-      <section id="feature" class="feature">
-        <div class="feature__container">
-          <div class="about-us-right-image-container">
+      <section id="feature" class="feature display__flex">
+        <div class="feature__container display__flex">
+          <div class="about-us-right-image-container display__flex">
             <div class="about-us-image-sideborder"></div>
             <img src="./image/home2/feature-people.png" alt="" />
           </div>
@@ -779,7 +793,7 @@
 
                   <div class="card__text text-center">
                     <div class="team__share__btn">
-                      <div class="social_icons">
+                      <div class="social_icons display__flex">
                         <a href="#"><i class="fa fa-linkedin"></i></a>
                         <a href="#"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -805,7 +819,7 @@
       <section id="project" class="project">
         <div class="row">
           <div class="col-md-12 col-lg-4">
-            <div class="project__left">
+            <div class="project__left display__flex">
               <h6 class="section__sub_heading">latest project</h6>
               <h2 class="section__heading">
                 Experience the Evolution of your Business.
@@ -968,8 +982,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-1.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
@@ -996,8 +1010,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-2.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
@@ -1024,8 +1038,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-3.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
@@ -1058,7 +1072,7 @@
         <div class="testimonial__content">
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-5 order__slider">
-              <div class="testimonials__container">
+              <div class="testimonials__container display__flex">
                 <h6 class="section__sub_heading">Our client feedback</h6>
                 <h2 class="section__heading">
                   Happy client feedback about service
@@ -1107,7 +1121,7 @@
                                 ></use>
                               </svg>
 
-                              <div class="section__description">
+                              <p class="section__description">
                                 Praesent bibendum praesent anterule conubia
                                 integer convallis egete site commodo proin
                                 fermentum nostra egesta lacinia adiso dictumst
@@ -1117,21 +1131,29 @@
                                 pellentesque lobortis nisle laoreet to ornare
                                 hendrerit torquent iaculis elementum accumsa
                                 ullamcorper laoreet.
-                              </div>
-                              <div class="slider__footer">
-                                <div class="person__info">
+                              </p>
+                              <div
+                                class="slider__footer display__flex__space__between"
+                              >
+                                <div
+                                  class="person__info display__flex__align__item__Center"
+                                >
                                   <img
                                     src="./image/home2/testimonial-user.jpg"
                                     alt=""
                                   />
-                                  <div class="person__designation">
+                                  <div
+                                    class="person__designation display__flex__column__nogap"
+                                  >
                                     <h4>Cory Anderson</h4>
                                     <span class="person__title"
                                       >Head of Director “Keystone Group”</span
                                     >
                                   </div>
                                 </div>
-                                <div class="testimonial__title__btn">
+                                <div
+                                  class="testimonial__title__btn display__flex"
+                                >
                                   <button
                                     class="btn btn_secondary testimonial__slider_prev"
                                   >
@@ -1191,7 +1213,7 @@
                                 ></use>
                               </svg>
 
-                              <div class="section__description">
+                              <p class="section__description">
                                 Praesent bibendum praesent anterule conubia
                                 integer convallis egete site commodo proin
                                 fermentum nostra egesta lacinia adiso dictumst
@@ -1201,21 +1223,29 @@
                                 pellentesque lobortis nisle laoreet to ornare
                                 hendrerit torquent iaculis elementum accumsa
                                 ullamcorper laoreet.
-                              </div>
-                              <div class="slider__footer">
-                                <div class="person__info">
+                              </p>
+                              <div
+                                class="slider__footer display__flex__space__between"
+                              >
+                                <div
+                                  class="person__info display__flex__align__item__Center"
+                                >
                                   <img
                                     src="./image/home2/testimonial-user.jpg"
                                     alt=""
                                   />
-                                  <div class="person__designation">
+                                  <div
+                                    class="person__designation display__flex__column__nogap"
+                                  >
                                     <h4>Cory Anderson</h4>
                                     <span class="person__title"
                                       >Head of Director “Keystone Group”</span
                                     >
                                   </div>
                                 </div>
-                                <div class="testimonial__title__btn">
+                                <div
+                                  class="testimonial__title__btn display__flex"
+                                >
                                   <button
                                     class="btn btn_secondary testimonial__slider_prev"
                                   >
@@ -1275,7 +1305,7 @@
                                 ></use>
                               </svg>
 
-                              <div class="section__description">
+                              <p class="section__description">
                                 Praesent bibendum praesent anterule conubia
                                 integer convallis egete site commodo proin
                                 fermentum nostra egesta lacinia adiso dictumst
@@ -1285,21 +1315,29 @@
                                 pellentesque lobortis nisle laoreet to ornare
                                 hendrerit torquent iaculis elementum accumsa
                                 ullamcorper laoreet.
-                              </div>
-                              <div class="slider__footer">
-                                <div class="person__info">
+                              </p>
+                              <div
+                                class="slider__footer display__flex__space__between"
+                              >
+                                <div
+                                  class="person__info display__flex__align__item__Center"
+                                >
                                   <img
                                     src="./image/home2/testimonial-user.jpg"
                                     alt=""
                                   />
-                                  <div class="person__designation">
+                                  <div
+                                    class="person__designation display__flex__column__nogap"
+                                  >
                                     <h4>Cory Anderson</h4>
                                     <span class="person__title"
                                       >Head of Director “Keystone Group”</span
                                     >
                                   </div>
                                 </div>
-                                <div class="testimonial__title__btn">
+                                <div
+                                  class="testimonial__title__btn display__flex"
+                                >
                                   <button
                                     class="btn btn_secondary testimonial__slider_prev"
                                   >
@@ -1330,9 +1368,10 @@
               </div>
             </div>
             <div class="col-sm-12 col-md-12 col-lg-7 order__video">
-              <div class="about-us-right-image-container">
-                <!-- <img src="./image/home2/testimonial-people.jpg" alt="" /> -->
-                <div class="tesimonial__video__image">
+              <div class="about-us-right-image-container display__flex">
+                <div
+                  class="tesimonial__video__image display__grid__items__center"
+                >
                   <button class="btn btn-primary btn_primary tesimonial__btn">
                     <svg class="icon service___right__arrow__icon">
                       <use
@@ -1467,13 +1506,13 @@
               <div class="col-md-4">
                 <div class="float-left footer__widget__content">
                   <h2 class="footer__title">Let’s Project</h2>
-                  <div
+                  <p
                     class="footer__widget__des footer__widget__des--margin-top"
                   >
                     Neque eget porttitor fermentum congue duis natoque had
                     amcorper a torquent vulputate donec conubian tempor nibhe
                     tortor pharetra over the dictum.
-                  </div>
+                  </p>
                   <div
                     class="footer__widget__des footer__widget__des--margin-top footer__widget__des--emergency"
                   >
@@ -1609,12 +1648,10 @@
               </div>
             </div>
             <div class="col-md-8">
-              <div class="footer__copyright">
-                <div class="copyright__text">
-                  <p>
-                    Copyright © 2023 Cube by HR Design. All Rights Reserved.
-                  </p>
-                </div>
+              <div class="footer__copyright display__flex__space__between">
+                <p class="copyright__text">
+                  Copyright © 2023 Cube by HR Design. All Rights Reserved.
+                </p>
                 <div class="copyright__links">
                   <ul class="list-inline">
                     <li><a href="#">About us </a></li>

@@ -49,7 +49,7 @@
         <div class="container header__container">
           <div class="top__container">
             <div class="header__topbar">
-              <div class="topbar__left">
+              <div class="topbar__left display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#location"></use>
                 </svg>
@@ -62,7 +62,7 @@
                 </svg>
                 <span class="top__icon__text">support@cubex24.com</span>
               </div>
-              <div class="topbar__right">
+              <div class="topbar__right display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#history"></use>
                 </svg>
@@ -70,7 +70,7 @@
                   >Opening Hours: Mon - Fri: 09:00 - 05:00</span
                 >
                 <span class="top__line"></span>
-                <div class="social_icons">
+                <div class="social_icons display__flex">
                   <a href="#"><i class="fa fa-dribbble"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -79,7 +79,9 @@
               </div>
             </div>
           </div>
-          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -202,15 +204,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__search__container">
-              <div class="nav__phone__search__container">
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
                 <svg class="icon search__icon">
                   <use xlink:href="./icon/sprite.svg#Search"></use>
                 </svg>
                 <span class="phone__image__container">
                   <img src="./image/home2/navTelephone.png" alt="" />
                 </span>
-                <span class="nav__number__container">
+                <span
+                  class="nav__number__container display__flex__column__nogap"
+                >
                   <span class="nav__free">Free Call</span>
                   <span class="nav__number">02 (256) 256 025 </span>
                 </span>
@@ -235,7 +243,9 @@
           <div class="row">
             <div class="col-md-12">
               <div class="hero__tile__navigation__container">
-                <div class="hero__content text-center">
+                <div
+                  class="hero__content text-center display__flex__center__vertical_horizontal"
+                >
                   <div class="hero__section__title">
                     <span class="hero__badge">Home - About Us</span>
                     <h1 class="hero__title">About Us</h1>
@@ -252,20 +262,26 @@
         id="about-section"
         class="about-section section__padding__bottom"
       >
-        <div class="container">
-          <div class="about-us-right-image-container">
+        <div class="container display__flex">
+          <div
+            class="about-us-right-image-container display__flex__column__nogap"
+          >
             <img src="./image/about-us/about-us.jpg" alt="" />
-            <div class="about__client">
+            <div
+              class="about__client display__flex__center__vertical_horizontal"
+            >
               <svg class="about__business__icon">
                 <use xlink:href="./icon/sprite.svg#icon-businessman"></use>
               </svg>
-              <div class="about__number">
+              <div class="about__number display__flex__column__nogap">
                 <h2>30k</h2>
                 <h4>Happy Client</h4>
               </div>
             </div>
           </div>
-          <div class="feature__accordion__container">
+          <div
+            class="feature__accordion__container display__flex__column__nogap"
+          >
             <h6 class="section__sub_heading">our company</h6>
             <h2 class="section__heading">
               Creating business with Real integrity
@@ -319,7 +335,7 @@
       </section>
       <!-- About us End -->
       <!-- Service Start -->
-      <section id="service" class="service">
+      <section id="service" class="service display__flex">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section__info__container">
@@ -334,7 +350,7 @@
           </div>
           <div class="row">
             <div class="col-md-4">
-              <div class="service__card">
+              <div class="service__card display__flex__column__nogap">
                 <h3>Who We Are</h3>
                 <div class="section__description">
                   Massa augue angry inceptos ridiculus poten dictumst amet
@@ -352,7 +368,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="service__card">
+              <div class="service__card display__flex__column__nogap">
                 <h3>Company Vision</h3>
                 <div class="section__description">
                   Massa augue angry inceptos ridiculus poten dictumst amet
@@ -370,7 +386,7 @@
               </div>
             </div>
             <div class="col-md-4">
-              <div class="service__card">
+              <div class="service__card display__flex__column__nogap">
                 <h3>Why Choose Us</h3>
                 <div class="section__description">
                   Massa augue angry inceptos ridiculus poten dictumst amet
@@ -610,11 +626,13 @@
       <!-- Team End -->
       <!-- Testimonial Start -->
       <section id="testimonial" class="testimonial">
-        <div class="container testimonial_slider_container">
+        <div class="container testimonial_slider_container display__flex">
           <div class="testimonial-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="testimonial__slider__card">
+                <div
+                  class="testimonial__slider__card display__flex__align__item__Center"
+                >
                   <div class="testimonial__image__container">
                     <img
                       src="./image/home1/testimonial-1.png"
@@ -622,7 +640,9 @@
                       class="rounded-circle"
                     />
 
-                    <div class="quote__icon-container">
+                    <div
+                      class="quote__icon-container display__flex__center__vertical_horizontal"
+                    >
                       <svg class="icon quote__icon">
                         <use
                           xlink:href="./icon/sprite.svg#home-one-quote"
@@ -638,7 +658,9 @@
                     varius auctor egestas ornare pellentesque lobortis nisle
                     laoreet to ornare hendrerit torquent
                   </div>
-                  <div class="testimonial__btn">
+                  <div
+                    class="testimonial__btn display__flex__align__item__Center"
+                  >
                     <button class="btn btn_secondary testimonial__slider_prev">
                       <svg class="icon project__arrow__icon">
                         <use xlink:href="./icon/sprite.svg#left-arrow"></use>
@@ -678,7 +700,9 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="testimonial__slider__card">
+                <div
+                  class="testimonial__slider__card display__flex__align__item__Center"
+                >
                   <div class="testimonial__image__container">
                     <img
                       src="./image/home1/testimonial-1.png"
@@ -686,7 +710,9 @@
                       class="rounded-circle"
                     />
 
-                    <div class="quote__icon-container">
+                    <div
+                      class="quote__icon-container display__flex__center__vertical_horizontal"
+                    >
                       <svg class="icon quote__icon">
                         <use
                           xlink:href="./icon/sprite.svg#home-one-quote"
@@ -702,7 +728,9 @@
                     varius auctor egestas ornare pellentesque lobortis nisle
                     laoreet to ornare hendrerit torquent
                   </div>
-                  <div class="testimonial__btn">
+                  <div
+                    class="testimonial__btn display__flex__align__item__Center"
+                  >
                     <button class="btn btn_secondary testimonial__slider_prev">
                       <svg class="icon project__arrow__icon">
                         <use xlink:href="./icon/sprite.svg#left-arrow"></use>
@@ -814,9 +842,7 @@
               </div>
               <div class="col-sm-12 col-md-12 col-lg-5">
                 <div class="focus-quality__content">
-                  <h6 class="section__sub_heading section__sub_heading--active">
-                    Focus Quality
-                  </h6>
+                  <h6 class="section__sub_heading">Focus Quality</h6>
 
                   <h2 class="section__heading">
                     conceptual Design delivery exceptional execution
@@ -900,8 +926,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-1.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
@@ -928,8 +954,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-2.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
@@ -956,8 +982,8 @@
                 <div class="team__card">
                   <img src="./image/home2/blog-image-3.png" alt="" />
 
-                  <div class="card__text">
-                    <div class="blog__badge__container">
+                  <div class="card__text display__flex__column">
+                    <div class="blog__badge__container display__flex">
                       <span class="badge badge-light blog__badge"
                         >Business</span
                       >
