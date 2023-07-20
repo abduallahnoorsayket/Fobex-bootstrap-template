@@ -695,6 +695,11 @@ button {
 /* .wellcome__image__container {
   height: 720px;
 } */
+.about-us {
+  max-width: 1580px;
+  margin-left: auto;
+  /* padding: 0px 0px; */
+}
 .welcome__image {
   background-image: url(../image/home1/welcome_image.png);
   width: 100%;
@@ -715,6 +720,11 @@ button {
   line-height: 30px;
   margin-top: 10px;
   color: #5f6165;
+}
+.about-us__welcome {
+  max-width: 1580px;
+  padding: 0px 0px;
+  margin-left: auto;
 }
 .about-us__welcome ul li {
   padding: 5px 0;
@@ -737,9 +747,9 @@ button {
 .about-us hr {
   margin: 10px 5px;
 }
-.focus-quality__image_container {
+/* .focus-quality__image_container {
   padding-left: 16px;
-}
+} */
 .focus-quality__image {
   background-image: url(../image/home1/focus_quality.png);
   width: 100%;
@@ -749,8 +759,13 @@ button {
   /* padding-left: 15px; */
 }
 .focus-quality__content {
-  padding: 80px 40px 80px 260px;
+  padding: 80px 40px 80px 0px;
 }
+/* .about-us__focus-quality {
+  max-width: 1580px;
+  margin-left: auto;
+  padding: 0px 0px;
+} */
 .about-us__focus-quality img {
   width: 100%;
   padding-left: 15px;
@@ -790,6 +805,9 @@ button {
 }
 /* About-us responsive */
 @media (max-width: 992px) {
+  .about-us__container {
+    padding: 0 30px;
+  }
   .welcome__content {
     width: 100%;
     padding: 50px 0;
@@ -800,11 +818,14 @@ button {
   .focus-quality__content {
     padding: 80px 30px 0px 30px;
   }
-  .focus-quality__image_container {
+  /* .focus-quality__image_container {
     padding-right: 16px;
-  }
+  } */
   .order-about {
     order: 10;
+  }
+  .about-us__focus-quality {
+    padding: 0 30px;
   }
 }
 @media (max-width: 424px) {
@@ -824,9 +845,7 @@ button {
   .about-us__welcome .btn_primary {
     width: 100%;
   }
-  .about-us__focus-quality {
-    padding: 0 30px;
-  }
+
   .focus-quality__content {
     padding: 20px 0px;
   }
