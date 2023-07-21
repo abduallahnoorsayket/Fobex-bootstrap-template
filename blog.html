@@ -49,7 +49,7 @@
         <div class="container header__container">
           <div class="top__container">
             <div class="header__topbar">
-              <div class="topbar__left">
+              <div class="topbar__left display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#location"></use>
                 </svg>
@@ -62,7 +62,7 @@
                 </svg>
                 <span class="top__icon__text">support@cubex24.com</span>
               </div>
-              <div class="topbar__right">
+              <div class="topbar__right display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#history"></use>
                 </svg>
@@ -70,7 +70,7 @@
                   >Opening Hours: Mon - Fri: 09:00 - 05:00</span
                 >
                 <span class="top__line"></span>
-                <div class="social_icons">
+                <div class="social_icons display__flex">
                   <a href="#"><i class="fa fa-dribbble"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -79,7 +79,9 @@
               </div>
             </div>
           </div>
-          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -202,15 +204,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__search__container">
-              <div class="nav__phone__search__container">
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
                 <svg class="icon search__icon">
                   <use xlink:href="./icon/sprite.svg#Search"></use>
                 </svg>
                 <span class="phone__image__container">
                   <img src="./image/home2/navTelephone.png" alt="" />
                 </span>
-                <span class="nav__number__container">
+                <span
+                  class="nav__number__container display__flex__column__nogap"
+                >
                   <span class="nav__free">Free Call</span>
                   <span class="nav__number">02 (256) 256 025 </span>
                 </span>

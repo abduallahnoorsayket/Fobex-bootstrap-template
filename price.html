@@ -49,7 +49,7 @@
         <div class="container header__container">
           <div class="top__container">
             <div class="header__topbar">
-              <div class="topbar__left">
+              <div class="topbar__left display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#location"></use>
                 </svg>
@@ -62,7 +62,7 @@
                 </svg>
                 <span class="top__icon__text">support@cubex24.com</span>
               </div>
-              <div class="topbar__right">
+              <div class="topbar__right display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#history"></use>
                 </svg>
@@ -70,7 +70,7 @@
                   >Opening Hours: Mon - Fri: 09:00 - 05:00</span
                 >
                 <span class="top__line"></span>
-                <div class="social_icons">
+                <div class="social_icons display__flex">
                   <a href="#"><i class="fa fa-dribbble"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -79,7 +79,9 @@
               </div>
             </div>
           </div>
-          <nav class="navbar navbar-dark navbar-expand-lg nav-custom">
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -202,15 +204,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__search__container">
-              <div class="nav__phone__search__container">
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
                 <svg class="icon search__icon">
                   <use xlink:href="./icon/sprite.svg#Search"></use>
                 </svg>
                 <span class="phone__image__container">
                   <img src="./image/home2/navTelephone.png" alt="" />
                 </span>
-                <span class="nav__number__container">
+                <span
+                  class="nav__number__container display__flex__column__nogap"
+                >
                   <span class="nav__free">Free Call</span>
                   <span class="nav__number">02 (256) 256 025 </span>
                 </span>
@@ -236,10 +244,12 @@
           <div class="row">
             <div class="col-md-12">
               <div class="hero__tile__navigation__container">
-                <div class="hero__content text-center">
+                <div
+                  class="hero__content text-center display__flex__center__vertical_horizontal"
+                >
                   <div class="hero__section__title">
-                    <span class="hero__badge">Home - our price</span>
-                    <h1 class="hero__title">our pricing</h1>
+                    <span class="hero__badge">Home - Price</span>
+                    <h1 class="hero__title">Our Pricing</h1>
                   </div>
                 </div>
               </div>
@@ -267,7 +277,7 @@
               <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="price__card">
                   <div class="price__card-content">
-                    <div class="price__card__header">
+                    <div class="price__card__header display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__icon">
                           <use
@@ -347,7 +357,7 @@
               <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="price__card">
                   <div class="price__card-content">
-                    <div class="price__card__header">
+                    <div class="price__card__header display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__icon">
                           <use
@@ -427,7 +437,7 @@
               <div class="col-sm-12 col-md-6 col-lg-4">
                 <div class="price__card">
                   <div class="price__card-content">
-                    <div class="price__card__header">
+                    <div class="price__card__header display__flex">
                       <div class="process__icon-container">
                         <svg class="icon process__icon">
                           <use xlink:href="./icon/sprite.svg#investment"></use>
@@ -508,7 +518,7 @@
       </section>
       <!-- Price End -->
       <!-- Service Start -->
-      <section id="service" class="service">
+      <section id="service" class="service display__flex">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -546,9 +556,9 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-1.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex__column">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -573,9 +583,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-2.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex__column">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -600,9 +610,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-1.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex__column">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -627,9 +637,9 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="swiper__content">
+                  <div class="swiper__content display__flex">
                     <img src="./image/home2/service-slider-2.png" alt="" />
-                    <div class="swiper__text">
+                    <div class="swiper__text display__flex__column">
                       <div class="process__icon-container">
                         <svg class="icon process__service-teamworkicon">
                           <use
@@ -688,34 +698,13 @@
           <div class="row">
             <div class="col-md-12">
               <div class="accordion__container">
-                <div class="accordion-main">
-                  <!-- <div class="accordion__item__container display__flex">
-              <span class="accordion__serial">Q:1</span>
-              <div class="accordion-item">
-                <div class="accordion__item__contents">
-                  <button id="accordion-button-1" aria-expanded="false">
-                    <span class="accordion-title"
-                      >Why is the moon sometimes out during the day?</span
-                    >
-                    <span class="icon" aria-hidden="true"></span>
-                  </button>
-                  <svg class="icon accordion__icon">
-                    <use xlink:href="./icon/sprite.svg#down-arrow"></use>
-                  </svg>
-                </div>
-                <div class="accordion-content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor
-                    pretium viverra suspendisse potenti.
-                  </p>
-                </div>
-              </div>
-            </div> -->
-
+                <div class="accordion-main display__flex__column">
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial"> Q:1 </span>
+                    <span
+                      class="accordion__serial display__grid__items__center"
+                    >
+                      Q:1
+                    </span>
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -739,7 +728,9 @@
                   </div>
 
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial">Q:2</span>
+                    <span class="accordion__serial display__grid__items__center"
+                      >Q:2</span
+                    >
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -761,7 +752,9 @@
                   </div>
 
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial">Q:3</span>
+                    <span class="accordion__serial display__grid__items__center"
+                      >Q:3</span
+                    >
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -781,7 +774,11 @@
                     </div>
                   </div>
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial"> Q:4 </span>
+                    <span
+                      class="accordion__serial display__grid__items__center"
+                    >
+                      Q:4
+                    </span>
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -803,7 +800,9 @@
                   </div>
 
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial">Q:5</span>
+                    <span class="accordion__serial display__grid__items__center"
+                      >Q:5</span
+                    >
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -828,7 +827,9 @@
                   </div>
 
                   <div class="accordion__item__container display__flex">
-                    <span class="accordion__serial">Q:6</span>
+                    <span class="accordion__serial display__grid__items__center"
+                      >Q:6</span
+                    >
                     <div class="accordion-item">
                       <button class="accordion-button-1" aria-expanded="false">
                         <span class="accordion-title"
@@ -864,7 +865,7 @@
           <div class="footer__cta">
             <div class="row">
               <div class="col-md-8">
-                <div class="cta__icon__container">
+                <div class="cta__icon__container display__flex">
                   <svg class="icon footer__phone_icon">
                     <use xlink:href="./icon/sprite.svg#footer-phone"></use>
                   </svg>
@@ -979,7 +980,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="footer__copyright">
+              <div class="footer__copyright display__flex__space__between">
                 <div class="copyright__text">
                   <p>
                     Copyright © 2023 Cube by
