@@ -3646,12 +3646,10 @@ input[type="radio"] {
   height: 100%;
 }
 #faq .search__input__container {
-  display: flex;
   padding: 65px 50px;
   background: #f5f6f0;
   width: 100%;
   align-items: flex-start;
-  flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
 }
@@ -3663,26 +3661,30 @@ input[type="radio"] {
 #faq .search__input {
   width: 100%;
 }
-#faq .search__input .form-group {
-  display: flex;
-}
 #faq .search__input .form-group .icon__btn {
   width: 25px;
   height: 25px;
 }
-
 #faq .search__input .btn_primary {
   width: 56px;
   height: 51px;
   margin: 5px 0 5px -60px;
   padding: 0px;
 }
+
+#faq .search__input__container .form-group {
+  display: flex;
+}
 @media screen and (max-width: 900px) {
-  #faq .search-field .display__flex {
+  #faq .search-field .search__container {
     flex-direction: column;
   }
 }
-/* ============= Contact  us ============ */
+/* FAQ FAQ SECTION  */
+#faq #faq-main .section__sub_heading::after {
+  content: none;
+}
+/* ============= Contact  us page start ============ */
 /* CONTACT CONTACT SECTION */
 
 #contact-section .container img {
@@ -3693,14 +3695,11 @@ input[type="radio"] {
   padding-right: 40px;
 }
 #contact-section .contact__item__container {
-  display: flex;
   gap: 50px;
 }
 
 #contact-section .contact__item__container .appointment__content {
-  flex-direction: column;
   gap: 35px;
-  display: flex;
 }
 
 #contact-section .appointment__form .welcome__desc {
@@ -3733,32 +3732,21 @@ input[type="radio"] {
   background-size: cover;
   position: relative;
 }
-#contact .contact-map .container {
-  display: grid;
-  place-items: center;
-}
+
 #contact .map__icon__container {
   width: 500px;
   margin: 0 auto;
   padding-top: 270px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 #contact .contact-map .map__pin__icon__1 {
   height: 66px;
   width: 55px;
-  /* position: absolute;
-  top: 47%;
-  right: 30%; */
 }
 #contact .contact-map .map__pin__icon__2 {
   height: 66px;
   width: 55px;
-  /* position: absolute;
-  top: 44%;
-  left: 28%; */
 }
 #contact .right__icon__container .section__sub_heading::after {
   content: none;
@@ -3771,7 +3759,6 @@ input[type="radio"] {
 
 /* CONTACT CONTACT INFO SECTION */
 #contact .contact__item__container {
-  display: flex;
   gap: 80px;
 }
 #contact .contact__item__container h3 {
@@ -3782,8 +3769,6 @@ input[type="radio"] {
   padding-right: 40px;
 }
 #contact .contact__icons__container {
-  display: flex;
-  flex-direction: column;
   gap: 22px;
 }
 #contact .contact__icon {
@@ -3816,7 +3801,6 @@ input[type="radio"] {
 .all-posts img {
   object-fit: cover;
   width: 100%;
-  /* height: 100%; */
 }
 
 .all-posts .post__cotainer {
@@ -3900,6 +3884,9 @@ input[type="radio"] {
 .all-posts .pagination__container {
   gap: 20px;
 }
+.all-posts .pagination__container img {
+  width: auto;
+}
 .all-posts .pagination__container .pagination__number__btn {
   border-radius: 50px;
   border: 1px solid #888;
@@ -3938,7 +3925,6 @@ input[type="radio"] {
   gap: 10px;
 }
 .all-posts .recent__post__item .recent__post__container {
-  display: flex;
   justify-content: center;
 }
 
@@ -3956,9 +3942,6 @@ input[type="radio"] {
     url("../image/blog/blog-contact-us.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--white);
 }
 .all-posts .sidebar__container .recent__post__support .support__content {
@@ -3970,8 +3953,6 @@ input[type="radio"] {
 }
 .all-posts .sidebar__container .tag__container .category__item {
   padding: 12px 20px;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid #888888;
   background: rgba(217, 217, 217, 0);
   margin: 0 5px 10px;
@@ -4001,14 +3982,7 @@ input[type="radio"] {
   font-size: 30px;
 }
 .all-posts .post__cotainer .post__description {
-  flex-direction: column;
   gap: 20px;
-  display: flex;
-}
-.all-posts .post__cotainer .post__description {
-  flex-direction: column;
-  gap: 20px;
-  display: flex;
 }
 .all-posts .post__cotainer .blog__image__caption {
   padding: 10px 0;

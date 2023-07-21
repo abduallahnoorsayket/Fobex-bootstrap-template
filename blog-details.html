@@ -49,7 +49,7 @@
         <div class="container header__container">
           <div class="top__container">
             <div class="header__topbar">
-              <div class="topbar__left">
+              <div class="topbar__left display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#location"></use>
                 </svg>
@@ -62,7 +62,7 @@
                 </svg>
                 <span class="top__icon__text">support@cubex24.com</span>
               </div>
-              <div class="topbar__right">
+              <div class="topbar__right display__flex">
                 <svg class="icon search__icon top__icon">
                   <use xlink:href="./icon/sprite.svg#history"></use>
                 </svg>
@@ -70,7 +70,7 @@
                   >Opening Hours: Mon - Fri: 09:00 - 05:00</span
                 >
                 <span class="top__line"></span>
-                <div class="social_icons">
+                <div class="social_icons display__flex">
                   <a href="#"><i class="fa fa-dribbble"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                   <a href="#"><i class="fa fa-linkedin"></i></a>
@@ -79,7 +79,9 @@
               </div>
             </div>
           </div>
-          <nav style="" class="navbar navbar-dark navbar-expand-lg nav-custom">
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
             <a class="navbar-brand" href="#">
               <img src="./image/home2/Logo-2.png" alt="logo" />
             </a>
@@ -202,15 +204,21 @@
                 </li>
               </ul>
             </div>
-            <div class="nav__search__container">
-              <div class="nav__phone__search__container">
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
                 <svg class="icon search__icon">
                   <use xlink:href="./icon/sprite.svg#Search"></use>
                 </svg>
                 <span class="phone__image__container">
                   <img src="./image/home2/navTelephone.png" alt="" />
                 </span>
-                <span class="nav__number__container">
+                <span
+                  class="nav__number__container display__flex__column__nogap"
+                >
                   <span class="nav__free">Free Call</span>
                   <span class="nav__number">02 (256) 256 025 </span>
                 </span>
@@ -236,10 +244,12 @@
           <div class="row">
             <div class="col-md-12">
               <div class="hero__tile__navigation__container">
-                <div class="hero__content text-center">
+                <div
+                  class="hero__content text-center display__flex__center__vertical_horizontal"
+                >
                   <div class="hero__section__title">
-                    <span class="hero__badge">Home - news details</span>
-                    <h1 class="hero__title">news details</h1>
+                    <span class="hero__badge">Home - News details</span>
+                    <h1 class="hero__title">News details</h1>
                   </div>
                 </div>
               </div>
@@ -272,7 +282,7 @@
 
                     <div class="blog__text display__flex">
                       <div class="post__btn_container display__flex">
-                        <div class="social_icons">
+                        <div class="social_icons display__flex">
                           <a href="#"><i class="fa fa-facebook"></i></a>
                           <a href="#"><i class="fa fa-twitter"></i></a>
                           <a href="#"><i class="fa fa-instagram"></i></a>
@@ -312,7 +322,7 @@
                   </div>
                 </div>
                 <!-- partners in growth -->
-                <div class="post__description">
+                <div class="post__description display__flex__column">
                   <h3 class="post__desc__title">
                     Mutual vision partners in growth
                   </h3>
@@ -336,7 +346,7 @@
                       Developing process for your profits
                     </div>
                   </div>
-                  <div class="col-md-6 post__description">
+                  <div class="col-md-6 post__description display__flex__column">
                     <div class="section__description">
                       Kind green deep fill had us all god. You're deep midst
                       land brings Bearing shall lesser lets wherein days
@@ -365,7 +375,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="post__description">
+                <div class="post__description display__flex__column">
                   <div class="section__description">
                     Dominion god all two to green multiply kind great without
                     heaven herb you one over man them open god open. Let for
@@ -413,7 +423,7 @@
                   </div>
                 </div>
                 <!-- business inovation -->
-                <div class="post__description">
+                <div class="post__description display__flex__column">
                   <h3 class="post__desc__title">
                     Lead from Front in Business Innovation
                   </h3>
@@ -445,7 +455,7 @@
                   </div>
                 </div>
                 <!-- smart service -->
-                <div class="post__description">
+                <div class="post__description display__flex__column">
                   <h3 class="post__desc__title">
                     Financially smart Service from the heart
                   </h3>
@@ -644,14 +654,14 @@
               </div>
             </div>
             <!-- sidebar -->
-            <div class="col-md-5 col-lg-4">
+            <div class="col-md-4">
               <div class="sidebar__container display__flex">
                 <form>
                   <div class="form-group">
                     <input
-                      type="text"
+                      type="email"
                       class="form-control"
-                      id="search-box"
+                      id="exampleFormControlInput1"
                       placeholder="Search here..."
                     />
                     <svg class="icon icon__btn">
@@ -667,7 +677,9 @@
                       <div class="col-md-5">
                         <img src="./image/blog/recent-post-1.jpg" alt="" />
                       </div>
-                      <div class="col-md-7 recent__post__container">
+                      <div
+                        class="col-md-7 recent__post__container display__flex"
+                      >
                         <div class="recent__post__text display__flex">
                           <span> <strong>Business</strong>/ 10 feb, 2023</span>
                           <h5>
@@ -682,7 +694,9 @@
                       <div class="col-md-5">
                         <img src="./image/blog/recent-post-2.jpg" alt="" />
                       </div>
-                      <div class="col-md-7 recent__post__container">
+                      <div
+                        class="col-md-7 recent__post__container display__flex"
+                      >
                         <div class="recent__post__text display__flex">
                           <span> <strong>Business</strong>/ 10 feb, 2023</span>
                           <h5>
@@ -697,7 +711,9 @@
                       <div class="col-md-5">
                         <img src="./image/blog/recent-post-3.jpg" alt="" />
                       </div>
-                      <div class="col-md-7 recent__post__container">
+                      <div
+                        class="col-md-7 recent__post__container display__flex"
+                      >
                         <div class="recent__post__text display__flex">
                           <span> <strong>Business</strong>/ 10 feb, 2023</span>
                           <h5>
@@ -734,7 +750,9 @@
                 </div>
                 <!-- support  -->
                 <div class="recent__post__support">
-                  <div class="support__image">
+                  <div
+                    class="support__image display__flex__center__vertical_horizontal"
+                  >
                     <div class="support__content">
                       <h2>Have Any project? contact us</h2>
                       <button type="button" class="btn btn-primary btn_primary">
@@ -797,7 +815,7 @@
           <div class="footer__cta">
             <div class="row">
               <div class="col-md-8">
-                <div class="cta__icon__container">
+                <div class="cta__icon__container display__flex">
                   <svg class="icon footer__phone_icon">
                     <use xlink:href="./icon/sprite.svg#footer-phone"></use>
                   </svg>
@@ -898,10 +916,10 @@
                     Follow us
                   </div>
                   <div class="social_icons">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
                     <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
                   </div>
                 </div>
               </div>
@@ -912,7 +930,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <div class="footer__copyright">
+              <div class="footer__copyright display__flex__space__between">
                 <div class="copyright__text">
                   <p>
                     Copyright © 2023 Cube by
