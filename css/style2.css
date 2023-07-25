@@ -235,41 +235,7 @@ button {
   fill: var(--secondary);
 }
 /* display flex general */
-.display__flex {
-  display: flex;
-}
-.display__flex__column {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.display__flex__column__nogap {
-  display: flex;
-  flex-direction: column;
-}
-.display__flex__space__between {
-  display: flex;
-  justify-content: space-between;
-}
-.display__flex__center__vertical_horizontal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.display__flex__section__sub__heading__icon {
-  display: flex;
-  gap: 0px;
-  align-items: center;
-  flex-direction: column;
-}
-.display__flex__align__item__Center {
-  display: flex;
-  align-items: center;
-}
-.display__grid__items__center {
-  display: grid;
-  place-items: center;
-}
+
 /* image object fit */
 .object__fit__w__100 img {
   object-fit: cover;
@@ -279,30 +245,6 @@ button {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
-/* general form control */
-.form-control {
-  padding: 18px 25px;
-  height: auto;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: initial;
-  color: #5f6165;
-  background: #fff;
-  border-radius: 3px;
-  border: 1px solid #888;
-}
-*:focus {
-  outline: none;
-}
-textarea:focus,
-input:focus {
-  outline: none;
-  box-shadow: none;
-}
-.form-control:focus {
-  box-shadow: none;
-  border: 1px solid #888;
 }
 
 /* general global Responsive */
@@ -1727,7 +1669,9 @@ p {
 }
 
 /* SERVICE SERVICE  SECTION */
-
+#service-page .service .section__sub_heading::after {
+  content: none;
+}
 /* SERVICE FEATURE SECTION */
 #service-page .feature {
   background: none;
@@ -1794,99 +1738,10 @@ p {
   }
 }
 /* SERVICE PRICE SECTION */
-#price-main
-  .display__flex__section__sub__heading__icon
-  .section__sub_heading::after {
-  content: none;
-}
-#price-main .price__card {
-  border: 20px solid #f5f6f0;
-  width: 97%;
-  transition: all 0.5s ease-in-out;
-}
-#price-main .price__card:hover {
-  border-color: var(--primary);
-}
-#price-main .price__card-content {
-  background: #ffffff;
-  box-shadow: 0px 2px 4px rgba(19, 25, 34, 0.04);
-  padding: 45px 30px;
-  gap: 20px;
-}
-
 #price-main .process__icon {
   width: 44px;
   height: 42px;
   fill: var(--secondary);
-}
-#price-main .process__icon-container {
-  padding: 19px 18px;
-  background: var(--primary);
-  border-radius: 50%;
-  height: 80px;
-  width: 80px;
-  margin: 0 20px 0 0;
-}
-#price-main .price__plan {
-  font-weight: 400;
-  color: #131922;
-}
-#price-main .price__line {
-  background: #e1e1e1;
-  height: 1px;
-  margin: 20px 0 25px 0;
-}
-#price-main ul li span {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #5f6165;
-}
-#price-main ul li {
-  display: flex;
-  align-items: center;
-  margin: 0 0 15px 0;
-}
-#price-main .price__check__icon {
-  fill: #5f6165;
-  height: 15px;
-  width: 15px;
-  margin: 0 10px 0 0;
-}
-#price-main .nav__arrow__icon {
-  fill: var(--secondary);
-}
-
-#price-main .buy__button {
-  padding: 17px 0;
-  background: #f5f6f0;
-  border: 1px solid #e3e4dd;
-  border-radius: 10px;
-  text-transform: uppercase;
-  color: #131922;
-}
-#price-main .price__card:hover .buy__button {
-  background: var(--secondary);
-  color: var(--white);
-}
-#price-main .price__card:hover .nav__arrow__icon {
-  fill: var(--white);
-}
-
-/* service price responsive */
-@media (max-width: 992px) {
-  #price-main .price__card {
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 424px) {
-  #price-main .price__card {
-    width: 100%;
-    margin: 0 0 20px 0;
-  }
-  #price-main .price__card-content {
-    padding: 30px 20px;
-  }
 }
 /* SERVICE FOOTER SECTION */
 /* #footer {
@@ -2391,12 +2246,15 @@ input[type="radio"] {
 #service-details #focus-quality {
   padding: 100px 0 0;
 }
+#service-details .focus-quality__content {
+  padding-top: 0px;
+}
 #service-details .about-us__focus-quality img {
   width: 100%;
   padding-left: 0px;
 }
 #service-details .focus__quality_progress {
-  margin-top: 40px;
+  margin-top: 5px;
 }
 #service-details .focus__quality_progress_title {
   font-weight: 600;
@@ -2438,6 +2296,9 @@ input[type="radio"] {
 
 /* service details focus quality responsive */
 @media (max-width: 992px) {
+  #service-details .about-us__focus-quality {
+    padding: 0px 0px;
+  }
   #service-details #focus-quality {
     padding: 50px 0 0;
   }
@@ -2484,83 +2345,11 @@ input[type="radio"] {
 }
 
 /*SERVICE DETAILS APPOINMENT SECTION */
-#service-details .appointment {
-  background: #fff;
-  padding: 0px 0px;
-}
 #service-details .appointment .container {
-  margin-top: 0;
-  position: relative;
-  z-index: 10;
-  background: #f5f6f0;
-}
-
-#service-details .appointment__image {
-  height: 100%;
-  width: 100%;
-}
-#service-details .appointment__content {
-  padding: 70px 80px;
-}
-#service-details .appointment .section__sub_heading_line {
-  margin: 10px;
-}
-#service-details .appointment .welcome__desc {
-  margin-top: 30px;
-}
-#service-details .appointment__form {
-  margin-top: 30px;
-}
-#service-details .appointment .btn_primary {
-  border-radius: 10px;
-}
-#service-details .appointment .form-control {
-  border-radius: 10px;
-  border: 1px solid #e3e4dd;
-}
-
-#service-details .appointment__top__arrow {
-  position: absolute;
-  fill: #e6e8e0;
-  width: 20px;
-  height: 109px;
-  right: 100px;
-  top: 50px;
-}
-#service-details .appointment__bottom_right__arrow {
-  position: absolute;
-  fill: #e6e8e0;
-  width: 109px;
-  height: 20px;
-  right: 150px;
-  bottom: 70px;
-}
-#service-details .appointment textarea {
-  max-height: 150px;
-  resize: none;
-}
-/* service details appointment responsive */
-@media (max-width: 992px) {
-  #service-details .appointment__content {
-    padding: 50px 0px;
-  }
-}
-@media (max-width: 424px) {
-  #service-details .appointment__content {
-    padding: 50px 0px;
-  }
-  #service-details .appointment__top__arrow {
-    right: 30px;
-  }
-  #service-details .appointment__bottom_right__arrow {
-    right: 30px;
-  }
-  #service-details .appointment__image {
-    margin-top: -50px;
-  }
+  margin-top: 0px;
 }
 /* SERVICE DETAILS SERVICE SECTION */
-#service-details .service {
+#service-details .service-home-2 {
   padding: 100px 0 100px;
 }
 #service-details .service__realated__card__container {
@@ -2568,12 +2357,12 @@ input[type="radio"] {
   gap: 20px;
 }
 @media (max-width: 992px) {
-  #service-details .service .swiper__content {
+  #service-details .service-home-2 .swiper__content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
-  #service-details .service .swiper__content img {
+  #service-details .service-home-2 .swiper__content img {
     width: 100%;
     object-fit: cover;
   }
@@ -2588,124 +2377,11 @@ input[type="radio"] {
 }
 
 /* SERVICE DETAILS FEATURE SECTION */
-#service-details .feature .section__sub_heading::after {
-  content: none;
-}
-#service-details .feature {
-  background: #fff;
-  position: relative;
-  margin-right: unset;
-  max-width: unset;
-}
-
-#service-details .feature__content {
-  padding: 50px 0px;
-  width: 85%;
-}
-#service-details .feature .section__heading {
-  width: 45%;
-}
-#service-details .feature .feature__image {
-  border-radius: 50%;
-}
-#service-details .feature .feature__title {
-  font-size: 30px;
-  line-height: 40px;
-  text-transform: capitalize;
-  color: #131922;
-  margin: 35px 0px 0px 0px;
-}
-#service-details .feature__desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: #5f6165;
-  margin: 30px 0px 30px 0px;
-}
-#service-details .feature__link {
-  margin: 30px 0px 0px 0px;
-  text-decoration: none !important;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 25px;
-  /* identical to box height, or 167% */
-
-  text-transform: uppercase;
-
-  color: #5f6165;
-}
-#service-details .feature__arrow__icon {
-  width: 17px;
-  height: 14px;
-  margin: 0px 5px 0 0;
-}
-#service-details .feature__link:hover .feature__arrow__icon {
-  fill: var(--primary);
-  color: var(--primary);
-}
-#service-details .feature__link:hover {
-  color: var(--primary);
-}
-#service-details .feature__link--active {
-  color: var(--primary);
-  fill: var(--primary);
-}
-
-#service-details .feature__image__container {
-  position: relative;
-}
-#service-details .feature__circle__icon {
-  height: 250px;
-  width: 208px;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
-  fill: var(--primary);
-}
-#service-details .feature__content:hover .feature__circle__icon {
-  opacity: 1;
-}
-
-#service-details .feature__content:hover .feature__arrow__icon {
-  fill: var(--primary);
-  color: var(--primary);
-}
-#service-details .feature__content:hover .feature__more {
-  color: var(--primary);
-}
-
-/* service details feature responsive */
-@media (max-width: 992px) {
-  #service-details .feature__content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #service-details .feature__title {
-    font-size: 24px;
-    line-height: 35px;
-    margin: 35px 0px 0px 0px;
-  }
-}
-@media (max-width: 424px) {
-  #service-details .feature__content {
-    text-align: center;
-    width: 100%;
-    padding: 25px 0;
-  }
-  #service-details .feature__desc {
-    margin: 30px 0px 20px 0px;
-  }
-}
-/* SERVICE DETAILS PERSONAL EXPERITISE */
 #service-details .feature__title {
-  margin: 0;
   width: 90%;
 }
+/* SERVICE DETAILS PERSONAL EXPERITISE */
+
 #service-details .personal__content {
   background-repeat: no-repeat;
   height: 721px;
@@ -2824,31 +2500,6 @@ input[type="radio"] {
   background-image: url(../image/case-studies/case-6.jpg);
 }
 
-#case-studies-page .slider__title {
-  background: var(--white);
-  padding: 18px 30px;
-  width: 100%;
-  font-size: 22px;
-  line-height: 32px;
-  text-transform: capitalize;
-  color: #131922;
-  border-radius: 5px;
-  align-items: center;
-  transition: all 0.5s ease-in-out;
-}
-#case-studies-page .slider__title:hover {
-  background: var(--primary);
-  color: var(--white);
-}
-
-#case-studies-page .slider__btn {
-  border-radius: 20px;
-  padding: 5px 16px;
-  background: var(--secondary);
-  transition: all 0.5s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-}
 #case-studies-page .slider__right__arrow__icon {
   height: 13px;
   width: 26px;
@@ -3173,10 +2824,10 @@ input[type="radio"] {
 
 /*================ Price page start ====================*/
 /* PRICE SERVICE SECTION */
-#price .service .section__sub_heading::after {
+#price .service-home-2 .section__sub_heading::after {
   content: "";
 }
-#price .service {
+#price .service-home-2 {
   gap: 50px;
   background: url(../image/about-us/service-bg.jpg),
     linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
@@ -3184,24 +2835,24 @@ input[type="radio"] {
   background-size: cover;
   padding: 100px 0px;
 }
-#price .service .swiper__text {
+#price .service-home-2 .swiper__text {
   gap: 20px;
 }
-#price .service .swiper__content {
+#price .service-home-2 .swiper__content {
   background: #fff;
 }
-#price .service .project__title__btn {
+#price .service-home-2 .project__title__btn {
   margin: 15px 0 0;
 }
-#price .service .section__heading {
+#price .service-home-2 .section__heading {
   width: 80%;
 }
 
-#price .service .swiper__slider {
+#price .service-home-2 .swiper__slider {
   padding-top: 30px;
   padding-left: 0px;
 }
-#price .service .section__heading {
+#price .service-home-2 .section__heading {
   margin: 0px;
 }
 
@@ -3209,7 +2860,6 @@ input[type="radio"] {
 #price .faq-main .section__sub_heading::after {
   content: none;
 }
-
 .accordion__container {
   margin: 0 auto;
   padding: 50px 0px 0px;
@@ -3236,25 +2886,21 @@ input[type="radio"] {
   background: none;
   outline: none;
 }
-
 .accordion-main button:hover,
 .accordion-main button:focus {
   cursor: pointer;
 }
-
 .accordion-main button:hover::after,
 .accordion-main button:focus::after {
   cursor: pointer;
   color: #03b5d2;
   border: 1px solid #03b5d2;
 }
-
 .accordion-main button .accordion-title {
   padding: 1em 1.5em 1em 0;
   font-size: 20px;
   font-weight: 600;
 }
-
 .accordion-main button .accordion__icon {
   display: inline-block;
   position: absolute;
@@ -3263,7 +2909,6 @@ input[type="radio"] {
   width: 22px;
   height: 22px;
 }
-
 .accordion-main button .accordion__icon::before {
   display: block;
   position: absolute;
@@ -3277,13 +2922,11 @@ input[type="radio"] {
   font-size: 25px;
   transition: all 0.2s ease-in;
 }
-
 .accordion-main button[aria-expanded="true"] .accordion__icon::before {
   transform: rotate(180deg);
   top: 29px;
   left: 25px;
 }
-
 .accordion-main button[aria-expanded="true"] + .accordion-content {
   opacity: 1;
   max-height: 9em;
@@ -3320,7 +2963,6 @@ input[type="radio"] {
   border-right: 0;
   transition: all 0.3s ease-in;
 }
-
 .mm-show {
   background: var(--primary);
 }
@@ -3356,7 +2998,6 @@ input[type="radio"] {
   gap: 20px;
   justify-content: flex-start;
 }
-
 #faq .search__input__container .form-control {
   box-shadow: 0px 3px 4px 0px rgba(190, 190, 190, 0.1);
   border: none;
@@ -3407,11 +3048,8 @@ input[type="radio"] {
   align-items: center;
 }
 
-#contact .contact-map .map__pin__icon__1 {
-  height: 66px;
-  width: 55px;
-}
-#contact .contact-map .map__pin__icon__2 {
+#contact .contact-map .map__pin__icon__1,
+.map__pin__icon__2 {
   height: 66px;
   width: 55px;
 }
@@ -3451,6 +3089,10 @@ input[type="radio"] {
   text-transform: capitalize;
 }
 
+#contact .contact-info .appointment__content {
+  padding: 30px 0px;
+}
+
 @media screen and (max-width: 768px) {
   #contact .contact__item__container {
     flex-direction: column;
@@ -3477,19 +3119,6 @@ input[type="radio"] {
   left: 0;
   padding: 1.25rem;
 }
-.all-posts .project__title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.all-posts .title__text {
-  width: 45%;
-}
-
-.all-posts .project__arrow__icon {
-  margin: 0 10px 0 0;
-}
-
 .all-posts .blog__text {
   margin: 30px 0 0 0;
   width: 90%;
@@ -3514,7 +3143,6 @@ input[type="radio"] {
   margin: 10px 0;
 }
 .all-posts .blog__badge__container {
-  display: flex;
   gap: 15px;
 }
 .all-posts .blog__text .social_icons i {
@@ -3591,8 +3219,6 @@ input[type="radio"] {
 
 .all-posts .sidebar__container .category__item {
   padding: 15px 20px;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid #888888;
   background: rgba(217, 217, 217, 0);
 }
