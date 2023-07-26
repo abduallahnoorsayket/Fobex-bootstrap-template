@@ -16,11 +16,6 @@
   box-shadow: none !important;
 }
 body {
-  font-family: "Roboto Condensed", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
   color: var(--secondary);
 }
 

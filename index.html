@@ -28,7 +28,7 @@
   </head>
   <body id="home-1">
     <main>
-      <header id="header" class="header">
+      <!-- <header id="header" class="header">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -40,20 +40,20 @@
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-7 mt-1">
-                    <!-- New navbar  -->
                     <div class="float-left">
                       <div class="navbar nav">
-                        <!-- <div class="Navbar__Link Navbar__Link-brand">
-                   Website title
-                 </div> -->
                         <div class="navbar__Link navbar__Link-toggle">
                           <i class="fa fas fa-bars"></i>
                         </div>
                         <nav class="navbar__Items">
-                          <div class="navbar__Link active">
+                          <div class="navbar__Link active dropdown">
                             <a class="navbar__Items--fontStyles" href=""
                               ><span class="navbar__Items--active">Home +</span>
                             </a>
+                             <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./index.html">Home 1</a>
+                    <a class="dropdown-item" href="./index2.html">Home 2</a>
+                  </div>
                           </div>
                           <div class="navbar__Link">
                             <a class="navbar__Items--fontStyles" href="">
@@ -87,7 +87,6 @@
                   </div>
                   <div class="col-sm-12 col-md-3">
                     <div class="float-right nav__search__container">
-                      <!-- <i class="fa fa-search"></i> -->
                       <svg class="icon search__icon">
                         <use xlink:href="./icon/sprite.svg#Search"></use>
                       </svg>
@@ -103,6 +102,161 @@
               </div>
             </div>
           </div>
+        </div>
+      </header> -->
+      
+      <header id="header" class="header">
+        <div class="container header__container">
+          <div class="top__container">
+           
+          </div>
+          <nav
+            class="navbar navbar-dark navbar-expand-lg nav-custom display__flex__space__between"
+          >
+            <a class="navbar-brand" href="#">
+              <img src="./image/home1/Logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbar-list-3"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon">
+                <i class="fa fas fa-bars"></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-list-3">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Home +
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./index.html">Home 1</a>
+                    <a class="dropdown-item" href="./index2.html">Home 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./service.html"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Services +
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./service.html">Service</a>
+                    <a class="dropdown-item" href="./service-details.html"
+                      >Service Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Portfolio +
+                  </a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./about-us.html"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Pages +
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./about-us.html">About Us</a>
+                    <a class="dropdown-item" href="./case-studies.html"
+                      >Case Studies</a
+                    >
+                    <a class="dropdown-item" href="./case-details.html"
+                      >Case Details</a
+                    >
+                    <a class="dropdown-item" href="./team.html">Team</a>
+                    <a class="dropdown-item" href="./price.html">Price</a>
+                    <a class="dropdown-item" href="./faq.html">FAQ</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./blog.html"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    News +
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                    <a class="dropdown-item" href="/blog-details.html"
+                      >Blog Details</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="./contact.html"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Contact
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="./contact.html">Contact</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="nav__search__container display__flex__align__item__Center"
+            >
+              <div
+                class="nav__phone__search__container display__flex__align__item__Center"
+              >
+                <svg class="icon search__icon">
+                  <use xlink:href="./icon/sprite.svg#Search"></use>
+                </svg>
+                
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary btn_primary button-rounded"
+              >
+                <svg class="icon nav__arrow__icon">
+                  <use xlink:href="./icon/sprite.svg#right-arrow"></use>
+                </svg>
+                Free Quote
+              </button>
+            </div>
+          </nav>
         </div>
       </header>
       <!-- Hero start -->
