@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
-@import "./style2.css";
+/* @import "./style2.css"; */
 :root {
   --primary: #ff4c1a;
   --secondary: #131922;
@@ -305,7 +305,7 @@ button {
   position: relative;
   margin-top: 30px;
 }
-
+/* 
 .nav__container {
   background: #ffffff;
   padding: 16px 35px;
@@ -372,29 +372,26 @@ button {
 .navbar__Link-toggle {
   display: none;
 }
+*/
+
 /* header icon */
 .fa-search:before {
   content: "\f002";
   font-size: 24px;
   padding: 30px 25px 0px 0px;
 }
-.fa-bars:before {
+/* .fa-bars:before {
   content: "\f0c9";
   color: black;
   padding: 5px;
   border-radius: 3px;
-}
+} */
 .search__icon {
   width: 24px;
   height: 24px;
   margin: 0px 20px 0px 0px;
 }
-.nav__arrow__icon {
-  width: 17px;
-  height: 14px;
-  fill: white;
-  margin: 0 2px 0 0;
-}
+
 .nav__item__line {
   height: 30px;
   width: 2px;
@@ -405,6 +402,12 @@ button {
   padding-top: 20px;
 }
 
+.nav__arrow__icon {
+  width: 17px;
+  height: 14px;
+  fill: white;
+  margin: 0 2px 0 0;
+}
 /* header home 2 CSS ==============*/
 /* .dropdown-menu {
   transition: all 0.5s ease-in-out !important;
