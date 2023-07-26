@@ -10,9 +10,18 @@
   --yellow: #ffa818;
 }
 /* Global   */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
+html {
+  background: red;
+  overflow-x: hidden;
+}
 body {
   color: #5f6165;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 h1,
@@ -67,11 +76,23 @@ section {
   color: #131922;
 }
 .section__sub_heading {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   line-height: 25px;
   text-transform: uppercase;
   color: #ff4c1a;
+  position: relative;
+  display: inline;
+}
+.section__sub_heading::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background: var(--primary);
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  transform: translateY(-50%);
 }
 .section__sub_heading_line {
   width: 30px;
@@ -245,6 +266,12 @@ button {
   flex-direction: column;
 }
 /* general global Responsive */
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 10px;
+    max-width: 1200px;
+  }
+}
 @media (max-width: 992px) {
   .container {
     padding: 0px 30px;
@@ -402,6 +429,7 @@ button {
   color: white;
   position: initial;
   flex-direction: column;
+  margin-top: 75px;
 }
 
 #home-1 .hero__title {
@@ -456,7 +484,7 @@ button {
     font-size: 95px;
     line-height: 94px;
   }
-  .hero__navigation {
+  #home-1 .hero__navigation {
     display: none;
     visibility: hidden;
   }
@@ -641,6 +669,9 @@ button {
 .feature__content:hover .feature__more {
   color: var(--primary);
 }
+#home-1 .feature .section__sub_heading::after {
+  content: none;
+}
 
 /* feature responsive */
 @media (max-width: 768px) {
@@ -766,6 +797,7 @@ button {
 /* .wellcome__image__container {
   height: 720px;
 } */
+
 #home-1 .about-us {
   max-width: 1580px;
   margin-left: auto;
@@ -791,9 +823,7 @@ button {
   color: #5f6165;
 }
 .about-us__welcome {
-  max-width: 1580px;
   padding: 0px 0px;
-  margin-left: auto;
 }
 .about-us__welcome ul li {
   padding: 5px 0;
@@ -869,10 +899,13 @@ button {
   order: 1;
 }
 /* About-us responsive */
-@media (max-width: 992px) {
-  .about-us__container {
-    padding: 0 30px;
+@media (max-width: 1500px) {
+  .about-us {
+    padding-left: 30px;
+    padding-right: 30px;
   }
+}
+@media (max-width: 992px) {
   .welcome__content {
     width: 100%;
     padding: 50px 0;
@@ -889,14 +922,8 @@ button {
   .order-about {
     order: 10;
   }
-  .about-us__focus-quality {
-    padding: 0 30px;
-  }
 }
 @media (max-width: 424px) {
-  #about-us {
-    padding: 100px 0 100px 0;
-  }
   .welcome__image {
     max-height: 350px;
   }
@@ -975,18 +1002,21 @@ button {
 .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
 }
+#home-1 .service .section__sub_heading::after {
+  content: none;
+}
 /* service responsive */
 @media (max-width: 768px) {
   .service__card {
     padding: 50px 30px;
   }
   .appointment__image {
-    margin-top: -70px;
+    margin-top: -30px;
   }
 }
 @media (max-width: 424px) {
   .service {
-    padding: 50px 0 250px;
+    padding: 50px 0 120px;
   }
   .service__card__container {
     padding: 50px 0 0px 0;
@@ -1119,7 +1149,7 @@ button {
 }
 #home-1 .swiper__content {
   height: 490px;
-  width: 420px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1181,6 +1211,13 @@ button {
   visibility: visible;
 }
 /* project responsive */
+@media (max-width: 1500px) {
+  .project___slider__container {
+    max-width: 1320px;
+    padding: 0 30px;
+    margin-left: auto;
+  }
+}
 @media (max-width: 992px) {
   .project__title__divider {
     height: 1px;
@@ -1194,7 +1231,7 @@ button {
 
 @media (max-width: 424px) {
   .swiper__slider {
-    padding: 0 20px;
+    padding: 0px 0px;
   }
   .project__title__divider {
     margin: 30px 0 50px 20px;
@@ -1242,6 +1279,9 @@ button {
   height: 169px;
   border-radius: 50%;
   background: #f5f6f0;
+}
+#home-1 .working-process .section__sub_heading::after {
+  content: none;
 }
 @media (max-width: 767px) {
   .process__main-icon-content {
@@ -1461,6 +1501,9 @@ button {
   fill: var(--secondary);
 }
 
+#home-1 .price-main .section__sub_heading::after {
+  content: none;
+}
 /* service price responsive */
 @media (max-width: 992px) {
   #price-main .price__card {
@@ -1613,7 +1656,7 @@ button {
 }
 /* FOOTER SECTION */
 #footer {
-  padding: 100px 0 20px 0;
+  padding: 100px 0px 0px 0px;
 }
 .footer {
   background: var(--secondary);
@@ -1713,7 +1756,7 @@ input[type="radio"] {
   height: 1px;
 }
 .footer__copyright {
-  padding: 40px 0;
+  padding: 30px 0 20px;
   display: flex;
   justify-content: space-between;
 }
