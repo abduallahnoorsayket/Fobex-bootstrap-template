@@ -1,3 +1,55 @@
+/* @File: CUBE  Template CUSTOM
+
+* This file contains the styling for the actual tepmlate, this
+is the file you need to edit if you want to add any custom to change the look of the
+tepmlate.
+
+This files table contents are outlined below>>>>>
+
+*******************************************
+*******************************************
+
+==== INDEX PAGE CSS
+
+** - Default 
+** - Global 
+** - General form control 
+** - icons 
+** - Buttons 
+** - Badges 
+** - Image object fit 
+** - General global Responsive
+
+ ====== Home1 start ========== 
+
+** - HEADER 
+** - HEADER ICONS 
+** - HEADER RESPONSIVE 
+** - HERO SECTION 
+** - HERO RESPONSIVE 
+** - FEATURE SECTION 
+** - FEATURE RESPONSIVE 
+** - FEATURE COMMON 
+** - FEATURE COMMON RESPONSIVE 
+** - ABOUT US SECTION 
+** - ABOUT US RESPONSIVE 
+** - SEVICE SECTION 
+** - SERVICE RESPONSIVE 
+** - General form control 
+** - General form control 
+** - General form control 
+** - General form control 
+** - General form control 
+** - Header css
+** - Hero css
+** - PROGRESS BAR CSS
+** - TAB MENU CSS
+** - MOBILE MENU CSS
+** - PRICING SECTION CSS
+** - PROFESSION CSS
+** - MOBILE MENU RESPONSIVE CSS */
+
+/* Default */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
 :root {
   --primary: #ff4c1a;
@@ -8,7 +60,7 @@
   --gery-3: #a2a6ad;
   --yellow: #ffa818;
 }
-/* Global   */
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -128,7 +180,7 @@ ul li {
 .btn-primary:hover {
   background: var(--primary);
 }
-/* general form control */
+/* General form control */
 .form-control {
   padding: 18px 25px;
   height: auto;
@@ -153,7 +205,7 @@ input:focus {
   border: 1px solid #888;
 }
 
-/* icon */
+/* icons */
 .icon {
   width: 50px;
   height: 50px;
@@ -222,7 +274,7 @@ button {
 .hidden {
   display: none;
 }
-/* image object fit */
+/* Image object fit */
 .object__fit__w__100 {
   object-fit: cover;
   width: 100%;
@@ -232,7 +284,7 @@ button {
   width: 100%;
   height: 100%;
 }
-/* display flex general */
+/* Display flex general */
 .display__flex {
   display: flex;
 }
@@ -269,7 +321,7 @@ button {
   align-items: center;
   flex-direction: column;
 }
-/* general global Responsive */
+/* General global Responsive */
 @media (max-width: 1400px) {
   .container {
     padding: 0 10px;
@@ -294,7 +346,7 @@ button {
   }
 }
 
-/* ======home1 start ========== */
+/* ====== Home1 start ========== */
 /* Header */
 #home-1 .header {
   padding: 0px;
@@ -303,41 +355,9 @@ button {
   position: relative;
   margin-top: 30px;
 }
-
-/* header icon */
-.fa-search:before {
-  content: "\f002";
-  font-size: 24px;
-  padding: 30px 25px 0px 0px;
-}
-.search__icon {
-  width: 24px;
-  height: 24px;
-  margin: 0px 20px 0px 0px;
-}
-
-.nav__item__line {
-  height: 30px;
-  width: 2px;
-  background: var(--primary);
-  display: block;
-}
-.hero__container {
-  padding-top: 20px;
-}
-
-.nav__arrow__icon {
-  width: 17px;
-  height: 14px;
-  fill: white;
-  margin: 0 2px 0 0;
-}
-/* header home 2 CSS ==============*/
-
 #home-1 .nav-custom {
   border-radius: 0px;
 }
-/* navbar hover line */
 .nav-link::before {
   content: "";
   position: absolute;
@@ -434,8 +454,35 @@ li {
   height: 24px;
   margin: 0px 20px 0px 0px;
 }
+/* HEADER ICONS */
+.fa-search:before {
+  content: "\f002";
+  font-size: 24px;
+  padding: 30px 25px 0px 0px;
+}
+.search__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0px 20px 0px 0px;
+}
 
-/* home 2 header responsive */
+.nav__item__line {
+  height: 30px;
+  width: 2px;
+  background: var(--primary);
+  display: block;
+}
+.hero__container {
+  padding-top: 20px;
+}
+
+.nav__arrow__icon {
+  width: 17px;
+  height: 14px;
+  fill: white;
+  margin: 0 2px 0 0;
+}
+/* HEADER RESPONSIVE */
 @media (max-width: 1300px) {
   .navbar-brand {
     margin-right: 1rem;
@@ -572,7 +619,7 @@ li {
 #home-1 .hero__tile__navigation__container {
   position: relative;
 }
-/* hero responsive */
+/* HERO RESPONSIVE */
 @media only screen and (max-width: 992px) {
   .hero__bg__container {
     display: none;
@@ -607,58 +654,7 @@ li {
     position: relative;
   }
 }
-/* navbar / header responsive */
-@media only screen and (max-width: 992px) {
-  #home-1 .nav__search__container {
-    display: none;
-  }
-  #home-1 .navbar__Link.active .navbar__Items--fontStyles::before {
-    visibility: hidden;
-  }
-  #home-1 .navbar__Items {
-    gap: 20px;
-  }
-  #home-1 .nav__Logo img {
-    height: 30px;
-    width: 90px;
-  }
-  #home-1 .navbar__Items,
-  #home-1 .nav {
-    flex-direction: column;
-    position: absolute;
-    padding: 10px 15px;
-    top: 100%;
-    width: 100%;
-    z-index: 20;
-    right: 0px;
-  }
-  #home-1 .navbar__Items {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateX(-50px);
-    transition: all 0.3s ease-in;
-  }
-  #home-1 .navbar__Items--right {
-    margin-left: 0;
-  }
-  #home-1 .navbar__ToggleShow {
-    display: flex;
-    align-items: flex-start;
-    background: white;
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0px);
-  }
 
-  #home-1 .navbar__Link-toggle {
-    display: flex;
-    position: absolute;
-    cursor: pointer;
-    padding-top: 5px;
-    top: -30px;
-    right: 15px;
-  }
-}
 /*FEATURE SECTION */
 .feature {
   background: #f5f6f0;
@@ -767,7 +763,7 @@ li {
   content: none;
 }
 
-/* feature responsive */
+/* FEATURE RESPONSIVE */
 @media (max-width: 768px) {
   .feature .feature__Bg__vector__4 {
     bottom: 39px;
@@ -862,7 +858,7 @@ li {
   color: var(--primary);
 }
 
-/* service details feature responsive */
+/* FEATURE COMMON RESPONSIVE */
 @media (max-width: 992px) {
   .feature__content {
     width: 100%;
@@ -888,10 +884,6 @@ li {
   }
 }
 /* ABOUT US SECTION */
-/* .wellcome__image__container {
-  height: 720px;
-} */
-
 #home-1 .about-us {
   max-width: 1580px;
   margin-left: auto;
@@ -989,7 +981,7 @@ li {
 .order-quality {
   order: 1;
 }
-/* About-us responsive */
+/* ABOUT US RESPONSIVE */
 @media (max-width: 1500px) {
   .about-us {
     padding-left: 30px;
@@ -1093,7 +1085,7 @@ li {
 #home-1 .service .section__sub_heading::after {
   content: none;
 }
-/* service responsive */
+/* SERVICE RESPONSIVE */
 @media (max-width: 768px) {
   .service__card {
     padding: 50px 30px;
