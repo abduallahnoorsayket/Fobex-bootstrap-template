@@ -318,7 +318,6 @@ button {
   line-height: 26px;
   text-transform: uppercase;
   color: #131922;
-  padding-right: 1.6rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
   color: var(--primary);
@@ -398,7 +397,7 @@ button {
 }
 .dropdown:hover .dropdown-menu {
   display: block;
-  margin-top: 0;
+  margin-top: 15px;
 }
 
 .header .search__icon {
