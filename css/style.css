@@ -422,6 +422,28 @@ button {
 #home-1 .nav-custom {
   border-radius: 0px;
 }
+/*  */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 31px;
+  background-color: var(--primary);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item.nav-active::before {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-item:hover .nav-link::before {
+  opacity: 1;
+  visibility: visible;
+}
 .nav-custom {
   background: var(--white);
   color: var(--secondary);
@@ -458,7 +480,7 @@ button {
   margin-top: 0;
 }
 .header .search__icon {
-  margin: 0px 7px 0px 0px;
+  margin: 0px 20px 0px 0px;
   cursor: pointer;
 }
 .fa-search:before {
