@@ -9,15 +9,127 @@
 ** - Badges 
 ** - Anchor link css 
 ** - Image object fit 
-** - General global responsive 
-
 
  ====== Home2 start ========== 
+
 ** - HEADER SECTION  
-** - HEADER 
-** - HEADER 
-** - HEADER 
-** - HEADER 
+** - HERO SECTION 
+** - APPOINTMENT SECTION 
+** - ABOUT US SECTION 
+** - FUN FACTS SECTION 
+** - SERVICE SECTION 
+** - FEATURE SECTION 
+** - TEAM SECTION 
+** - PROJECT SECTION 
+** - BLOG SECTION 
+** - TESTIMONIAL SECTION 
+** - CLIENT SECTION 
+** - MAP SECTION 
+** - FOOTER SECTION 
+
+======== Service page ========
+
+** - SERVICE HERO-MAIN SECTION 
+** - SERVICE WORKING PROCESS 
+** - SERVICE SERVICE  SECTION 
+** - SERVICE FEATURE SECTION 
+** - SERVICE FUN-FACTS SECTION 
+** - SERVICE PRICE SECTION 
+** - SERVICE FOOTER SECTION 
+
+======= About us page =====
+
+** - ABOUT US CLIENT SECTION 
+** - ABOUT US ABOUT US SECTION 
+** - ABOUT US SERVICE SECTION 
+** - ABOUT US TEAM SECTION 
+** - ABOUT US FOCUS QUALITY SECTION 
+** - ABOUT US PAGE PROGRESS BAR 
+** - ABOUT US BLOG SECTION 
+ 
+====== Service details page ======
+
+** - SERVICE DETAILS CLIENT SECTION 
+** - SERVICE DETAILS FOCUS QUALITY SECTION 
+** - SERVICE DETAILS PROGRESSBAR 
+** - SERVICE DETAILS APPOINMENT SECTION 
+** - SERVICE DETAILS SERVICE SECTION 
+** - SERVICE DETAILS FEATURE SECTION 
+** - SERVICE DETAILS PERSONAL EXPERITISE 
+
+======= Case studies page ======
+
+** - CASE STUDIES CLIENT SECTION 
+** - CASE STUDIES CTA SECTION 
+** - CASE STUDIES CASE STUDIES SECTION 
+
+
+===== Case details page =======
+
+** - CASE DETAILS DESCRIPTION SECTION 
+** - CASE DETAILS PROJECT OVERVIEW SECTION 
+** - CASE DETAILS WORKING PROCESS 
+** - CASE DETAILS PROJECT RESULTS SECTION 
+
+========= Team page ==========
+
+** - TEAM VIDEO SECTION 
+** - TEAM MEET OUT TEAM SECTION 
+** - TEAM GREAT PLATFORM 
+
+====== Price page =========
+
+** - PRICE SERVICE SECTION 
+** - PRICE FAQ SECTION 
+
+==== Faq page  =====
+
+** - FAQ SEACH FIELD 
+** - FAQ FAQ SECTION 
+
+===== Contact us page ======
+
+** - CONTACT CONTACT MAP SECTION 
+** - CONTACT CONTACT INFO SECTION 
+
+
+==== Blog page ======
+
+** - BLOG POST SECTION 
+
+=====   Blog detials page =====
+
+** - BLOG DETAILS BLOG DETAILS SECTION
+
+
+******=====  ALL RESPONSIVE STYLES ==========***
+
+** - General global responsive
+
+==== Home 2 responsive =======
+
+** - header responsive
+** - hero responsive
+** - appointment responsive
+** - about us responsive
+** - fun facts responsive
+** - service responsive
+** - feature responsive
+** - team responsive
+** - project responsive
+** - testimonial responsive
+** - client responsive
+** - map responsive
+** - footer responsive
+
+========= Service page responsive ========
+
+** - service feature responsive
+** - service Fun facts responsive
+** - footer-main responsive
+
+
+======= About us page responsive ======
 
 
 /* Global   */
@@ -230,7 +342,7 @@ button {
   height: 100%;
 }
 
-/* ============= Home 2 ======================== */
+/* ============= Home2 page start ======================== */
 /* HEADER SECTION */
 .header {
   margin-bottom: -123px;
@@ -334,7 +446,6 @@ button {
 .nav__phone__search__container {
   gap: 5px;
 }
-/* header icon  start*/
 .fa-search:before {
   content: "\f002";
   font-size: 24px;
@@ -469,7 +580,7 @@ select {
   gap: 20px;
 }
 
-/* FUN FACTS */
+/* FUN FACTS SECTION */
 #home-2 #fun-facts {
   padding-bottom: 100px;
 }
@@ -1009,7 +1120,6 @@ select {
   line-height: 40px;
   text-transform: capitalize;
   color: #ffffff;
-  /* width: 70%; */
 }
 .footer__btn_container {
   padding-top: 20px;
@@ -1109,7 +1219,7 @@ p {
   gap: 20px;
 }
 
-/* ================= Service page start =============*/
+/* ================= Service page =============*/
 /* SERVICE HERO-MAIN SECTION */
 .hero-main {
   background-color: #cccccc;
@@ -1311,7 +1421,7 @@ input[type="radio"] {
   color: var(--primary);
 }
 
-/* ============= About us page start ========= */
+/* ============= About us page ========= */
 
 /* ABOUT US CLIENT SECTION */
 #about-us-page .section__description {
@@ -1460,8 +1570,7 @@ input[type="radio"] {
   padding-left: 0px;
 }
 
-/*   ABOUT US TESTIMONIAL SECTION*/
-/* ABOUT US FOCUS QUALITY  SECTION */
+/* ABOUT US FOCUS QUALITY SECTION */
 #about-us-page #focus-quality {
   padding: 0 0;
 }
@@ -1502,7 +1611,7 @@ input[type="radio"] {
 #about-us-page .order-quality {
   order: 1;
 }
-/*about-us-page bootstrap progress bar */
+/*ABOUT US PAGE PROGRESS BAR */
 #about-us-page .focus-quality__content .progress {
   background: none;
   border-radius: 0;
@@ -1524,7 +1633,7 @@ input[type="radio"] {
 }
 /*==================== Service details page ========= */
 
-/* SERVICE DETAILS CLINET SECTION */
+/* SERVICE DETAILS CLIENT SECTION */
 
 #service-details .client .container {
   border-top: 1px solid #e1e1e1;
@@ -1573,7 +1682,7 @@ input[type="radio"] {
   order: 0;
 }
 
-/*about-us-page bootstrap progress bar */
+/*SERVICE DETAILS PROGRESSBAR */
 #service-details .focus-quality__content .progress {
   background: none;
   border-radius: 0;
@@ -1634,7 +1743,7 @@ input[type="radio"] {
   gap: 15px;
 }
 
-/* ========= Case studies page start ========*/
+/* ========= Case studies page  ========*/
 
 /*  CASE STUDIES CLIENT SECTION */
 
@@ -1724,7 +1833,7 @@ input[type="radio"] {
   color: var(--secondary);
 }
 
-/* ============== Case details page start=========== */
+/* ============== Case details page =========== */
 
 /* CASE DETAILS DESCRIPTION SECTION  */
 #case-details .description__container {
@@ -1845,7 +1954,7 @@ input[type="radio"] {
   align-items: center;
 }
 
-/* ============ Team page start ============== */
+/* ============ Team page ============== */
 /* TEAM VIDEO SECTION */
 
 #team-page .team .section__content .row:nth-child(1) {
@@ -1957,7 +2066,7 @@ input[type="radio"] {
   order: 0;
 }
 
-/*================ Price page start ====================*/
+/*================ Price page ====================*/
 /* PRICE SERVICE SECTION */
 #price .service-home-2 .section__sub_heading::after {
   content: "";
@@ -2102,7 +2211,7 @@ input[type="radio"] {
   background: var(--primary);
 }
 
-/* ========== Faq page start ================ */
+/* ========== Faq page ================ */
 /* FAQ SEACH FIELD */
 
 #faq .seach__input__title {
@@ -2146,9 +2255,7 @@ input[type="radio"] {
 #faq #faq-main .section__sub_heading::after {
   content: none;
 }
-/* ============= Contact  us page start ============ */
-/* CONTACT CONTACT SECTION */
-
+/* ============= Contact us page ============ */
 /* CONTACT CONTACT MAP SECTION */
 #contact .contact-map {
   background: url(../image/contact/contact-map-bg.jpg);
@@ -2206,7 +2313,7 @@ input[type="radio"] {
   padding: 30px 0px;
 }
 
-/* ======= Blog page start ========== */
+/* ======= Blog page ========== */
 /* BLOG POST SECTION */
 .all-posts {
   background: var(--white);
@@ -2352,7 +2459,7 @@ input[type="radio"] {
   color: var(--gery-1);
 }
 
-/* ========   Blog detials page start ======== */
+/* ========   Blog detials page ======== */
 /* BLOG DETAILS BLOG DETAILS SECTION */
 .all-posts .post__item .post__btn_container {
   gap: 20px;
@@ -2620,7 +2727,7 @@ input[type="radio"] {
   }
 }
 
-/* Fun facts responsive */
+/* fun facts responsive */
 @media (max-width: 768px) {
   .fun-facts__card {
     padding: 50px 30px;
@@ -2670,7 +2777,6 @@ input[type="radio"] {
   }
 }
 /* feature responsive */
-/* @media screen and (max-width: 1500px) */
 @media screen and (min-width: 800px) and (max-width: 1500px) {
   .feature {
     gap: 0px;
@@ -2918,7 +3024,7 @@ input[type="radio"] {
   }
 }
 
-/* Service Fun facts responsive */
+/* service Fun facts responsive */
 @media (max-width: 992px) {
   #service-page .fun-facts__card {
     padding: 50px 30px;
