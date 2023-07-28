@@ -1676,16 +1676,6 @@ input[type="radio"] {
 #case-studies-page .personal__note .btn_primary .nav__arrow__icon {
   fill: #ffffff;
 }
-@media (max-width: 992px) {
-  #case-studies-page .personal__note {
-    margin-right: 0;
-  }
-  #case-studies-page .personal__content .container {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
-}
 
 /* CASE STUDIES CASE STUDIES SECTION */
 
@@ -1733,15 +1723,8 @@ input[type="radio"] {
   background: var(--primary);
   color: var(--secondary);
 }
-@media (max-width: 992px) {
-  #case-studies-page .case-studies .row:nth-child(1) .swiper__content {
-    margin-bottom: 30px;
-  }
-  #case-studies-page .case-studies .row:nth-child(2) .swiper__content {
-    margin-bottom: 30px;
-  }
-}
-/* ============== case details page start=========== */
+
+/* ============== Case details page start=========== */
 
 /* CASE DETAILS DESCRIPTION SECTION  */
 #case-details .description__container {
@@ -1765,21 +1748,6 @@ input[type="radio"] {
 }
 #case-details .case__content {
   gap: 60px;
-}
-@media (max-width: 992px) {
-  #case-details .description .case__content {
-    gap: 20px;
-  }
-}
-@media (max-width: 424px) {
-  #case-details .description .case__info {
-    display: block;
-    padding: 35px 30px;
-  }
-  #case-details .description .case__content {
-    gap: 15px;
-    flex-direction: column;
-  }
 }
 
 /* CASE DETAILS PROJECT OVERVIEW SECTION */
@@ -1856,7 +1824,6 @@ input[type="radio"] {
 #case-details .project-result .case__info .btn_primary {
   background: #f5f6f0;
 }
-
 #case-details .project-result .case__info .btn_primary:hover {
   background: #f5f6f0;
   color: var(--secondary);
@@ -1865,7 +1832,6 @@ input[type="radio"] {
   width: 42px;
   height: 42px;
 }
-
 #case-details .project-result .case__info .btn_primary:hover .nav__arrow__icon {
   fill: var(--secondary);
 }
@@ -1878,16 +1844,8 @@ input[type="radio"] {
   justify-content: space-around;
   align-items: center;
 }
-@media (max-width: 575px) {
-  #case-details .project-result .case__info {
-    padding: 35px 10px;
-  }
-  #case-details .project-result .case__content {
-    gap: 10px;
-  }
-}
 
-/* ============ team page start ============== */
+/* ============ Team page start ============== */
 /* TEAM VIDEO SECTION */
 
 #team-page .team .section__content .row:nth-child(1) {
@@ -1977,30 +1935,7 @@ input[type="radio"] {
   max-height: 150px;
   resize: none;
 }
-/* team meet team responsive */
-@media (max-width: 992px) {
-  #team-page .meet-team .appointment__content {
-    padding: 50px 0px;
-  }
-  #team-page .meet-team .meet__team__image__container {
-    display: flex;
-    align-items: center;
-  }
-}
-@media (max-width: 424px) {
-  #team-page .meet-team .appointment__content {
-    padding: 50px 0px;
-  }
-  #team-page .meet-team .appointment__top__arrow {
-    right: 30px;
-  }
-  #team-page .meet-team .appointment__bottom_right__arrow {
-    right: 30px;
-  }
-  #team-page .meet-team .appointment__image {
-    margin-top: -50px;
-  }
-}
+
 /* TEAM GREAT PLATFORM */
 #team-page .great-platform .container {
   background: #f5f6f0;
@@ -2020,25 +1955,6 @@ input[type="radio"] {
 
 #team-page .great-platform .order-platform-content {
   order: 0;
-}
-
-/* team great platform responsive */
-@media (max-width: 992px) {
-  #team-page .great-platform .feature__accordion__container {
-    padding: 80px 0px 80px 0px;
-  }
-}
-@media (max-width: 768px) {
-  #team-page .great-platform .container {
-    padding-top: 50px;
-  }
-  #team-page .great-platform .order-platform-image {
-    order: 0;
-  }
-
-  #team-page .great-platform .order-platform-content {
-    order: 1;
-  }
 }
 
 /*================ Price page start ====================*/
@@ -2185,19 +2101,6 @@ input[type="radio"] {
 .mm-show {
   background: var(--primary);
 }
-/* price faq accordion responsive */
-@media screen and (max-width: 500px) {
-  .accordion-main .display__flex {
-    flex-direction: column;
-  }
-  .accordion-main .accordion__serial {
-    border-right: 1px solid rgb(136, 136, 136);
-    width: 100%;
-  }
-  .accordion-main button .accordion__icon::before {
-    left: 26px;
-  }
-}
 
 /* ========== Faq page start ================ */
 /* FAQ SEACH FIELD */
@@ -2238,11 +2141,7 @@ input[type="radio"] {
 #faq .search__input__container .form-group {
   display: flex;
 }
-@media screen and (max-width: 900px) {
-  #faq .search-field .search__container {
-    flex-direction: column;
-  }
-}
+
 /* FAQ FAQ SECTION  */
 #faq #faq-main .section__sub_heading::after {
   content: none;
@@ -2275,11 +2174,6 @@ input[type="radio"] {
 #contact .right__icon__container .section__sub_heading::after {
   content: none;
 }
-@media screen and (max-width: 574px) {
-  #contact .map__icon__container {
-    max-width: 330px;
-  }
-}
 
 /* CONTACT CONTACT INFO SECTION */
 #contact .contact__item__container {
@@ -2310,15 +2204,6 @@ input[type="radio"] {
 
 #contact .contact-info .appointment__content {
   padding: 30px 0px;
-}
-
-@media screen and (max-width: 768px) {
-  #contact .contact__item__container {
-    flex-direction: column;
-  }
-  #contact .contact__item__container .appointment__content {
-    padding-right: 0;
-  }
 }
 
 /* ======= Blog page start ========== */
@@ -2466,17 +2351,7 @@ input[type="radio"] {
   font-weight: 600;
   color: var(--gery-1);
 }
-/* blog responsive */
-@media (max-width: 768px) {
-  .all-posts .sidebar__container {
-    margin-top: 30px;
-  }
-  .all-posts .recent__post__item .recent__post__container {
-    margin-top: 30px;
-  }
-}
-@media (max-width: 576px) {
-}
+
 /* ========   Blog detials page start ======== */
 /* BLOG DETAILS BLOG DETAILS SECTION */
 .all-posts .post__item .post__btn_container {
@@ -2559,24 +2434,6 @@ input[type="radio"] {
   .comment__item
   .display__flex__column {
   gap: 10px;
-}
-@media screen and (max-width: 768px) {
-  #blog-details .all-posts .post__cotainer .pagination__container,
-  .prev__post,
-  .next__post {
-    flex-direction: column;
-  }
-
-  .all-posts .post__cotainer .comment__container .comment__item img {
-    width: auto;
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 424px) {
-  .all-posts .post__cotainer .post__item .post__btn_container {
-    flex-direction: column;
-  }
 }
 
 /*  ======  ALL RESPONSIVE STYLES ==========  */
@@ -3327,3 +3184,177 @@ input[type="radio"] {
 }
 
 /* ========= Case studies page responsive ========*/
+
+/* case studies cta responsive */
+@media (max-width: 992px) {
+  #case-studies-page .personal__note {
+    margin-right: 0;
+  }
+  #case-studies-page .personal__content .container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+/* case studies case studies responsive */
+@media (max-width: 992px) {
+  #case-studies-page .case-studies .row:nth-child(1) .swiper__content {
+    margin-bottom: 30px;
+  }
+  #case-studies-page .case-studies .row:nth-child(2) .swiper__content {
+    margin-bottom: 30px;
+  }
+}
+
+/* ============== Case details responsive =========== */
+
+/* case details description responsive */
+@media (max-width: 992px) {
+  #case-details .description .case__content {
+    gap: 20px;
+  }
+}
+@media (max-width: 424px) {
+  #case-details .description .case__info {
+    display: block;
+    padding: 35px 30px;
+  }
+  #case-details .description .case__content {
+    gap: 15px;
+    flex-direction: column;
+  }
+}
+
+/* case details project results responsive */
+@media (max-width: 575px) {
+  #case-details .project-result .case__info {
+    padding: 35px 10px;
+  }
+  #case-details .project-result .case__content {
+    gap: 10px;
+  }
+}
+
+/* ============ Team responsive ============== */
+
+/* team meet team responsive */
+@media (max-width: 992px) {
+  #team-page .meet-team .appointment__content {
+    padding: 50px 0px;
+  }
+  #team-page .meet-team .meet__team__image__container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 424px) {
+  #team-page .meet-team .appointment__content {
+    padding: 50px 0px;
+  }
+  #team-page .meet-team .appointment__top__arrow {
+    right: 30px;
+  }
+  #team-page .meet-team .appointment__bottom_right__arrow {
+    right: 30px;
+  }
+  #team-page .meet-team .appointment__image {
+    margin-top: -50px;
+  }
+}
+
+/* team great platform responsive */
+@media (max-width: 992px) {
+  #team-page .great-platform .feature__accordion__container {
+    padding: 80px 0px 80px 0px;
+  }
+}
+@media (max-width: 768px) {
+  #team-page .great-platform .container {
+    padding-top: 50px;
+  }
+  #team-page .great-platform .order-platform-image {
+    order: 0;
+  }
+
+  #team-page .great-platform .order-platform-content {
+    order: 1;
+  }
+}
+
+/*============ Price responsive ================*/
+
+/* price faq accordion responsive */
+@media screen and (max-width: 500px) {
+  .accordion-main .display__flex {
+    flex-direction: column;
+  }
+  .accordion-main .accordion__serial {
+    border-right: 1px solid rgb(136, 136, 136);
+    width: 100%;
+  }
+  .accordion-main button .accordion__icon::before {
+    left: 26px;
+  }
+}
+
+/* ========== Faq responsive ================ */
+
+/* faq search field responsive */
+@media screen and (max-width: 900px) {
+  #faq .search-field .search__container {
+    flex-direction: column;
+  }
+}
+
+/* ============= Contact  us responsive ============ */
+
+/* contact map responsive */
+@media screen and (max-width: 574px) {
+  #contact .map__icon__container {
+    max-width: 330px;
+  }
+}
+
+/* contact contact info responsive */
+@media screen and (max-width: 768px) {
+  #contact .contact__item__container {
+    flex-direction: column;
+  }
+  #contact .contact__item__container .appointment__content {
+    padding-right: 0;
+  }
+}
+
+/* ======= Blog responsive ========== */
+
+/* blog responsive */
+@media (max-width: 768px) {
+  .all-posts .sidebar__container {
+    margin-top: 30px;
+  }
+  .all-posts .recent__post__item .recent__post__container {
+    margin-top: 30px;
+  }
+}
+
+/* ========   Blog detials responsive ======== */
+/* blog details blog details responsive */
+@media screen and (max-width: 768px) {
+  #blog-details .all-posts .post__cotainer .pagination__container,
+  .prev__post,
+  .next__post {
+    flex-direction: column;
+  }
+
+  .all-posts .post__cotainer .comment__container .comment__item img {
+    width: auto;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .all-posts .post__cotainer .post__item .post__btn_container {
+    flex-direction: column;
+  }
+}
