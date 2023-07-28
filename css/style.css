@@ -14,7 +14,9 @@ This files table contents are outlined below>>>>>
 *******************************************
 *******************************************
 
-==== INDEX PAGE CSS
+/* ===================================
+    Table of Content
+====================================== 
 
 ** - Default 
 ** - Global 
@@ -24,7 +26,7 @@ This files table contents are outlined below>>>>>
 ** - Badges 
 ** - Image object fit 
 ** - Display flex general 
-** - General global Responsive
+
 
  ====== Home1 start ========== 
 
@@ -46,7 +48,7 @@ This files table contents are outlined below>>>>>
 
 
 ====== HOME1 ALL RESPONSIVE STYLES ========== 
-
+** - GENERAL GLOBAL RESPONSIVE
 ** - HEADER RESPONSIVE 
 ** - HERO RESPONSIVE 
 ** - FEATURE RESPONSIVE 
@@ -331,29 +333,6 @@ button {
   gap: 0px;
   align-items: center;
   flex-direction: column;
-}
-/* General global Responsive */
-@media (max-width: 1400px) {
-  .container {
-    padding: 0 10px;
-    max-width: 1200px;
-  }
-}
-@media (max-width: 992px) {
-  .container {
-    padding: 0px 30px;
-  }
-}
-@media (max-width: 424px) {
-  section {
-    padding: 50px 0;
-  }
-  .section__heading {
-    font-size: 40px;
-  }
-  .process__container {
-    margin: 25px 0;
-  }
 }
 
 /* ====== Home1 start ========== */
@@ -1463,6 +1442,29 @@ input[type="radio"] {
 
 /* ============= HOME1 ALL RESPONSIVE STYLES ========= */
 
+/* GENERAL GLOBAL RESPONSIVE */
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 10px;
+    max-width: 1200px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 424px) {
+  section {
+    padding: 50px 0;
+  }
+  .section__heading {
+    font-size: 40px;
+  }
+  .process__container {
+    margin: 25px 0;
+  }
+}
 /* HEADER RESPONSIVE */
 @media (max-width: 1300px) {
   .navbar-brand {
