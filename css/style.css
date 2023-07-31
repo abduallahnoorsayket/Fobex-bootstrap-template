@@ -350,11 +350,11 @@ button {
 .nav-link::before {
   content: "";
   position: absolute;
-  top: 70%;
+  top: 67%;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 31px;
+  height: 25px;
   background-color: var(--primary);
   opacity: 0;
   visibility: hidden;
@@ -1479,6 +1479,10 @@ input[type="radio"] {
   }
 }
 @media (max-width: 992px) {
+  .navbar-brand {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
   .navbar-collapse {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -1506,16 +1510,17 @@ input[type="radio"] {
   .nav-link::before {
     content: none;
   }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+  }
+  li:not(:last-child)::after {
+    content: none;
+  }
 }
 @media screen and (max-width: 424px) {
   .header__container .container {
     padding: 0 0;
   }
-  .navbar-dark .navbar-brand {
-    width: 140px;
-    height: 55px;
-  }
-
   .header__topbar,
   .nav__search__container {
     display: none;
