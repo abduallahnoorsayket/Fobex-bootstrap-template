@@ -2,15 +2,14 @@
     Table of Content
 ====================================== 
 
-** - Global 
-** - General form control 
-** - icons 
-** - Buttons 
-** - Badges 
+** - Global styles
+** - icon styles
+** - Button styles 
+** - Badge styles 
 ** - Anchor link css 
 ** - Image object fit 
 
- ====== Home2 start ========== 
+ ====== Home2 page ========== 
 
 ** - HEADER SECTION  
 ** - HERO SECTION 
@@ -35,7 +34,7 @@
 ** - SERVICE FEATURE SECTION 
 ** - SERVICE FUN-FACTS SECTION 
 ** - SERVICE PRICE SECTION 
-** - SERVICE FOOTER SECTION 
+** - SERVICE FOOTER-MAIN SECTION 
 
 ======= About us page =====
 
@@ -131,8 +130,55 @@
 
 ======= About us page responsive ======
 
+** - about us client responsive
+** - about us  about us responsive
+** - about us team responsive
+** - about us focus quality responsive
 
-/* Global   */
+======= Service details responsive=====
+
+** - service details focus quality responsive
+** - service details service responsive
+** - service details personal expertise responsive 
+
+
+======= Case studies page responsive =======
+
+** - case studies cta responsive
+** - case studies case studies responsive
+
+======== Case details responsive =======
+
+** - case details description responsive
+** - case details project results responsive
+
+========= Team responsive ==========
+
+** - team meet team responsive
+** - team great platform responsive
+
+======== Price responsive ==========
+
+** - price faq accordion responsive
+
+======= Faq responsive ==========
+
+** - faq search field responsive
+
+======== Contact  us responsive ========
+
+** - contact map responsive
+** - contact contact info responsive
+
+====== Blog responsive ========
+
+** - blog responsive
+
+=====   Blog detials responsive ======
+
+** - blog details blog details responsive
+
+/* Global styles   */
 @import "./style.css";
 :root {
   --primary: #ffde00;
@@ -214,7 +260,7 @@ ul li {
 .btn-primary:hover {
   background: var(--primary);
 }
-/* icons */
+/* icon styles */
 .icon {
   width: 50px;
   height: 50px;
@@ -235,7 +281,7 @@ hr {
 section .section__sub_heading_line {
   margin: 10px;
 }
-/* Buttons */
+/* Button styles */
 .btn_primary {
   background: var(--primary);
   border-radius: 2px;
@@ -275,7 +321,7 @@ section .section__sub_heading_line {
   background-color: var(--primary) !important;
   border-color: var(--primary);
 }
-/* Badges  */
+/* Badge styles   */
 .badge-primary {
   background: var(--primary);
   padding: 5px 10px;
@@ -342,7 +388,7 @@ button {
   height: 100%;
 }
 
-/* ============= Home2 page start ======================== */
+/* ============= Home2 page ======================== */
 /* HEADER SECTION */
 .header {
   margin-bottom: -123px;
@@ -490,8 +536,7 @@ button {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
-    url("../image/home2/home-2\ hero.png");
+  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)), url("../image/home2/home-2\ hero.png");
   background-size: cover;
   background-position: center;
 }
@@ -693,8 +738,7 @@ select {
 /* FEATURE SECTION */
 .feature {
   gap: 50px;
-  background: url(../image/home2/feature-bg.png),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/feature-bg.png), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: auto;
@@ -885,12 +929,7 @@ select {
   place-items: center;
 }
 .project__slider__image_1 {
-  background: linear-gradient(
-      0deg,
-      rgba(19, 25, 34, 0.4),
-      rgba(19, 25, 34, 0.4)
-    ),
-    url("../image/home2/project-slider-1.png");
+  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/home2/project-slider-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -958,8 +997,7 @@ select {
 }
 
 .testimonials {
-  background: url(../image/home2/testimonial-bg.jpg),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/testimonial-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -1225,12 +1263,7 @@ p {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 60vh;
-  background: linear-gradient(
-      0deg,
-      rgba(19, 25, 34, 0.4),
-      rgba(19, 25, 34, 0.4)
-    ),
-    url("../image/service/service-hero-bg.jpg");
+  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/service/service-hero-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 123px 0 0 0;
@@ -1308,7 +1341,7 @@ p {
   height: 42px;
   fill: var(--secondary);
 }
-/* SERVICE FOOTER SECTION */
+/* SERVICE FOOTER-MAIN SECTION */
 .footer-main {
   background: var(--secondary) !important;
   padding: 100px 0 0 0;
@@ -1483,8 +1516,7 @@ input[type="radio"] {
 
 #about-us-page .service {
   gap: 50px;
-  background: url(../image/about-us/service-bg.jpg),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/about-us/service-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0px;
@@ -1766,8 +1798,7 @@ input[type="radio"] {
 
 #case-studies-page .personal__note {
   padding: 50px;
-  background: url("../image/case-studies/cta-card-bg.png"),
-    linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
+  background: url("../image/case-studies/cta-card-bg.png"), linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
   background-repeat: no-repeat;
   flex-direction: column;
   gap: 15px;
@@ -1961,12 +1992,8 @@ input[type="radio"] {
   margin-bottom: 30px;
 }
 #team-page .video {
-  background: linear-gradient(
-      0deg,
-      rgba(2, 14, 32, 0.5) 0%,
-      rgba(2, 14, 32, 0.5) 100%
-    ),
-    url(../image/team/team-page-video.jpg), lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, rgba(2, 14, 32, 0.5) 0%, rgba(2, 14, 32, 0.5) 100%), url(../image/team/team-page-video.jpg),
+    lightgray 50% / cover no-repeat;
   height: 700px;
 }
 #team-page .video__icon__container {
@@ -2073,8 +2100,7 @@ input[type="radio"] {
 }
 #price .service-home-2 {
   gap: 50px;
-  background: url(../image/about-us/service-bg.jpg),
-    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/about-us/service-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0px;
@@ -2436,8 +2462,7 @@ input[type="radio"] {
 .all-posts .sidebar__container .recent__post__support .support__image {
   background-repeat: no-repeat;
   height: 400px;
-  background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)),
-    url("../image/blog/blog-contact-us.jpg");
+  background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)), url("../image/blog/blog-contact-us.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -2535,11 +2560,7 @@ input[type="radio"] {
   gap: 30px;
 }
 
-.all-posts
-  .post__cotainer
-  .comment__container
-  .comment__item
-  .display__flex__column {
+.all-posts .post__cotainer .comment__container .comment__item .display__flex__column {
   gap: 10px;
 }
 
@@ -2551,7 +2572,6 @@ input[type="radio"] {
   section {
     padding: 50px 0 0;
   }
-
   .section__heading {
     font-size: 30px !important;
     width: 100% !important;
@@ -3153,7 +3173,7 @@ input[type="radio"] {
   }
 }
 
-/* About us focus quality responsive */
+/* about us focus quality responsive */
 @media (max-width: 768px) {
   #about-us-page .welcome__content {
     width: 100%;
