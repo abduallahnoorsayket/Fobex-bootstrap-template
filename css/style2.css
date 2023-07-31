@@ -427,15 +427,6 @@ button {
 .social_icons i {
   color: var(--white);
 }
-
-.nav-custom {
-  background: var(--white);
-  color: var(--secondary);
-  border-radius: 34px;
-  padding: 10px 20px;
-  position: relative;
-  align-items: center;
-}
 .navbar-dark .navbar-nav .nav-link {
   font-weight: 500 !important;
   font-size: 16px;
@@ -516,10 +507,6 @@ button {
 }
 .dropdown-menu {
   transition: all 0.5s ease-in-out !important;
-}
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 15px;
 }
 
 .header .search__icon {
@@ -2661,11 +2648,6 @@ input[type="radio"] {
   .header__container .container {
     padding: 0 0;
   }
-  .navbar-dark .navbar-brand {
-    width: 140px;
-    height: 55px;
-  }
-
   .header__topbar,
   .nav__search__container {
     display: none;
