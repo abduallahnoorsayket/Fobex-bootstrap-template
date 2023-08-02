@@ -480,7 +480,8 @@ li {
 #home-1 .hero {
   background-color: #cccccc;
   background-repeat: no-repeat;
-  background: linear-gradient(0deg, rgba(1, 5, 21, 0.5), rgba(1, 5, 21, 0.5)), url("../image/home1/Bitmap.jpg");
+  background: linear-gradient(0deg, rgba(1, 5, 21, 0.5), rgba(1, 5, 21, 0.5)),
+    url("../image/home1/Bitmap.jpg");
   background-size: cover;
   min-height: 100vh;
 }
@@ -488,7 +489,7 @@ li {
   z-index: 10;
 }
 #home-1 .hero .hero__bg__container {
-  background-image: url(../image/home1/hero-section-title.png);
+  background-image: url(/assets/image/home1/hero-section-title.png);
   height: 505px;
   width: 943px;
   background-color: #cccccc05;
@@ -717,7 +718,7 @@ li {
   margin-left: auto;
 }
 .welcome__image {
-  background-image: url(../image/home1/welcome_image.png);
+  background-image: url(/assets/image/home1/welcome_image.png);
   width: 100%;
   height: 720px;
   background-size: cover;
@@ -762,7 +763,7 @@ li {
   margin: 10px 5px;
 }
 .focus-quality__image {
-  background-image: url(../image/home1/focus_quality.png);
+  background-image: url(/assets/image/home1/focus_quality.png);
   width: 100%;
   height: 710px;
   background-size: cover;
@@ -978,22 +979,22 @@ li {
   padding: 0 30px 30px 30px;
 }
 .swiper__image-1 {
-  background-image: url(../image/home1/project-slier-1.png);
+  background-image: url(/assets/image/home1/project-slier-1.png);
 }
 .swiper__image-2 {
-  background-image: url(../image/home1/project-slier-2.png);
+  background-image: url(/assets/image/home1/project-slier-2.png);
 }
 .swiper__image-3 {
-  background-image: url(../image/home1/project-slier-3.png);
+  background-image: url(/assets/image/home1/project-slier-3.png);
 }
 .swiper__image-4 {
-  background-image: url(../image/home1/project-slier-4.png);
+  background-image: url(/assets/image/home1/project-slier-4.png);
 }
 .swiper__image-5 {
-  background-image: url(../image/home1/project-slier-5.png);
+  background-image: url(/assets/image/home1/project-slier-5.png);
 }
 .swiper__image-6 {
-  background-image: url(../image/home1/project-slier-6.png);
+  background-image: url(/assets/image/home1/project-slier-6.png);
 }
 .slider__title {
   background: var(--white);
@@ -1081,7 +1082,7 @@ li {
   padding: 0;
 }
 .testimonial {
-  background-image: url(../image/home1/testimonial-bg.png);
+  background-image: url(/assets/image/home1/testimonial-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1104,7 +1105,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(../image/home1/testimonial-map.png);
+  background-image: url(/assets/image/home1/testimonial-map.png);
   background-repeat: no-repeat;
 }
 .testimonail__des {
@@ -1162,7 +1163,9 @@ li {
 }
 
 /* PRICE MAIN SECTION */
-#price-main .display__flex__section__sub__heading__icon .section__sub_heading::after {
+#price-main
+  .display__flex__section__sub__heading__icon
+  .section__sub_heading::after {
   content: none;
 }
 #price-main .price__card {
