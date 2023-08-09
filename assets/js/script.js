@@ -1,5 +1,20 @@
 //
 "strict mode";
+
+const home1__hero__slider = new Swiper(".home1-hero-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  // direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  },
+});
+
 const project__slider = new Swiper(".project-slider", {
   loop: true,
   slidesPerView: 1,
