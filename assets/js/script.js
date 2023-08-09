@@ -13,6 +13,18 @@ const home1__hero__slider = new Swiper(".home1-hero-slider", {
     },
   },
 });
+const home2__hero__slider = new Swiper(".home2-hero-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: ".hero__navigation",
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<li class="' + className + '">' + (index + 1) + "</li>";
+    },
+  },
+});
 
 const project__slider = new Swiper(".project-slider", {
   loop: true,

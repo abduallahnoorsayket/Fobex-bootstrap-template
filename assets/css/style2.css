@@ -523,7 +523,8 @@ button {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 100vh;
-  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)), url("../image/home2/home-2\ hero.png");
+  background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
+    url("../image/home2/home-2\ hero.png");
   background-size: cover;
   background-position: center;
 }
@@ -550,13 +551,58 @@ button {
   line-height: 90px;
   text-transform: uppercase;
   color: #ffffff;
-  width: 60%;
+  width: 85%;
   margin-top: 15px;
 }
 .hero__button {
   margin-top: 40px;
 }
-
+#home-2 .hero__slider__content {
+  max-width: 1170px;
+}
+#home-2 .hero__navigation {
+  display: flex;
+  color: #fff;
+  width: 50px;
+  height: 100%;
+  border-radius: 25px;
+  text-align: center;
+  padding: 25px 12px;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: -100px;
+  margin-left: 0px;
+  z-index: 20;
+  /* position: relative; */
+}
+/* #home-2 .hero__navigation li::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+} */
+#home-2 .hero__navigation li:not(:last-child) {
+  margin-bottom: 20px;
+}
+#home-2 .hero__tile__navigation__container {
+  height: 430px;
+}
+#home-2 .swiper-pagination-bullet {
+  height: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+#home-2 .swiper-pagination-bullet-active {
+  color: var(--secondary);
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
 /* APPOINTMENT SECTION */
 #appointment-home-2 {
   padding: 90px 0;
@@ -725,7 +771,8 @@ select {
 /* FEATURE SECTION */
 .feature {
   gap: 50px;
-  background: url(../image/home2/feature-bg.png), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/feature-bg.png),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: auto;
@@ -916,7 +963,12 @@ select {
   place-items: center;
 }
 .project__slider__image_1 {
-  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/home2/project-slider-1.png");
+  background: linear-gradient(
+      0deg,
+      rgba(19, 25, 34, 0.4),
+      rgba(19, 25, 34, 0.4)
+    ),
+    url("../image/home2/project-slider-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -984,7 +1036,8 @@ select {
 }
 
 .testimonials {
-  background: url(../image/home2/testimonial-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/home2/testimonial-bg.jpg),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -1250,7 +1303,12 @@ p {
   background-color: #cccccc;
   background-repeat: no-repeat;
   min-height: 60vh;
-  background: linear-gradient(0deg, rgba(19, 25, 34, 0.4), rgba(19, 25, 34, 0.4)), url("../image/service/service-hero-bg.jpg");
+  background: linear-gradient(
+      0deg,
+      rgba(19, 25, 34, 0.4),
+      rgba(19, 25, 34, 0.4)
+    ),
+    url("../image/service/service-hero-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 123px 0 0 0;
@@ -1503,7 +1561,8 @@ input[type="radio"] {
 
 #about-us-page .service {
   gap: 50px;
-  background: url(../image/about-us/service-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/about-us/service-bg.jpg),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0px;
@@ -1785,7 +1844,8 @@ input[type="radio"] {
 
 #case-studies-page .personal__note {
   padding: 50px;
-  background: url("../image/case-studies/cta-card-bg.png"), linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
+  background: url("../image/case-studies/cta-card-bg.png"),
+    linear-gradient(0deg, rgba(252, 219, 0, 1), rgba(252, 219, 0, 1));
   background-repeat: no-repeat;
   flex-direction: column;
   gap: 15px;
@@ -1979,8 +2039,12 @@ input[type="radio"] {
   margin-bottom: 30px;
 }
 #team-page .video {
-  background: linear-gradient(0deg, rgba(2, 14, 32, 0.5) 0%, rgba(2, 14, 32, 0.5) 100%), url(../image/team/team-page-video.jpg),
-    lightgray 50% / cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(2, 14, 32, 0.5) 0%,
+      rgba(2, 14, 32, 0.5) 100%
+    ),
+    url(../image/team/team-page-video.jpg), lightgray 50% / cover no-repeat;
   height: 700px;
 }
 #team-page .video__icon__container {
@@ -2087,7 +2151,8 @@ input[type="radio"] {
 }
 #price .service-home-2 {
   gap: 50px;
-  background: url(../image/about-us/service-bg.jpg), linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
+  background: url(../image/about-us/service-bg.jpg),
+    linear-gradient(0deg, rgba(245, 248, 247, 1), rgba(245, 248, 247, 1));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0px;
@@ -2449,7 +2514,8 @@ input[type="radio"] {
 .all-posts .sidebar__container .recent__post__support .support__image {
   background-repeat: no-repeat;
   height: 400px;
-  background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)), url("../image/blog/blog-contact-us.jpg");
+  background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)),
+    url("../image/blog/blog-contact-us.jpg");
   background-size: cover;
   background-position: center;
   color: var(--white);
@@ -2547,7 +2613,11 @@ input[type="radio"] {
   gap: 30px;
 }
 
-.all-posts .post__cotainer .comment__container .comment__item .display__flex__column {
+.all-posts
+  .post__cotainer
+  .comment__container
+  .comment__item
+  .display__flex__column {
   gap: 10px;
 }
 
