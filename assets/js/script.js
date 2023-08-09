@@ -5,12 +5,11 @@ const home1__hero__slider = new Swiper(".home1-hero-slider", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 20,
-  // direction: "vertical",
   pagination: {
-    el: ".swiper-pagination",
+    el: ".hero__navigation",
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<li class="' + className + '">' + (index + 1) + "</li>";
     },
   },
 });
