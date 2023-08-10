@@ -535,6 +535,7 @@ button {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  padding-left: 50px;
 }
 .hero__badge {
   background: #141413ab;
@@ -2780,6 +2781,9 @@ input[type="radio"] {
     line-height: 70px;
     margin-top: 15px;
     width: 100%;
+  }
+  #home-2 .navigation__circle__1 {
+    display: none;
   }
 }
 @media screen and (max-width: 424px) {
