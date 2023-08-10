@@ -573,17 +573,18 @@ button {
   margin-top: -100px;
   margin-left: 0px;
   z-index: 20;
-  /* position: relative; */
+  position: relative;
 }
-/* #home-2 .hero__navigation li::after {
+#home-2 .hero__navigation .swiper-pagination-bullet::before {
   content: "";
-  width: 30px;
+  width: 100px;
   height: 2px;
   background-color: var(--white);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-} */
+  left: 19px;
+}
 #home-2 .hero__navigation li:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -597,12 +598,29 @@ button {
   background: transparent;
   border-radius: 50%;
   border: 1px solid #fff;
+  position: relative;
 }
 #home-2 .swiper-pagination-bullet-active {
   color: var(--secondary);
   background: var(--primary);
   border: 1px solid var(--primary);
+  position: relative;
+  left: -15px;
 }
+
+#home-2
+  .hero__navigation
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+}
+
 #home-2 .navigation__circle__1 {
   width: 280px;
   height: 280px;
