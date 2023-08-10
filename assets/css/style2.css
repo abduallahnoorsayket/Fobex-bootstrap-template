@@ -622,26 +622,28 @@ button {
 }
 
 #home-2 .navigation__circle__1 {
-  width: 280px;
+  width: 140px;
   height: 280px;
-  border-radius: 50%;
   border: 2px solid #fff;
   opacity: 0.2;
   background: rgba(255, 255, 255, 0);
-  margin-top: -120px;
+  margin-top: -140px;
   position: absolute;
-  right: -130px;
+  border-radius: 140px 0 0 140px;
+  right: 0;
+  border-right: none;
 }
 #home-2 .navigation__circle__1::before {
   content: "";
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  border: 2px solid #fff;
   opacity: 0.8;
-  background: rgba(255, 255, 255, 0);
   position: absolute;
-  right: 20px;
+  right: 0;
+  width: 160px;
+  height: 280px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 140px 0 0 140px;
+  border-right: none;
 }
 #home-2 .hero__container {
   position: relative;
