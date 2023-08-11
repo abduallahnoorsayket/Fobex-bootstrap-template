@@ -1161,6 +1161,9 @@ select {
   background-position: center;
   width: 100%;
 }
+.modal-open {
+  padding: 0px !important;
+}
 .modal {
   overflow: hidden !important;
 }
@@ -1168,7 +1171,7 @@ select {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 40%;
   bottom: 0;
   margin: auto;
   width: 100%;
@@ -1176,7 +1179,7 @@ select {
   max-width: 1000px !important;
 }
 .modal-dialog iframe {
-  margin: auto;
+  margin: 0 auto;
   display: block;
 }
 .modal-body {
@@ -2129,7 +2132,7 @@ input[type="radio"] {
   gap: 20px;
 }
 #team-page .video__icon__container .video__title {
-  width: 60%;
+  width: 55%;
 }
 #team-page .video__icon {
   width: 115px;
