@@ -394,10 +394,41 @@
         <div
           class="video__icon__container display__flex__center__vertical_horizontal"
         >
-          <svg class="icon video__icon">
-            <use xlink:href="./assets/icon/sprite.svg#team-video-play"></use>
-          </svg>
+          <button class="btn" data-toggle="modal" data-target="#myModal">
+            <svg class="icon video__icon">
+              <use xlink:href="./assets/icon/sprite.svg#team-video-play"></use>
+            </svg>
+          </button>
+
           <h5 class="video__title">Watch our team working</h5>
+          <!-- video modal start -->
+          <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      id="cartoonVideo"
+                      class="embed-responsive-item"
+                      src="//www.youtube.com/embed/YE7VzlLtp-4"
+                      width="560"
+                      height="315"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- video modal end  -->
         </div>
       </section>
       <!-- Video end-->

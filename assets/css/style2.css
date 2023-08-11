@@ -1161,10 +1161,10 @@ select {
   background-position: center;
   width: 100%;
 }
-#home-2 .modal {
-  overflow: hidden;
+.modal {
+  overflow: hidden !important;
 }
-#home-2 .testimonials .modal-dialog {
+.modal-dialog {
   position: absolute;
   left: 0;
   right: 0;
@@ -1175,15 +1175,15 @@ select {
   height: 100%;
   max-width: 1000px !important;
 }
-#home-2 .testimonials .modal-dialog iframe {
+.modal-dialog iframe {
   margin: auto;
   display: block;
 }
-#home-2 .modal-body {
+.modal-body {
   padding: 0;
   position: relative;
 }
-#home-2 .close {
+.close {
   position: absolute;
   right: -30px;
   top: -8px;
