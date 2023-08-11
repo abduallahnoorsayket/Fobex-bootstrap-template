@@ -1394,13 +1394,46 @@
                 <div
                   class="tesimonial__video__image display__grid__items__center"
                 >
-                  <button class="btn btn-primary btn_primary tesimonial__btn">
+                  <button
+                    class="btn btn-primary btn_primary tesimonial__btn"
+                    data-toggle="modal"
+                    data-target="#myModal"
+                  >
                     <svg class="icon service___right__arrow__icon">
                       <use
                         xlink:href="./assets/icon/sprite.svg#testimonial-play-icon"
                       ></use>
                     </svg>
                   </button>
+
+                  <!-- video modal start -->
+                  <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                          <div class="embed-responsive embed-responsive-16by9">
+                            <iframe
+                              id="cartoonVideo"
+                              class="embed-responsive-item"
+                              src="//www.youtube.com/embed/YE7VzlLtp-4"
+                              width="560"
+                              height="315"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- video modal end  -->
                 </div>
 
                 <div class="about-us-image-sideborder"></div>
@@ -1692,6 +1725,7 @@
       </section>
       <!-- Footer End -->
     </main>
+
     <!--Jquery & proper js -->
     <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
@@ -1701,5 +1735,6 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
+    <script></script>
   </body>
 </html>
