@@ -1161,9 +1161,15 @@ select {
   background-position: center;
   width: 100%;
 }
+/* modal css */
+/* body.modal-open {
+} */
 .modal-open {
+  height: 100vh;
+  overflow-y: hidden;
   padding: 0px !important;
 }
+
 .modal {
   overflow: hidden !important;
 }
@@ -1196,6 +1202,15 @@ select {
   color: #fff;
   opacity: 1;
 }
+/* body .modal-open {
+  min-height: 100vh;
+} */
+/* body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+  padding: 0px !important;
+} */
+
 /* CLIENT SECTION */
 #home-2 #client {
   padding-bottom: 100px;
