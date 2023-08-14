@@ -1164,12 +1164,14 @@ select {
 /* modal css */
 /* body.modal-open {
 } */
-.modal-open {
-  height: 100vh;
+body.modal-open {
+  /* height: 100vh; */
   overflow-y: hidden;
   padding: 0px !important;
 }
-
+.modal-open {
+  overflow: hidden !important;
+}
 .modal {
   overflow: hidden !important;
 }
@@ -1202,14 +1204,6 @@ select {
   color: #fff;
   opacity: 1;
 }
-/* body .modal-open {
-  min-height: 100vh;
-} */
-/* body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-  padding: 0px !important;
-} */
 
 /* CLIENT SECTION */
 #home-2 #client {
