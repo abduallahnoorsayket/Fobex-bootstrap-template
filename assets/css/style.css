@@ -1824,12 +1824,13 @@ input[type="radio"] {
     width: 478px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .testimonial {
     background-image: none;
   }
   .testimonial-slider {
     margin: 0;
+    width: 100%;
   }
 
   .testimonial .container {

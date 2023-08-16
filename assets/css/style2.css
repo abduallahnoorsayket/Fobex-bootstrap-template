@@ -1955,6 +1955,9 @@ input[type="radio"] {
 #case-studies-page .personal__note .btn_primary .nav__arrow__icon {
   fill: #ffffff;
 }
+#case-studies-page .cta .section__sub_heading::after {
+  content: none;
+}
 
 /* CASE STUDIES CASE STUDIES SECTION */
 
