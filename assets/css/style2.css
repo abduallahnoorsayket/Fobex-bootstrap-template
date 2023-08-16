@@ -2928,7 +2928,7 @@ input[type="radio"] {
     padding: 0 75px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .service-home-2 {
     padding: 100px 0 50px;
   }
@@ -2940,6 +2940,8 @@ input[type="radio"] {
     width: 50%;
     object-fit: cover;
   }
+}
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 424px) {
   .service-home-2 .section__heading {
@@ -3315,9 +3317,6 @@ input[type="radio"] {
     height: 1px;
     background: #888888;
     margin: 30px 0 50px 30px;
-  }
-  .swiper__slider {
-    padding-left: 30px;
   }
 }
 

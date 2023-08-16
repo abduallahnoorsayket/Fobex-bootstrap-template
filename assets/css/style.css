@@ -1786,7 +1786,7 @@ input[type="radio"] {
     background: #888888;
     margin: 30px 0 50px 30px;
   }
-  .swiper__slider {
+  #home-1 .project .swiper__slider {
     padding-left: 30px;
   }
 }
