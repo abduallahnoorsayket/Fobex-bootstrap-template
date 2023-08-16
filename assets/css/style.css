@@ -84,8 +84,8 @@ This files table contents are outlined below>>>>>
   text-decoration: none !important;
 }
 html {
-  background: red;
-  overflow-x: hidden;
+  background: black;
+  /* overflow-x: auto; */
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
@@ -94,7 +94,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: #5f6165;
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
 h1,

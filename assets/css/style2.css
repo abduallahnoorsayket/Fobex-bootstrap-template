@@ -389,6 +389,7 @@ button {
 }
 
 /* ============= Home2 page ======================== */
+
 /* HEADER SECTION */
 .header {
   margin-bottom: -123px;
@@ -979,12 +980,12 @@ select {
 }
 
 /* PROJECT SECTION */
+
 #project-home-2 {
   padding: 0;
-}
-#project-home-2 {
   border-top: 1px solid #888888;
   border-bottom: 1px solid #888888;
+  overflow-x: hidden;
 }
 #project-home-2 .project__left {
   padding: 90px 90px 75px;
@@ -1077,6 +1078,7 @@ select {
 /* TESTIMONIAL SECTION */
 #home-2 #testimonials {
   padding-bottom: 100px;
+  overflow-x: hidden;
 }
 .testimonials {
   margin-left: 262px;
