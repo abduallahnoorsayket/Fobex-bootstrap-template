@@ -389,6 +389,7 @@ button {
 }
 
 /* ============= Home2 page ======================== */
+
 /* HEADER SECTION */
 .header {
   margin-bottom: -123px;
@@ -979,12 +980,12 @@ select {
 }
 
 /* PROJECT SECTION */
+
 #project-home-2 {
   padding: 0;
-}
-#project-home-2 {
   border-top: 1px solid #888888;
   border-bottom: 1px solid #888888;
+  overflow-x: hidden;
 }
 #project-home-2 .project__left {
   padding: 90px 90px 75px;
@@ -1077,6 +1078,7 @@ select {
 /* TESTIMONIAL SECTION */
 #home-2 #testimonials {
   padding-bottom: 100px;
+  overflow-x: hidden;
 }
 .testimonials {
   margin-left: 262px;
@@ -1164,12 +1166,14 @@ select {
 /* modal css */
 /* body.modal-open {
 } */
-.modal-open {
-  height: 100vh;
+body.modal-open {
+  /* height: 100vh; */
   overflow-y: hidden;
   padding: 0px !important;
 }
-
+.modal-open {
+  overflow: hidden !important;
+}
 .modal {
   overflow: hidden !important;
 }
@@ -1202,14 +1206,6 @@ select {
   color: #fff;
   opacity: 1;
 }
-/* body .modal-open {
-  min-height: 100vh;
-} */
-/* body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-  padding: 0px !important;
-} */
 
 /* CLIENT SECTION */
 #home-2 #client {
@@ -1958,6 +1954,9 @@ input[type="radio"] {
 }
 #case-studies-page .personal__note .btn_primary .nav__arrow__icon {
   fill: #ffffff;
+}
+#case-studies-page .cta .section__sub_heading::after {
+  content: none;
 }
 
 /* CASE STUDIES CASE STUDIES SECTION */
@@ -2767,6 +2766,7 @@ input[type="radio"] {
 /* ========== Home 2 responsive ==========  */
 
 /* header responsive */
+
 @media (max-width: 1300px) {
   .header__topbar {
     display: none;
@@ -2781,7 +2781,16 @@ input[type="radio"] {
     white-space: nowrap;
   }
   .nav__number {
-    font-size: 16px;
+    font-size: 12px;
+  }
+  .nav-custom {
+    padding: 0px 10px;
+  }
+  .navbar-nav {
+    gap: 10px;
+  }
+  .nav__search__container {
+    gap: 10px;
   }
 }
 @media (max-width: 992px) {
@@ -2855,7 +2864,7 @@ input[type="radio"] {
 }
 /* appointment responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .appoinment__container {
     flex-direction: column;
   }
@@ -2922,7 +2931,7 @@ input[type="radio"] {
     padding: 0 75px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .service-home-2 {
     padding: 100px 0 50px;
   }
@@ -2934,6 +2943,8 @@ input[type="radio"] {
     width: 50%;
     object-fit: cover;
   }
+}
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 424px) {
   .service-home-2 .section__heading {
@@ -3309,9 +3320,6 @@ input[type="radio"] {
     height: 1px;
     background: #888888;
     margin: 30px 0 50px 30px;
-  }
-  .swiper__slider {
-    padding-left: 30px;
   }
 }
 
