@@ -1,8 +1,8 @@
 /* 
-    Theme Name: CUBE  Template CUSTOM
+    Theme Name: Fobex  Template CUSTOM
     Company: Cloud production limited
-    Author : ThimCloud 
-    Description: Multi page CUBE template
+    Author : Thim Cloud 
+    Description: Multi page Fobex template
     Tags: Multi page, multipurpose, bootstrap, CSS, html, swiper js
  
 * This file contains the styling for the actual tepmlate, this
@@ -85,7 +85,6 @@ This files table contents are outlined below>>>>>
 }
 html {
   background: black;
-  /* overflow-x: auto; */
 }
 body {
   font-family: "Roboto Condensed", sans-serif;
