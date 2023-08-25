@@ -271,6 +271,16 @@ $(document).ready(function () {
 });
 
 // search input header
+const inputField = document.getElementById("searchright");
+const toggleButton = document.getElementById("toggleButton");
+
+toggleButton.addEventListener("click", function () {
+  if (inputField.style.display === "none") {
+    inputField.style.display = "block";
+  } else {
+    inputField.style.display = "none";
+  }
+});
 
 // var form = document.getElementsByClassName("et-search-form");
 // function clickBtn() {
