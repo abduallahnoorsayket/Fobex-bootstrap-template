@@ -192,6 +192,22 @@ ul li {
 .btn-primary:hover {
   background: var(--primary);
 }
+
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.btn-primary:focus svg {
+  fill: var(--white);
+}
+.btn-primary.focus,
+.btn-primary:focus {
+  /* color: #fff; */
+  background-color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: none;
+}
+
 /* General form control */
 .form-control {
   padding: 18px 25px;
@@ -405,7 +421,7 @@ li {
   font-size: 16px;
   line-height: 26px;
   text-transform: uppercase;
-  color: #131922;
+  color: #131922 !important;
   padding: 25px 20px;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
