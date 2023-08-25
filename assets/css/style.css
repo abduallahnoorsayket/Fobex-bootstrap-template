@@ -30,7 +30,7 @@ This files table contents are outlined below>>>>>
 
  ====== Home1 start ========== 
 
-** - HEADER 
+** - HEADER SECTION
 ** - HEADER ICONS 
 ** - HERO SECTION 
 ** - FEATURE SECTION 
@@ -344,7 +344,7 @@ button {
 }
 
 /* ====== Home1 start ========== */
-/* Header */
+/* HEADER SECTION */
 #home-1 .header {
   padding: 0px;
   margin-bottom: -123px;
@@ -433,7 +433,7 @@ li {
   margin-top: 0px;
 }
 .header .search__icon {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 25px 0px -35px;
   cursor: pointer;
 }
 .fa-search:before {
@@ -451,6 +451,12 @@ li {
   width: 24px;
   height: 24px;
   margin: 0px 20px 0px 0px;
+}
+/*  Search input */
+.header_search_input {
+  padding: 13px 10px;
+  border-radius: 15px;
+  /* border: 2px solid; */
 }
 /* HEADER ICONS */
 .fa-search:before {
