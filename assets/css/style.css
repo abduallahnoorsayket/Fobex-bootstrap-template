@@ -440,6 +440,7 @@ li {
 .nav-item:hover .nav-link::before {
   opacity: 1;
   visibility: visible;
+  /* color: green !important; */
 }
 
 .nav-link.nav-active::before {
@@ -482,9 +483,9 @@ li {
 .navbar-dark .navbar-nav .show > .nav-link {
   color: var(--secondary);
 }
-.dropdown-toggle::after {
-  /* display: none; */
-}
+/* .dropdown-toggle::after {
+  display: none;
+} */
 .navbar-brand {
   margin-right: 5rem;
   padding: 0px;
@@ -496,6 +497,14 @@ li {
   display: block;
   margin-top: 0px;
 }
+/* ======= */
+/* .dropdown-menu:hover .nav-item > div + a {
+  color: green;
+} */
+/* .dropdown-menu:hover .nav-item {
+  color: green;
+} */
+/* ============ */
 .header .search__icon {
   margin: 0px 25px 0px -35px;
   cursor: pointer;
