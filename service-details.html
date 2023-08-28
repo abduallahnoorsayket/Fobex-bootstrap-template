@@ -96,7 +96,7 @@
                   Services
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="./service.html">Service</a>
+                  <a class="dropdown-item" href="./service.html">Services</a>
                   <a class="dropdown-item" href="./service-details.html"
                     >Service Details</a
                   >
@@ -131,9 +131,9 @@
                   News
                 </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="./blog.html">Blog</a>
+                  <a class="dropdown-item" href="./blog.html">News</a>
                   <a class="dropdown-item" href="/blog-details.html"
-                    >Blog Details</a
+                    >News Details</a
                   >
                 </div>
               </li>
@@ -150,20 +150,44 @@
             <div
               class="nav__phone__search__container display__flex__align__item__Center"
             >
-              <div class="search-container mr-3">
-                <form>
-                  <input
-                    class="search_input expandright"
-                    id="searchright"
-                    type="search"
-                    placeholder="Search"
-                  />
-                  <label
-                    class="search_icon_button searchbutton"
-                    for="searchright"
-                    ><span class="mglass">&#9906;</span></label
+              <div class="search-container mr-0">
+                <div class="overlay">
+                  <a
+                    class="mk-search-trigger mk-fullscreen-trigger"
+                    href="#"
+                    id="search-button-listener"
                   >
-                </form>
+                    <div id="search-button"><i class="fa fa-search"></i></div>
+                  </a>
+                  <div
+                    class="mk-fullscreen-search-overlay"
+                    id="mk-search-overlay"
+                  >
+                    <a
+                      href="#"
+                      class="mk-fullscreen-close"
+                      id="mk-fullscreen-close-button"
+                      ><i class="fa fa-times"></i
+                    ></a>
+                    <div id="mk-fullscreen-search-wrapper">
+                      <form
+                        method="get"
+                        id="mk-fullscreen-searchform"
+                        action=""
+                      >
+                        <input
+                          type="text"
+                          value=""
+                          placeholder="Search..."
+                          id="mk-fullscreen-search-input"
+                        />
+                        <i class="fa fa-search fullscreen-search-icon"
+                          ><input value="" type="submit"
+                        /></i>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
               <span class="phone__image__container">
                 <img src="./assets/image/home2/navTelephone.png" alt="" />

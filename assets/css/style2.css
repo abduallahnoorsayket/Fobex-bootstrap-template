@@ -2766,14 +2766,16 @@ input[type="radio"] {
 /* ========== Home 2 responsive ==========  */
 
 /* header responsive */
-
+@media (max-width: 1400px) {
+  .navbar-brand {
+    margin-right: 1rem;
+  }
+}
 @media (max-width: 1300px) {
   .header__topbar {
     display: none;
   }
-  .navbar-brand {
-    margin-right: 1rem;
-  }
+
   .navbar-dark .navbar-nav .nav-link {
     padding-right: 0.5rem;
   }
