@@ -269,21 +269,7 @@ $(document).ready(function () {
     $("#cartoonVideo").attr("src", url);
   });
 });
-
-// // search input header
-// const inputField = document.getElementById("searchright");
-// const toggleButton = document.getElementById("toggleButton");
-
-// toggleButton.addEventListener("click", function () {
-//   if (inputField.style.display === "none") {
-//     inputField.style.display = "block";
-//   } else {
-//     inputField.style.display = "none";
-//   }
-// });
-
 // new Search input form
-// this code is my pure JS Version
 jQuery(document).ready(function ($) {
   var wHeight = window.innerHeight;
   //search bar middle alignment

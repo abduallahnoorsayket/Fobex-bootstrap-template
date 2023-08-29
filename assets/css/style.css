@@ -962,8 +962,8 @@ li {
   width: 85%;
 }
 .feature .feature__image {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 .feature__title {
@@ -1034,12 +1034,13 @@ li {
 .feature__image__container {
   position: relative;
 }
+
 .feature__circle__icon {
-  height: 250px;
-  width: 208px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0px;
-  left: 0;
+  left: -30px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   fill: var(--primary);
@@ -1094,11 +1095,11 @@ li {
   position: relative;
 }
 #service-details .feature__circle__icon {
-  height: 250px;
-  width: 208px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0px;
-  left: 0;
+  left: -30px;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   fill: var(--primary);
@@ -1999,10 +2000,10 @@ input[type="radio"] {
 }
 @media (max-width: 768px) {
   #home-1 .hero__tile__navigation__container {
-    width: 450px;
+    max-width: 450px;
   }
 }
-@media (max-width: 424px) {
+@media (max-width: 576px) {
   #home-1 .hero__title {
     font-size: 50px;
     line-height: 60px;
@@ -2038,6 +2039,9 @@ input[type="radio"] {
   .feature .feature__Bg__vector__1 {
     top: 50px;
   }
+  .feature__circle__icon {
+    left: -25px;
+  }
 }
 @media (max-width: 768px) {
   .feature .feature__Bg__vector__4 {
@@ -2048,6 +2052,9 @@ input[type="radio"] {
   }
   .feature .feature__Bg__vector__2 {
     right: 57px;
+  }
+  .feature__circle__icon {
+    left: -20px;
   }
 }
 @media (max-width: 424px) {
@@ -2078,12 +2085,16 @@ input[type="radio"] {
 }
 
 /* FEATURE COMMON RESPONSIVE */
+@media (max-width: 1024px) {
+  #service-details .feature__circle__icon {
+    left: -25px;
+  }
+}
 @media (max-width: 992px) {
   .feature__content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
   #service-details .feature__title {
@@ -2092,7 +2103,17 @@ input[type="radio"] {
     margin: 35px 0px 0px 0px;
   }
 }
+@media (max-width: 768px) {
+  #service-details .feature__circle__icon {
+    left: -23px;
+  }
+}
+
 @media (max-width: 424px) {
+  .feature__content {
+    align-items: center;
+    text-align: center;
+  }
   #service-details .feature__content {
     text-align: center;
     width: 100%;

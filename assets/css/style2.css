@@ -1972,10 +1972,9 @@ input[type="radio"] {
   background-position: center;
   align-items: flex-end;
   padding: 0 30px 25px 30px;
-}
-#case-studies-page .case-studies .row:nth-child(1) {
   margin-bottom: 30px;
 }
+
 #case-studies .swiper__image-1 {
   background-image: url(../image/case-studies/case-1.jpg);
 }
@@ -2846,6 +2845,9 @@ input[type="radio"] {
   }
   .navbar-dark .navbar-toggler-icon {
     margin-top: 10px;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    padding: 10px 3px;
   }
 }
 @media screen and (max-width: 424px) {
