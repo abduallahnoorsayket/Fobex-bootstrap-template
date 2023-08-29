@@ -307,16 +307,3 @@ jQuery(document).ready(function ($) {
     );
   });
 });
-
-// var form = document.getElementsByClassName("et-search-form");
-// function clickBtn() {
-//   form[0].style.display = "block";
-// }
-// $(function () {
-//   "use strict";
-//   $("i").click(function () {
-//     $(this).next().animate({
-//       width: "250px",
-//     });
-//   });
-// });

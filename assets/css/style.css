@@ -1853,6 +1853,12 @@ input[type="radio"] {
     max-width: 1200px;
   }
 }
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+    max-width: 1000px;
+  }
+}
 @media (max-width: 992px) {
   .container {
     padding: 0px 30px;
@@ -1887,6 +1893,11 @@ input[type="radio"] {
   }
   .nav__number {
     font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  #search-button i {
+    left: -30px;
   }
 }
 @media (max-width: 992px) {
@@ -1956,10 +1967,7 @@ input[type="radio"] {
   .hero__bg__container {
     display: none;
   }
-  .hero__title {
-    font-size: 95px;
-    line-height: 94px;
-  }
+
   #home-1 .hero__navigation {
     position: absolute;
     left: 50%;
@@ -1995,6 +2003,10 @@ input[type="radio"] {
   }
 }
 @media (max-width: 424px) {
+  #home-1 .hero__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
   #home-1 .nav__search__container {
     display: none;
     visibility: hidden;
@@ -2007,9 +2019,26 @@ input[type="radio"] {
   #home-1 .hero__tile__navigation__container {
     width: 350px;
   }
+  #home-1 .hero__button {
+    margin-top: 10px;
+  }
 }
 
 /* FEATURE RESPONSIVE */
+@media (max-width: 1024px) {
+  .feature .feature__Bg__vector__4 {
+    bottom: 39px;
+  }
+  .feature .feature__Bg__vector__3 {
+    bottom: 47px;
+  }
+  .feature .feature__Bg__vector__2 {
+    top: 50px;
+  }
+  .feature .feature__Bg__vector__1 {
+    top: 50px;
+  }
+}
 @media (max-width: 768px) {
   .feature .feature__Bg__vector__4 {
     bottom: 39px;
@@ -2021,7 +2050,7 @@ input[type="radio"] {
     right: 57px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 424px) {
   .feature .feature__Bg__vector__1 {
     top: 20px;
     left: 20px;
@@ -2081,6 +2110,13 @@ input[type="radio"] {
     padding-right: 30px;
   }
 }
+
+@media (max-width: 1024px) {
+  .about-us__welcome .btn_primary {
+    width: 50%;
+  }
+}
+
 @media (max-width: 992px) {
   .welcome__content {
     width: 100%;
@@ -2125,6 +2161,14 @@ input[type="radio"] {
 }
 
 /* SERVICE RESPONSIVE */
+@media (max-width: 1024px) {
+  .service__card {
+    padding: 20px;
+  }
+  .service__title {
+    font-size: 25px;
+  }
+}
 @media (max-width: 768px) {
   .service__card {
     padding: 50px 30px;
