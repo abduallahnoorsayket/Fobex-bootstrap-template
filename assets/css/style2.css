@@ -1465,7 +1465,7 @@ p {
 #service-page .fun-facts__card {
   background: #f5f6f0;
 }
-#service-page .feature__link {
+#service-page .fun-facts.feature__link {
   color: var(--gery-1);
 }
 #service-page .number__line {

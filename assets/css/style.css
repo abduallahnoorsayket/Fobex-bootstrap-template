@@ -1177,6 +1177,9 @@ li {
 .service .feature__link {
   color: #a2a6ad;
 }
+.service .feature__link:hover {
+  color: var(--primary);
+}
 
 .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
