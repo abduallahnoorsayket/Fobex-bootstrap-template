@@ -132,6 +132,9 @@ label {
   font-family: "Sen", sans-serif;
   font-size: 14px;
 }
+a:active {
+  color: var(--primary);
+}
 .container {
   padding: 0px;
   max-width: 1320px;
@@ -480,6 +483,14 @@ li {
   display: block;
   margin-top: 0px;
 }
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--primary);
+}
+
 /* ======= */
 /* .dropdown-menu:hover .nav-item > div + a {
   color: green;
@@ -789,7 +800,7 @@ li {
   z-index: 10;
 }
 #home-1 .hero .hero__bg__container {
-  background-image: url(/assets/image/home1/hero-section-title.png);
+  background-image: url(../image/home1/hero-section-title.png);
   height: 505px;
   width: 943px;
   background-color: #cccccc05;
@@ -1025,7 +1036,7 @@ li {
   margin-left: auto;
 }
 .welcome__image {
-  background-image: url(/assets/image/home1/welcome_image.png);
+  background-image: url(../image/home1/welcome_image.png);
   width: 100%;
   height: 720px;
   background-size: cover;
@@ -1070,7 +1081,7 @@ li {
   margin: 10px 5px;
 }
 .focus-quality__image {
-  background-image: url(/assets/image/home1/focus_quality.png);
+  background-image: url(../image/home1/focus_quality.png);
   width: 100%;
   height: 710px;
   background-size: cover;
@@ -1286,22 +1297,22 @@ li {
   padding: 0 30px 30px 30px;
 }
 .swiper__image-1 {
-  background-image: url(/assets/image/home1/project-slier-1.png);
+  background-image: url(../image/home1/project-slier-1.png);
 }
 .swiper__image-2 {
-  background-image: url(/assets/image/home1/project-slier-2.png);
+  background-image: url(../image/home1/project-slier-2.png);
 }
 .swiper__image-3 {
-  background-image: url(/assets/image/home1/project-slier-3.png);
+  background-image: url(../image/home1/project-slier-3.png);
 }
 .swiper__image-4 {
-  background-image: url(/assets/image/home1/project-slier-4.png);
+  background-image: url(../image/home1/project-slier-4.png);
 }
 .swiper__image-5 {
-  background-image: url(/assets/image/home1/project-slier-5.png);
+  background-image: url(../image/home1/project-slier-5.png);
 }
 .swiper__image-6 {
-  background-image: url(/assets/image/home1/project-slier-6.png);
+  background-image: url(../image/home1/project-slier-6.png);
 }
 .slider__title {
   background: var(--white);
@@ -1389,7 +1400,7 @@ li {
   padding: 0;
 }
 .testimonial {
-  background-image: url(/assets/image/home1/testimonial-bg.png);
+  background-image: url(../image/home1/testimonial-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1412,7 +1423,7 @@ li {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url(/assets/image/home1/testimonial-map.png);
+  background-image: url(../image/home1/testimonial-map.png);
   background-repeat: no-repeat;
 }
 .testimonail__des {
@@ -1748,6 +1759,18 @@ input[type="radio"] {
   padding-left: 0;
 }
 
+.footer a {
+  color: var(--gery-2);
+}
+.footer a:hover {
+  color: var(--primary);
+}
+.footer a.active {
+  color: var(--primary);
+}
+.footer__service__list li {
+  display: block;
+}
 /* ============= HOME1 ALL RESPONSIVE STYLES ========= */
 
 /* GENERAL GLOBAL RESPONSIVE */

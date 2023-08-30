@@ -1592,6 +1592,12 @@ input[type="radio"] {
 .footer-main .social_icons a i:hover {
   color: var(--primary);
 }
+.footer-main .form-check-label {
+  color: var(--gery-2);
+}
+.footer-main a:hover {
+  color: var(--primary);
+}
 
 /* ============= About us page ========= */
 
