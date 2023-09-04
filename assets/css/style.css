@@ -286,6 +286,13 @@ select {
   padding: 13px 20px;
   border: 1px solid #888888;
 }
+.btn_secondary:hover {
+  background: var(--primary);
+  border: 1px solid var(--primary) !important;
+}
+.btn_secondary:hover svg {
+  fill: var(--white);
+}
 .btn-primary:hover svg {
   fill: var(--white);
 }

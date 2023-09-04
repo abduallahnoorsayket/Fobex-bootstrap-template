@@ -1069,9 +1069,7 @@ select {
   text-transform: uppercase;
   color: var(--secondary);
 }
-.blog .anchor__more {
-  color: var(--gery-1);
-}
+
 .blog .section__sub_heading::after {
   content: none;
 }
@@ -2046,8 +2044,7 @@ input[type="radio"] {
 
 /* CASE DETAILS PROJECT OVERVIEW SECTION */
 
-#case-details .project-overview,
-.working-process {
+#case-details .project-overview .working-process {
   padding: 60px 0 0 0;
 }
 #case-details .project-overview .project__overview__title {
