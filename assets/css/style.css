@@ -132,6 +132,12 @@ label {
   font-family: "Sen", sans-serif;
   font-size: 14px;
 }
+a {
+  color: initial;
+}
+a:hover {
+  color: var(--primary);
+}
 a:active {
   color: var(--primary);
 }
@@ -1723,7 +1729,7 @@ li {
   font-size: 15px;
   line-height: 18px;
   color: #888888;
-  padding: 0;
+  padding: 10px 0;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -1740,7 +1746,9 @@ input[type="radio"] {
   line-height: 21px;
   margin-top: 20px;
 }
-
+.social_icons i:hover {
+  color: var(--primary);
+}
 .footer hr {
   margin: 0;
   background: #d9d9d9;
@@ -1774,6 +1782,16 @@ input[type="radio"] {
 .footer__service__list li {
   display: block;
 }
+.footer .form-control:focus {
+  background-color: transparent;
+  color: var(--white);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  border-bottom: 1px solid inherit;
+}
+
 /* ============= HOME1 ALL RESPONSIVE STYLES ========= */
 
 /* GENERAL GLOBAL RESPONSIVE */

@@ -1390,6 +1390,9 @@ p {
   display: flex;
   gap: 20px;
 }
+#home-2 .footer .form-control:focus {
+  color: var(--gery-1);
+}
 
 /* ================= Service page =============*/
 /* SERVICE HERO-MAIN SECTION */
