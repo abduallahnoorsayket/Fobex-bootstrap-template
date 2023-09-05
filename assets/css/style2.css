@@ -314,13 +314,7 @@ section .section__sub_heading_line {
 .button-rounded {
   border-radius: 50px;
 }
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: var(--primary) !important;
-  border-color: var(--primary);
-}
+
 /* Badge styles   */
 .badge-primary {
   background: var(--primary);

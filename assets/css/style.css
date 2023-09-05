@@ -299,6 +299,13 @@ select {
 .btn-primary:hover {
   border: none;
 }
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--primary) !important;
+  border-color: var(--primary);
+}
 /* Badges  */
 .badge-primary {
   background: var(--primary);
@@ -725,8 +732,8 @@ li {
 #search-button {
   display: relative;
   vertical-align: middle;
-  height: 50px;
-  width: 50px;
+  height: 0px;
+  width: 0px;
   border-radius: 50%;
   cursor: pointer;
   opacity: 1;
@@ -803,9 +810,8 @@ li {
 }
 #home-1 .hero {
   background-color: #cccccc;
-  background-repeat: no-repeat;
   background: linear-gradient(0deg, rgba(1, 5, 21, 0.5), rgba(1, 5, 21, 0.5)),
-    url("../image/home1/Bitmap.jpg");
+    url("../image/home1/Bitmap.jpg") center center no-repeat;
   background-size: cover;
   min-height: 100vh;
 }
@@ -1072,7 +1078,9 @@ li {
   padding: 0px 0px;
 }
 .about-us__welcome ul li {
-  padding: 5px 0;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
 }
 .welcome___list {
   margin-top: 10px;
@@ -1165,6 +1173,10 @@ li {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin-bottom: 30px;
+  transition: all 0.8s;
+}
+.service__card:hover {
+  border: 2px solid var(--primary);
 }
 .service__icon {
   height: 68px;
@@ -1951,6 +1963,10 @@ input[type="radio"] {
     border-radius: 50px;
     padding: 10px 15px;
   }
+  #home-1 .hero__navigation li:not(:last-child) {
+    margin-bottom: 0px;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+  }
 }
 @media (max-width: 768px) {
   #home-1 .hero__tile__navigation__container {
@@ -2035,6 +2051,9 @@ input[type="radio"] {
     right: 20px;
     width: 80px;
     height: 80px;
+  }
+  #home-1 .feature {
+    padding: 100px 0;
   }
 }
 
@@ -2196,10 +2215,7 @@ input[type="radio"] {
   .project__title__divider {
     height: 1px;
     background: #888888;
-    margin: 30px 0 50px 30px;
-  }
-  #home-1 .project .swiper__slider {
-    padding-left: 30px;
+    margin: 30px 0 50px 0px;
   }
 }
 
@@ -2208,7 +2224,7 @@ input[type="radio"] {
     padding: 0px 0px;
   }
   .project__title__divider {
-    margin: 30px 0 50px 20px;
+    margin: 30px 0 50px 0px;
   }
   .swiper__content {
     width: 100%;
