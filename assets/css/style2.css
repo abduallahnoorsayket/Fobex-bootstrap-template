@@ -258,7 +258,9 @@ ul li {
   color: var(--secondary);
 }
 .btn-primary:hover {
-  background: var(--primary);
+  /* background: var(--primary); */
+  background-color: rgb(255 168 24);
+  color: initial;
 }
 /* icon styles */
 .icon {
@@ -306,7 +308,7 @@ section .section__sub_heading_line {
 }
 
 .btn-primary:hover svg {
-  fill: var(--white);
+  fill: initial;
 }
 .btn-primary:hover {
   border: none;
@@ -314,7 +316,9 @@ section .section__sub_heading_line {
 .button-rounded {
   border-radius: 50px;
 }
-
+.btn_secondary:hover svg {
+  fill: initial;
+}
 /* Badge styles   */
 .badge-primary {
   background: var(--primary);
@@ -643,6 +647,8 @@ button {
 }
 #home-2 .hero__container {
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* APPOINTMENT SECTION */
@@ -660,6 +666,7 @@ button {
 }
 .appointment__form {
   width: 100%;
+  margin-top: 0px;
 }
 .appointment-home-2 .form-control {
   padding: 18px 25px;
@@ -831,7 +838,7 @@ select {
   width: 30%;
 }
 .feature .accordion {
-  height: 350px;
+  height: auto;
   position: relative;
 }
 .feature .section__description {
@@ -1219,7 +1226,13 @@ body.modal-open {
 .client .section__sub_heading::after {
   content: none;
 }
-
+.client__image__container {
+  margin: 20px;
+}
+.client .section__description {
+  max-width: 600px;
+  margin: 20px 0;
+}
 /* MAP SECTION */
 .map {
   background: url(../image/home2/map-bg.jpg);
@@ -1375,6 +1388,9 @@ input[type="radio"] {
 p {
   color: var(--gery-1);
 }
+/* .footer a:not(.btn-primary) {
+  color: var(--gery-1);
+} */
 .footer a:hover {
   color: var(--primary);
 }
@@ -3164,12 +3180,12 @@ input[type="radio"] {
   .client .brand__image__container {
     margin-bottom: 30px;
   }
-  .client__image__container {
+  /* .client__image__container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 0 30px;
-  }
+  } */
 }
 /* map responsive */
 @media (max-width: 768px) {

@@ -1205,6 +1205,9 @@ li {
 .service .feature__link:hover {
   color: var(--primary);
 }
+.service .feature__link:hover svg {
+  fill: var(--primary);
+}
 
 .service .feature__arrow__icon:hover {
   fill: #a2a6ad;
@@ -1672,6 +1675,10 @@ li {
 }
 .brand img:hover {
   opacity: 1;
+}
+
+.brand .brand__image__container {
+  margin: 20px;
 }
 
 /* FOOTER SECTION */
@@ -2332,11 +2339,7 @@ input[type="radio"] {
   }
 }
 /* BRAND RESPONSIVE */
-@media (max-width: 768px) {
-  .brand .brand__image__container {
-    margin-bottom: 30px;
-  }
-}
+
 @media (max-width: 375px) {
   .brand__image__container {
     display: flex;
