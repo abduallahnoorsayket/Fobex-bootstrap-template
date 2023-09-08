@@ -824,7 +824,7 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
   margin-right: auto;
-  max-width: 1610px;
+  max-width: 1590px;
   padding-bottom: 100px;
 }
 .feature__container {
@@ -1089,7 +1089,7 @@ select {
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
-  max-width: 1610px;
+  max-width: 1590px;
 }
 
 .testimonials .section__heading {
@@ -1248,7 +1248,7 @@ body.modal-open {
 .map form {
   background: var(--white);
   width: 500px;
-  height: 625px;
+  height: 100%;
   padding: 50px 50px;
   z-index: 3;
   position: relative;
