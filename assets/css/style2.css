@@ -2982,7 +2982,7 @@ input[type="radio"] {
 }
 
 /* fun facts responsive */
-@media (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 992px) {
   .fun-facts__card {
     padding: 50px 30px;
   }
