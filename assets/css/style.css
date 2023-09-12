@@ -393,7 +393,7 @@ button {
   margin-top: 30px;
 }
 #home-1 .nav-custom {
-  border-radius: 0px;
+  border-radius: 3px;
 }
 .nav-link::before {
   content: "";

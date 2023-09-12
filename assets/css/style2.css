@@ -534,6 +534,8 @@ button {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+}
+#home-2 .hero__content {
   padding-left: 50px;
 }
 .hero__badge {
@@ -1212,7 +1214,9 @@ body.modal-open {
   color: #fff;
   opacity: 1;
 }
-
+#about-us-page .testimonial .project__arrow__icon--active {
+  fill: initial;
+}
 /* CLIENT SECTION */
 #home-2 #client {
   padding-bottom: 100px;
@@ -1703,7 +1707,7 @@ input[type="radio"] {
   padding: 50px;
   gap: 15px;
   border-radius: 0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 #about-us-page .service .section__description {
   width: 100%;
@@ -1955,9 +1959,6 @@ input[type="radio"] {
 
 /*  CASE STUDIES CLIENT SECTION */
 
-#case-studies-page .client .section__description {
-  width: 45%;
-}
 /* CASE STUDIES CTA SECTION */
 #case-studies-page .personal__content {
   background-repeat: no-repeat;
