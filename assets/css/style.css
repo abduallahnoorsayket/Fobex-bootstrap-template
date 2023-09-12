@@ -1680,7 +1680,7 @@ li {
 }
 
 .brand .brand__image__container {
-  margin: 20px;
+  margin: 30px;
 }
 
 /* FOOTER SECTION */
@@ -1758,6 +1758,7 @@ li {
   line-height: 18px;
   color: #888888;
   padding: 10px 0;
+  position: relative;
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -1818,6 +1819,12 @@ input[type="radio"] {
   border-left: none;
   border-radius: 0;
   border-bottom: 1px solid inherit;
+}
+.footer .footer__widget__content form .nav__arrow__icon {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  cursor: pointer;
 }
 
 /* ============= HOME1 ALL RESPONSIVE STYLES ========= */
@@ -2212,12 +2219,7 @@ input[type="radio"] {
   }
 }
 /* APPOINTMENT COMMON RESPONSIVE */
-@media (max-width: 992px) {
-  .appointment__content {
-    padding: 50px 0px;
-  }
-}
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 992px) {
   .appointment__content {
     padding: 50px 0px;
   }

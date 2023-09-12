@@ -764,7 +764,7 @@ select {
 
 /* SERVICE SECTION */
 .service-home-2 {
-  padding: 100px 0 200px;
+  padding: 100px 0 270px;
 }
 .service-home-2 .section__heading {
   margin: 10px 0 50px;
@@ -812,7 +812,7 @@ select {
   padding: 0 25px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -200px;
+  margin-top: -225px;
 }
 .service-home-2 .section__sub_heading::after {
   content: none;
@@ -1118,7 +1118,7 @@ select {
   border-radius: 50%;
 }
 .testimonial__card {
-  padding: 40px 25px;
+  padding: 40px;
   background: var(--white);
   background-image: url(../image/home2/tesimonial-slider-bg.jpg);
   background-repeat: no-repeat;
@@ -1126,8 +1126,9 @@ select {
   background-position-y: 50px;
   margin-right: -125px;
   z-index: 10;
-  min-height: 500px;
+  min-height: 480px;
   min-width: 500px;
+  margin-top: 15px;
 }
 .tesimonial__quote__icon {
   height: 55px;
@@ -1145,7 +1146,7 @@ select {
   margin: 20px 0;
 }
 .testimonials .slider__footer {
-  margin: 50px 0 0 0;
+  margin: 90px 0 0 0;
   align-items: center;
 }
 .testimonials .person__info {
@@ -1186,7 +1187,7 @@ body.modal-open {
   position: absolute;
   left: 0;
   right: 0;
-  top: 40%;
+  top: 45%;
   bottom: 0;
   margin: auto;
   width: 100%;
@@ -1231,7 +1232,7 @@ body.modal-open {
   content: none;
 }
 .client__image__container {
-  margin: 20px;
+  margin: 30px;
 }
 .client .section__description {
   max-width: 600px;
@@ -1564,6 +1565,7 @@ p {
   opacity: 0.45;
   color: #888888;
   padding: 10px 0;
+  position: relative;
 }
 #footer-main input[type="checkbox"],
 input[type="radio"] {
@@ -1616,6 +1618,13 @@ input[type="radio"] {
 }
 .footer-main a:hover {
   color: var(--primary);
+}
+.footer-main .footer__widget__content form .nav__arrow__icon {
+  position: absolute;
+  right: 15px;
+  top: 50px;
+  cursor: pointer;
+  fill: var(--white);
 }
 
 /* ============= About us page ========= */
@@ -2939,6 +2948,12 @@ input[type="radio"] {
 }
 
 /* about us responsive */
+@media (max-width: 1500px) {
+  #home-2 .about-us {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 @media (max-width: 768px) {
   .about-us-right-image-container {
     align-items: center;
@@ -2959,6 +2974,9 @@ input[type="radio"] {
   }
   .about-us img {
     width: 100%;
+  }
+  #home-2 .about-us .hero__button {
+    margin-top: 5px;
   }
 }
 
@@ -2988,7 +3006,7 @@ input[type="radio"] {
 }
 @media screen and (max-width: 1200px) {
   .service-home-2 {
-    padding: 100px 0 50px;
+    padding: 100px 0 100px;
   }
   .service__slider__button__container {
     justify-content: space-evenly;
@@ -3176,13 +3194,23 @@ input[type="radio"] {
     order: 0;
   }
 }
-
+@media (min-width: 375px) and (max-width: 767px) {
+  .testimonial__card {
+    min-width: 330px;
+  }
+}
 /* client responsive */
 @media (max-width: 1024px) {
   .client img {
     width: 120px;
   }
 }
+@media (max-width: 992px) {
+  #home-2 #client {
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .client .brand__image__container {
     margin-bottom: 30px;
