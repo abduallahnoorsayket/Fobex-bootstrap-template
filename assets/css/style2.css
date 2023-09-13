@@ -3325,7 +3325,7 @@ input[type="radio"] {
 }
 
 /*  footer-main responsive */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .footer-main {
     padding: 100px 0 0px 0;
   }
@@ -3664,9 +3664,6 @@ input[type="radio"] {
   }
 }
 @media (max-width: 768px) {
-  #team-page .great-platform .container {
-    padding-top: 50px;
-  }
   #team-page .great-platform .order-platform-image {
     order: 0;
   }
@@ -3723,6 +3720,12 @@ input[type="radio"] {
 /* ======= Blog responsive ========== */
 
 /* blog responsive */
+@media (min-width: 576px) and (max-width: 992px) {
+  .all-posts .sidebar__container .recent__post__support .support__content {
+    padding-left: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .all-posts .sidebar__container {
     margin-top: 30px;
