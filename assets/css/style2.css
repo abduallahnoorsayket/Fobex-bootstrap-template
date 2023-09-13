@@ -1741,7 +1741,7 @@ input[type="radio"] {
 }
 #about-us-page .team .team__container {
   margin-left: auto;
-  max-width: 1610px;
+  max-width: 1590px;
 }
 #about-us-page .team .section__heading {
   width: 100%;
@@ -3253,7 +3253,7 @@ input[type="radio"] {
     flex-direction: row;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #footer {
     padding: 100px 0 20px 0;
   }
@@ -3344,7 +3344,7 @@ input[type="radio"] {
     margin-top: 20px;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   .footer-main {
     padding: 100px 0 20px 0;
   }
@@ -3397,22 +3397,22 @@ input[type="radio"] {
     padding: 0 0;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #about-us-page .about-section .container img {
-    width: 310px;
+    width: 100%;
   }
 }
 
 /* about us team responsive */
 @media (max-width: 1400px) {
   .team__container {
-    padding: 0 10px;
+    padding: 0 30px;
   }
 }
 @media (max-width: 768px) {
-  #about-us-page .team .swiper__slider {
+  /* #about-us-page .team .swiper__slider {
     padding: 0 20px;
-  }
+  } */
   .project__title__divider {
     height: 1px;
     background: #888888;
@@ -3420,7 +3420,7 @@ input[type="radio"] {
   }
 }
 
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   .project__title__divider {
     margin: 30px 0 50px 20px;
   }
@@ -3454,7 +3454,7 @@ input[type="radio"] {
     padding-left: 0px;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #about-us-page .welcome__image {
     max-height: 350px;
   }
@@ -3519,7 +3519,7 @@ input[type="radio"] {
     order: 1;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #service-details .about-us__focus-quality {
     padding: 0 0;
   }
@@ -3597,12 +3597,19 @@ input[type="radio"] {
 /* ============== Case details responsive =========== */
 
 /* case details description responsive */
+
 @media (max-width: 992px) {
   #case-details .description .case__content {
     gap: 20px;
   }
 }
-@media (max-width: 424px) {
+@media (max-width: 767.98px) {
+  #case-details .description__image div {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 375px) and (max-width: 576px) {
   #case-details .description .case__info {
     display: block;
     padding: 35px 30px;
@@ -3635,7 +3642,7 @@ input[type="radio"] {
     align-items: center;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #team-page .meet-team .appointment__content {
     padding: 50px 0px;
   }
