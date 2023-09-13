@@ -503,7 +503,9 @@ li {
   display: block;
   margin-top: 0px;
 }
-
+.dropdown-item {
+  font-weight: 700;
+}
 .dropdown-item.active,
 .dropdown-item:active {
   color: #fff;
@@ -749,7 +751,7 @@ li {
   transform: rotate(0deg);
 }
 #search-button i {
-  color: black;
+  color: #5f6165;
   font-size: 20px;
   position: absolute;
   left: -50px;
@@ -1674,13 +1676,14 @@ li {
 /* BRAND SECTION */
 .brand img {
   opacity: 0.5;
+  /* max-width: 130px; */
 }
 .brand img:hover {
   opacity: 1;
 }
 
 .brand .brand__image__container {
-  margin: 30px;
+  margin: 22px;
 }
 
 /* FOOTER SECTION */
@@ -2205,6 +2208,9 @@ input[type="radio"] {
   .appointment__image {
     margin-top: -30px;
   }
+  #home-1 .service {
+    padding: 100px 0 150px;
+  }
 }
 @media (max-width: 424px) {
   .service {
@@ -2371,7 +2377,6 @@ input[type="radio"] {
   }
 }
 /* BRAND RESPONSIVE */
-
 @media (max-width: 375px) {
   .brand__image__container {
     display: flex;
@@ -2397,7 +2402,7 @@ input[type="radio"] {
     width: 115px;
   }
 }
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #footer {
     padding: 100px 0 20px 0;
   }

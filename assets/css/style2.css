@@ -3084,7 +3084,7 @@ input[type="radio"] {
   }
 }
 /* team responsive */
-@media screen and (min-width: 500px) and (max-width: 992px) {
+@media screen and (min-width: 375px) and (max-width: 992px) {
   .team__card {
     margin: 0 0 30px;
     background: none;
@@ -3094,9 +3094,6 @@ input[type="radio"] {
   }
 }
 @media screen and (min-width: 375px) and (max-width: 424px) {
-  .team__card {
-    margin: 0 0 20px;
-  }
   .team__card img {
     width: 310px;
   }
@@ -3551,8 +3548,7 @@ input[type="radio"] {
     object-fit: cover;
   }
 }
-
-@media (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 576px) {
   #service-details .service__realated__card__container {
     display: flex;
     gap: 20px;
