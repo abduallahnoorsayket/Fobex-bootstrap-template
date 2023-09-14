@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #c4cce3;
+      }
+
+      .cls-3 {
+        fill: #58595b;
+        font-family: Impact, Impact;
+        font-size: 17.71px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" width="170" height="170"/>
+  <g>
+    <rect class="cls-1" x="42.81" y="48.9" width="84.38" height="72.21" rx="14" ry="14"/>
+    <rect class="cls-2" x="54.88" y="48.79" width="60.24" height="72.42" rx="9" ry="9" transform="translate(170 0) rotate(90)"/>
+    <g>
+      <path class="cls-1" d="m100.59,86.13c-1.17-1.33-3.25-1.33-4.42,0l-2.9,3.29c-1.2,1.37-3.34,1.33-4.49-.09l-9.45-11.62c-1.18-1.45-3.39-1.45-4.56,0l-25.98,31.92v8.4h72.42v-8.47l-20.62-23.44Z"/>
+      <circle class="cls-1" cx="104.75" cy="71.6" r="7.39"/>
+    </g>
+  </g>
+  <text class="cls-3" transform="translate(54.86 140.82)"><tspan x="0" y="0">170 x 170</tspan></text>
+</svg>

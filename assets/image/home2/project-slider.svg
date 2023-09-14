@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 621">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #58595b;
+        font-family: Impact, Impact;
+        font-size: 49.28px;
+      }
+
+      .cls-3 {
+        fill: #c4cce3;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" width="770" height="621"/>
+  <g>
+    <rect class="cls-1" x="255.4" y="199.6" width="259.19" height="221.79" rx="14" ry="14"/>
+    <rect class="cls-3" x="292.48" y="199.28" width="185.04" height="222.45" rx="9" ry="9" transform="translate(695.5 -74.5) rotate(90)"/>
+    <g>
+      <path class="cls-1" d="m432.9,313.98c-3.6-4.09-9.98-4.09-13.57,0l-8.9,10.12c-3.69,4.2-10.27,4.07-13.8-.26l-29.04-35.68c-3.62-4.44-10.4-4.44-14.02,0l-79.79,98.05v25.79h222.45v-26l-63.32-72.01Z"/>
+      <circle class="cls-1" cx="445.68" cy="269.34" r="22.71"/>
+    </g>
+  </g>
+  <text class="cls-2" transform="translate(297.81 480.14)"><tspan class="cls-5" x="0" y="0">7</tspan><tspan x="20.19" y="0">70 x </tspan><tspan class="cls-4" x="104.66" y="0">6</tspan><tspan x="130.86" y="0">21</tspan></text>
+</svg>

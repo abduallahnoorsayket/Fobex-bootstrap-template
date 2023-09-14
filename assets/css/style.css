@@ -813,7 +813,7 @@ li {
 #home-1 .hero {
   background-color: #cccccc;
   background: linear-gradient(0deg, rgba(1, 5, 21, 0.5), rgba(1, 5, 21, 0.5)),
-    url("../image/home1/Bitmap.jpg") center center no-repeat;
+    url("../image/home1/hero-bg.svg") center center no-repeat;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -1059,7 +1059,7 @@ li {
   margin-left: auto;
 }
 .welcome__image {
-  background-image: url(../image/home1/welcome_image.png);
+  background-image: url(../image/home1/welcome_image.svg);
   width: 100%;
   height: 720px;
   background-size: cover;
@@ -1106,7 +1106,7 @@ li {
   margin: 10px 5px;
 }
 .focus-quality__image {
-  background-image: url(../image/home1/focus_quality.png);
+  background-image: url(../image/home1/focus_quality.svg);
   width: 100%;
   height: 710px;
   background-size: cover;
@@ -1332,22 +1332,22 @@ li {
   padding: 0 30px 30px 30px;
 }
 .swiper__image-1 {
-  background-image: url(../image/home1/project-slier-1.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .swiper__image-2 {
-  background-image: url(../image/home1/project-slier-2.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .swiper__image-3 {
-  background-image: url(../image/home1/project-slier-3.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .swiper__image-4 {
-  background-image: url(../image/home1/project-slier-4.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .swiper__image-5 {
-  background-image: url(../image/home1/project-slier-5.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .swiper__image-6 {
-  background-image: url(../image/home1/project-slier-6.png);
+  background-image: url(../image/home1/project-slier.svg);
 }
 .slider__title {
   background: var(--white);
@@ -1435,7 +1435,7 @@ li {
   padding: 0;
 }
 .testimonial {
-  background-image: url(../image/home1/testimonial-bg.png);
+  background-image: url(../image/home1/testimonial-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -523,7 +523,7 @@ button {
   background-repeat: no-repeat;
   min-height: 100vh;
   background: linear-gradient(0deg, rgba(34, 26, 5, 0.4), rgba(34, 26, 5, 0.4)),
-    url("../image/home2/home-2\ hero.png");
+    url("../image/home2/home-2-hero.svg");
   background-size: cover;
   background-position: center;
 }
@@ -1021,13 +1021,13 @@ select {
       rgba(19, 25, 34, 0.4),
       rgba(19, 25, 34, 0.4)
     ),
-    url("../image/home2/project-slider-1.png");
+    url("../image/home2/project-slider.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .project__slider__image_2 {
-  background: url("../image/home2/project-slider-2.png");
+  background: url("../image/home2/project-slider.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1169,7 +1169,7 @@ select {
   gap: 10px;
 }
 .tesimonial__video__image {
-  background: url(../image/home2/testimonial-people.jpg);
+  background: url(../image/home2/testimonial-people.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3004,6 +3004,12 @@ input[type="radio"] {
   }
 }
 /* service responsive */
+@media screen and (max-width: 2500px) {
+  .service-home-2 .swiper__content img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
 @media screen and (min-width: 1500px) {
   .service__slider__button__container {
     padding: 0 75px;
@@ -3016,10 +3022,6 @@ input[type="radio"] {
   .service__slider__button__container {
     justify-content: space-evenly;
     margin-top: 20px;
-  }
-  .service-home-2 .swiper__content img {
-    width: 50%;
-    object-fit: cover;
   }
 }
 @media screen and (max-width: 768px) {
