@@ -1497,6 +1497,10 @@ li {
 .testimonial__image__container {
   position: relative;
 }
+.testimonial__image__container img {
+  width: 170px;
+  height: 170px;
+}
 .testimonial .quote__icon-container {
   height: 44px;
   width: 44px;

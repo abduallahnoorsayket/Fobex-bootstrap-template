@@ -593,6 +593,9 @@ button {
 #home-2 .hero__tile__navigation__container {
   height: 430px;
 }
+.hero__tile__navigation__container {
+  max-width: initial;
+}
 #home-2 .swiper-pagination-bullet {
   height: 20px;
   font-size: 14px;
@@ -1158,6 +1161,10 @@ select {
 .testimonials .person__info {
   gap: 10px;
 }
+.testimonials .person__info img {
+  width: 80px;
+  height: 80px;
+}
 .testimonials .person__designation {
   gap: 0px;
 }
@@ -1430,7 +1437,7 @@ p {
       rgba(19, 25, 34, 0.4),
       rgba(19, 25, 34, 0.4)
     ),
-    url("../image/service/service-hero-bg.jpg");
+    url("../image/service/service-hero-bg.svg");
   background-size: cover;
   background-position: center;
   padding: 123px 0 0 0;
@@ -1934,7 +1941,7 @@ input[type="radio"] {
 #service-details .personal__content {
   background-repeat: no-repeat;
   height: 721px;
-  background: url("../image/service-details/personal-expertice.jpg");
+  background: url("../image/service-details/personal-expertice.svg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1967,7 +1974,7 @@ input[type="radio"] {
 #case-studies-page .personal__content {
   background-repeat: no-repeat;
   height: 600px;
-  background: url("../image/case-studies/cta-bg.jpg");
+  background: url("../image/case-studies/cta-bg.svg ");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2015,22 +2022,22 @@ input[type="radio"] {
 }
 
 #case-studies .swiper__image-1 {
-  background-image: url(../image/case-studies/case-1.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 #case-studies-page .swiper__image-2 {
-  background-image: url(../image/case-studies/case-2.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 #case-studies-page .swiper__image-3 {
-  background-image: url(../image/case-studies/case-3.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 #case-studies-page .swiper__image-4 {
-  background-image: url(../image/case-studies/case-4.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 #case-studies-page .swiper__image-5 {
-  background-image: url(../image/case-studies/case-5.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 #case-studies-page .swiper__image-6 {
-  background-image: url(../image/case-studies/case-6.jpg);
+  background-image: url(../image/case-studies/case.svg);
 }
 
 #case-studies-page .slider__right__arrow__icon {
