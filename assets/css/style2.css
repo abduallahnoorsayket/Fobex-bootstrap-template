@@ -1485,7 +1485,10 @@ p {
 #service-page .feature .feature__accordion__container .btn_primary {
   align-self: flex-start;
 }
-
+#service-page .feature .about-us-right-image-container {
+  width: 100%;
+  max-width: 945px;
+}
 /* SERVICE FUN-FACTS SECTION */
 
 #service-page .fun-facts {
@@ -1702,6 +1705,7 @@ input[type="radio"] {
 #about-us-page .about-us-right-image-container img {
   height: 100%;
 }
+
 /* ABOUT US SERVICE SECTION */
 
 #about-us-page .service {
@@ -1974,7 +1978,7 @@ input[type="radio"] {
 #case-studies-page .personal__content {
   background-repeat: no-repeat;
   height: 600px;
-  background: url("../image/case-studies/cta-bg.svg ");
+  background: url("../image/case-studies/cta-bg.svg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -2187,7 +2191,7 @@ input[type="radio"] {
       rgba(2, 14, 32, 0.5) 0%,
       rgba(2, 14, 32, 0.5) 100%
     ),
-    url(../image/team/team-page-video.jpg), lightgray 50% / cover no-repeat;
+    url(../image/team/team-page-video.svg), lightgray 50% / cover no-repeat;
   height: 700px;
 }
 #team-page .video__icon__container {
@@ -2658,7 +2662,7 @@ input[type="radio"] {
   background-repeat: no-repeat;
   height: 400px;
   background: linear-gradient(0deg, rgba(2, 14, 32, 0.6), rgba(2, 14, 32, 0.6)),
-    url("../image/blog/blog-contact-us.jpg");
+    url("../image/blog/blog-contact-us.svg");
   background-size: cover;
   background-position: center;
   color: var(--white);
