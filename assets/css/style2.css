@@ -1485,10 +1485,7 @@ p {
 #service-page .feature .feature__accordion__container .btn_primary {
   align-self: flex-start;
 }
-#service-page .feature .about-us-right-image-container {
-  width: 100%;
-  max-width: 945px;
-}
+
 /* SERVICE FUN-FACTS SECTION */
 
 #service-page .fun-facts {
