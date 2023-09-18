@@ -1113,7 +1113,7 @@ li {
   background-repeat: no-repeat;
 }
 .focus-quality__content {
-  padding: 80px 40px 80px 0px;
+  padding: 80px 40px 0px 0px;
 }
 
 .about-us__focus-quality img {
@@ -1523,7 +1523,7 @@ li {
 }
 #price-main .price__card {
   border: 20px solid #f5f6f0;
-  width: 97%;
+  width: 100%;
   transition: all 0.5s ease-in-out;
 }
 #price-main .price__card:hover {
@@ -1958,7 +1958,7 @@ input[type="radio"] {
     position: absolute;
     left: 50%;
     transform: translateX(50%);
-    bottom: 0;
+    bottom: 3%;
     display: flex;
     background: transparent;
     height: 50px;

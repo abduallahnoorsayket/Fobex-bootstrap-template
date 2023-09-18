@@ -3037,6 +3037,12 @@ input[type="radio"] {
   }
 }
 /* feature responsive */
+@media (min-width: 2000px) {
+  .feature {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 800px) and (max-width: 1500px) {
   .feature {
     gap: 0px;
@@ -3159,6 +3165,12 @@ input[type="radio"] {
 }
 
 /* testimonial responsive */
+@media (min-width: 2000px) {
+  .testimonials {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .testimonial__content .row {
     display: flex;
@@ -3404,6 +3416,12 @@ input[type="radio"] {
 }
 
 /* about us team responsive */
+@media (min-width: 2000px) {
+  #about-us-page .team {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1400px) {
   .team__container {
     padding: 0 30px;
