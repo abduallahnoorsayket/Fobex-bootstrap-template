@@ -937,10 +937,16 @@ select {
   position: relative;
 }
 .section__description {
-  width: 100%;
+  width: 90%;
   margin: 0;
   font-size: 16px;
 }
+
+#all-posts .section__description {
+  width: 100%;
+  text-align: justify;
+}
+
 .team__share__btn {
   padding: 15px;
   background: var(--white);
@@ -2575,7 +2581,7 @@ input[type="radio"] {
 }
 .all-posts .blog__text {
   margin: 30px 0 0 0;
-  width: 90%;
+  width: 100%;
   gap: 25px;
   flex-direction: column;
 }
@@ -2590,6 +2596,7 @@ input[type="radio"] {
 .all-posts .card .post__content {
   position: relative;
 }
+
 .all-posts .blog__text h3 {
   font-weight: 600;
   font-size: 30px;
@@ -3071,6 +3078,10 @@ input[type="radio"] {
 
   .service-home-2 .swiper__content {
     flex-direction: column;
+  }
+
+  .all-posts .sidebar__container .tag__container .category__item {
+    padding: 12px 32px;
   }
 }
 /* feature responsive */
@@ -3726,6 +3737,10 @@ input[type="radio"] {
   #team-page .great-platform .order-platform-content {
     order: 1;
   }
+
+  .support__content h2 {
+    font-size: 30px;
+  }
 }
 
 /*============ Price responsive ================*/
@@ -3741,6 +3756,12 @@ input[type="radio"] {
   }
   .accordion-main button .accordion__icon::before {
     left: 26px;
+  }
+
+  .accordion-main button .accordion-title {
+    margin-right: 20px;
+    padding: 0;
+    display: inline-block;
   }
 }
 
