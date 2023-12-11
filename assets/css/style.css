@@ -1706,6 +1706,11 @@ li {
 .cta__icon__container {
   display: flex;
 }
+
+.cta__icon__container h3 {
+  margin-bottom: 0;
+}
+
 .footer__phone_icon {
   fill: var(--white);
   height: 64px;
