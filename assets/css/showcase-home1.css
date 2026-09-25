@@ -1,0 +1,75 @@
+/* Showcase refresh for index.html only. */
+#home-1 {
+  --primary: #0f766e;
+  --yellow: #c7f36b;
+  --showcase-primary-dark: #0b5d57;
+  --showcase-tint: #e8f5f1;
+}
+
+#home-1 .hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(7, 18, 28, 0.62),
+      rgba(7, 18, 28, 0.62)
+    ),
+    url("../image/showcase/northline-team.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home-1 .section__sub_heading,
+#home-1 .section__sub_heading_line,
+#home-1 .active {
+  color: var(--primary);
+}
+
+#home-1 .section__sub_heading_line {
+  background: var(--primary);
+}
+
+#home-1 .btn_primary,
+#home-1 .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 180ms ease, border-color 180ms ease,
+    transform 180ms ease;
+}
+
+#home-1 .section__sub_heading {
+  letter-spacing: 0.08em;
+}
+
+#home-1 .btn_primary:hover,
+#home-1 .btn-primary:hover {
+  background-color: var(--showcase-primary-dark);
+  border-color: var(--showcase-primary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#home-1 .badge-primary {
+  color: #131922;
+  background-color: var(--yellow);
+}
+
+#home-1 .feature {
+  background-color: var(--showcase-tint);
+}
+
+#home-1 .hero__navigation .swiper-pagination-bullet-active {
+  color: var(--yellow);
+}
+
+#home-1 .navbar-dark .navbar-nav .nav-link:hover,
+#home-1 .navbar-dark .navbar-nav .nav-item:hover {
+  color: var(--primary);
+}
+
+#home-1 a:focus-visible,
+#home-1 button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}

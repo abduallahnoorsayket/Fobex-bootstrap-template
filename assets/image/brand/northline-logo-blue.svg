@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="46" viewBox="0 0 150 46" role="img" aria-labelledby="title">
+  <title id="title">Northline Advisory</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="23" cy="23" r="18" stroke="#2563EB" stroke-width="3"/>
+    <path d="M23 7.5 28.4 21 23 18.2 17.6 34.5 20.1 22.8 16.4 25.1Z" fill="#2563EB" stroke="#2563EB" stroke-width="1.2"/>
+    <path d="M23 7.5 25.5 14.1 23 12.8Z" fill="#7DD3FC" stroke="#7DD3FC" stroke-width="1"/>
+  </g>
+  <text x="48" y="25" fill="#131922" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="0.25">NORTHLINE</text>
+  <text x="49" y="37" fill="#5F6165" font-family="Arial, Helvetica, sans-serif" font-size="7" font-weight="700" letter-spacing="2.15">ADVISORY</text>
+</svg>

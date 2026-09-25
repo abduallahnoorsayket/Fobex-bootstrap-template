@@ -1,0 +1,74 @@
+/* Showcase refresh for index2.html only. */
+#home-2 {
+  --primary: #2563eb;
+  --showcase-accent: #7dd3fc;
+  --showcase-primary-dark: #1d4ed8;
+  --showcase-tint: #eff6ff;
+}
+
+#home-2 .hero {
+  background-image: linear-gradient(
+      90deg,
+      rgba(9, 17, 31, 0.78) 0%,
+      rgba(9, 17, 31, 0.53) 58%,
+      rgba(9, 17, 31, 0.24) 100%
+    ),
+    url("../image/showcase/northline-consulting.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home-2 .section__sub_heading,
+#home-2 .section__sub_heading_line,
+#home-2 .active {
+  color: var(--primary);
+}
+
+#home-2 .section__sub_heading_line {
+  background: var(--primary);
+}
+
+#home-2 .section__sub_heading {
+  letter-spacing: 0.08em;
+}
+
+#home-2 .btn_primary,
+#home-2 .btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  transition: background-color 180ms ease, border-color 180ms ease,
+    transform 180ms ease;
+}
+
+#home-2 .btn_primary:hover,
+#home-2 .btn-primary:hover {
+  background-color: var(--showcase-primary-dark);
+  border-color: var(--showcase-primary-dark);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+#home-2 .hero__badge {
+  border-left: 3px solid var(--showcase-accent);
+}
+
+#home-2 .hero__title .active {
+  color: var(--showcase-accent);
+}
+
+#home-2 .appointment-home-2 {
+  background-color: var(--showcase-tint);
+}
+
+#home-2 .swiper-pagination-bullet-active {
+  color: #fff;
+}
+
+#home-2 a:focus-visible,
+#home-2 button:focus-visible {
+  outline: 3px solid var(--showcase-accent);
+  outline-offset: 3px;
+}
