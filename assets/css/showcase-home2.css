@@ -63,44 +63,6 @@
   background-color: var(--showcase-tint);
 }
 
-/* Keep the hero's generated pagination inside the viewport. */
-#home-2 #hero {
-  position: relative;
-}
-
-#home-2 .hero__navigation {
-  position: absolute;
-  top: 50%;
-  right: clamp(16px, 4vw, 56px);
-  z-index: 5;
-  display: flex;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  gap: 12px;
-  align-items: center;
-  transform: translateY(-50%);
-}
-
-#home-2 .hero__navigation .swiper-pagination-bullet,
-#home-2 .hero__navigation .swiper-pagination-bullet-active {
-  position: relative;
-  left: auto;
-  display: grid;
-  width: 32px;
-  height: 32px;
-  margin: 0;
-  place-items: center;
-  opacity: 1;
-}
-
-#home-2 .hero__navigation .swiper-pagination-bullet::before,
-#home-2 .hero__navigation .swiper-pagination-bullet::after,
-#home-2 .navigation__circle__1 {
-  display: none;
-}
-
 /* Use flex alignment so inline SVG baselines cannot pull button icons off-center. */
 #home-2 .btn_primary,
 #home-2 .btn-secondary,
@@ -184,18 +146,15 @@
 }
 
 @media (max-width: 767.98px) {
-  #home-2 .hero__navigation {
-    top: auto;
-    right: 16px;
-    bottom: 20px;
-    flex-direction: row;
-    transform: none;
-  }
-
   #home-2 #about-us .about__right .about-us-right-image-container > img {
     width: 100%;
     height: auto;
   }
+}
+
+/* Keep the stats cards from sitting flush against the next section. */
+#home-2 #fun-facts {
+  padding-bottom: 48px;
 }
 
 @media (max-width: 575.98px) {
