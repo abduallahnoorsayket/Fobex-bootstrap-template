@@ -109,6 +109,13 @@
   padding: clamp(64px, 8vw, 96px) 0;
 }
 
+/* Reserve room for the desktop slider controls and space before the feature. */
+@media (min-width: 1201px) {
+  #home-2 .service-home-2 {
+    padding-bottom: 220px;
+  }
+}
+
 #home-2 .service-home-2 .section__heading {
   width: min(100%, 720px);
   margin: 10px auto 40px;
@@ -143,6 +150,28 @@
 #home-2 .service-home-2 .client__plane__icon {
   display: block;
   margin: 0 auto 12px;
+}
+
+/* Keep replacement team and article photos inside their original frames. */
+#home-2 #team .team__card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+#home-2 #blog .team__card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.45 / 1;
+  object-fit: cover;
+}
+
+#home-2 #testimonials .person__info > img {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  object-fit: cover;
 }
 
 @media (max-width: 767.98px) {

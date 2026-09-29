@@ -1689,6 +1689,10 @@ li {
 .blog-home-1 .card {
   border: none;
 }
+.blog-home-1 .blog__img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
 .blog-home-1 .blog__text h3 {
   font-weight: 600;
   font-size: 30px;

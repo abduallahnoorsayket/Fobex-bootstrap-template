@@ -1032,13 +1032,13 @@ select {
       rgba(19, 25, 34, 0.4),
       rgba(19, 25, 34, 0.4)
     ),
-    url("../image/home2/project-slider-1.png");
+    url("../image/home1/project-slier-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .project__slider__image_2 {
-  background: url("../image/home2/project-slider-2.png");
+  background: url("../image/home1/project-slier-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1178,7 +1178,7 @@ select {
   gap: 10px;
 }
 .tesimonial__video__image {
-  background: url(../image/home2/testimonial-people.jpg);
+  background: url(../image/showcase/northline-team.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
