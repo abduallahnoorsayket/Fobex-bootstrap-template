@@ -114,6 +114,10 @@
   #home-2 .service-home-2 {
     padding-bottom: 220px;
   }
+
+  #home-2 .service__slider__button__container {
+    transform: translateY(60px);
+  }
 }
 
 #home-2 .service-home-2 .section__heading {
