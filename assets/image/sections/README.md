@@ -1,6 +1,6 @@
-# Northline section imagery
+# Avenorth section imagery
 
-These locally stored Unsplash photos are used in the Northline Advisory homepage (`index2.html`). They are downloaded for this project and used under the Unsplash License.
+These locally stored Unsplash photos are used in the Avenorth Strategy homepage (`index2.html`). They are downloaded for this project and used under the Unsplash License.
 
 | File | Placement | Photographer / source |
 | --- | --- | --- |

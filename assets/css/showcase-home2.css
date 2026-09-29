@@ -59,6 +59,15 @@
   color: var(--showcase-accent);
 }
 
+#home-2 .hero__navigation .swiper-pagination-bullet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0;
+  line-height: 1;
+}
+
 #home-2 .appointment-home-2 {
   background-color: var(--showcase-tint);
 }
